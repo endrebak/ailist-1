@@ -68,6 +68,12 @@ void ailist_wps(ailist_t *ail, double wps[], uint32_t protection);
 // Filter ailist by length
 ailist_t *ailist_length_filter(ailist_t *ail, int min_length, int max_length);
 
+// Calculate length distribution
+void ailist_length_distribution(ailist_t *ail, int distribution[]);
+
+// Calculate maximum length
+int ailist_max_length(ailist_t *ail);
+
 // Print AIList
 void display_list(ailist_t *ail);
 

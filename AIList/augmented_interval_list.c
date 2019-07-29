@@ -374,7 +374,8 @@ ailist_t *ailist_length_filter(ailist_t *ail, int min_length, int max_length)
     int i;
     for (i = 0; i < ail->nr; i++)
     {
-        length = ail->interval_list[i].end - ail->interval_list[i].start;
+        // Record length (excluding last position)
+        length = ail->interval_list[i].end - ail->interval_list[i].start - 1;
         if (length >= min_length && length <= max_length)
         {
             ailist_add(filtered_ail, ail->interval_list[i].start, ail->interval_list[i].end, ail->interval_list[i].value);
@@ -382,6 +383,38 @@ ailist_t *ailist_length_filter(ailist_t *ail, int min_length, int max_length)
     }
 
     return filtered_ail;
+}
+
+
+int ailist_max_length(ailist_t *ail)
+{   /* Calculate maximum length */
+	
+    // Iterate over intervals and record length
+    int length;
+    int maximum = 0;
+    int i;
+    for (i = 0; i < ail->nr; i++)
+    {
+        // Record length (excluding last position)
+        length = ail->interval_list[i].end - ail->interval_list[i].start - 1;
+	    maximum = MAX(maximum, length);
+    }
+
+    return maximum;
+}
+
+
+void ailist_length_distribution(ailist_t *ail, int distribution[])
+{   /* Calculate length distribution */
+    // Iterate over intervals and record length
+    int length;
+    int i;
+    for (i = 0; i < ail->nr; i++)
+    {
+        // Record length (excluding last position)
+        length = ail->interval_list[i].end - ail->interval_list[i].start - 1;
+        distribution[length] += 1;
+    }
 }
 
 

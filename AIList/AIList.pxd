@@ -43,6 +43,10 @@ cdef extern from "augmented_interval_list.h":
 	void ailist_wps(ailist_t *ail, double wps[], uint32_t protection) nogil
 	# Filter ailist by length
 	ailist_t *ailist_length_filter(ailist_t *ail, int min_length, int max_length) nogil
+	#  Calculate length distribution
+	void ailist_length_distribution(ailist_t *ail, int distribution[]) nogil
+	# Calculate maximum length
+	int ailist_max_length(ailist_t *ail) nogil
 	# Print AIList
 	void display_list(ailist_t *ail) nogil
 
@@ -69,3 +73,4 @@ cdef class AIList(object):
 	cdef ailist_t *_intersect(AIList self, int start, int end)
 	cdef np.ndarray _coverage(AIList self)
 	cdef np.ndarray _wps(AIList self, int protection)
+	cdef np.ndarray _length_dist(AIList self)

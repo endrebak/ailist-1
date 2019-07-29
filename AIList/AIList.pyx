@@ -233,3 +233,22 @@ cdef class AIList(object):
 		filtered_ail.set_list(cfiltered_ail)
 
 		return filtered_ail
+
+
+	cdef np.ndarray _length_dist(AIList self):
+		# Initialize distribution
+		cdef max_length = ailist_max_length(self.interval_list)
+		cdef int[::1] distribution = np.zeros(max_length + 1, dtype=np.intc)
+
+		# Calculate distribution
+		ailist_length_distribution(self.interval_list, &distribution[0])
+
+		return np.asarray(distribution, dtype=np.intc)
+
+	def length_dist(self):
+		# Initialize distribution
+		cdef np.ndarray distribution
+		# Calculate distribution
+		distribution = self._length_dist()
+
+		return distribution

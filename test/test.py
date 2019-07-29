@@ -1,4 +1,5 @@
 from AIList import AIList
+import numpy as np
 
 
 i = AIList()
@@ -26,6 +27,11 @@ len(i)
 print("Intersecting")
 o = i.intersect(3,15)
 o.display()
+
+print("Length distribution")
+i.display()
+ld = i.length_dist()
+print(ld)
 
 for x in i:
     print(x)
