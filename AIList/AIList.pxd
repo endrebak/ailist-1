@@ -41,6 +41,8 @@ cdef extern from "augmented_interval_list.h":
 	ailist_t *ailist_merge(ailist_t *ail, uint32_t gap) nogil
 	# Calculate Window Protection Score
 	void ailist_wps(ailist_t *ail, double wps[], uint32_t protection) nogil
+	# Filter ailist by length
+	ailist_t *ailist_length_filter(ailist_t *ail, int min_length, int max_length) nogil
 	# Print AIList
 	void display_list(ailist_t *ail) nogil
 

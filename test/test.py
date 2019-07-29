@@ -14,11 +14,16 @@ i.display()
 w = i.wps()
 print(w)
 
+print("Merging")
 m = i.merge()
 m.display()
 
+print("Filtering")
+f = i.filter(3, 10)
+f.display()
+
 len(i)
-i.display()
+print("Intersecting")
 o = i.intersect(3,15)
 o.display()
 

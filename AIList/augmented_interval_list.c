@@ -364,6 +364,27 @@ void ailist_wps(ailist_t *ail, double wps[], uint32_t protection)
 }
 
 
+ailist_t *ailist_length_filter(ailist_t *ail, int min_length, int max_length)
+{   /* Filter ailist by length */
+    // Initiatize filtered ailist
+    ailist_t *filtered_ail = ailist_init();
+
+    // Iterate over intervals and filter
+    int length;
+    int i;
+    for (i = 0; i < ail->nr; i++)
+    {
+        length = ail->interval_list[i].end - ail->interval_list[i].start;
+        if (length >= min_length && length <= max_length)
+        {
+            ailist_add(filtered_ail, ail->interval_list[i].start, ail->interval_list[i].end, ail->interval_list[i].value);
+        }
+    }
+
+    return filtered_ail;
+}
+
+
 void display_list(ailist_t *ail)
 {
     int i;

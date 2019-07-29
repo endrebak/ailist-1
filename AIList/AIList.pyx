@@ -221,3 +221,15 @@ cdef class AIList(object):
 		wps = self._wps(protection)
 		
 		return pd.Series(wps, index=np.arange(self.first, self.last))
+
+	
+	def filter(self, int min_length=1, int max_length=400):
+		"""
+		"""
+		# Initialize filtered list
+		cdef AIList filtered_ail = AIList()
+
+		cdef ailist_t *cfiltered_ail = ailist_length_filter(self.interval_list, min_length, max_length)
+		filtered_ail.set_list(cfiltered_ail)
+
+		return filtered_ail

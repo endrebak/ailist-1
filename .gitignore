@@ -4,7 +4,7 @@
 *~
 *.pyc
 build/*
-IntervalTree.egg-info/*
+AIList.egg-info/*
 dist/*
 writing/*
 

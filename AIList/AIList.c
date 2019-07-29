@@ -1231,7 +1231,7 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
 
-/* "AIList/AIList.pxd":48
+/* "AIList/AIList.pxd":50
  * 
  * 
  * cdef class Interval(object):             # <<<<<<<<<<<<<<
@@ -1245,7 +1245,7 @@ struct __pyx_obj_6AIList_6AIList_Interval {
 };
 
 
-/* "AIList/AIList.pxd":57
+/* "AIList/AIList.pxd":59
  * 
  * 
  * cdef class AIList(object):             # <<<<<<<<<<<<<<
@@ -2498,6 +2498,7 @@ static const char __pyx_k_reduce_ex[] = "__reduce_ex__";
 static const char __pyx_k_IndexError[] = "IndexError";
 static const char __pyx_k_Interval_2[] = "Interval";
 static const char __pyx_k_ValueError[] = "ValueError";
+static const char __pyx_k_max_length[] = "max_length";
 static const char __pyx_k_min_length[] = "min_length";
 static const char __pyx_k_protection[] = "protection";
 static const char __pyx_k_pyx_result[] = "__pyx_result";
@@ -2636,6 +2637,7 @@ static PyObject *__pyx_kp_s_itemsize_0_for_cython_array;
 static PyObject *__pyx_n_s_iter;
 static PyObject *__pyx_n_s_last;
 static PyObject *__pyx_n_s_main;
+static PyObject *__pyx_n_s_max_length;
 static PyObject *__pyx_n_s_memview;
 static PyObject *__pyx_n_s_min_length;
 static PyObject *__pyx_n_s_mode;
@@ -2719,8 +2721,9 @@ static PyObject *__pyx_pf_6AIList_6AIList_6AIList_17coverage(struct __pyx_obj_6A
 static PyObject *__pyx_pf_6AIList_6AIList_6AIList_19display(struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_6AIList_6AIList_6AIList_21merge(struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self, int __pyx_v_gap); /* proto */
 static PyObject *__pyx_pf_6AIList_6AIList_6AIList_23wps(struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self, int __pyx_v_protection); /* proto */
-static PyObject *__pyx_pf_6AIList_6AIList_6AIList_25__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6AIList_6AIList_6AIList_27__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_6AIList_6AIList_6AIList_25filter(struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self, int __pyx_v_min_length, int __pyx_v_max_length); /* proto */
+static PyObject *__pyx_pf_6AIList_6AIList_6AIList_27__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6AIList_6AIList_6AIList_29__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
@@ -5788,6 +5791,8 @@ static PyObject *__pyx_pf_6AIList_6AIList_6AIList_23wps(struct __pyx_obj_6AIList
  * 		wps = self._wps(protection)
  * 
  * 		return pd.Series(wps, index=np.arange(self.first, self.last))             # <<<<<<<<<<<<<<
+ * 
+ * 
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pd); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 223, __pyx_L1_error)
@@ -5899,6 +5904,158 @@ static PyObject *__pyx_pf_6AIList_6AIList_6AIList_23wps(struct __pyx_obj_6AIList
   return __pyx_r;
 }
 
+/* "AIList/AIList.pyx":226
+ * 
+ * 
+ * 	def filter(self, int min_length=1, int max_length=400):             # <<<<<<<<<<<<<<
+ * 		"""
+ * 		"""
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_6AIList_6AIList_6AIList_26filter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6AIList_6AIList_6AIList_25filter[] = "AIList.filter(self, int min_length=1, int max_length=400)\n\n\t\t";
+static PyObject *__pyx_pw_6AIList_6AIList_6AIList_26filter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  int __pyx_v_min_length;
+  int __pyx_v_max_length;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("filter (wrapper)", 0);
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_min_length,&__pyx_n_s_max_length,0};
+    PyObject* values[2] = {0,0};
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (kw_args > 0) {
+          PyObject* value = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_min_length);
+          if (value) { values[0] = value; kw_args--; }
+        }
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (kw_args > 0) {
+          PyObject* value = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_max_length);
+          if (value) { values[1] = value; kw_args--; }
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "filter") < 0)) __PYX_ERR(1, 226, __pyx_L3_error)
+      }
+    } else {
+      switch (PyTuple_GET_SIZE(__pyx_args)) {
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+    }
+    if (values[0]) {
+      __pyx_v_min_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_min_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 226, __pyx_L3_error)
+    } else {
+      __pyx_v_min_length = ((int)1);
+    }
+    if (values[1]) {
+      __pyx_v_max_length = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_max_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 226, __pyx_L3_error)
+    } else {
+      __pyx_v_max_length = ((int)0x190);
+    }
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("filter", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 226, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("AIList.AIList.AIList.filter", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_6AIList_6AIList_6AIList_25filter(((struct __pyx_obj_6AIList_6AIList_AIList *)__pyx_v_self), __pyx_v_min_length, __pyx_v_max_length);
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_6AIList_6AIList_6AIList_25filter(struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self, int __pyx_v_min_length, int __pyx_v_max_length) {
+  struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_filtered_ail = 0;
+  ailist_t *__pyx_v_cfiltered_ail;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  __Pyx_RefNannySetupContext("filter", 0);
+
+  /* "AIList/AIList.pyx":230
+ * 		"""
+ * 		# Initialize filtered list
+ * 		cdef AIList filtered_ail = AIList()             # <<<<<<<<<<<<<<
+ * 
+ * 		cdef ailist_t *cfiltered_ail = ailist_length_filter(self.interval_list, min_length, max_length)
+ */
+  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6AIList_6AIList_AIList)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 230, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_filtered_ail = ((struct __pyx_obj_6AIList_6AIList_AIList *)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "AIList/AIList.pyx":232
+ * 		cdef AIList filtered_ail = AIList()
+ * 
+ * 		cdef ailist_t *cfiltered_ail = ailist_length_filter(self.interval_list, min_length, max_length)             # <<<<<<<<<<<<<<
+ * 		filtered_ail.set_list(cfiltered_ail)
+ * 
+ */
+  __pyx_v_cfiltered_ail = ailist_length_filter(__pyx_v_self->interval_list, __pyx_v_min_length, __pyx_v_max_length);
+
+  /* "AIList/AIList.pyx":233
+ * 
+ * 		cdef ailist_t *cfiltered_ail = ailist_length_filter(self.interval_list, min_length, max_length)
+ * 		filtered_ail.set_list(cfiltered_ail)             # <<<<<<<<<<<<<<
+ * 
+ * 		return filtered_ail
+ */
+  ((struct __pyx_vtabstruct_6AIList_6AIList_AIList *)__pyx_v_filtered_ail->__pyx_vtab)->set_list(__pyx_v_filtered_ail, __pyx_v_cfiltered_ail);
+
+  /* "AIList/AIList.pyx":235
+ * 		filtered_ail.set_list(cfiltered_ail)
+ * 
+ * 		return filtered_ail             # <<<<<<<<<<<<<<
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __Pyx_INCREF(((PyObject *)__pyx_v_filtered_ail));
+  __pyx_r = ((PyObject *)__pyx_v_filtered_ail);
+  goto __pyx_L0;
+
+  /* "AIList/AIList.pyx":226
+ * 
+ * 
+ * 	def filter(self, int min_length=1, int max_length=400):             # <<<<<<<<<<<<<<
+ * 		"""
+ * 		"""
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_AddTraceback("AIList.AIList.AIList.filter", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF((PyObject *)__pyx_v_filtered_ail);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
 /* "(tree fragment)":1
  * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
@@ -5906,20 +6063,20 @@ static PyObject *__pyx_pf_6AIList_6AIList_6AIList_23wps(struct __pyx_obj_6AIList
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6AIList_6AIList_6AIList_26__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_6AIList_6AIList_6AIList_25__reduce_cython__[] = "AIList.__reduce_cython__(self)";
-static PyObject *__pyx_pw_6AIList_6AIList_6AIList_26__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_6AIList_6AIList_6AIList_28__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_6AIList_6AIList_6AIList_27__reduce_cython__[] = "AIList.__reduce_cython__(self)";
+static PyObject *__pyx_pw_6AIList_6AIList_6AIList_28__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_6AIList_6AIList_6AIList_25__reduce_cython__(((struct __pyx_obj_6AIList_6AIList_AIList *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6AIList_6AIList_6AIList_27__reduce_cython__(((struct __pyx_obj_6AIList_6AIList_AIList *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6AIList_6AIList_6AIList_25__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self) {
+static PyObject *__pyx_pf_6AIList_6AIList_6AIList_27__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5961,20 +6118,20 @@ static PyObject *__pyx_pf_6AIList_6AIList_6AIList_25__reduce_cython__(CYTHON_UNU
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6AIList_6AIList_6AIList_28__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static char __pyx_doc_6AIList_6AIList_6AIList_27__setstate_cython__[] = "AIList.__setstate_cython__(self, __pyx_state)";
-static PyObject *__pyx_pw_6AIList_6AIList_6AIList_28__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_6AIList_6AIList_6AIList_30__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static char __pyx_doc_6AIList_6AIList_6AIList_29__setstate_cython__[] = "AIList.__setstate_cython__(self, __pyx_state)";
+static PyObject *__pyx_pw_6AIList_6AIList_6AIList_30__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_6AIList_6AIList_6AIList_27__setstate_cython__(((struct __pyx_obj_6AIList_6AIList_AIList *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_6AIList_6AIList_6AIList_29__setstate_cython__(((struct __pyx_obj_6AIList_6AIList_AIList *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6AIList_6AIList_6AIList_27__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_6AIList_6AIList_6AIList_29__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_6AIList_6AIList_AIList *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -21371,8 +21528,9 @@ static PyMethodDef __pyx_methods_6AIList_6AIList_AIList[] = {
   {"display", (PyCFunction)__pyx_pw_6AIList_6AIList_6AIList_20display, METH_NOARGS, __pyx_doc_6AIList_6AIList_6AIList_19display},
   {"merge", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6AIList_6AIList_6AIList_22merge, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6AIList_6AIList_6AIList_21merge},
   {"wps", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6AIList_6AIList_6AIList_24wps, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6AIList_6AIList_6AIList_23wps},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_6AIList_6AIList_6AIList_26__reduce_cython__, METH_NOARGS, __pyx_doc_6AIList_6AIList_6AIList_25__reduce_cython__},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_6AIList_6AIList_6AIList_28__setstate_cython__, METH_O, __pyx_doc_6AIList_6AIList_6AIList_27__setstate_cython__},
+  {"filter", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6AIList_6AIList_6AIList_26filter, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6AIList_6AIList_6AIList_25filter},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_6AIList_6AIList_6AIList_28__reduce_cython__, METH_NOARGS, __pyx_doc_6AIList_6AIList_6AIList_27__reduce_cython__},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_6AIList_6AIList_6AIList_30__setstate_cython__, METH_O, __pyx_doc_6AIList_6AIList_6AIList_29__setstate_cython__},
   {0, 0, 0, 0}
 };
 
@@ -22384,6 +22542,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_iter, __pyx_k_iter, sizeof(__pyx_k_iter), 0, 0, 1, 1},
   {&__pyx_n_s_last, __pyx_k_last, sizeof(__pyx_k_last), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
+  {&__pyx_n_s_max_length, __pyx_k_max_length, sizeof(__pyx_k_max_length), 0, 0, 1, 1},
   {&__pyx_n_s_memview, __pyx_k_memview, sizeof(__pyx_k_memview), 0, 0, 1, 1},
   {&__pyx_n_s_min_length, __pyx_k_min_length, sizeof(__pyx_k_min_length), 0, 0, 1, 1},
   {&__pyx_n_s_mode, __pyx_k_mode, sizeof(__pyx_k_mode), 0, 0, 1, 1},
