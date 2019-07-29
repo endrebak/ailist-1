@@ -48,7 +48,7 @@ void ailist_construct(ailist_t *ail, int cLen);
 uint32_t binary_search(interval_t* As, uint32_t idxS, uint32_t idxE, uint32_t qe);
 
 // Query ailist intervals
-ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe, uint32_t *mr, uint32_t **ir);
+ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe);
 
 // Free ailist data
 void ailist_destroy(ailist_t *ail);

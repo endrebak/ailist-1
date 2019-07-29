@@ -30,7 +30,7 @@ cdef extern from "augmented_interval_list.h":
 	# Construct ailist: decomposition and augmentation
 	void ailist_construct(ailist_t *ail, int cLen) nogil
 	# Query ailist intervals
-	ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe, uint32_t *mr, uint32_t **ir) nogil
+	ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe) nogil
 	# Free ailist data
 	void ailist_destroy(ailist_t *ail) nogil
 	# Calculate coverage

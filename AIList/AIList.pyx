@@ -142,10 +142,7 @@ cdef class AIList(object):
 
 
 	cdef ailist_t *_intersect(AIList self, int start, int end):
-		cdef uint32_t mr = 1000000
-		cdef uint32_t *hits = <uint32_t *> malloc(mr * sizeof(uint32_t))
-		cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end, &mr, &hits)
-		free(hits)
+		cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
 
 		return overlaps
 

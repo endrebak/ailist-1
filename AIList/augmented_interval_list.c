@@ -194,11 +194,12 @@ void ailist_construct(ailist_t *ail, int cLen)
 }
 
 
-ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe, uint32_t *mr, uint32_t **ir)
+ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe)
 {   
     uint32_t nr = 0;
-    uint32_t m = *mr;
-    uint32_t *r = *ir;
+    //uint32_t m = *mr;
+    //uint32_t m = 1000000;
+    //uint32_t *r = *ir;
     int k;
 
     ailist_t *overlaps = ailist_init();
@@ -212,42 +213,27 @@ ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe, uint32_t *mr, ui
         if (ail->lenC[k] > 15)
         {
             t = binary_search(ail->interval_list, cs, ce, qe); 	//rs<qe: inline not better 
-            if (nr + t - cs >= m)
-            {
-            	m = nr + t - cs + 1024;
-            	r = realloc(r, m * sizeof(uint32_t));
-            }
 
             while (t >= cs && ail->maxE[t] > qs)
             {
                 if (ail->interval_list[t].end > qs)
                 {               	
                     ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, nr);
-                    r[nr++] = t;
                 }
 
                 t--;
             }
-        } else {
-        	if (nr + ce - cs >= m)
-            {
-        		m = nr + ce - cs + 1024;
-        		r = realloc(r, m * sizeof(uint32_t));
-        	}
-
+        } 
+        else {
             for (t = cs; t < ce; t++)
             {
                 if (ail->interval_list[t].start < qe && ail->interval_list[t].end > qs)
                 {
                     ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, nr);
-                    r[nr++] = t;
                 }
             }                      
         }
     }
-
-    *ir = r;
-    *mr = m;  
 
     return overlaps;                            
 }
@@ -420,17 +406,13 @@ void ailist_length_distribution(ailist_t *ail, int distribution[])
 
 void ailist_nhits_from_array(ailist_t *ail, const long starts[], const long ends[], int length, int nhits[])
 {
-    uint32_t mr = 1000000;
-	uint32_t *hits = malloc(mr * sizeof(uint32_t));
     ailist_t *overlaps;
     int i;
     for (i = 0; i < length; i++)
     {
-        overlaps = ailist_query(ail, starts[i], ends[i], &mr, &hits);
+        overlaps = ailist_query(ail, starts[i], ends[i]);
         nhits[i] = overlaps->nr;
     }
-
-    free(hits);
 }
 
 
@@ -476,18 +458,10 @@ int main()
     display_list(merged_ail);
 
     printf("Finding overlaps...for (10-15)\n");
-    uint32_t mr = 1000000;
-	uint32_t *hits = malloc(mr * sizeof(uint32_t));
     ailist_t *overlaps;
 
-    overlaps = ailist_query(ail, 15, 20, &mr, &hits);
+    overlaps = ailist_query(ail, 10, 15);
     display_list(overlaps);
-
-    int i;
-    for (i=0; i<overlaps->nr; i++)
-    {
-        printf("hits %d: %d\n", i, hits[i]);
-    }
 
     return 0;
 }
