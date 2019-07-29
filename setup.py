@@ -18,8 +18,8 @@ build_type = "optimized"
 #build_type="debug"
 
 # Descriptions of package
-SHORTDESC = "Python package for interval skip list"
-DESC = """A python package wrapper for a C implementation of an interval skip list."""
+SHORTDESC = "Python package for Augmented Interval List"
+DESC = """A python package wrapper for a C implementation of an Augmented Interval List."""
 
 # Directories (relative to the top-level directory where setup.py resides) in which to look for data files.
 datadirs  = ("test",)
