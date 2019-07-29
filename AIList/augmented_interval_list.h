@@ -1,0 +1,87 @@
+//=====================================================================================
+// Common structs, parameters, functions
+// Original: https://github.com/databio/AIList/tree/master/src
+// by Jianglin Feng and Kyle S. Smith
+//-------------------------------------------------------------------------------------
+#ifndef __AILIST_H__
+#define __AILIST_H__
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <ctype.h>
+#include <math.h>
+
+//-------------------------------------------------------------------------------------
+#define MAX(X, Y) (((X) > (Y)) ? (X) : (Y))
+#define MIN(X, Y) (((X) < (Y)) ? (X) : (Y))
+#define MAXC 10							// Max number of components
+//-------------------------------------------------------------------------------------
+
+typedef struct {
+    uint32_t start;      				// Region start: 0-based
+    uint32_t end;    					// Region end: not inclusive
+    int32_t value;
+} interval_t;
+
+typedef struct {
+	int64_t nr, mr;						// Number of intervals
+	interval_t *interval_list;			// List of interval_t objects
+	int nc, lenC[MAXC], idxC[MAXC];		// Components
+	uint32_t *maxE;						// Augmentation
+	uint32_t first, last;				// Record range of intervals
+} ailist_t;
+
+//-------------------------------------------------------------------------------------
+
+// Initialize ailist_t
+ailist_t *ailist_init(void);
+
+// Add a interval_t interval
+void ailist_add(ailist_t *ail, uint32_t s, uint32_t e, int32_t v);
+
+// Construct ailist: decomposition and augmentation
+void ailist_construct(ailist_t *ail, int cLen);
+
+// Binary search
+uint32_t binary_search(interval_t* As, uint32_t idxS, uint32_t idxE, uint32_t qe);
+
+// Query ailist intervals
+ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe, uint32_t *mr, uint32_t **ir);
+
+// Free ailist data
+void ailist_destroy(ailist_t *ail);
+
+// Calculate coverage
+void ailist_coverage(ailist_t *ail, double coverage[]);
+
+// Add intervals from arrays
+void ailist_from_array(ailist_t *ail, const long starts[], const long ends[], const long index[], int length);
+
+// Merge overlapping intervals
+ailist_t *ailist_merge(ailist_t *ail, uint32_t gap);
+
+// Calculate Window Protection Score
+void ailist_wps(ailist_t *ail, double wps[], uint32_t protection);
+
+// Print AIList
+void display_list(ailist_t *ail);
+
+/*********************
+ * Convenient macros *
+ *********************/
+
+#ifndef kroundup32
+#define kroundup32(x) (--(x), (x)|=(x)>>1, (x)|=(x)>>2, (x)|=(x)>>4, (x)|=(x)>>8, (x)|=(x)>>16, ++(x))
+#endif
+
+#define CALLOC(type, len) ((type*)calloc((len), sizeof(type)))
+#define REALLOC(ptr, len) ((ptr) = (__typeof__(ptr))realloc((ptr), (len) * sizeof(*(ptr))))
+
+#define EXPAND(a, m) do { \
+		(m) = (m)? (m) + ((m)>>1) : 16; \
+		REALLOC((a), (m)); \
+	}while (0) 
+
+#endif
