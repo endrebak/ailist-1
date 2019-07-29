@@ -47,6 +47,8 @@ cdef extern from "augmented_interval_list.h":
 	void ailist_length_distribution(ailist_t *ail, int distribution[]) nogil
 	# Calculate maximum length
 	int ailist_max_length(ailist_t *ail) nogil
+	# Calculate number ofe overlaps from arrays
+	void ailist_nhits_from_array(ailist_t *ail, const long starts[], const long ends[], int length, int nhits[]) nogil
 	# Print AIList
 	void display_list(ailist_t *ail) nogil
 
@@ -74,3 +76,4 @@ cdef class AIList(object):
 	cdef np.ndarray _coverage(AIList self)
 	cdef np.ndarray _wps(AIList self, int protection)
 	cdef np.ndarray _length_dist(AIList self)
+	cdef np.ndarray _nhits_from_array(AIList self, const long[::1] starts, const long[::1] ends)

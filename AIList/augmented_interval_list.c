@@ -418,6 +418,22 @@ void ailist_length_distribution(ailist_t *ail, int distribution[])
 }
 
 
+void ailist_nhits_from_array(ailist_t *ail, const long starts[], const long ends[], int length, int nhits[])
+{
+    uint32_t mr = 1000000;
+	uint32_t *hits = malloc(mr * sizeof(uint32_t));
+    ailist_t *overlaps;
+    int i;
+    for (i = 0; i < length; i++)
+    {
+        overlaps = ailist_query(ail, starts[i], ends[i], &mr, &hits);
+        nhits[i] = overlaps->nr;
+    }
+
+    free(hits);
+}
+
+
 void display_list(ailist_t *ail)
 {
     int i;
@@ -464,8 +480,14 @@ int main()
 	uint32_t *hits = malloc(mr * sizeof(uint32_t));
     ailist_t *overlaps;
 
-    overlaps = ailist_query(ail, 10, 15, &mr, &hits);
-    //display_list(overlaps);
+    overlaps = ailist_query(ail, 15, 20, &mr, &hits);
+    display_list(overlaps);
+
+    int i;
+    for (i=0; i<overlaps->nr; i++)
+    {
+        printf("hits %d: %d\n", i, hits[i]);
+    }
 
     return 0;
 }

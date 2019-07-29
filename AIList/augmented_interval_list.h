@@ -74,6 +74,9 @@ void ailist_length_distribution(ailist_t *ail, int distribution[]);
 // Calculate maximum length
 int ailist_max_length(ailist_t *ail);
 
+// Calculate number ofe overlaps from arrays
+void ailist_nhits_from_array(ailist_t *ail, const long starts[], const long ends[], int length, int nhits[]);
+
 // Print AIList
 void display_list(ailist_t *ail);
 
