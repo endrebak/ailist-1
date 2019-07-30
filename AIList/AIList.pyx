@@ -262,6 +262,12 @@ cdef class AIList(object):
 		return np.asarray(nhits, dtype=np.intc)
 
 	def nhits_from_array(self, const long[::1] starts, const long[::1] ends):
+		"""
+		"""
+		# Make sure list is constructed
+		if self.is_constructed == False:
+			self.construct()
+
 		# Initialize distribution
 		cdef np.ndarray nhits
 		# Calculate distribution

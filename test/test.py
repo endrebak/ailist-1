@@ -35,3 +35,9 @@ print(ld)
 
 for x in i:
     print(x)
+
+print("nhits from array")
+starts = np.arange(1,100,10)
+ends = starts + 10
+nhits = i.nhits_from_array(starts, ends)
+print(nhits)

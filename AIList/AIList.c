@@ -6459,13 +6459,13 @@ static PyArrayObject *__pyx_f_6AIList_6AIList_6AIList__nhits_from_array(struct _
  * 		return np.asarray(nhits, dtype=np.intc)
  * 
  * 	def nhits_from_array(self, const long[::1] starts, const long[::1] ends):             # <<<<<<<<<<<<<<
- * 		# Initialize distribution
- * 		cdef np.ndarray nhits
+ * 		"""
+ * 		"""
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6AIList_6AIList_6AIList_30nhits_from_array(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6AIList_6AIList_6AIList_29nhits_from_array[] = "AIList.nhits_from_array(self, const long[::1] starts, const long[::1] ends)";
+static char __pyx_doc_6AIList_6AIList_6AIList_29nhits_from_array[] = "AIList.nhits_from_array(self, const long[::1] starts, const long[::1] ends)\n\n\t\t";
 static PyObject *__pyx_pw_6AIList_6AIList_6AIList_30nhits_from_array(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_starts = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_ends = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -6529,22 +6529,70 @@ static PyObject *__pyx_pf_6AIList_6AIList_6AIList_29nhits_from_array(struct __py
   PyArrayObject *__pyx_v_nhits = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
+  int __pyx_t_1;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("nhits_from_array", 0);
 
   /* "AIList/AIList.pyx":268
+ * 		"""
+ * 		# Make sure list is constructed
+ * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ * 			self.construct()
+ * 
+ */
+  __pyx_t_1 = ((__pyx_v_self->is_constructed == 0) != 0);
+  if (__pyx_t_1) {
+
+    /* "AIList/AIList.pyx":269
+ * 		# Make sure list is constructed
+ * 		if self.is_constructed == False:
+ * 			self.construct()             # <<<<<<<<<<<<<<
+ * 
+ * 		# Initialize distribution
+ */
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_construct); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 269, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_4 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_4)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_4);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 269, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "AIList/AIList.pyx":268
+ * 		"""
+ * 		# Make sure list is constructed
+ * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ * 			self.construct()
+ * 
+ */
+  }
+
+  /* "AIList/AIList.pyx":274
  * 		cdef np.ndarray nhits
  * 		# Calculate distribution
  * 		nhits = self._nhits_from_array(starts, ends)             # <<<<<<<<<<<<<<
  * 
  * 		return nhits
  */
-  __pyx_t_1 = ((PyObject *)((struct __pyx_vtabstruct_6AIList_6AIList_AIList *)__pyx_v_self->__pyx_vtab)->_nhits_from_array(__pyx_v_self, __pyx_v_starts, __pyx_v_ends)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 268, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_v_nhits = ((PyArrayObject *)__pyx_t_1);
-  __pyx_t_1 = 0;
+  __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6AIList_6AIList_AIList *)__pyx_v_self->__pyx_vtab)->_nhits_from_array(__pyx_v_self, __pyx_v_starts, __pyx_v_ends)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 274, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_v_nhits = ((PyArrayObject *)__pyx_t_2);
+  __pyx_t_2 = 0;
 
-  /* "AIList/AIList.pyx":270
+  /* "AIList/AIList.pyx":276
  * 		nhits = self._nhits_from_array(starts, ends)
  * 
  * 		return nhits             # <<<<<<<<<<<<<<
@@ -6558,13 +6606,15 @@ static PyObject *__pyx_pf_6AIList_6AIList_6AIList_29nhits_from_array(struct __py
  * 		return np.asarray(nhits, dtype=np.intc)
  * 
  * 	def nhits_from_array(self, const long[::1] starts, const long[::1] ends):             # <<<<<<<<<<<<<<
- * 		# Initialize distribution
- * 		cdef np.ndarray nhits
+ * 		"""
+ * 		"""
  */
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4);
   __Pyx_AddTraceback("AIList.AIList.AIList.nhits_from_array", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
