@@ -432,7 +432,6 @@ void ailist_nhits_from_array(ailist_t *ail, const long starts[], const long ends
     {
         ailist_t *overlaps = ailist_query(ail, starts[i], ends[i]);
         nhits[i] = overlaps->nr;
-        ailist_destroy(overlaps);
     }
 
     return;
