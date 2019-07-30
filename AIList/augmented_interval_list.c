@@ -1,8 +1,7 @@
 //=============================================================================
-//Read .BED datasets, and then find all overlaps 
-//by Jianglin Feng  09/05/2018
-//Decomposition & simplication: 11/26/2018
-//Radix sorting and one-pass loading based on lh3's cgranges: 6/20/2019
+// Quick and efficient storing/querying of intervals 
+// by Kyle S. Smith and Jianglin Feng
+//
 //-----------------------------------------------------------------------------
 #include "augmented_interval_list.h"
 #include "radix_interval_sort.c"
@@ -49,13 +48,22 @@ uint32_t binary_search(interval_t* As, uint32_t idxS, uint32_t idxE, uint32_t qe
 ailist_t *ailist_init(void)
 {   /* Initialize ailist_t object */
 
-	ailist_t *ail = (ailist_t *)malloc(sizeof(ailist_t));
-
+    // Initialize variables
     ail->nr = 0;
     ail->mr = 64;
     ail->first = INT32_MAX;
     ail->last = 0;
+
+    // Initialize arrays
+    ailist_t *ail = (ailist_t *)malloc(sizeof(ailist_t));
     ail->interval_list = malloc(ail->mr * sizeof(interval_t));
+
+    // Check if memory was allocated
+    if (ail == NULL && ail->interval_list)
+    {
+        fprintf (stderr, "Out of memory!!! (init)\n");
+        exit(1);
+    }
 
 	return ail;
 }
@@ -197,9 +205,6 @@ void ailist_construct(ailist_t *ail, int cLen)
 ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe)
 {   
     uint32_t nr = 0;
-    //uint32_t m = *mr;
-    //uint32_t m = 1000000;
-    //uint32_t *r = *ir;
     int k;
 
     ailist_t *overlaps = ailist_init();
@@ -212,7 +217,7 @@ ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe)
 
         if (ail->lenC[k] > 15)
         {
-            t = binary_search(ail->interval_list, cs, ce, qe); 	//rs<qe: inline not better 
+            t = binary_search(ail->interval_list, cs, ce, qe);
 
             while (t >= cs && ail->maxE[t] > qs)
             {
