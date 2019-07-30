@@ -2,12 +2,12 @@
 #include "augmented_interval_list.h"
 
 
-// A utility function to get maximum value in arr[] 
-int getMax(interval_t *arr, int n) 
-{ 
+int get_max(interval_t *arr, int n) 
+{   /* Get maximum start in array */
     int mx = arr[0].start;
     int i;
 
+    // Iterate over array, record max start
     for (i = 1; i < n; i++)
     {
         if ((int)arr[i].start > mx)
@@ -19,54 +19,49 @@ int getMax(interval_t *arr, int n)
     return mx; 
 } 
   
-// A function to do counting sort of arr[] according to 
-// the digit represented by exp. 
-void countSort(interval_t *arr, int n, int exp) 
-{ 
+ 
+void count_sort(interval_t *arr, int n, int exp) 
+{   /* Counting sort array by exp */
     interval_t *output = (interval_t *)malloc(n * sizeof(interval_t));; // output array 
     int i, count[10] = {0}; 
   
-    // Store count of occurrences in count[] 
+    // Store count of occurrences in count
     for (i = 0; i < n; i++)
     {
         count[ (arr[i].start / exp) % 10 ]++;
     }
   
     // Change count[i] so that count[i] now contains actual 
-    //  position of this digit in output[] 
+    // position of this digit in output
     for (i = 1; i < 10; i++)
     {
         count[i] += count[i - 1];
     }
   
-    // Build the output array 
+    // Build output
     for (i = n - 1; i >= 0; i--) 
     { 
         output[count[ (arr[i].start / exp) % 10 ] - 1] = arr[i]; 
         count[ (arr[i].start / exp) % 10 ]--; 
     } 
   
-    // Copy the output array to arr[], so that arr[] now 
-    // contains sorted numbers according to current digit 
+    // Copy the output array to arr[] 
     for (i = 0; i < n; i++)
     {
         arr[i] = output[i];
     }
 } 
   
-// The main function to that sorts arr[] of size n using  
-// Radix Sort 
+
 void radix_interval_sort(interval_t *arr, int n) 
-{ 
-    // Find the maximum number to know number of digits 
-    int m = getMax(arr, n); 
+{   /* Radix Sort  */
+    // Find the maximum start
+    int m = get_max(arr, n);
   
-    // Do counting sort for every digit. Note that instead 
-    // of passing digit number, exp is passed. exp is 10^i 
-    // where i is current digit number 
+    // Do counting sort for every digit
     int exp;
     for (exp = 1; m/exp > 0; exp *= 10)
     {
-        countSort(arr, n, exp);
+        count_sort(arr, n, exp);
     }
 } 
