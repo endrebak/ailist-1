@@ -427,12 +427,12 @@ void ailist_length_distribution(ailist_t *ail, int distribution[])
 
 void ailist_nhits_from_array(ailist_t *ail, const long starts[], const long ends[], int length, int nhits[])
 {
-    ailist_t *overlaps;
     int i;
     for (i = 0; i < length; i++)
     {
-        overlaps = ailist_query(ail, starts[i], ends[i]);
+        ailist_t *overlaps = ailist_query(ail, starts[i], ends[i]);
         nhits[i] = overlaps->nr;
+        ailist_destroy(overlaps);
     }
 
     return;
