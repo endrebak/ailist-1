@@ -90,9 +90,11 @@ void ailist_add(ailist_t *ail, uint32_t s, uint32_t e, int32_t v)
     ail->first = MIN(ail->first, s);
     ail->last = MAX(ail->last, e);
 
+    // If max region reached, expand array
 	if (ail->nr == ail->mr)
 		EXPAND(ail->interval_list, ail->mr);
 
+    // Set new interval values
 	interval_t *i = &ail->interval_list[ail->nr++];
 	i->start = s;
 	i->end   = e;
@@ -198,7 +200,8 @@ void ailist_construct(ailist_t *ail, int cLen)
 
             ail->maxE[t] = tt;  
         }             
-    } 
+    }
+    return;
 }
 
 
@@ -262,6 +265,8 @@ void ailist_coverage(ailist_t *ail, double coverage[])
             coverage[position] = coverage[position] + 1;
         }
     }
+
+    return;
 }
 
 
@@ -277,6 +282,8 @@ void ailist_from_array(ailist_t *ail, const long starts[], const long ends[], co
     {
         ailist_add(ail, starts[i], ends[i], index[i]);
     }
+
+    return;
 }
 
 
@@ -357,6 +364,8 @@ void ailist_wps(ailist_t *ail, double wps[], uint32_t protection)
             }
         }
     }
+
+    return;
 }
 
 
@@ -411,6 +420,8 @@ void ailist_length_distribution(ailist_t *ail, int distribution[])
         length = ail->interval_list[i].end - ail->interval_list[i].start - 1;
         distribution[length] += 1;
     }
+
+    return;
 }
 
 
@@ -423,6 +434,8 @@ void ailist_nhits_from_array(ailist_t *ail, const long starts[], const long ends
         overlaps = ailist_query(ail, starts[i], ends[i]);
         nhits[i] = overlaps->nr;
     }
+
+    return;
 }
 
 
@@ -434,6 +447,7 @@ void display_list(ailist_t *ail)
         printf("(%d-%d) ", ail->interval_list[i].start, ail->interval_list[i].end);
     }
     printf("\n");
+    return;
 }
 
 
