@@ -49,17 +49,17 @@ ailist_t *ailist_init(void)
 {   /* Initialize ailist_t object */
 
     // Initialize variables
+    ailist_t *ail = (ailist_t *)malloc(sizeof(ailist_t));
     ail->nr = 0;
     ail->mr = 64;
     ail->first = INT32_MAX;
     ail->last = 0;
 
     // Initialize arrays
-    ailist_t *ail = (ailist_t *)malloc(sizeof(ailist_t));
     ail->interval_list = malloc(ail->mr * sizeof(interval_t));
 
     // Check if memory was allocated
-    if (ail == NULL && ail->interval_list)
+    if (ail == NULL && ail->interval_list == NULL)
     {
         fprintf (stderr, "Out of memory!!! (init)\n");
         exit(1);
