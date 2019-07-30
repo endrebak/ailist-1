@@ -110,7 +110,7 @@ void ailist_construct(ailist_t *ail, int cLen)
     int j1, nr;
     int minL = MAX(64, cLen);     
     cLen += cLen1;      
-    int lenT, len, iter, i, j, k, k0, t;  
+    int lenT, len, iter, j, k, k0, t;  
 
     //1. Decomposition
     interval_t *L1 = ail->interval_list;					//L1: to be rebuilt
@@ -267,6 +267,11 @@ void ailist_coverage(ailist_t *ail, double coverage[])
 
 void ailist_from_array(ailist_t *ail, const long starts[], const long ends[], const long index[], int length)
 {
+    // Expand interval list to the number of given
+    ail->mr = ail->nr + length;
+    EXPAND(ail->interval_list, ail->mr);
+    
+    // Iterate over itervals and add
     int i;
     for (i = 0; i < length; i++)
     {
@@ -287,9 +292,9 @@ ailist_t *ailist_merge(ailist_t *ail, uint32_t gap)
     for (i = 1; i < ail->nr; i++)
     {
         // If previous
-        if (previous_end > (ail->interval_list[i].start - gap))
+        if (previous_end > (int)(ail->interval_list[i].start - gap))
         {
-            previous_end = MAX(previous_end, ail->interval_list[i].end);
+            previous_end = MAX(previous_end, (int)ail->interval_list[i].end);
         }
         else
         {

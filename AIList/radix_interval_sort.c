@@ -10,7 +10,7 @@ int getMax(interval_t *arr, int n)
 
     for (i = 1; i < n; i++)
     {
-        if (arr[i].start > mx)
+        if ((int)arr[i].start > mx)
         { 
             mx = arr[i].start;
         }
