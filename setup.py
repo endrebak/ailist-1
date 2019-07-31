@@ -139,8 +139,14 @@ def declare_cython_extension(extName, use_math=False, use_openmp=False, include_
                     )
 
 
-# Add standard documentation (README et al.), if any, to data files
+# Gather user-defined data files
 datafiles = []
+getext = lambda filename: os.path.splitext(filename)[1]
+for datadir in datadirs:
+    datafiles.extend( [(root, [os.path.join(root, f) for f in files if getext(f) in dataexts])
+                       for root, dirs, files in os.walk(datadir)] )
+
+# Add standard documentation (README et al.), if any, to data files
 detected_docs = []
 for docname in standard_docs:
     for ext in standard_doc_exts:

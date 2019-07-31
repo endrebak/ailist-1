@@ -33,11 +33,25 @@ i.display()
 ld = i.length_dist()
 print(ld)
 
-for x in i:
-    print(x)
-
 print("nhits from array")
 starts = np.arange(1,100,10)
 ends = starts + 10
 nhits = i.nhits_from_array(starts, ends)
 print(nhits)
+
+print("Iterating")
+for x in i:
+    print(x)
+
+print("Pickling")
+import pickle
+d = pickle.dump(i, open("test_pickle.pickle","wb"))
+i2 = pickle.load(open("test_pickle.pickle","rb"))
+i2.display()
+
+print("Adding to pickle")
+i2.add(40, 60)
+
+print("Iterating pickle")
+for x in i2:
+    print(x)

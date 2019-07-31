@@ -6,6 +6,9 @@ import numpy as np
 cimport numpy as np
 cimport cython
 import pandas as pd
+from libc.stdlib cimport malloc
+from libc.string cimport memcpy
+from cpython.mem cimport PyMem_Malloc
 
 
 def get_include():
@@ -14,6 +17,19 @@ def get_include():
 	"""
 
 	return os.path.split(os.path.realpath(__file__))[0]
+
+
+cpdef AIList rebuild(bytes data, bytes b_length, bytes b_first, bytes b_last):
+	"""
+	Rebuild function for __reduce__()
+	"""
+	# Initialize new AIList
+	c = AIList()
+	# Build ailist from serialized data
+	cdef ailist_t *interval_list = c._set_data(data, b_length, b_first, b_last)
+	c.set_list(interval_list)
+
+	return c
 
 
 cdef class Interval(object):
@@ -53,6 +69,7 @@ cdef class Interval(object):
 		return format_string
 
 
+@cython.auto_pickle(True)
 cdef class AIList(object):
 	"""
 	Wrapper for C ailist_t
@@ -76,6 +93,48 @@ cdef class AIList(object):
 			ailist_destroy(self.interval_list)
 
 
+	cdef bytes _get_data(self):
+		"""
+		Function to convert ailist_t to bytes
+		for serialization by __reduce__()
+		"""
+		return <bytes>(<char*>self.interval_list)[:sizeof(ailist_t *)*self.interval_list.nr]
+
+	cdef ailist_t *_set_data(self, bytes data, bytes b_length, bytes b_first, bytes b_last):
+		"""
+		Function to build ailist_t object from
+		serialized bytes using __reduce__()
+		"""
+		# Convert bytes to ints
+		cdef int length = int.from_bytes(b_length, "little")
+		cdef int first = int.from_bytes(b_first, "little")
+		cdef int last = int.from_bytes(b_last, "little")
+		
+		# Create new ailist_t
+		cdef ailist_t *interval_list = ailist_init()
+		memcpy(interval_list, <char*>data, sizeof(ailist_t*)*length)
+
+		# Reassign ailist attributes
+		interval_list.first = first
+		interval_list.last = last
+
+		return interval_list
+
+	def __reduce__(self):
+		"""
+		Used for pickling. Convert ailist to bytes and back.
+		"""
+		# Convert ints to bytes
+		b_length = bytes([self.interval_list.nr])
+		b_first = bytes([self.interval_list.first])
+		b_last = bytes([self.interval_list.last])
+
+		# Convert ailist_t to bytes
+		data = self._get_data()
+
+		return (rebuild, (data, b_length, b_first, b_last))
+
+
 	@property	
 	def size(self):
 		return self.interval_list.nr
@@ -91,7 +150,7 @@ cdef class AIList(object):
 	@property
 	def range(self):
 		return self.last - self.first
-
+		
 
 	def __len__(self):
 		return self.size

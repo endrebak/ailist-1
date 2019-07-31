@@ -254,11 +254,10 @@ void ailist_coverage(ailist_t *ail, double coverage[])
     int n;
     int i;
     int position;
-    int start = ail->interval_list[0].start;
+    int start = (int)ail->first;
     for (i = 0; i < ail->nr; i++)
     {
-        // Add length to count (excluding last position)
-        length = ail->interval_list[i].end - ail->interval_list[i].start - 1;
+        length = ail->interval_list[i].end - ail->interval_list[i].start;
         for (n = 0; n < length; n++)
         {
             position = (ail->interval_list[i].start - start) + n;
@@ -337,9 +336,9 @@ void ailist_wps(ailist_t *ail, double wps[], uint32_t protection)
     {
         // Find regions around end points
         head_start = MAX(first, (int)(ail->interval_list[i].start - half_window));
-        head_end = ail->interval_list[i].start + half_window;
+        head_end = MIN((int)ail->interval_list[i].start + half_window, (int)ail->interval_list[i].end);
         tail_start = MAX(head_end, (int)(ail->interval_list[i].end - half_window)); // if overlap, set not to overlap
-        tail_end = ail->interval_list[i].end + half_window;
+        tail_end = MIN((int)ail->interval_list[i].end + half_window, (int)ail->last);
 
         // Decrement region around head
         head_length = head_end - head_start;

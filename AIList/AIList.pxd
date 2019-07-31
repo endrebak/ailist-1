@@ -18,7 +18,7 @@ cdef extern from "augmented_interval_list.h":
 		int32_t value
 
 	ctypedef struct ailist_t:
-		int64_t nr  					    # Number of regions
+		int64_t nr, mr  					# Number of regions
 		interval_t *interval_list			# Regions data
 		uint32_t first, last				# Record range of intervals
 
@@ -53,6 +53,9 @@ cdef extern from "augmented_interval_list.h":
 	void display_list(ailist_t *ail) nogil
 
 
+cpdef object rebuild(bytes data, bytes b_length, bytes b_first, bytes b_last)
+
+
 cdef class Interval(object):
 	"""
 	Wrapper for C interval
@@ -67,7 +70,10 @@ cdef class AIList(object):
 	Wrapper for C ailist_t
 	"""
 	cdef ailist_t *interval_list
-	cdef bint is_constructed
+	cdef public bint is_constructed
+
+	cdef bytes _get_data(self)
+	cdef ailist_t *_set_data(self, bytes data, bytes b_length, bytes b_first, bytes b_last)
 
 	cdef void set_list(AIList self, ailist_t *input_list)
 	cdef void _insert(AIList self, int start, int end)
