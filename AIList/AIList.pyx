@@ -6,9 +6,7 @@ import numpy as np
 cimport numpy as np
 cimport cython
 import pandas as pd
-from libc.stdlib cimport malloc
 from libc.string cimport memcpy
-from cpython.mem cimport PyMem_Malloc
 
 
 def get_include():
@@ -98,7 +96,8 @@ cdef class AIList(object):
 		Function to convert ailist_t to bytes
 		for serialization by __reduce__()
 		"""
-		return <bytes>(<char*>self.interval_list)[:sizeof(ailist_t *)*self.interval_list.nr]
+
+		return <bytes>(<char*>self.interval_list)[:sizeof(ailist_t)]
 
 	cdef ailist_t *_set_data(self, bytes data, bytes b_length, bytes b_first, bytes b_last):
 		"""
@@ -112,7 +111,7 @@ cdef class AIList(object):
 		
 		# Create new ailist_t
 		cdef ailist_t *interval_list = ailist_init()
-		memcpy(interval_list, <char*>data, sizeof(ailist_t*)*length)
+		memcpy(interval_list, <char*>data, sizeof(ailist_t))
 
 		# Reassign ailist attributes
 		interval_list.first = first
@@ -125,9 +124,9 @@ cdef class AIList(object):
 		Used for pickling. Convert ailist to bytes and back.
 		"""
 		# Convert ints to bytes
-		b_length = bytes([self.interval_list.nr])
-		b_first = bytes([self.interval_list.first])
-		b_last = bytes([self.interval_list.last])
+		b_length = int(self.interval_list.nr).to_bytes(4, "little")
+		b_first = int(self.interval_list.first).to_bytes(4, "little")
+		b_last = int(self.interval_list.last).to_bytes(4, "little")
 
 		# Convert ailist_t to bytes
 		data = self._get_data()
