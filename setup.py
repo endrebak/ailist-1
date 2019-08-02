@@ -1,15 +1,9 @@
 from __future__ import division, print_function, absolute_import
 import numpy as np
 
-try:
-    # Python 3
-    MyFileNotFoundError = FileNotFoundError
-except:  # FileNotFoundError does not exist in Python 2.7
-    # Python 2.7
-    # - open() raises IOError
-    # - remove() (not currently used here) raises OSError
-    MyFileNotFoundError = (IOError, OSError)
 
+# Python 3
+MyFileNotFoundError = FileNotFoundError
 
 # Library name
 libname = "AIList"
@@ -22,7 +16,7 @@ SHORTDESC = "Python package for Augmented Interval List"
 DESC = """A python package wrapper for a C implementation of an Augmented Interval List."""
 
 # Directories (relative to the top-level directory where setup.py resides) in which to look for data files.
-datadirs  = ("test",)
+datadirs  = ("tests",)
 # File extensions to be considered as data files. (Literal, no wildcards.)
 dataexts  = (".py",  ".pyx", ".pxd",  ".c",".h")
 # Standard documentation to detect (and package if it exists).
@@ -207,12 +201,10 @@ setup(
                     "Environment :: Console",
                     "Intended Audience :: Developers",
                     "Intended Audience :: Science/Research",
-                    "License :: GPL2",  # not a standard classifier; CHANGE THIS
+                    "License :: GPL2", 
                     "Operating System :: POSIX :: Linux",
                     "Programming Language :: Cython",
                     "Programming Language :: Python",
-                    "Programming Language :: Python :: 2",
-                    "Programming Language :: Python :: 2.7",
                     "Programming Language :: Python :: 3",
                     "Programming Language :: Python :: 3.4",
                     "Topic :: Scientific/Engineering",

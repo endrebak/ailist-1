@@ -2,16 +2,26 @@
 #cython: profile=False
 
 import os
+import sys
 import numpy as np
 cimport numpy as np
 cimport cython
 import pandas as pd
 from libc.string cimport memcpy
 
+# Set byteorder for __reduce__
+byteorder = sys.byteorder
+
 
 def get_include():
 	"""
 	Get file directory if C headers
+
+	Arguments:
+		None
+
+	Returns:
+		str (Directory to header files)
 	"""
 
 	return os.path.split(os.path.realpath(__file__))[0]
@@ -20,9 +30,20 @@ def get_include():
 cpdef AIList rebuild(bytes data, bytes b_length, bytes b_first, bytes b_last):
 	"""
 	Rebuild function for __reduce__()
+
+	Arguments:
+		data: bytes (Bytes representation of ailist_t)
+		b_length: bytes (Length of ailist_t)
+		b_first: bytes (Lowest start position in ailist_t)
+		b_last: bytes (Highest end position in ailist_t)
+
+	Returns:
+		c: ailist_t* (Translated ailist_t from data)
 	"""
+
 	# Initialize new AIList
 	c = AIList()
+
 	# Build ailist from serialized data
 	cdef ailist_t *interval_list = c._set_data(data, b_length, b_first, b_last)
 	c.set_list(interval_list)
@@ -39,8 +60,15 @@ cdef class Interval(object):
 	cdef void set_i(Interval self, interval_t i):
 		"""
 		Initialize wrapper of C interval
+
+		Arguments:
+			i: interval_t (C interval_t to be wrapped)
+
+		Returns:
+			None
 		"""
 
+		# Set i
 		self.i = i
 
 
@@ -103,11 +131,21 @@ cdef class AIList(object):
 		"""
 		Function to build ailist_t object from
 		serialized bytes using __reduce__()
+
+		Arguments:
+			data: bytes (Bytes representation of ailist_t)
+			b_length: bytes (Length of ailist_t)
+			b_first: bytes (Lowest start position in ailist_t)
+			b_last: bytes (Highest end position in ailist_t)
+
+		Returns:
+			interval_list: ailist_t* (Translated ailist_t for bytes)
 		"""
+		
 		# Convert bytes to ints
-		cdef int length = int.from_bytes(b_length, "little")
-		cdef int first = int.from_bytes(b_first, "little")
-		cdef int last = int.from_bytes(b_last, "little")
+		cdef int length = int.from_bytes(b_length, byteorder)
+		cdef int first = int.from_bytes(b_first, byteorder)
+		cdef int last = int.from_bytes(b_last, byteorder)
 		
 		# Create new ailist_t
 		cdef ailist_t *interval_list = ailist_init()
@@ -123,10 +161,11 @@ cdef class AIList(object):
 		"""
 		Used for pickling. Convert ailist to bytes and back.
 		"""
+		
 		# Convert ints to bytes
-		b_length = int(self.interval_list.nr).to_bytes(4, "little")
-		b_first = int(self.interval_list.first).to_bytes(4, "little")
-		b_last = int(self.interval_list.last).to_bytes(4, "little")
+		b_length = int(self.interval_list.nr).to_bytes(4, byteorder)
+		b_first = int(self.interval_list.first).to_bytes(4, byteorder)
+		b_last = int(self.interval_list.last).to_bytes(4, byteorder)
 
 		# Convert ailist_t to bytes
 		data = self._get_data()
@@ -167,9 +206,11 @@ cdef class AIList(object):
 		"""
 		Set wrapper of C ailist
 		"""
+
 		# Free old skiplist
 		if hasattr(self, 'interval_list'):
 			ailist_destroy(self.interval_list)
+		
 		# Replace new skiplist
 		self.interval_list = input_list
 
