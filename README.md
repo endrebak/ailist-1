@@ -6,9 +6,8 @@ Augmented interval list (AIList) is a data structure for enumerating intersectio
 between a query interval and an interval set. AILists have previously been shown 
 to be faster than interval tree, NCList, and BEDTools.
 
-This implementation is a Python wrapper of the one used in the original AIList library.
+This implementation is a Python wrapper of the one used in the original [AIList library][AIList_github].
 
-Original: https://github.com/databio/AIList
 
 Additonal wrapper functions have been created which allow easy user interface.
 
@@ -106,3 +105,5 @@ Interval(30-40, 5)
 
 > Jianglin Feng,  Aakrosh Ratan,  Nathan C Sheffield; Augmented Interval List: a novel data structure for efficient genomic interval search, Bioinformatics, btz407, https://doi.org/10.1093/bioinformatics/btz407
 
+
+[AIList_github]: https://github.com/databio/AIList
