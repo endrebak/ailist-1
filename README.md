@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/kylessmith/AIList.svg?branch=master)](https://travis-ci.org/kylessmith/AIList) [![PyPI version](https://badge.fury.io/py/AIList.svg)](https://badge.fury.io/py/AIList)
 
 Augmented interval list (AIList) is a data structure for enumerating intersections 
-between a query interval and an interval set. AILists have previously been showen 
+between a query interval and an interval set. AILists have previously been shown 
 to be faster than interval tree, NCList, and BEDTools.
 
 This implementation is a Python wrapper of the one used in the original AIList library.
