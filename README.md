@@ -65,7 +65,7 @@ PyPI install, presuming you have all its requirements installed:
 >>>
 # Iterate over intervals
 >>> for x in i:
-   print(x)
+       print(x)
 Interval(5-20, 3)
 Interval(10-30, 1)
 Interval(12-15, 4)
