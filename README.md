@@ -105,3 +105,10 @@ PyPI install, presuming you have all its requirements installed:
 ## Original paper
 
 > Jianglin Feng,  Aakrosh Ratan,  Nathan C Sheffield; Augmented Interval List: a novel data structure for efficient genomic interval search, Bioinformatics, btz407, https://doi.org/10.1093/bioinformatics/btz407
+
+
+[ailist_doc]: http://ailist.databio.org 
+[ailist_paper]: https://www.biorxiv.org/content/10.1101/593657v1
+[LITree]: https://github.com/lh3/cgranges
+[NCList]: https://github.com/hunt-genes/ncls
+[ITree]: https://en.wikipedia.org/wiki/Interval_tree
