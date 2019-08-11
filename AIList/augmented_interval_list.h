@@ -22,7 +22,8 @@
 typedef struct {
     uint32_t start;      				// Region start: 0-based
     uint32_t end;    					// Region end: not inclusive
-    int32_t value;
+    int32_t index;
+	double_t value;
 } interval_t;
 
 typedef struct {
@@ -39,7 +40,7 @@ typedef struct {
 ailist_t *ailist_init(void);
 
 // Add a interval_t interval
-void ailist_add(ailist_t *ail, uint32_t s, uint32_t e, int32_t v);
+void ailist_add(ailist_t *ail, uint32_t start, uint32_t end, int32_t index, double_t value);
 
 // Construct ailist: decomposition and augmentation
 void ailist_construct(ailist_t *ail, int cLen);
@@ -57,7 +58,7 @@ void ailist_destroy(ailist_t *ail);
 void ailist_coverage(ailist_t *ail, double coverage[]);
 
 // Add intervals from arrays
-void ailist_from_array(ailist_t *ail, const long starts[], const long ends[], const long index[], int length);
+void ailist_from_array(ailist_t *ail, const long starts[], const long ends[], const long index[], const double values[], int length);
 
 // Merge overlapping intervals
 ailist_t *ailist_merge(ailist_t *ail, uint32_t gap);

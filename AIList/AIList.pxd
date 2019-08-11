@@ -15,7 +15,8 @@ cdef extern from "augmented_interval_list.h":
 	ctypedef struct interval_t:
 		uint32_t start      			    # Region start: 0-based
 		uint32_t end    					# Region end: not inclusive
-		int32_t value
+		int32_t index
+		double value
 
 	ctypedef struct ailist_t:
 		int64_t nr, mr  					# Number of regions
@@ -26,7 +27,7 @@ cdef extern from "augmented_interval_list.h":
 	# Initialize ailist_t
 	ailist_t *ailist_init() nogil
 	# Add a interval_t interval
-	void ailist_add(ailist_t *ail, uint32_t s, uint32_t e, int32_t v) nogil
+	void ailist_add(ailist_t *ail, uint32_t start, uint32_t end, int32_t index, double value) nogil
 	# Construct ailist: decomposition and augmentation
 	void ailist_construct(ailist_t *ail, int cLen) nogil
 	# Query ailist intervals
@@ -36,7 +37,7 @@ cdef extern from "augmented_interval_list.h":
 	# Calculate coverage
 	void ailist_coverage(ailist_t *ail, double coverage[]) nogil
 	# Add intervals from arrays
-	void ailist_from_array(ailist_t *ail, long starts[], long ends[], long index[], int length) nogil
+	void ailist_from_array(ailist_t *ail, long starts[], long ends[], long index[], double values[], int length) nogil
 	# Merge overlapping intervals
 	ailist_t *ailist_merge(ailist_t *ail, uint32_t gap) nogil
 	# Calculate Window Protection Score
@@ -76,7 +77,7 @@ cdef class AIList(object):
 	cdef ailist_t *_set_data(self, bytes data, bytes b_length, bytes b_first, bytes b_last)
 
 	cdef void set_list(AIList self, ailist_t *input_list)
-	cdef void _insert(AIList self, int start, int end)
+	cdef void _insert(AIList self, int start, int end, double value)
 	cdef void _construct(AIList self, int min_length)
 	cdef ailist_t *_intersect(AIList self, int start, int end)
 	cdef np.ndarray _coverage(AIList self)

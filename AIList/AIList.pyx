@@ -79,6 +79,10 @@ cdef class Interval(object):
 	@property
 	def end(self):
 		return self.i.end
+	
+	@property
+	def index(self):
+		return self.i.index
 
 	@property
 	def value(self):
@@ -86,12 +90,12 @@ cdef class Interval(object):
 
 
 	def __str__(self):
-		format_string = "Interval(%d-%d, %s)" % (self.start, self.end, self.value)
+		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.value)
 		return format_string
 
 
 	def __repr__(self):
-		format_string = "Interval(%d-%d, %s)" % (self.start, self.end, self.value)
+		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.value)
 		return format_string
 
 
@@ -215,19 +219,19 @@ cdef class AIList(object):
 		self.interval_list = input_list
 
 
-	cdef void _insert(AIList self, int start, int end):
-		ailist_add(self.interval_list, start, end, self.interval_list.nr)
+	cdef void _insert(AIList self, int start, int end, double value):
+		ailist_add(self.interval_list, start, end, self.interval_list.nr, value)
 
-	def add(self, int start, int end):
+	def add(self, int start, int end, double value=0.0):
 		"""
 		"""
-		self._insert(start, end)
+		self._insert(start, end, value)
 		self.is_constructed = False
 
 
-	def from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index):
+	def from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index, const double[::1] values):
 		cdef int array_length = len(starts)
-		ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], array_length)
+		ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], &values[0], array_length)
 
 
 	cdef void _construct(AIList self, int min_length):

@@ -81,14 +81,14 @@ void ailist_destroy(ailist_t *ail)
 }
 
 
-void ailist_add(ailist_t *ail, uint32_t s, uint32_t e, int32_t v)
+void ailist_add(ailist_t *ail, uint32_t start, uint32_t end, int32_t index, double_t value)
 {   /* Add interval to ailist_t object */
 
-	if (s > e) {return;}
+	if (start > end) {return;}
 
     // Update first and last
-    ail->first = MIN(ail->first, s);
-    ail->last = MAX(ail->last, e);
+    ail->first = MIN(ail->first, start);
+    ail->last = MAX(ail->last, end);
 
     // If max region reached, expand array
 	if (ail->nr == ail->mr)
@@ -96,9 +96,10 @@ void ailist_add(ailist_t *ail, uint32_t s, uint32_t e, int32_t v)
 
     // Set new interval values
 	interval_t *i = &ail->interval_list[ail->nr++];
-	i->start = s;
-	i->end   = e;
-    i->value = v;
+	i->start = start;
+	i->end   = end;
+    i->index = index;
+    i->value = value;
 
 	return;
 }
@@ -226,7 +227,7 @@ ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe)
             {
                 if (ail->interval_list[t].end > qs)
                 {               	
-                    ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, nr);
+                    ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, nr, ail->interval_list[t].value);
                 }
 
                 t--;
@@ -237,7 +238,7 @@ ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe)
             {
                 if (ail->interval_list[t].start < qe && ail->interval_list[t].end > qs)
                 {
-                    ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, nr);
+                    ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, nr, ail->interval_list[t].value);
                 }
             }                      
         }
@@ -269,7 +270,7 @@ void ailist_coverage(ailist_t *ail, double coverage[])
 }
 
 
-void ailist_from_array(ailist_t *ail, const long starts[], const long ends[], const long index[], int length)
+void ailist_from_array(ailist_t *ail, const long starts[], const long ends[], const long index[], const double values[], int length)
 {
     // Expand interval list to the number of given
     ail->mr = ail->nr + length;
@@ -279,7 +280,7 @@ void ailist_from_array(ailist_t *ail, const long starts[], const long ends[], co
     int i;
     for (i = 0; i < length; i++)
     {
-        ailist_add(ail, starts[i], ends[i], index[i]);
+        ailist_add(ail, starts[i], ends[i], index[i], values[i]);
     }
 
     return;
@@ -304,7 +305,7 @@ ailist_t *ailist_merge(ailist_t *ail, uint32_t gap)
         }
         else
         {
-            ailist_add(merged_list, previous_start, previous_end, k);
+            ailist_add(merged_list, previous_start, previous_end, k, 0.0);
             k++;
             previous_start = ail->interval_list[i].start;
             previous_end = ail->interval_list[i].end;
@@ -312,7 +313,7 @@ ailist_t *ailist_merge(ailist_t *ail, uint32_t gap)
     }
 
     // Add last interval
-    ailist_add(merged_list, previous_start, previous_end, k);
+    ailist_add(merged_list, previous_start, previous_end, k, 0.0);
 
     return merged_list;
 }
@@ -320,7 +321,7 @@ ailist_t *ailist_merge(ailist_t *ail, uint32_t gap)
 
 void ailist_wps(ailist_t *ail, double wps[], uint32_t protection)
 {   /* Calculate Window Protection Score */
-    uint32_t half_window = protection / 2;
+    int half_window = protection / 2;
     int head_start;
     int head_end;
     int head_length;
@@ -382,7 +383,7 @@ ailist_t *ailist_length_filter(ailist_t *ail, int min_length, int max_length)
         length = ail->interval_list[i].end - ail->interval_list[i].start - 1;
         if (length >= min_length && length <= max_length)
         {
-            ailist_add(filtered_ail, ail->interval_list[i].start, ail->interval_list[i].end, ail->interval_list[i].value);
+            ailist_add(filtered_ail, ail->interval_list[i].start, ail->interval_list[i].end, ail->interval_list[i].index, ail->interval_list[i].value);
         }
     }
 
@@ -456,12 +457,12 @@ int main()
     ailist_t *ail = ailist_init();
 
     printf("Adding intervals...\n");
-    ailist_add(ail, 15, 20, 1); 
-    ailist_add(ail, 10, 30, 2); 
-    ailist_add(ail, 17, 19, 3); 
-    ailist_add(ail, 5, 20, 4); 
-    ailist_add(ail, 12, 15, 5); 
-    ailist_add(ail, 30, 40, 6); 
+    ailist_add(ail, 15, 20, 1, 0.0); 
+    ailist_add(ail, 10, 30, 2, 0.0); 
+    ailist_add(ail, 17, 19, 3, 0.0); 
+    ailist_add(ail, 5, 20, 4, 0.0); 
+    ailist_add(ail, 12, 15, 5, 0.0); 
+    ailist_add(ail, 30, 40, 6, 0.0); 
 
     //int i;
     /* for (i = 1000; i < 1000000000; i+=100) 
