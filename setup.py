@@ -6,7 +6,7 @@ import numpy as np
 MyFileNotFoundError = FileNotFoundError
 
 # Library name
-libname = "AIList"
+libname = "ailist"
 # Build type
 build_type = "optimized"
 #build_type="debug"
@@ -171,7 +171,7 @@ except MyFileNotFoundError:
 #########################################################
 
 # declare Cython extension modules here
-ext_module_AIList = declare_cython_extension( "AIList.AIList", use_math=False, use_openmp=False , include_dirs=my_include_dirs )
+ext_module_AIList = declare_cython_extension( "ailist.ailist", use_math=False, use_openmp=False , include_dirs=my_include_dirs )
 
 # this is mainly to allow a manual logical ordering of the declared modules
 cython_ext_modules = [ext_module_AIList]
@@ -186,11 +186,11 @@ my_ext_modules = cythonize(cython_ext_modules, include_path=my_include_dirs, gdb
 #########################################################
 
 setup(
-    name = "AIList",
+    name = "ailist",
     version = version,
     author = "Kyle S. Smith",
     author_email = "kyle.smith@stjude.org",
-    url = "https://github.com/kylessmtih/AIList",
+    url = "https://github.com/kylessmith/ailist",
     description = SHORTDESC,
     long_description = DESC,
     # CHANGE THIS
@@ -214,11 +214,11 @@ setup(
                   ],
     setup_requires = ["cython", "numpy"],
     install_requires = ["numpy"],
-    provides = ["AIList"],
+    provides = ["ailist"],
     keywords = ["cython interval skiplist c"],
     ext_modules = my_ext_modules,
-    packages = ["AIList"],
-    package_data={'AIList': ['*.pxd', '*.pyx', '*.c', '*.h']},
+    packages = ["ailist"],
+    package_data={'ailist': ['*.pxd', '*.pyx', '*.c', '*.h']},
     # Disable zip_safe
     zip_safe = False,
     # Custom data files not inside a Python package

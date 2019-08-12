@@ -13,7 +13,7 @@ test_ld = np.array([1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 test_nhits = np.array([1, 4, 4, 2, 2, 2, 2, 2, 2, 2])
 
 def test_AIList():
-    from AIList import AIList, Interval
+    from ailist import AIList, Interval
 
     # Test AIList construction
     i = AIList()

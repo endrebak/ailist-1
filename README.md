@@ -35,7 +35,7 @@ PyPI install, presuming you have all its requirements installed:
 ## Usage
 
 ```
->>> from AIList import AIList
+>>> from ailist import AIList
 >>> import numpy as np
 >>>
 >>> i = AIList()
