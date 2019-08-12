@@ -42,6 +42,9 @@ ailist_t *ailist_init(void);
 // Add a interval_t interval
 void ailist_add(ailist_t *ail, uint32_t start, uint32_t end, int32_t index, double_t value);
 
+// Sort intervals in ailist
+void ailist_sort(ailist_t *ail);
+
 // Construct ailist: decomposition and augmentation
 void ailist_construct(ailist_t *ail, int cLen);
 

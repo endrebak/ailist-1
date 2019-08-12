@@ -112,6 +112,7 @@ cdef class AIList(object):
 
 		self.interval_list = ailist_init()
 		self.is_constructed = False
+		self.is_sorted = False
 
 
 	def __dealloc__(self):
@@ -160,6 +161,7 @@ cdef class AIList(object):
 		interval_list.last = last
 
 		return interval_list
+
 
 	def __reduce__(self):
 		"""
@@ -227,6 +229,7 @@ cdef class AIList(object):
 		"""
 		self._insert(start, end, value)
 		self.is_constructed = False
+		self.is_sorted = False
 
 
 	def from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index, const double[::1] values):
@@ -242,6 +245,17 @@ cdef class AIList(object):
 		"""
 		self._construct(min_length)
 		self.is_constructed = True
+		self.is_sorted = True
+	
+
+	cdef void _sort(AIList self):
+		ailist_sort(self.interval_list)
+
+	def sort(self):
+		"""
+		"""
+		self._sort()
+		self.is_sorted = True
 
 
 	cdef ailist_t *_intersect(AIList self, int start, int end):
@@ -273,8 +287,6 @@ cdef class AIList(object):
 	def coverage(self):
 		"""
 		"""
-		if self.is_constructed == False:
-			self.construct()
 		
 		# Initialize coverage
 		cdef np.ndarray coverage
@@ -293,6 +305,11 @@ cdef class AIList(object):
 	def merge(self, int gap=0):
 		"""
 		"""
+
+		# Make sure list is sorted
+		if self.is_sorted == False:
+			self.sort()
+
 		cdef AIList merged_list = AIList()
 		cdef ailist_t *merged_clist = ailist_merge(self.interval_list, gap)
 
@@ -312,8 +329,6 @@ cdef class AIList(object):
 	def wps(self, int protection=60):
 		"""
 		"""
-		if self.is_constructed == False:
-			self.construct()
 		
 		# Initialize wps
 		cdef np.ndarray wps

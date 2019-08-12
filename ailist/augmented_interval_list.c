@@ -106,6 +106,14 @@ void ailist_add(ailist_t *ail, uint32_t start, uint32_t end, int32_t index, doub
 
 //-------------------------------------------------------------------------------
 
+void ailist_sort(ailist_t *ail)
+{   /* Sort intervals in ailist */
+    radix_interval_sort(ail->interval_list, ail->nr);
+
+    return;
+}
+
+
 void ailist_construct(ailist_t *ail, int cLen)
 {   /* Construct ailist_t object */  
 

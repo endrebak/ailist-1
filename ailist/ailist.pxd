@@ -28,6 +28,8 @@ cdef extern from "augmented_interval_list.h":
 	ailist_t *ailist_init() nogil
 	# Add a interval_t interval
 	void ailist_add(ailist_t *ail, uint32_t start, uint32_t end, int32_t index, double value) nogil
+	# Sort intervals in ailist
+	void ailist_sort(ailist_t *ail) nogil
 	# Construct ailist: decomposition and augmentation
 	void ailist_construct(ailist_t *ail, int cLen) nogil
 	# Query ailist intervals
@@ -83,6 +85,7 @@ cdef class AIList(object):
 	cdef void set_list(AIList self, ailist_t *input_list)
 	cdef void _insert(AIList self, int start, int end, double value)
 	cdef void _construct(AIList self, int min_length)
+	cdef void _sort(AIList self)
 	cdef ailist_t *_intersect(AIList self, int start, int end)
 	cdef np.ndarray _coverage(AIList self)
 	cdef np.ndarray _wps(AIList self, int protection)
