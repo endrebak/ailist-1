@@ -29,7 +29,7 @@ Dependencies can be installed by:
 
 PyPI install, presuming you have all its requirements installed:
 ```
-    pip install AIList
+    pip install ailist
 ```
 
 ## Usage

@@ -1,4 +1,4 @@
-name: AIList-env
+name: ailist-env
 channels:
 - r
 - defaults
