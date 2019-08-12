@@ -90,12 +90,12 @@ cdef class Interval(object):
 
 
 	def __str__(self):
-		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.value)
+		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
 		return format_string
 
 
 	def __repr__(self):
-		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.value)
+		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
 		return format_string
 
 
