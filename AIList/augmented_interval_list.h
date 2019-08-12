@@ -51,6 +51,9 @@ uint32_t binary_search(interval_t* As, uint32_t idxS, uint32_t idxE, uint32_t qe
 // Query ailist intervals
 ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe);
 
+// Query ailist intervals within lengths
+ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_length, int max_length);
+
 // Free ailist data
 void ailist_destroy(ailist_t *ail);
 
@@ -75,8 +78,11 @@ void ailist_length_distribution(ailist_t *ail, int distribution[]);
 // Calculate maximum length
 int ailist_max_length(ailist_t *ail);
 
-// Calculate number ofe overlaps from arrays
+// Calculate number of overlaps from arrays
 void ailist_nhits_from_array(ailist_t *ail, const long starts[], const long ends[], int length, int nhits[]);
+
+// Calculate number of overlaps from arrays within lengths
+void ailist_nhits_from_array_length(ailist_t *ail, const long starts[], const long ends[], int length, int nhits[], int min_length, int max_length);
 
 // Print AIList
 void display_list(ailist_t *ail);

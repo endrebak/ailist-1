@@ -32,6 +32,8 @@ cdef extern from "augmented_interval_list.h":
 	void ailist_construct(ailist_t *ail, int cLen) nogil
 	# Query ailist intervals
 	ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe) nogil
+	# Query ailist intervals within lengths
+	ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_length, int max_length) nogil
 	# Free ailist data
 	void ailist_destroy(ailist_t *ail) nogil
 	# Calculate coverage
@@ -48,8 +50,10 @@ cdef extern from "augmented_interval_list.h":
 	void ailist_length_distribution(ailist_t *ail, int distribution[]) nogil
 	# Calculate maximum length
 	int ailist_max_length(ailist_t *ail) nogil
-	# Calculate number ofe overlaps from arrays
+	# Calculate number of overlaps from arrays
 	void ailist_nhits_from_array(ailist_t *ail, const long starts[], const long ends[], int length, int nhits[]) nogil
+	# Calculate number of overlaps from arrays within lengths
+	void ailist_nhits_from_array_length(ailist_t *ail, const long starts[], const long ends[], int length, int nhits[], int min_length, int max_length) nogil
 	# Print AIList
 	void display_list(ailist_t *ail) nogil
 
@@ -84,3 +88,4 @@ cdef class AIList(object):
 	cdef np.ndarray _wps(AIList self, int protection)
 	cdef np.ndarray _length_dist(AIList self)
 	cdef np.ndarray _nhits_from_array(AIList self, const long[::1] starts, const long[::1] ends)
+	cdef np.ndarray _nhits_from_array_length(AIList self, const long[::1] starts, const long[::1] ends, int min_length, int max_length)

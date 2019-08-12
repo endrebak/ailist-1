@@ -247,6 +247,58 @@ ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe)
     return overlaps;                            
 }
 
+
+ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_length, int max_length)
+{   
+    uint32_t nr = 0;
+    int k;
+
+    ailist_t *overlaps = ailist_init();
+
+    for (k = 0; k < ail->nc; k++)
+    {   // Search each component
+        int32_t cs = ail->idxC[k];
+        int32_t ce = cs + ail->lenC[k];			
+        int32_t t;
+
+        if (ail->lenC[k] > 15)
+        {
+            t = binary_search(ail->interval_list, cs, ce, qe);
+
+            while (t >= cs && ail->maxE[t] > qs)
+            {
+                if (ail->interval_list[t].end > qs)
+                {               	
+                    int length = ail->interval_list[t].end - ail->interval_list[t].start;
+                    if (length >= min_length && length < max_length)
+                    {
+                        ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, nr, ail->interval_list[t].value);
+                    
+                    }
+                }
+
+                t--;
+            }
+        } 
+        else {
+            for (t = cs; t < ce; t++)
+            {
+                if (ail->interval_list[t].start < qe && ail->interval_list[t].end > qs)
+                {
+                    int length = ail->interval_list[t].end - ail->interval_list[t].start;
+                    if (length >= min_length && length < max_length)
+                    {
+                        ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, nr, ail->interval_list[t].value);
+                    }
+                }
+            }                      
+        }
+    }
+
+    return overlaps;                            
+}
+
+
 //-------------------------------------------------------------------------------
 
 void ailist_coverage(ailist_t *ail, double coverage[])
@@ -431,6 +483,19 @@ void ailist_nhits_from_array(ailist_t *ail, const long starts[], const long ends
     for (i = 0; i < length; i++)
     {
         ailist_t *overlaps = ailist_query(ail, starts[i], ends[i]);
+        nhits[i] = overlaps->nr;
+    }
+
+    return;
+}
+
+
+void ailist_nhits_from_array_length(ailist_t *ail, const long starts[], const long ends[], int length, int nhits[], int min_length, int max_length)
+{
+    int i;
+    for (i = 0; i < length; i++)
+    {
+        ailist_t *overlaps = ailist_query_length(ail, starts[i], ends[i], min_length, max_length);
         nhits[i] = overlaps->nr;
     }
 

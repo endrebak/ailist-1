@@ -364,7 +364,17 @@ cdef class AIList(object):
 
 		return np.asarray(nhits, dtype=np.intc)
 
-	def nhits_from_array(self, const long[::1] starts, const long[::1] ends):
+	cdef np.ndarray _nhits_from_array_length(AIList self, const long[::1] starts, const long[::1] ends, int min_length, int max_length):
+		# Initialize hits
+		cdef int length = starts.size
+		cdef int[::1] nhits = np.zeros(length, dtype=np.intc)
+
+		# Calculate distribution
+		ailist_nhits_from_array_length(self.interval_list, &starts[0], &ends[0], length, &nhits[0], min_length, max_length)
+
+		return np.asarray(nhits, dtype=np.intc)
+
+	def nhits_from_array(self, const long[::1] starts, const long[::1] ends, min_length=None, max_length=None):
 		"""
 		"""
 		# Make sure list is constructed
@@ -374,6 +384,9 @@ cdef class AIList(object):
 		# Initialize distribution
 		cdef np.ndarray nhits
 		# Calculate distribution
-		nhits = self._nhits_from_array(starts, ends)
+		if min_length is None or max_length is None:
+			nhits = self._nhits_from_array(starts, ends)
+		else:
+			nhits = self._nhits_from_array_length(starts, ends, min_length, max_length)
 
 		return nhits
