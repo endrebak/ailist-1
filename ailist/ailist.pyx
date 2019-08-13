@@ -296,6 +296,27 @@ cdef class AIList(object):
 		return pd.Series(coverage, index=np.arange(self.first, self.last))
 
 
+	cdef np.ndarray _bin_nhits(AIList self, int bin_size):
+		# Initialize coverage
+		cdef int n_bins = int(self.range / bin_size)
+		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+
+		ailist_bin_nhits(self.interval_list, &bins[0], bin_size)
+
+		return np.asarray(bins)
+
+	def bin_nhits(self, int bin_size=100000):
+		"""
+		"""
+		
+		# Initialize coverage
+		cdef np.ndarray bins
+		# Calculate coverage
+		bins = self._bin_nhits(bin_size)
+		
+		return pd.Series(bins, index=(np.arange(len(bins)) + int(self.first / bin_size)) * bin_size)
+
+
 	def display(self):
 		"""
 		"""

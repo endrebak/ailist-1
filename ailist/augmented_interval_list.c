@@ -310,12 +310,13 @@ ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_l
 //-------------------------------------------------------------------------------
 
 void ailist_coverage(ailist_t *ail, double coverage[])
-{
+{   /* Calculate coverage */
     int length;
     int n;
     int i;
     int position;
     int start = (int)ail->first;
+
     for (i = 0; i < ail->nr; i++)
     {
         length = ail->interval_list[i].end - ail->interval_list[i].start;
@@ -323,6 +324,29 @@ void ailist_coverage(ailist_t *ail, double coverage[])
         {
             position = (ail->interval_list[i].start - start) + n;
             coverage[position] = coverage[position] + 1;
+        }
+    }
+
+    return;
+}
+
+
+void ailist_bin_nhits(ailist_t *ail, double coverage[], int bin_size)
+{   /* Calculate n hits within bins */
+    int start = (int)(ail->first / bin_size);
+    
+    int i;
+    for (i = 0; i < ail->nr; i++)
+    {
+        int start_bin = ail->interval_list[i].start / bin_size;
+        
+        double length = (double)(ail->interval_list[i].end - ail->interval_list[i].start);
+        int n_bins = ceil(((double)(ail->interval_list[i].start % bin_size) / bin_size) + (length / bin_size));
+        int n;
+        for (n = 0; n < n_bins; n++)
+        {
+            int bin = (start_bin - start) + n;
+            coverage[bin] = coverage[bin] + 1;
         }
     }
 

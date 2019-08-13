@@ -12,6 +12,8 @@ test_ld = np.array([1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
 test_nhits = np.array([1, 4, 4, 2, 2, 2, 2, 2, 2, 2])
 
+test_bin_nhits = np.array([2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2,2,1], dtype=np.double)
+
 def test_AIList():
     from ailist import AIList, Interval
 
@@ -31,7 +33,11 @@ def test_AIList():
     is_Interval = 0
     for x in i:
         is_Interval += isinstance(x, Interval)
-    assert is_Interval == 7
+    assert (is_Interval == 7)
+
+    # Test bin nhits
+    bh = i.bin_nhits(5)
+    assert (bh.values == test_bin_nhits).all()
 
     # Test intersection
     o = i.intersect(3,15)
@@ -72,4 +78,8 @@ def test_AIList():
     is_Interval = 0
     for x in i2:
         is_Interval += isinstance(x, Interval)
-    assert is_Interval == 7
+    assert is_Interval == 8
+
+
+if __name__ == "__main__":
+    test_AIList()
