@@ -1,67 +1,67 @@
 #include <stdio.h>
+#include <limits.h>
+#include <stdlib.h>
 #include "augmented_interval_list.h"
 
 
-int get_max(interval_t *arr, int n) 
+int find_maximum(interval_t *array, int size)
 {   /* Get maximum start in array */
-    int mx = arr[0].start;
+  
     int i;
+    int maximum = -1;
 
     // Iterate over array, record max start
-    for (i = 1; i < n; i++)
+    for(i = 0; i < size; i++)
     {
-        if ((int)arr[i].start > mx)
-        { 
-            mx = arr[i].start;
+        if((int)array[i].start > maximum)
+        {
+            maximum = (int)array[i].start;
         }
     }
-    
-    return mx; 
-} 
-  
- 
-void count_sort(interval_t *arr, int n, int exp) 
-{   /* Counting sort array by exp */
-    interval_t *output = (interval_t *)malloc(n * sizeof(interval_t));; // output array 
-    int i, count[10] = {0}; 
-  
-    // Store count of occurrences in count
-    for (i = 0; i < n; i++)
-    {
-        count[ (arr[i].start / exp) % 10 ]++;
-    }
-  
-    // Change count[i] so that count[i] now contains actual 
-    // position of this digit in output
-    for (i = 1; i < 10; i++)
-    {
-        count[i] += count[i - 1];
-    }
-  
-    // Build output
-    for (i = n - 1; i >= 0; i--) 
-    { 
-        output[count[ (arr[i].start / exp) % 10 ] - 1] = arr[i]; 
-        count[ (arr[i].start / exp) % 10 ]--; 
-    } 
-  
-    // Copy the output array to arr[] 
-    for (i = 0; i < n; i++)
-    {
-        arr[i] = output[i];
-    }
-} 
-  
 
-void radix_interval_sort(interval_t *arr, int n) 
-{   /* Radix Sort  */
-    // Find the maximum start
-    int m = get_max(arr, n);
-  
-    // Do counting sort for every digit
-    int exp;
-    for (exp = 1; m/exp > 0; exp *= 10)
-    {
-        count_sort(arr, n, exp);
+    return maximum;
+}
+
+
+void radix_interval_sort(interval_t *array, int size)
+{   /* Radix sort interval list */
+    int i;
+    interval_t *semi_sorted = (interval_t *)malloc(size * sizeof(interval_t));
+    int significant_digit = 1;
+    int maximum = find_maximum(array, size);
+
+    // Loop until largest significant digit is reached
+    while (maximum / significant_digit > 0)
+    { 
+        int bucket[10] = { 0 };
+
+        // Counts the number of digits that will go into each bucket
+        for (i = 0; i < size; i++)
+        {
+            bucket[(array[i].start / significant_digit) % 10]++;
+        }
+
+        // Add the count of the previous buckets,
+        // Acquires the indexes after the end of each bucket location in the array
+        for (i = 1; i < 10; i++)
+        {
+            bucket[i] += bucket[i - 1];
+        }
+
+        // Use the bucket to fill a semi_sorted array
+        for (i = size - 1; i >= 0; i--)
+        {
+            semi_sorted[--bucket[(array[i].start / significant_digit) % 10]] = array[i];
+        }
+
+        for (i = 0; i < size; i++)
+        {
+            array[i] = semi_sorted[i];
+        }
+
+        // Move to next significant digit
+        significant_digit *= 10;
     }
-} 
+
+    free(semi_sorted);
+}
