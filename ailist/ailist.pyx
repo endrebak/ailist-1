@@ -296,6 +296,39 @@ cdef class AIList(object):
 		return pd.Series(coverage, index=np.arange(self.first, self.last))
 
 
+	cdef np.ndarray _bin_coverage(AIList self, int bin_size):
+		# Initialize coverage
+		cdef int n_bins = int(self.range / bin_size)
+		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+
+		ailist_bin_coverage(self.interval_list, &bins[0], bin_size)
+
+		return np.asarray(bins)
+
+	cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length):
+		# Initialize coverage
+		cdef int n_bins = int(self.range / bin_size)
+		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+
+		ailist_bin_coverage_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
+
+		return np.asarray(bins)
+
+	def bin_coverage(self, int bin_size=100000, min_length=None, max_length=None):
+		"""
+		"""
+		
+		# Initialize coverage
+		cdef np.ndarray bins
+		# Calculate coverage
+		if min_length is None or max_length is None:
+			bins = self._bin_coverage(bin_size)
+		else:
+			bins = self._bin_coverage_length(bin_size, min_length, max_length)
+		
+		return pd.Series(bins, index=(np.arange(len(bins)) + int(self.first / bin_size)) * bin_size)
+
+
 	cdef np.ndarray _bin_nhits(AIList self, int bin_size):
 		# Initialize coverage
 		cdef int n_bins = int(self.range / bin_size)

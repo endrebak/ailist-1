@@ -63,6 +63,12 @@ void ailist_destroy(ailist_t *ail);
 // Calculate coverage
 void ailist_coverage(ailist_t *ail, double coverage[]);
 
+// Calculate coverage within bins
+void ailist_bin_coverage(ailist_t *ail, double coverage[], int bin_size);
+
+// Calculate coverage within bins of a length
+void ailist_bin_coverage_length(ailist_t *ail, double coverage[], int bin_size, int min_length, int max_length);
+
 // Calculate n hits within bins
 void ailist_bin_nhits(ailist_t *ail, double coverage[], int bin_size);
 

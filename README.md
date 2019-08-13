@@ -1,6 +1,6 @@
 # Augmented Interval List
 
-[![Build Status](https://travis-ci.org/kylessmith/AIList.svg?branch=master)](https://travis-ci.org/kylessmith/AIList) [![PyPI version](https://badge.fury.io/py/AIList.svg)](https://badge.fury.io/py/AIList)
+[![Build Status](https://travis-ci.org/kylessmith/ailist.svg?branch=master)](https://travis-ci.org/kylessmith/ailist) [![PyPI version](https://badge.fury.io/py/ailist.svg)](https://badge.fury.io/py/ailist)
 
 Augmented interval list (AIList) is a data structure for enumerating intersections 
 between a query interval and an interval set. AILists have previously been shown 

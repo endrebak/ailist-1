@@ -40,6 +40,10 @@ cdef extern from "augmented_interval_list.h":
 	void ailist_destroy(ailist_t *ail) nogil
 	# Calculate coverage
 	void ailist_coverage(ailist_t *ail, double coverage[]) nogil
+	# Calculate coverage within bins
+	void ailist_bin_coverage(ailist_t *ail, double coverage[], int bin_size) nogil
+	# Calculate coverage within bins of a length
+	void ailist_bin_coverage_length(ailist_t *ail, double coverage[], int bin_size, int min_length, int max_length) nogil
 	# Calculate n hits within bins
 	void ailist_bin_nhits(ailist_t *ail, double coverage[], int bin_size) nogil
 	# Calculate n hits of a length within bins
@@ -93,6 +97,8 @@ cdef class AIList(object):
 	cdef void _sort(AIList self)
 	cdef ailist_t *_intersect(AIList self, int start, int end)
 	cdef np.ndarray _coverage(AIList self)
+	cdef np.ndarray _bin_coverage(AIList self, int bin_size)
+	cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length)
 	cdef np.ndarray _bin_nhits(AIList self, int bin_size)
 	cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length)
 	cdef np.ndarray _wps(AIList self, int protection)
