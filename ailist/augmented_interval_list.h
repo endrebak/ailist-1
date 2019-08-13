@@ -66,6 +66,9 @@ void ailist_coverage(ailist_t *ail, double coverage[]);
 // Calculate n hits within bins
 void ailist_bin_nhits(ailist_t *ail, double coverage[], int bin_size);
 
+// Calculate n hits of a length within bins
+void ailist_bin_nhits_length(ailist_t *ail, double coverage[], int bin_size, int min_length, int max_length);
+
 // Add intervals from arrays
 void ailist_from_array(ailist_t *ail, const long starts[], const long ends[], const long index[], const double values[], int length);
 

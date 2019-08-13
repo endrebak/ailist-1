@@ -354,6 +354,32 @@ void ailist_bin_nhits(ailist_t *ail, double coverage[], int bin_size)
 }
 
 
+void ailist_bin_nhits_length(ailist_t *ail, double coverage[], int bin_size, int min_length, int max_length)
+{   /* Calculate n hits of a length within bins */
+    int start = (int)(ail->first / bin_size);
+    
+    int i;
+    for (i = 0; i < ail->nr; i++)
+    {
+        int start_bin = ail->interval_list[i].start / bin_size;
+        
+        double length = (double)(ail->interval_list[i].end - ail->interval_list[i].start);
+        if (length >= min_length && length < max_length)
+        {
+            int n_bins = ceil(((double)(ail->interval_list[i].start % bin_size) / bin_size) + (length / bin_size));
+            int n;
+            for (n = 0; n < n_bins; n++)
+            {
+                int bin = (start_bin - start) + n;
+                coverage[bin] = coverage[bin] + 1;
+            }
+        }
+    }
+
+    return;
+}
+
+
 void ailist_from_array(ailist_t *ail, const long starts[], const long ends[], const long index[], const double values[], int length)
 {
     // Expand interval list to the number of given

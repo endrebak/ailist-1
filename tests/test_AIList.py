@@ -13,6 +13,7 @@ test_ld = np.array([1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 test_nhits = np.array([1, 4, 4, 2, 2, 2, 2, 2, 2, 2])
 
 test_bin_nhits = np.array([2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2,2,1], dtype=np.double)
+test_bin_nhits_length = np.array([1,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2,2,1], dtype=np.double)
 
 def test_AIList():
     from ailist import AIList, Interval
@@ -38,6 +39,10 @@ def test_AIList():
     # Test bin nhits
     bh = i.bin_nhits(5)
     assert (bh.values == test_bin_nhits).all()
+
+    # Test bin nhits length
+    bhl = i.bin_nhits(5, 2, 100)
+    assert (bhl.values == test_bin_nhits_length).all()
 
     # Test intersection
     o = i.intersect(3,15)

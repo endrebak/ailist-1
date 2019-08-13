@@ -305,14 +305,26 @@ cdef class AIList(object):
 
 		return np.asarray(bins)
 
-	def bin_nhits(self, int bin_size=100000):
+	cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length):
+		# Initialize coverage
+		cdef int n_bins = int(self.range / bin_size)
+		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+
+		ailist_bin_nhits_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
+
+		return np.asarray(bins)
+
+	def bin_nhits(self, int bin_size=100000, min_length=None, max_length=None):
 		"""
 		"""
 		
 		# Initialize coverage
 		cdef np.ndarray bins
 		# Calculate coverage
-		bins = self._bin_nhits(bin_size)
+		if min_length is None or max_length is None:
+			bins = self._bin_nhits(bin_size)
+		else:
+			bins = self._bin_nhits_length(bin_size, min_length, max_length)
 		
 		return pd.Series(bins, index=(np.arange(len(bins)) + int(self.first / bin_size)) * bin_size)
 

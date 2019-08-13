@@ -42,6 +42,8 @@ cdef extern from "augmented_interval_list.h":
 	void ailist_coverage(ailist_t *ail, double coverage[]) nogil
 	# Calculate n hits within bins
 	void ailist_bin_nhits(ailist_t *ail, double coverage[], int bin_size) nogil
+	# Calculate n hits of a length within bins
+	void ailist_bin_nhits_length(ailist_t *ail, double coverage[], int bin_size, int min_length, int max_length) nogil
 	# Add intervals from arrays
 	void ailist_from_array(ailist_t *ail, long starts[], long ends[], long index[], double values[], int length) nogil
 	# Merge overlapping intervals
@@ -92,6 +94,7 @@ cdef class AIList(object):
 	cdef ailist_t *_intersect(AIList self, int start, int end)
 	cdef np.ndarray _coverage(AIList self)
 	cdef np.ndarray _bin_nhits(AIList self, int bin_size)
+	cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length)
 	cdef np.ndarray _wps(AIList self, int protection)
 	cdef np.ndarray _length_dist(AIList self)
 	cdef np.ndarray _nhits_from_array(AIList self, const long[::1] starts, const long[::1] ends)
