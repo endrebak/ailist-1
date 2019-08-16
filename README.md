@@ -76,7 +76,8 @@ Interval(30-40, 5)
 >>> starts = np.arange(10,1000,100)
 >>> ends = starts + 50
 >>> ids = starts
->>> i.from_array(starts, ends, ids)
+>>> values = np.ones(10)
+>>> i.from_array(starts, ends, ids, values)
 >>> i.display()
 (5-20) (10-30) (12-15) (15-20) (17-19) (30-40) 
 (10-60) (110-160) (210-260) (310-360) (410-460) 
@@ -96,7 +97,8 @@ Interval(30-40, 5)
 >>>
 # Filter to interval lengths between 3 and 20
 >>> fi = i.filter(3,20)
->>>
+>>> fi.display()
+(5-20) (10-30) (15-20) (30-40)
 
 ```
 

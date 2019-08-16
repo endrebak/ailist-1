@@ -678,7 +678,7 @@ void display_list(ailist_t *ail)
 }
 
 
-/* Drier program to test above function*/
+/* Driver program to test above functions*/
 int main() 
 { 
     printf("Initializing AIList...\n");

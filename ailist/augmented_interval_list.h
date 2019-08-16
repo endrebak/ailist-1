@@ -1,7 +1,7 @@
 //=====================================================================================
 // Common structs, parameters, functions
 // Original: https://github.com/databio/AIList/tree/master/src
-// by Jianglin Feng and Kyle S. Smith
+// by Kyle S. Smith and Jianglin Feng
 //-------------------------------------------------------------------------------------
 #ifndef __AILIST_H__
 #define __AILIST_H__
