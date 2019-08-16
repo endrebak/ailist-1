@@ -68,7 +68,7 @@ cdef extern from "augmented_interval_list.h":
 	void display_list(ailist_t *ail) nogil
 
 
-cpdef object rebuild(bytes data, bytes b_length, bytes b_first, bytes b_last)
+cpdef object rebuild(bytes data, bytes b_length)
 
 
 cdef class Interval(object):
@@ -87,9 +87,10 @@ cdef class AIList(object):
 	cdef ailist_t *interval_list
 	cdef public bint is_constructed
 	cdef public bint is_sorted
+	cdef public bint is_closed
 
 	cdef bytes _get_data(self)
-	cdef ailist_t *_set_data(self, bytes data, bytes b_length, bytes b_first, bytes b_last)
+	cdef ailist_t *_set_data(self, bytes data, bytes b_length)
 
 	cdef void set_list(AIList self, ailist_t *input_list)
 	cdef void _insert(AIList self, int start, int end, double value)

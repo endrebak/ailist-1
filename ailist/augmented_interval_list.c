@@ -54,6 +54,7 @@ ailist_t *ailist_init(void)
     ail->mr = 64;
     ail->first = INT32_MAX;
     ail->last = 0;
+	ail->maxE = NULL;
 
     // Initialize arrays
     ail->interval_list = malloc(ail->mr * sizeof(interval_t));
@@ -73,9 +74,13 @@ void ailist_destroy(ailist_t *ail)
 {   /* Free ailist_t object */
 
 	if (ail == 0) {return;}
-
+	
 	free(ail->interval_list);
-	free(ail->maxE);
+	
+	if (ail->maxE)
+	{
+		free(ail->maxE);
+	}
 
 	free(ail);
 }

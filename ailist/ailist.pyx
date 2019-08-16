@@ -5,6 +5,7 @@ import os
 import sys
 import numpy as np
 cimport numpy as np
+import math
 cimport cython
 import pandas as pd
 from libc.string cimport memcpy
@@ -18,26 +19,28 @@ def get_include():
 	Get file directory if C headers
 
 	Arguments:
+	---------
 		None
 
 	Returns:
+	---------
 		str (Directory to header files)
 	"""
 
 	return os.path.split(os.path.realpath(__file__))[0]
 
 
-cpdef AIList rebuild(bytes data, bytes b_length, bytes b_first, bytes b_last):
+cpdef AIList rebuild(bytes data, bytes b_length):
 	"""
 	Rebuild function for __reduce__()
 
 	Arguments:
+	---------
 		data: bytes (Bytes representation of ailist_t)
 		b_length: bytes (Length of ailist_t)
-		b_first: bytes (Lowest start position in ailist_t)
-		b_last: bytes (Highest end position in ailist_t)
 
 	Returns:
+	---------
 		c: ailist_t* (Translated ailist_t from data)
 	"""
 
@@ -45,7 +48,7 @@ cpdef AIList rebuild(bytes data, bytes b_length, bytes b_first, bytes b_last):
 	c = AIList()
 
 	# Build ailist from serialized data
-	cdef ailist_t *interval_list = c._set_data(data, b_length, b_first, b_last)
+	cdef ailist_t *interval_list = c._set_data(data, b_length)
 	c.set_list(interval_list)
 
 	return c
@@ -62,9 +65,11 @@ cdef class Interval(object):
 		Initialize wrapper of C interval
 
 		Arguments:
+		---------
 			i: interval_t (C interval_t to be wrapped)
 
 		Returns:
+		---------
 			None
 		"""
 
@@ -113,14 +118,15 @@ cdef class AIList(object):
 		self.interval_list = ailist_init()
 		self.is_constructed = False
 		self.is_sorted = False
+		self.is_closed = False
 
 
 	def __dealloc__(self):
 		"""
 		Free IntervalSkipList
 		"""
-
-		if hasattr(self, 'interval_list'):
+		
+		if hasattr(self, "interval_list"):
 			ailist_destroy(self.interval_list)
 
 
@@ -130,77 +136,104 @@ cdef class AIList(object):
 		for serialization by __reduce__()
 		"""
 
-		return <bytes>(<char*>self.interval_list)[:sizeof(ailist_t)]
+		return <bytes>(<char*>self.interval_list.interval_list)[:(sizeof(interval_t)*self.interval_list.nr)]
 
-	cdef ailist_t *_set_data(self, bytes data, bytes b_length, bytes b_first, bytes b_last):
+	cdef ailist_t *_set_data(self, bytes data, bytes b_length):
 		"""
 		Function to build ailist_t object from
 		serialized bytes using __reduce__()
 
 		Arguments:
+		---------
 			data: bytes (Bytes representation of ailist_t)
 			b_length: bytes (Length of ailist_t)
-			b_first: bytes (Lowest start position in ailist_t)
-			b_last: bytes (Highest end position in ailist_t)
 
 		Returns:
+		---------
 			interval_list: ailist_t* (Translated ailist_t for bytes)
 		"""
 		
 		# Convert bytes to ints
 		cdef int length = int.from_bytes(b_length, byteorder)
-		cdef int first = int.from_bytes(b_first, byteorder)
-		cdef int last = int.from_bytes(b_last, byteorder)
 		
 		# Create new ailist_t
-		cdef ailist_t *interval_list = ailist_init()
-		memcpy(interval_list, <char*>data, sizeof(ailist_t))
+		cdef ailist_t *ail = ailist_init()
+		cdef interval_t *interval_list = <interval_t*>malloc(length * sizeof(interval_t))
+		memcpy(interval_list, <char*>data, sizeof(interval_t)*length)
 
-		# Reassign ailist attributes
-		interval_list.first = first
-		interval_list.last = last
+		# Iteratively add intervals to interval_list		
+		cdef int i
+		for i in range(length):
+			ailist_add(ail, interval_list[i].start, interval_list[i].end, interval_list[i].index, interval_list[i].value)
 
-		return interval_list
+		return ail
 
 
 	def __reduce__(self):
 		"""
 		Used for pickling. Convert ailist to bytes and back.
 		"""
+
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
 		
 		# Convert ints to bytes
 		b_length = int(self.interval_list.nr).to_bytes(4, byteorder)
-		b_first = int(self.interval_list.first).to_bytes(4, byteorder)
-		b_last = int(self.interval_list.last).to_bytes(4, byteorder)
 
 		# Convert ailist_t to bytes
 		data = self._get_data()
 
-		return (rebuild, (data, b_length, b_first, b_last))
+		return (rebuild, (data, b_length))
 
 
 	@property	
 	def size(self):
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		return self.interval_list.nr
 	
 	@property
 	def first(self):
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		return self.interval_list.first
 
 	@property
 	def last(self):
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		return self.interval_list.last
 
 	@property
 	def range(self):
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		return self.last - self.first
 		
 
 	def __len__(self):
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		return self.size
 
 	
 	def __iter__(self):
+
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		cdef Interval interval
 		for i in range(self.size):
 			interval = Interval()
@@ -214,11 +247,12 @@ cdef class AIList(object):
 		"""
 
 		# Free old skiplist
-		if hasattr(self, 'interval_list'):
+		if self.interval_list:
 			ailist_destroy(self.interval_list)
 		
 		# Replace new skiplist
 		self.interval_list = input_list
+		self.is_closed = False
 
 
 	cdef void _insert(AIList self, int start, int end, double value):
@@ -227,12 +261,22 @@ cdef class AIList(object):
 	def add(self, int start, int end, double value=0.0):
 		"""
 		"""
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		self._insert(start, end, value)
 		self.is_constructed = False
 		self.is_sorted = False
 
 
 	def from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index, const double[::1] values):
+		"""
+		"""
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		cdef int array_length = len(starts)
 		ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], &values[0], array_length)
 
@@ -243,6 +287,10 @@ cdef class AIList(object):
 	def construct(self, int min_length=20):
 		"""
 		"""
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		self._construct(min_length)
 		self.is_constructed = True
 		self.is_sorted = True
@@ -254,6 +302,10 @@ cdef class AIList(object):
 	def sort(self):
 		"""
 		"""
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		self._sort()
 		self.is_sorted = True
 
@@ -266,6 +318,10 @@ cdef class AIList(object):
 	def intersect(self, int start, int end):
 		"""
 		"""
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		if self.is_constructed == False:
 			self.construct()
 
@@ -287,7 +343,10 @@ cdef class AIList(object):
 	def coverage(self):
 		"""
 		"""
-		
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		# Initialize coverage
 		cdef np.ndarray coverage
 		# Calculate coverage
@@ -298,7 +357,7 @@ cdef class AIList(object):
 
 	cdef np.ndarray _bin_coverage(AIList self, int bin_size):
 		# Initialize coverage
-		cdef int n_bins = int(self.range / bin_size)
+		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
 
 		ailist_bin_coverage(self.interval_list, &bins[0], bin_size)
@@ -307,7 +366,7 @@ cdef class AIList(object):
 
 	cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length):
 		# Initialize coverage
-		cdef int n_bins = int(self.range / bin_size)
+		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
 
 		ailist_bin_coverage_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
@@ -317,7 +376,10 @@ cdef class AIList(object):
 	def bin_coverage(self, int bin_size=100000, min_length=None, max_length=None):
 		"""
 		"""
-		
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		# Initialize coverage
 		cdef np.ndarray bins
 		# Calculate coverage
@@ -331,16 +393,16 @@ cdef class AIList(object):
 
 	cdef np.ndarray _bin_nhits(AIList self, int bin_size):
 		# Initialize coverage
-		cdef int n_bins = int(self.range / bin_size)
+		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
-
+		
 		ailist_bin_nhits(self.interval_list, &bins[0], bin_size)
 
 		return np.asarray(bins)
 
 	cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length):
 		# Initialize coverage
-		cdef int n_bins = int(self.range / bin_size)
+		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
 
 		ailist_bin_nhits_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
@@ -350,7 +412,10 @@ cdef class AIList(object):
 	def bin_nhits(self, int bin_size=100000, min_length=None, max_length=None):
 		"""
 		"""
-		
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		# Initialize coverage
 		cdef np.ndarray bins
 		# Calculate coverage
@@ -365,12 +430,19 @@ cdef class AIList(object):
 	def display(self):
 		"""
 		"""
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		display_list(self.interval_list)
 
 
 	def merge(self, int gap=0):
 		"""
 		"""
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
 
 		# Make sure list is sorted
 		if self.is_sorted == False:
@@ -395,6 +467,9 @@ cdef class AIList(object):
 	def wps(self, int protection=60):
 		"""
 		"""
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
 		
 		# Initialize wps
 		cdef np.ndarray wps
@@ -407,6 +482,10 @@ cdef class AIList(object):
 	def filter(self, int min_length=1, int max_length=400):
 		"""
 		"""
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		# Initialize filtered list
 		cdef AIList filtered_ail = AIList()
 
@@ -427,6 +506,12 @@ cdef class AIList(object):
 		return np.asarray(distribution, dtype=np.intc)
 
 	def length_dist(self):
+		"""
+		"""
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		# Initialize distribution
 		cdef np.ndarray distribution
 		# Calculate distribution
@@ -458,6 +543,10 @@ cdef class AIList(object):
 	def nhits_from_array(self, const long[::1] starts, const long[::1] ends, min_length=None, max_length=None):
 		"""
 		"""
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		# Make sure list is constructed
 		if self.is_constructed == False:
 			self.construct()
@@ -471,3 +560,14 @@ cdef class AIList(object):
 			nhits = self._nhits_from_array_length(starts, ends, min_length, max_length)
 
 		return nhits
+
+	
+	def close(self):
+		"""
+		"""
+		if self.interval_list:
+			ailist_destroy(self.interval_list)
+
+		self.interval_list = NULL
+		
+		self.is_closed = True

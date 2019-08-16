@@ -96,6 +96,13 @@ def test_AIList():
         is_Interval += isinstance(x, Interval)
     assert is_Interval == 8
 
+    # Test close
+    i.close()
+    try:
+        i.add(10,20)
+        assert False
+    except NameError:
+        assert True
 
 if __name__ == "__main__":
     test_AIList()
