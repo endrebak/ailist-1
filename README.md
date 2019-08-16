@@ -11,7 +11,7 @@ This implementation is a Python wrapper of the one used in the original [AIList 
 
 Additonal wrapper functions have been created which allow easy user interface.
 
-Paper: https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz407/5509521
+All citations should reference to [original paper][paper].
 
 ## Install
 
@@ -109,3 +109,4 @@ Interval(30-40, 5)
 
 
 [AIList_github]: https://github.com/databio/AIList
+[paper]: https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz407/5509521
