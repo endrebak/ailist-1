@@ -394,7 +394,14 @@ cdef class AIList(object):
 
 	def coverage(self):
 		"""
+		Find number of intervals overlapping every
+		position in the AList range
+
+		Returns:
+		---------
+			pandas.Series{double} (Position on index and coverage as values)
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -427,7 +434,20 @@ cdef class AIList(object):
 
 	def bin_coverage(self, int bin_size=100000, min_length=None, max_length=None):
 		"""
+		Find sum of coverage within binned
+		positions
+		
+		Arguments:
+		---------
+			bin_size: int (Size of the bin to use)
+			min_length: int (Minimum length of intervals to include [default = None])
+			max_length: int (Maximum length of intervals to include [default = None])
+
+		Returns:
+		---------
+			pandas.Series{double} (Position on index and coverage as values)
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -463,6 +483,18 @@ cdef class AIList(object):
 
 	def bin_nhits(self, int bin_size=100000, min_length=None, max_length=None):
 		"""
+		Find number of intervals overlapping binned
+		positions
+		
+		Arguments:
+		---------
+			bin_size: int (Size of the bin to use)
+			min_length: int (Minimum length of intervals to include [default = None])
+			max_length: int (Maximum length of intervals to include [default = None])
+
+		Returns:
+		---------
+			pandas.Series{double} (Position on index and coverage as values)
 		"""
 		# Check if object is still open
 		if self.is_closed:
@@ -481,6 +513,7 @@ cdef class AIList(object):
 
 	def display(self):
 		"""
+		Print all intervals
 		"""
 		# Check if object is still open
 		if self.is_closed:
@@ -491,6 +524,15 @@ cdef class AIList(object):
 
 	def merge(self, int gap=0):
 		"""
+		Merge intervals within a gap
+		
+		Arguments:
+		---------
+			gap: int (Gap between intervals to merge)
+
+		Returns:
+		---------
+			merged_list: AIList (Merged intervals)
 		"""
 		# Check if object is still open
 		if self.is_closed:
@@ -518,6 +560,16 @@ cdef class AIList(object):
 
 	def wps(self, int protection=60):
 		"""
+		Calculate Window Protection Score
+		for each position in AIList range
+		
+		Arguments:
+		---------
+			protection: int (Protection window to use)
+
+		Returns:
+		---------
+			pandas.Series{double} (Position on index and WPS as values)
 		"""
 		# Check if object is still open
 		if self.is_closed:
@@ -533,6 +585,16 @@ cdef class AIList(object):
 	
 	def filter(self, int min_length=1, int max_length=400):
 		"""
+		Filter out intervals outside of a length range
+		
+		Arguments:
+		---------
+			min_length: int (Minimum length to keep)
+			max_length: int (Maximum langth to keep)
+
+		Returns:
+		---------
+			filtered_ail: AIList (Filtered intervals)
 		"""
 		# Check if object is still open
 		if self.is_closed:
@@ -559,6 +621,11 @@ cdef class AIList(object):
 
 	def length_dist(self):
 		"""
+		Calculate length distribution of intervals
+		
+		Returns:
+		---------
+			distribution: numpy.ndarray{int} (Interval length distribution)
 		"""
 		# Check if object is still open
 		if self.is_closed:
@@ -594,6 +661,19 @@ cdef class AIList(object):
 
 	def nhits_from_array(self, const long[::1] starts, const long[::1] ends, min_length=None, max_length=None):
 		"""
+		Find number of intervals overlapping given
+		positions
+		
+		Arguments:
+		---------
+			starts: numpy.ndarray{long} (Start positions to intersect)
+			ends: numpy.ndarray{long} (End positions to intersect)
+			min_length: int (Minimum length of intervals to include [default = None])
+			max_length: int (Maximum length of intervals to include [default = None])
+
+		Returns:
+		---------
+			nhits: numpy.ndarray{int} (Number of hits per position)
 		"""
 		# Check if object is still open
 		if self.is_closed:
@@ -616,6 +696,7 @@ cdef class AIList(object):
 	
 	def close(self):
 		"""
+		Close object and clear memory
 		"""
 		if self.interval_list:
 			ailist_destroy(self.interval_list)
