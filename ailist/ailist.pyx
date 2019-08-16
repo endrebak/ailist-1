@@ -558,7 +558,15 @@ cdef class AIList(object):
 
 		return np.asarray(wps)
 
-	def wps(self, int protection=60):
+	cdef np.ndarray _wps_length(AIList self, int protection, int min_length, int max_length):
+		# Initialize wps
+		cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
+
+		ailist_wps_length(self.interval_list, &wps[0], protection, min_length, max_length)
+
+		return np.asarray(wps)
+
+	def wps(self, int protection=60, min_length=None, max_length=None):
 		"""
 		Calculate Window Protection Score
 		for each position in AIList range
@@ -566,11 +574,14 @@ cdef class AIList(object):
 		Arguments:
 		---------
 			protection: int (Protection window to use)
+			min_length: int (Minimum length of intervals to include [default = None])
+			max_length: int (Maximum length of intervals to include [default = None])
 
 		Returns:
 		---------
 			pandas.Series{double} (Position on index and WPS as values)
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -578,7 +589,10 @@ cdef class AIList(object):
 		# Initialize wps
 		cdef np.ndarray wps
 		# Calculate wps
-		wps = self._wps(protection)
+		if min_length is None or max_length is None:
+			wps = self._wps(protection)
+		else:
+			wps = self._wps_length(protection, min_length, max_length)
 		
 		return pd.Series(wps, index=np.arange(self.first, self.last))
 

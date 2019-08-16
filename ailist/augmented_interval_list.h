@@ -84,6 +84,9 @@ ailist_t *ailist_merge(ailist_t *ail, uint32_t gap);
 // Calculate Window Protection Score
 void ailist_wps(ailist_t *ail, double wps[], uint32_t protection);
 
+// Calculate Window Protection Score within a length
+void ailist_wps_length(ailist_t *ail, double wps[], uint32_t protection, int min_length, int max_length);
+
 // Filter ailist by length
 ailist_t *ailist_length_filter(ailist_t *ail, int min_length, int max_length);
 

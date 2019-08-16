@@ -54,6 +54,8 @@ cdef extern from "augmented_interval_list.h":
 	ailist_t *ailist_merge(ailist_t *ail, uint32_t gap) nogil
 	# Calculate Window Protection Score
 	void ailist_wps(ailist_t *ail, double wps[], uint32_t protection) nogil
+	# Calculate Window Protection Score within a length
+	void ailist_wps_length(ailist_t *ail, double wps[], uint32_t protection, int min_length, int max_length) nogil
 	# Filter ailist by length
 	ailist_t *ailist_length_filter(ailist_t *ail, int min_length, int max_length) nogil
 	#  Calculate length distribution
@@ -103,6 +105,7 @@ cdef class AIList(object):
 	cdef np.ndarray _bin_nhits(AIList self, int bin_size)
 	cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length)
 	cdef np.ndarray _wps(AIList self, int protection)
+	cdef np.ndarray _wps_length(AIList self, int protection, int min_length, int max_length)
 	cdef np.ndarray _length_dist(AIList self)
 	cdef np.ndarray _nhits_from_array(AIList self, const long[::1] starts, const long[::1] ends)
 	cdef np.ndarray _nhits_from_array_length(AIList self, const long[::1] starts, const long[::1] ends, int min_length, int max_length)
