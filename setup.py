@@ -201,7 +201,6 @@ setup(
                     "Environment :: Console",
                     "Intended Audience :: Developers",
                     "Intended Audience :: Science/Research",
-                    "License :: GPL2", 
                     "Operating System :: POSIX :: Linux",
                     "Programming Language :: Cython",
                     "Programming Language :: Python",
@@ -222,5 +221,6 @@ setup(
     # Disable zip_safe
     zip_safe = False,
     # Custom data files not inside a Python package
-    data_files = datafiles
+    data_files = datafiles,
+    license = "GPL2"
 )
