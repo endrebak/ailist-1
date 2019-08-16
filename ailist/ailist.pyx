@@ -221,6 +221,9 @@ cdef class AIList(object):
 		
 
 	def __len__(self):
+		"""
+		Return size of interval_list
+		"""
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -229,21 +232,34 @@ cdef class AIList(object):
 
 	
 	def __iter__(self):
+		"""
+		Iterate over AIList object
+		"""
 
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
 
+		# Iterate over interval list
 		cdef Interval interval
 		for i in range(self.size):
 			interval = Interval()
 			interval.set_i(self.interval_list.interval_list[i])
+			
 			yield interval
 
 
 	cdef void set_list(AIList self, ailist_t *input_list):
 		"""
 		Set wrapper of C ailist
+
+		Arguments:
+		---------
+			input_list: ailist_t* (ailist_t to replace existing one)
+
+		Returns:
+		---------
+			Nothing
 		"""
 
 		# Free old skiplist
@@ -260,7 +276,19 @@ cdef class AIList(object):
 
 	def add(self, int start, int end, double value=0.0):
 		"""
+		Add an interval to AIList inplace
+		
+		Arguments:
+		---------
+			start: int (Start position of interval)
+			end: int (End position of interval)
+			value: double (Value of interval [default = 0.0])
+
+		Returns:
+		---------
+			Nothing
 		"""
+		
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -272,6 +300,18 @@ cdef class AIList(object):
 
 	def from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index, const double[::1] values):
 		"""
+		Add an intervals from arrays to AIList inplace
+		
+		Arguments:
+		---------
+			starts: numpy.ndarray{long} (Start positions of intervals)
+			ends: numpy.ndarray{long} (End positions of intervals)
+			index: numpy.ndarray{long} (Index of intervals)
+			values: numpy.ndarray{double} (Values of intervals)
+
+		Returns:
+		---------
+			Nothing
 		"""
 		# Check if object is still open
 		if self.is_closed:
@@ -286,6 +326,7 @@ cdef class AIList(object):
 
 	def construct(self, int min_length=20):
 		"""
+		Construct ailist_t *Required to call intersect
 		"""
 		# Check if object is still open
 		if self.is_closed:
@@ -301,6 +342,7 @@ cdef class AIList(object):
 
 	def sort(self):
 		"""
+		Sort intervals inplace
 		"""
 		# Check if object is still open
 		if self.is_closed:
@@ -317,6 +359,16 @@ cdef class AIList(object):
 
 	def intersect(self, int start, int end):
 		"""
+		Find intervals overlapping given range
+		
+		Arguments:
+		---------
+			start: int (Start position of query range)
+			end: int (End position of query range)
+
+		Returns:
+		---------
+			overlaps: AIList (Overlapping intervals)
 		"""
 		# Check if object is still open
 		if self.is_closed:
