@@ -221,6 +221,5 @@ setup(
     # Disable zip_safe
     zip_safe = False,
     # Custom data files not inside a Python package
-    data_files = datafiles,
-    license = "GPL2"
+    data_files = datafiles
 )
