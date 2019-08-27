@@ -18,6 +18,8 @@ test_bin_nhits_length = np.array([1,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2,2,1], dtype=np
 test_bin_coverage = np.array([3,5,7,0,10,10,10,10,10,10,10,10,10,10,10,10,10,5], dtype=np.double)
 test_bin_coverage_length = np.array([2,5,7,0,10,10,10,10,10,10,10,10,10,10,10,10,10,5], dtype=np.double)
 
+test_intersect_index = (np.array([200, 200, 123, 123], dtype=np.intc), np.array([0, 2, 5, 6], dtype=np.long))
+
 def test_AIList():
     from ailist import AIList, Interval
 
@@ -56,8 +58,17 @@ def test_AIList():
     assert (bcl.values == test_bin_coverage_length).all()
 
     # Test intersection
-    o = i.intersect(3,15)
+    o = i.intersect(3, 15)
     assert o.size == 2 and o.first == 10 and o.last == 13
+
+    # Test intersect from array
+    oi = i.intersect_from_array(np.array([1,30]), np.array([15,35]), np.array([200,123]))
+    assert (oi[0] == test_intersect_index[0]).all()
+    assert (oi[1] == test_intersect_index[1]).all()
+
+    # Test index intersection
+    oi = i.intersect_index(3, 15)
+    assert (oi == np.array([0,2], dtype=np.long)).all()
 
     # Test WPS calculation
     w = i.wps(4)

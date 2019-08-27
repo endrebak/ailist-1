@@ -34,10 +34,16 @@ cdef extern from "augmented_interval_list.h":
 	void ailist_construct(ailist_t *ail, int cLen) nogil
 	# Query ailist intervals
 	ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe) nogil
+	# Find overlaps from array
+	ailist_t *ailist_query_from_array(ailist_t *ail, const long starts[], const long ends[], const long indices[], int length) nogil
 	# Query ailist intervals within lengths
 	ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_length, int max_length) nogil
 	# Free ailist data
 	void ailist_destroy(ailist_t *ail) nogil
+	# Append intervals other ailist
+	void ailist_append(ailist_t *ail1, ailist_t *ail2) nogil
+	# Extract index for ailist
+	void ailist_extract_index(ailist_t *ail, long indices[]) nogil
 	# Calculate coverage
 	void ailist_coverage(ailist_t *ail, double coverage[]) nogil
 	# Calculate coverage within bins
@@ -99,6 +105,8 @@ cdef class AIList(object):
 	cdef void _construct(AIList self, int min_length)
 	cdef void _sort(AIList self)
 	cdef ailist_t *_intersect(AIList self, int start, int end)
+	cdef np.ndarray _intersect_index(AIList self, int start, int end)
+	cdef long[:,::1] _intersect_from_array(AIList self, const long[::1] starts, const long[::1] ends, const long[::1] indices)
 	cdef np.ndarray _coverage(AIList self)
 	cdef np.ndarray _bin_coverage(AIList self, int bin_size)
 	cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length)

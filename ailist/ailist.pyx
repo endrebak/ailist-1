@@ -313,12 +313,15 @@ cdef class AIList(object):
 		---------
 			Nothing
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
 
 		cdef int array_length = len(starts)
 		ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], &values[0], array_length)
+		self.is_constructed = False
+		self.is_sorted = False
 
 
 	cdef void _construct(AIList self, int min_length):
@@ -328,13 +331,18 @@ cdef class AIList(object):
 		"""
 		Construct ailist_t *Required to call intersect
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
 
-		self._construct(min_length)
-		self.is_constructed = True
-		self.is_sorted = True
+		# Check if already constructed
+		if self.is_constructed == False:
+			self._construct(min_length)
+			self.is_constructed = True
+			self.is_sorted = True
+		else:
+			pass
 	
 
 	cdef void _sort(AIList self):
@@ -370,6 +378,7 @@ cdef class AIList(object):
 		---------
 			overlaps: AIList (Overlapping intervals)
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -382,6 +391,88 @@ cdef class AIList(object):
 		overlaps.set_list(i_list)
 
 		return overlaps
+
+
+	cdef np.ndarray _intersect_index(AIList self, int start, int end):
+		cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
+		cdef long[::1] indices = np.zeros(overlaps.nr, dtype=np.long)
+
+		ailist_extract_index(overlaps, &indices[0])
+
+		return np.asarray(indices)
+
+	def intersect_index(self, int start, int end):
+		"""
+		Find interval indices overlapping given range
+		
+		Arguments:
+		---------
+			start: int (Start position of query range)
+			end: int (End position of query range)
+
+		Returns:
+		---------
+			indice: np.ndarray{int} (Overlapping interval indices)
+		"""
+
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
+		# Check if object has been constructed
+		if self.is_constructed == False:
+			self.construct()
+
+		cdef np.ndarray indices = self._intersect_index(start, end)
+
+		return indices
+
+
+	@cython.boundscheck(False)
+	@cython.wraparound(False)
+	@cython.initializedcheck(False)
+	cdef long[:,::1] _intersect_from_array(AIList self, const long[::1] starts, const long[::1] ends, const long[::1] indices):
+		cdef int length = len(starts)
+		cdef ailist_t *total_overlaps = ailist_query_from_array(self.interval_list, &starts[0], &ends[0], &indices[0], length)
+
+		cdef long[:,::1] results = np.zeros((2,total_overlaps.nr), dtype=np.long)
+		
+		cdef int i
+		for i in range(total_overlaps.nr):
+			results[0, i] = <int>total_overlaps.interval_list[i].value
+			results[1, i] = total_overlaps.interval_list[i].index
+
+		ailist_destroy(total_overlaps)
+
+		#return np.asarray(results)
+		return results
+
+	def intersect_from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index):
+		"""
+		Find interval indices overlapping given ranges
+		
+		Arguments:
+		---------
+			starts: numpy.ndarray{long} (Start positions of intervals)
+			ends: numpy.ndarray{long} (End positions of intervals)
+			index: numpy.ndarray{long} (Index of intervals)
+
+		Returns:
+		---------
+			indice: np.ndarray{int} (Overlapping interval indices)
+		"""
+
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
+		if self.is_constructed == False:
+			self.construct()
+
+		cdef long[:,::1] indices = self._intersect_from_array(starts, ends, index)
+		cdef np.ndarray indices_arr = np.asarray(indices)
+
+		return indices_arr[0,:], indices_arr[1,:]
 		
 
 	cdef np.ndarray _coverage(AIList self):

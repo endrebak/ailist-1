@@ -54,11 +54,20 @@ uint32_t binary_search(interval_t* As, uint32_t idxS, uint32_t idxE, uint32_t qe
 // Query ailist intervals
 ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe);
 
+// Find overlaps from array
+ailist_t *ailist_query_from_array(ailist_t *ail, const long starts[], const long ends[], const long indices[], int length);
+
 // Query ailist intervals within lengths
 ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_length, int max_length);
 
 // Free ailist data
 void ailist_destroy(ailist_t *ail);
+
+// Append intervals other ailist
+void ailist_append(ailist_t *ail1, ailist_t *ail2);
+
+// Extract index for ailist
+void ailist_extract_index(ailist_t *ail, long indices[]);
 
 // Calculate coverage
 void ailist_coverage(ailist_t *ail, double coverage[]);
