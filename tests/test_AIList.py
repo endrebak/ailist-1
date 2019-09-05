@@ -20,6 +20,9 @@ test_bin_coverage_length = np.array([2,5,7,0,10,10,10,10,10,10,10,10,10,10,10,10
 
 test_intersect_index = (np.array([200, 200, 123, 123], dtype=np.intc), np.array([0, 2, 5, 6], dtype=np.long))
 
+test_subtract_starts = np.array([0, 13, 25, 100, 0, 25, 110], dtype=np.intc)
+test_subtract_ends = np.array([10, 15, 30, 105, 5, 27, 120], dtype=np.intc)
+
 def test_AIList():
     from ailist import AIList, Interval
 
@@ -77,6 +80,17 @@ def test_AIList():
     # Test merging
     m = i.merge()
     assert m.size == 5 and m.first == 10 and m.last == 100
+
+    # Test subtract
+    j = AIList()
+    j.add(20,27)
+    j.add(0,105)
+    j.add(0,5)
+    j.add(110,120)
+    s = j - i
+    for k, x in enumerate(s):
+        assert x.start == test_subtract_starts[k]
+        assert x.end == test_subtract_ends[k]
 
     # Test filtering
     f = i.filter(3, 10)

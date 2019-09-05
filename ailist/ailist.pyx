@@ -224,6 +224,7 @@ cdef class AIList(object):
 		"""
 		Return size of interval_list
 		"""
+		
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -247,6 +248,14 @@ cdef class AIList(object):
 			interval.set_i(self.interval_list.interval_list[i])
 			
 			yield interval
+
+
+	def __sub__(self, AIList query_ail):
+		"""
+		Subtract values
+		"""
+
+		return self.subtract(query_ail)
 
 
 	cdef void set_list(AIList self, ailist_t *input_list):
@@ -639,6 +648,37 @@ cdef class AIList(object):
 		merged_list.set_list(merged_clist)
 
 		return merged_list
+
+
+	def subtract(self, AIList query_ail):
+		"""
+		Subtract intervals within another AIList
+		
+		Arguments:
+		---------
+			query_ail: AIList (AIList of intervals to subtract)
+
+		Returns:
+		---------
+			subtracted_list: AIList (Subtracted intervals)
+		"""
+		# Check if object is still open
+		if self.is_closed or query_ail.is_closed:
+			raise NameError("AIList object has been closed.")
+
+		# Make sure list is sorted
+		if self.is_sorted == False:
+			self.sort()
+		if query_ail.is_sorted == False:
+			query_ail.sort()
+
+		cdef AIList subtracted_list = AIList()
+		cdef ailist_t *subtracted_clist = ailist_subtract(query_ail.interval_list,
+														  self.interval_list)
+
+		subtracted_list.set_list(subtracted_clist)
+
+		return subtracted_list
 
 
 	cdef np.ndarray _wps(AIList self, int protection):
