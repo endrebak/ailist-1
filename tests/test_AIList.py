@@ -23,6 +23,10 @@ test_intersect_index = (np.array([200, 200, 123, 123], dtype=np.intc), np.array(
 test_subtract_starts = np.array([0, 13, 25, 100, 0, 25, 110], dtype=np.intc)
 test_subtract_ends = np.array([10, 15, 30, 105, 5, 27, 120], dtype=np.intc)
 
+test_common_starts = np.array([10, 11, 15, 19, 30, 20], dtype=np.intc)
+test_common_ends = np.array([11, 13, 19, 25, 100, 25], dtype=np.intc)
+
+
 def test_AIList():
     from ailist import AIList, Interval
 
@@ -93,10 +97,10 @@ def test_AIList():
         assert x.end == test_subtract_ends[k]
 
     # Test common
-    c = j.common(i)
-    i.display()
-    j.display()
-    c.display()
+    c = j + i
+    for k, x in enumerate(c):
+        assert x.start == test_common_starts[k]
+        assert x.end == test_common_ends[k]
 
     # Test filtering
     f = i.filter(3, 10)

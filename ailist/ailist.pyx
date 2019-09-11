@@ -258,6 +258,14 @@ cdef class AIList(object):
 		return self.subtract(query_ail)
 
 
+	def __add__(self, AIList query_ail):
+		"""
+		Common values
+		"""
+
+		return self.common(query_ail)
+
+
 	cdef void set_list(AIList self, ailist_t *input_list):
 		"""
 		Set wrapper of C ailist
