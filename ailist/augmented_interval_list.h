@@ -93,6 +93,12 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
 // Subtract two ailist_t intervals
 ailist_t *ailist_subtract(ailist_t *ail1, ailist_t *ail2);
 
+// Common regions between intervals from region
+void common_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t query_i, int j);
+
+// Common regions between two ailist_t intervals
+ailist_t *ailist_common(ailist_t *ail1, ailist_t *ail2);
+
 // Merge overlapping intervals
 ailist_t *ailist_merge(ailist_t *ail, uint32_t gap);
 

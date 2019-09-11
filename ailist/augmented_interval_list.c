@@ -565,8 +565,12 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
                 s_start = previous_end;
                 s_end = query_i.end;
 
-                // Update query_i bounds
-                query_i.start = previous_end;
+                // If query is larger than ref_ail interval
+                if ((int)query_i.end > previous_end)
+                {
+                    // Update query_i bounds
+                    query_i.start = previous_end;
+                }
             }
             
 
@@ -676,6 +680,159 @@ ailist_t *ailist_subtract(ailist_t *ref_ail, ailist_t *query_ail)
     {
         ailist_add(result_ail, query_ail->interval_list[j].start, query_ail->interval_list[j].end,
                    query_ail->interval_list[j].index, query_ail->interval_list[j].value);
+        j++;
+    }
+
+    return result_ail;
+}
+
+
+void common_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t query_i, int j)
+{   /* Subtract intervals from region*/
+
+    int previous_start = ref_ail->interval_list[j].start;
+    int previous_end = ref_ail->interval_list[j].end;
+
+    // Iterate over regions
+    int i = j+1;
+    while (i < ref_ail->nr && (int)query_i.start < previous_end && (int)query_i.end > previous_start)
+    {        
+        if (previous_end > (int)ref_ail->interval_list[i].start)
+        {   // If previous overlaps current, merge
+            previous_end = MAX(previous_end, (int)ref_ail->interval_list[i].end);
+        }
+        else
+        {
+            int c_start;
+            int c_end;
+
+            // Find subtracted bounds
+            if ((int)query_i.start <= previous_start)
+            {
+                // Record new bounds
+                c_start = previous_start;
+                c_end = query_i.end;
+
+                // If query is larger than ref_ail interval
+                if ((int)query_i.end > previous_end)
+                {
+                    c_end = previous_end;
+                    query_i.start = previous_end;
+                }
+
+                // Add new bounds to result
+                ailist_add(result_ail, c_start, c_end, query_i.index, query_i.value);
+            }
+            else
+            {
+                c_start = query_i.start;
+                c_end = query_i.end;
+
+                // If query is larger than ref_ail interval
+                if ((int)query_i.end > previous_end)
+                {
+                    c_end = previous_end;
+                    // Update query_i bounds
+                    query_i.start = previous_end;
+                }
+
+                // Add new bounds to result
+                ailist_add(result_ail, c_start, c_end, query_i.index, query_i.value);
+            }
+            
+
+            previous_start = ref_ail->interval_list[i].start;
+            previous_end = ref_ail->interval_list[i].end;
+        }
+
+        i++;
+    }
+
+    // Check last interval
+    if ((int)query_i.start < previous_end && (int)query_i.end > previous_start)
+    {
+        int c_start;
+        int c_end;
+        // Find subtracted bounds
+        if ((int)query_i.start <= previous_start)
+        {
+            // Record new bounds
+            c_start = previous_start;
+            c_end = query_i.end;
+
+            // If query is larger than ref_ail interval
+            if ((int)query_i.end > previous_end)
+            {
+                c_end = previous_end;
+                query_i.start = previous_end;
+            }
+
+            // Add new bounds to result
+            ailist_add(result_ail, c_start, c_end, query_i.index, query_i.value);
+        }
+        else
+        {
+            c_start = query_i.start;
+            c_end = query_i.end;
+
+            // If query is larger than ref_ail interval
+            if ((int)query_i.end > previous_end)
+            {
+                c_end = previous_end;
+                query_i.start = previous_end;
+            }
+
+            // Add new bounds to result
+            ailist_add(result_ail, c_start, c_end, query_i.index, query_i.value);
+        }
+    }
+}
+
+
+ailist_t *ailist_common(ailist_t *ref_ail, ailist_t *query_ail)
+{   /* Subtract two ailist_t intervals */
+    int previous_end = ref_ail->interval_list[0].end;
+    int previous_start = ref_ail->interval_list[0].start;
+    int j = 0;
+    int n_merged = 1;
+
+    ailist_t *result_ail = ailist_init();
+
+    // Iterate over regions
+    int i;
+    for (i = 1; i < ref_ail->nr; i++)
+    {
+        // If previous overlaps current, merge
+        if (previous_end > (int)ref_ail->interval_list[i].start)
+        {
+            previous_end = MAX(previous_end, (int)ref_ail->interval_list[i].end);
+            n_merged++;
+        }
+        else
+        {   
+            // Add intervals until caught up with ail1
+            while (j < query_ail->nr && (int)query_ail->interval_list[j].end < previous_start)
+            {
+                j++;
+            }
+
+            // Subtract merged ail1 interval from overlapping ail1 intervals
+            while (j < query_ail->nr && (int)query_ail->interval_list[j].start < previous_end && (int)query_ail->interval_list[j].end > previous_start)
+            {
+                common_intervals(ref_ail, result_ail, query_ail->interval_list[j], i-n_merged);
+                j++;
+            }
+
+            previous_start = ref_ail->interval_list[i].start;
+            previous_end = ref_ail->interval_list[i].end;
+            n_merged = 1;
+        }
+    }
+
+    // Subtract merged ail1 interval from overlapping ail1 intervals
+    if ((int)query_ail->interval_list[j].start < previous_end && (int)query_ail->interval_list[j].end > previous_start)
+    {
+        common_intervals(ref_ail, result_ail, query_ail->interval_list[j], i-n_merged);
         j++;
     }
 

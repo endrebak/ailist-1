@@ -92,6 +92,12 @@ def test_AIList():
         assert x.start == test_subtract_starts[k]
         assert x.end == test_subtract_ends[k]
 
+    # Test common
+    c = j.common(i)
+    i.display()
+    j.display()
+    c.display()
+
     # Test filtering
     f = i.filter(3, 10)
     assert f.size == 2 and f.first == 15 and f.last == 25

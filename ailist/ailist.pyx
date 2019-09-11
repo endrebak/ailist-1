@@ -681,6 +681,37 @@ cdef class AIList(object):
 		return subtracted_list
 
 
+	def common(self, AIList query_ail):
+		"""
+		Common intervals within another AIList
+		
+		Arguments:
+		---------
+			query_ail: AIList (AIList of intervals to find commons)
+
+		Returns:
+		---------
+			common_list: AIList (Common intervals)
+		"""
+		# Check if object is still open
+		if self.is_closed or query_ail.is_closed:
+			raise NameError("AIList object has been closed.")
+
+		# Make sure list is sorted
+		if self.is_sorted == False:
+			self.sort()
+		if query_ail.is_sorted == False:
+			query_ail.sort()
+
+		cdef AIList common_list = AIList()
+		cdef ailist_t *common_clist = ailist_common(query_ail.interval_list,
+														  self.interval_list)
+
+		common_list.set_list(common_clist)
+
+		return common_list
+
+
 	cdef np.ndarray _wps(AIList self, int protection):
 		# Initialize wps
 		cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
