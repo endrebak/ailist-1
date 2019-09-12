@@ -361,14 +361,27 @@ ailist_t *ailist_query_from_array(ailist_t *ail, const long starts[], const long
 
 //-------------------------------------------------------------------------------
 
-void ailist_append(ailist_t *ail1, ailist_t *ail2)
+ailist_t *ailist_append(ailist_t *ail1, ailist_t *ail2)
 {
+    // Initialize appended ailist
+    ailist_t *appended_ailist = ailist_init();
+    
+    // Append ail1
     int i;
+    for (i = 0; i < ail1->nr; i++)
+    {
+        ailist_add(appended_ailist, ail1->interval_list[i].start, ail1->interval_list[i].end,
+                   ail1->interval_list[i].index, ail1->interval_list[i].value);
+    }
+
+    // Append ail2
     for (i = 0; i < ail2->nr; i++)
     {
-        ailist_add(ail1, ail2->interval_list[i].start, ail2->interval_list[i].end,
+        ailist_add(appended_ailist, ail2->interval_list[i].start, ail2->interval_list[i].end,
                    ail2->interval_list[i].index, ail2->interval_list[i].value);
     }
+
+    return appended_ailist;
 }
 
 

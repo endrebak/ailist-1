@@ -41,7 +41,7 @@ cdef extern from "augmented_interval_list.h":
 	# Free ailist data
 	void ailist_destroy(ailist_t *ail) nogil
 	# Append intervals other ailist
-	void ailist_append(ailist_t *ail1, ailist_t *ail2) nogil
+	ailist_t *ailist_append(ailist_t *ail1, ailist_t *ail2) nogil
 	# Extract index for ailist
 	void ailist_extract_index(ailist_t *ail, long indices[]) nogil
 	# Calculate coverage

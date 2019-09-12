@@ -64,7 +64,7 @@ ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_l
 void ailist_destroy(ailist_t *ail);
 
 // Append intervals other ailist
-void ailist_append(ailist_t *ail1, ailist_t *ail2);
+ailist_t *ailist_append(ailist_t *ail1, ailist_t *ail2);
 
 // Extract index for ailist
 void ailist_extract_index(ailist_t *ail, long indices[]);

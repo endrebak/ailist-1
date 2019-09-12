@@ -255,6 +255,10 @@ cdef class AIList(object):
 		Subtract values
 		"""
 
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		return self.subtract(query_ail)
 
 
@@ -263,7 +267,46 @@ cdef class AIList(object):
 		Common values
 		"""
 
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
 		return self.common(query_ail)
+
+
+	def __and__(self, AIList query_ail):
+		"""
+		Common values
+		"""
+
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
+		return self.append(query_ail)
+
+
+	def __getitem__(self, key):
+		"""
+		"""
+
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+		
+		# Check if key is greater than length
+		if key > self.interval_list.nr:
+			raise IndexError("Value larger than ailist length")
+
+		# Check if negative
+		if key < 0:
+			return self.__getitem__(self.interval_list.nr + key)
+
+		# Create Interval wrapper
+		output_interval = Interval()
+		output_interval.set_i(self.interval_list.interval_list[key])
+		
+		return output_interval
 
 
 	cdef void set_list(AIList self, ailist_t *input_list):
@@ -701,6 +744,7 @@ cdef class AIList(object):
 		---------
 			common_list: AIList (Common intervals)
 		"""
+
 		# Check if object is still open
 		if self.is_closed or query_ail.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -713,11 +757,37 @@ cdef class AIList(object):
 
 		cdef AIList common_list = AIList()
 		cdef ailist_t *common_clist = ailist_common(query_ail.interval_list,
-														  self.interval_list)
+													self.interval_list)
 
 		common_list.set_list(common_clist)
 
 		return common_list
+
+
+	def append(self, AIList query_ail):
+		"""
+		Union of intervals within two AIList
+		
+		Arguments:
+		---------
+			query_ail: AIList (AIList of intervals to append)
+
+		Returns:
+		---------
+			union_list: AIList (Union of intervals)
+		"""
+
+		# Check if object is still open
+		if self.is_closed or query_ail.is_closed:
+			raise NameError("AIList object has been closed.")
+
+		cdef AIList union_list = AIList()
+		cdef ailist_t *union_clist = ailist_append(query_ail.interval_list,
+												   self.interval_list)
+
+		union_list.set_list(union_clist)
+
+		return union_list
 
 
 	cdef np.ndarray _wps(AIList self, int protection):

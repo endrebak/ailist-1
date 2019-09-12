@@ -102,6 +102,11 @@ def test_AIList():
         assert x.start == test_common_starts[k]
         assert x.end == test_common_ends[k]
 
+    # Test append
+
+    # Test indexing
+    assert i[-2].start == 30
+
     # Test filtering
     f = i.filter(3, 10)
     assert f.size == 2 and f.first == 15 and f.last == 25
