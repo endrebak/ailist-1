@@ -76,6 +76,22 @@ for x in i:
 # Interval(17-19, 2, 0.0)
 # Interval(30-40, 5, 0.0)
 
+# Interval comparisons
+j = AIList()
+j.add(5, 15)
+j.add(50, 60)
+
+# Subtract regions
+s = i - j #also: i.subtract(j)
+s.display()
+# (15-20) (15-30) (15-20) (17-19) (30-40) 
+
+# Common regions
+c = i + j #also: i.common(j)
+c.display()
+# (5-15) (10-15) (12-15)
+
+
 # AIList can also add to from arrays
 starts = np.arange(10,1000,100)
 ends = starts + 50

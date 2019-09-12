@@ -274,7 +274,7 @@ cdef class AIList(object):
 		return self.common(query_ail)
 
 
-	def __and__(self, AIList query_ail):
+	def __or__(self, AIList query_ail):
 		"""
 		Common values
 		"""
@@ -288,6 +288,7 @@ cdef class AIList(object):
 
 	def __getitem__(self, key):
 		"""
+		Index Intervals by value
 		"""
 
 		# Check if object is still open
@@ -412,6 +413,7 @@ cdef class AIList(object):
 		"""
 		Sort intervals inplace
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -647,6 +649,7 @@ cdef class AIList(object):
 		---------
 			pandas.Series{double} (Position on index and coverage as values)
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -666,6 +669,7 @@ cdef class AIList(object):
 		"""
 		Print all intervals
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -685,6 +689,7 @@ cdef class AIList(object):
 		---------
 			merged_list: AIList (Merged intervals)
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -713,6 +718,7 @@ cdef class AIList(object):
 		---------
 			subtracted_list: AIList (Subtracted intervals)
 		"""
+
 		# Check if object is still open
 		if self.is_closed or query_ail.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -850,6 +856,7 @@ cdef class AIList(object):
 		---------
 			filtered_ail: AIList (Filtered intervals)
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -881,6 +888,7 @@ cdef class AIList(object):
 		---------
 			distribution: numpy.ndarray{int} (Interval length distribution)
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -929,6 +937,7 @@ cdef class AIList(object):
 		---------
 			nhits: numpy.ndarray{int} (Number of hits per position)
 		"""
+
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
@@ -952,9 +961,10 @@ cdef class AIList(object):
 		"""
 		Close object and clear memory
 		"""
+
+		# Free interval_list memory
 		if self.interval_list:
 			ailist_destroy(self.interval_list)
-
 		self.interval_list = NULL
 		
 		self.is_closed = True

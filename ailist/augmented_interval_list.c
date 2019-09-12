@@ -545,6 +545,8 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
 
     int previous_start = ref_ail->interval_list[j].start;
     int previous_end = ref_ail->interval_list[j].end;
+    int s_start = query_i.start;
+    int s_end = query_i.end;
 
     // Iterate over regions
     int i = j+1;
@@ -556,8 +558,6 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
         }
         else
         {
-            int s_start;
-            int s_end;
             // Find subtracted bounds
             if ((int)query_i.start < previous_start)
             {
@@ -597,8 +597,6 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
     // Check last interval
     if ((int)query_i.start < previous_end && (int)query_i.end > previous_start)
     {
-        int s_start;
-        int s_end;
         // Find subtracted bounds
         if ((int)query_i.start < previous_start)
         {
@@ -629,10 +627,10 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
             query_i.start = previous_end;
         }
     }
-    else
+    else if (s_end > s_start)
     {
         // Add new bounds to result
-        ailist_add(result_ail, query_i.start, query_i.end, query_i.index, query_i.value);
+        ailist_add(result_ail, s_start, s_end, query_i.index, query_i.value);
     }
     
 
