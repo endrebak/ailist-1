@@ -310,6 +310,33 @@ cdef class AIList(object):
 		return output_interval
 
 
+	def __repr__(self):
+		"""
+		Representation of ailist object
+		"""
+
+		# Check if object is still open
+		if self.is_closed:
+			raise NameError("AIList object has been closed.")
+
+		# Initialize string
+		repr_string = "AIList\n"
+		repr_string += " range: (%d-%d)\n" % (self.first, self.last)
+
+		# Iterate over interval_list
+		if self.interval_list.nr > 10:
+			for i in range(5):
+				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+			repr_string += "   ...\n"
+			for i in range(-5, -1, 1):
+				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+		else:
+			for i in range(self.interval_list.nr):
+				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+
+		return repr_string		
+
+
 	cdef void set_list(AIList self, ailist_t *input_list):
 		"""
 		Set wrapper of C ailist
