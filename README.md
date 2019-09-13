@@ -87,10 +87,12 @@ s.display()
 # (15-20) (15-30) (15-20) (17-19) (30-40) 
 
 # Common regions
-c = i + j #also: i.common(j)
-c.display()
-# (5-15) (10-15) (12-15)
-
+i + j #also: i.common(j)
+# AIList
+#  range: (5-15)
+#    (5-15, 3, 0.0)
+#    (10-15, 1, 0.0)
+#    (12-15, 4, 0.0)
 
 # AIList can also add to from arrays
 starts = np.arange(10,1000,100)
