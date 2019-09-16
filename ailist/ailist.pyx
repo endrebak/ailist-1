@@ -333,7 +333,10 @@ cdef class AIList(object):
 
 		# Initialize string
 		repr_string = "AIList\n"
-		repr_string += " range: (%d-%d)\n" % (self.first, self.last)
+		if self.size == 0:
+			repr_string += " range: (None-None)\n"
+		else:
+			repr_string += " range: (%d-%d)\n" % (self.first, self.last)
 
 		# Iterate over interval_list
 		if self.interval_list.nr > 10:
