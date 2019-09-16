@@ -565,6 +565,7 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
                 s_start = query_i.start;
                 s_end = previous_start;
                 // Add new bounds to result
+                printf("here1\n");
                 ailist_add(result_ail, s_start, s_end, query_i.index, query_i.value);
 
                 // If query is larger than ref_ail interval
@@ -604,6 +605,7 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
             s_start = query_i.start;
             s_end = previous_start;
             // Add new bounds to result
+            printf("here2\n");
             ailist_add(result_ail, s_start, s_end, query_i.index, query_i.value);
 
             // If query is larger than ref_ail interval
@@ -611,6 +613,7 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
             {
                 query_i.start = previous_end;
                 // Add new bounds to result
+                printf("here3\n");
                 ailist_add(result_ail, query_i.start, query_i.end, query_i.index, query_i.value);
             }
         }
@@ -622,6 +625,7 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
             // Add new bounds to result
             if ((s_end - s_start) > 0)
             {
+                printf("here4\n");
                 ailist_add(result_ail, s_start, s_end, query_i.index, query_i.value);
             }
 
@@ -632,6 +636,7 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
     else if (s_end > s_start)
     {
         // Add new bounds to result
+        printf("here5\n");
         ailist_add(result_ail, s_start, s_end, query_i.index, query_i.value);
     }
     
@@ -663,6 +668,7 @@ ailist_t *ailist_subtract(ailist_t *ref_ail, ailist_t *query_ail)
             // Add intervals until caught up with ail1
             while (j < query_ail->nr && (int)query_ail->interval_list[j].end < previous_start)
             {
+                printf("there1\n");
                 ailist_add(result_ail, query_ail->interval_list[j].start, query_ail->interval_list[j].end,
                            query_ail->interval_list[j].index, query_ail->interval_list[j].value);
                 j++;
@@ -691,8 +697,13 @@ ailist_t *ailist_subtract(ailist_t *ref_ail, ailist_t *query_ail)
     // Add remaining intervals
     while (j < query_ail->nr)
     {
-        ailist_add(result_ail, query_ail->interval_list[j].start, query_ail->interval_list[j].end,
-                   query_ail->interval_list[j].index, query_ail->interval_list[j].value);
+        // Check if intervals don't overlap
+        if ((int)query_ail->interval_list[j].start > previous_end || (int)query_ail->interval_list[j].end < previous_start)
+        {
+            printf("there2\n");
+            ailist_add(result_ail, query_ail->interval_list[j].start, query_ail->interval_list[j].end,
+                    query_ail->interval_list[j].index, query_ail->interval_list[j].value);
+        }
         j++;
     }
 
