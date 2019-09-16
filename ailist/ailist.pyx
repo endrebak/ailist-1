@@ -200,8 +200,12 @@ cdef class AIList(object):
 		# Check if object is still open
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
-
-		return self.interval_list.first
+		
+		# Check if ther are any intervals
+		if self.size == 0:
+			return None
+		else:
+			return self.interval_list.first
 
 	@property
 	def last(self):
@@ -209,7 +213,11 @@ cdef class AIList(object):
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
 
-		return self.interval_list.last
+		# Check if there are any intervals
+		if self.size == 0:
+			return None
+		else:
+			return self.interval_list.last
 
 	@property
 	def range(self):
@@ -217,7 +225,11 @@ cdef class AIList(object):
 		if self.is_closed:
 			raise NameError("AIList object has been closed.")
 
-		return self.last - self.first
+		# Check if ther are any intervals
+		if self.size == 0:
+			return 0
+		else:
+			return self.last - self.first
 		
 
 	def __len__(self):

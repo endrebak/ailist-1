@@ -610,10 +610,9 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
             if ((int)query_i.end > previous_end)
             {
                 query_i.start = previous_end;
+                // Add new bounds to result
+                ailist_add(result_ail, query_i.start, query_i.end, query_i.index, query_i.value);
             }
-
-            // Add new bounds to result
-            ailist_add(result_ail, query_i.start, query_i.end, query_i.index, query_i.value);
         }
         else
         {
@@ -621,7 +620,10 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
             s_end = query_i.end;
 
             // Add new bounds to result
-            ailist_add(result_ail, s_start, s_end, query_i.index, query_i.value);
+            if ((s_end - s_start) > 0)
+            {
+                ailist_add(result_ail, s_start, s_end, query_i.index, query_i.value);
+            }
 
             // Update query_i bounds
             query_i.start = previous_end;
