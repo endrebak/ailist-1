@@ -682,7 +682,7 @@ ailist_t *ailist_subtract(ailist_t *ref_ail, ailist_t *query_ail)
     }
 
     // Subtract merged ail1 interval from overlapping ail1 intervals
-    if ((int)query_ail->interval_list[j].start < previous_end && (int)query_ail->interval_list[j].end > previous_start)
+    while (j < query_ail->nr && (int)query_ail->interval_list[j].start < previous_end && (int)query_ail->interval_list[j].end > previous_start)
     {
         subtract_intervals(ref_ail, result_ail, query_ail->interval_list[j], i-n_merged);
         j++;
@@ -843,7 +843,7 @@ ailist_t *ailist_common(ailist_t *ref_ail, ailist_t *query_ail)
     }
 
     // Subtract merged ail1 interval from overlapping ail1 intervals
-    if ((int)query_ail->interval_list[j].start < previous_end && (int)query_ail->interval_list[j].end > previous_start)
+    while (j < query_ail->nr && (int)query_ail->interval_list[j].start < previous_end && (int)query_ail->interval_list[j].end > previous_start)
     {
         common_intervals(ref_ail, result_ail, query_ail->interval_list[j], i-n_merged);
         j++;
