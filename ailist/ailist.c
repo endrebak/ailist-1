@@ -4,8 +4,8 @@
 {
     "distutils": {
         "depends": [
-            "/anaconda3/envs/cfDNA/lib/python3.7/site-packages/numpy/core/include/numpy/arrayobject.h",
-            "/anaconda3/envs/cfDNA/lib/python3.7/site-packages/numpy/core/include/numpy/ufuncobject.h",
+            "/Users/endrebakkenstovner/anaconda3/lib/python3.7/site-packages/numpy/core/include/numpy/arrayobject.h",
+            "/Users/endrebakkenstovner/anaconda3/lib/python3.7/site-packages/numpy/core/include/numpy/ufuncobject.h",
             "ailist/augmented_interval_list.c",
             "ailist/augmented_interval_list.h"
         ],
@@ -15,7 +15,7 @@
         "include_dirs": [
             "ailist",
             ".",
-            "/anaconda3/envs/cfDNA/lib/python3.7/site-packages/numpy/core/include"
+            "/Users/endrebakkenstovner/anaconda3/lib/python3.7/site-packages/numpy/core/include"
         ],
         "name": "ailist.ailist",
         "sources": [
@@ -974,7 +974,7 @@ typedef struct {
 } __Pyx_BufFmt_Context;
 
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":776
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":776
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -983,7 +983,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":777
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":777
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -992,7 +992,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":778
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":778
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -1001,7 +1001,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":779
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":779
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -1010,7 +1010,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":783
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":783
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -1019,7 +1019,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":784
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":784
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -1028,7 +1028,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":785
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":785
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -1037,7 +1037,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":786
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":786
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -1046,7 +1046,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":790
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":790
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1055,7 +1055,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":791
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":791
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1064,7 +1064,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":800
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":800
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -1073,7 +1073,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":801
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":801
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
@@ -1082,7 +1082,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":802
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":802
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1091,7 +1091,7 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":804
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":804
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -1100,7 +1100,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":805
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":805
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
@@ -1109,7 +1109,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":806
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":806
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1118,7 +1118,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":808
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":808
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1127,7 +1127,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":809
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":809
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1136,7 +1136,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":811
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":811
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1145,7 +1145,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":812
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":812
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1154,7 +1154,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":813
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":813
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1196,7 +1196,7 @@ struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":815
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":815
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1205,7 +1205,7 @@ struct __pyx_memoryviewslice_obj;
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":816
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":816
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1214,7 +1214,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":817
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":817
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1223,7 +1223,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":819
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":819
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -1232,12 +1232,12 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
 
-/* "ailist/ailist.pxd":86
+/* "ailist/ailist.pxd":98
  * 
  * 
  * cdef class Interval(object):             # <<<<<<<<<<<<<<
- * 	"""
- * 	Wrapper for C interval
+ *     """
+ *     Wrapper for C interval
  */
 struct __pyx_obj_6ailist_6ailist_Interval {
   PyObject_HEAD
@@ -1246,12 +1246,12 @@ struct __pyx_obj_6ailist_6ailist_Interval {
 };
 
 
-/* "ailist/ailist.pxd":95
+/* "ailist/ailist.pxd":107
  * 
  * 
  * cdef class AIList(object):             # <<<<<<<<<<<<<<
- * 	"""
- * 	Wrapper for C ailist_t
+ *     """
+ *     Wrapper for C ailist_t
  */
 struct __pyx_obj_6ailist_6ailist_AIList {
   PyObject_HEAD
@@ -1263,12 +1263,12 @@ struct __pyx_obj_6ailist_6ailist_AIList {
 };
 
 
-/* "ailist/ailist.pyx":247
+/* "ailist/ailist.pyx":253
  * 
  * 
- * 	def __iter__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Iterate over AIList object
+ *     def __iter__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Iterate over AIList object
  */
 struct __pyx_obj_6ailist_6ailist___pyx_scope_struct____iter__ {
   PyObject_HEAD
@@ -1359,12 +1359,12 @@ struct __pyx_memoryviewslice_obj {
 
 
 
-/* "ailist/ailist.pyx":57
+/* "ailist/ailist.pyx":63
  * 
  * 
  * cdef class Interval(object):             # <<<<<<<<<<<<<<
- * 	"""
- * 	Wrapper of C interval_t
+ *     """
+ *     Wrapper of C interval_t
  */
 
 struct __pyx_vtabstruct_6ailist_6ailist_Interval {
@@ -1373,12 +1373,12 @@ struct __pyx_vtabstruct_6ailist_6ailist_Interval {
 static struct __pyx_vtabstruct_6ailist_6ailist_Interval *__pyx_vtabptr_6ailist_6ailist_Interval;
 
 
-/* "ailist/ailist.pyx":108
+/* "ailist/ailist.pyx":114
  * 
  * @cython.auto_pickle(True)
  * cdef class AIList(object):             # <<<<<<<<<<<<<<
- * 	"""
- * 	Wrapper for C ailist_t
+ *     """
+ *     Wrapper for C ailist_t
  */
 
 struct __pyx_vtabstruct_6ailist_6ailist_AIList {
@@ -1780,6 +1780,12 @@ static CYTHON_INLINE PyObject *__Pyx_PyObject_GetItem(PyObject *obj, PyObject* k
 #else
 #define __Pyx_PyObject_GetItem(obj, key)  PyObject_GetItem(obj, key)
 #endif
+
+/* SliceObject.proto */
+static CYTHON_INLINE PyObject* __Pyx_PyObject_GetSlice(
+        PyObject* obj, Py_ssize_t cstart, Py_ssize_t cstop,
+        PyObject** py_start, PyObject** py_stop, PyObject** py_slice,
+        int has_cstart, int has_cstop, int wraparound);
 
 /* DictGetItem.proto */
 #if PY_MAJOR_VERSION >= 3 && !CYTHON_COMPILING_IN_PYPY
@@ -2328,6 +2334,9 @@ static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_lon
 static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_long(PyObject *, int writable_flag);
 
 /* ObjectToMemviewSlice.proto */
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(PyObject *, int writable_flag);
+
+/* ObjectToMemviewSlice.proto */
 static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_double(PyObject *, int writable_flag);
 
 /* ObjectToMemviewSlice.proto */
@@ -2462,6 +2471,7 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, 
 static __Pyx_TypeInfo __Pyx_TypeInfo_long__const__ = { "const long", NULL, sizeof(long const ), { 0 }, 0, IS_UNSIGNED(long const ) ? 'U' : 'I', IS_UNSIGNED(long const ), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_double__const__ = { "const double", NULL, sizeof(double const ), { 0 }, 0, 'R', 0, 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_long = { "long", NULL, sizeof(long), { 0 }, 0, IS_UNSIGNED(long) ? 'U' : 'I', IS_UNSIGNED(long), 0 };
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn_int64_t = { "int64_t", NULL, sizeof(int64_t), { 0 }, 0, IS_UNSIGNED(int64_t) ? 'U' : 'I', IS_UNSIGNED(int64_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_double = { "double", NULL, sizeof(double), { 0 }, 0, 'R', 0, 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_int = { "int", NULL, sizeof(int), { 0 }, 0, IS_UNSIGNED(int) ? 'U' : 'I', IS_UNSIGNED(int), 0 };
 #define __Pyx_MODULE_NAME "ailist.ailist"
@@ -2473,6 +2483,7 @@ static PyObject *__pyx_builtin_TypeError;
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_NameError;
 static PyObject *__pyx_builtin_IndexError;
+static PyObject *__pyx_builtin_print;
 static PyObject *__pyx_builtin_ValueError;
 static PyObject *__pyx_builtin_RuntimeError;
 static PyObject *__pyx_builtin_ImportError;
@@ -2514,6 +2525,7 @@ static const char __pyx_k_math[] = "math";
 static const char __pyx_k_mode[] = "mode";
 static const char __pyx_k_name[] = "name";
 static const char __pyx_k_ndim[] = "ndim";
+static const char __pyx_k_ones[] = "ones";
 static const char __pyx_k_pack[] = "pack";
 static const char __pyx_k_path[] = "path";
 static const char __pyx_k_send[] = "send";
@@ -2522,6 +2534,7 @@ static const char __pyx_k_sort[] = "sort";
 static const char __pyx_k_step[] = "step";
 static const char __pyx_k_stop[] = "stop";
 static const char __pyx_k_test[] = "__test__";
+static const char __pyx_k_time[] = "time";
 static const char __pyx_k_ASCII[] = "ASCII";
 static const char __pyx_k_class[] = "__class__";
 static const char __pyx_k_close[] = "close";
@@ -2530,7 +2543,9 @@ static const char __pyx_k_error[] = "error";
 static const char __pyx_k_first[] = "first";
 static const char __pyx_k_flags[] = "flags";
 static const char __pyx_k_index[] = "index";
+static const char __pyx_k_int64[] = "int64";
 static const char __pyx_k_numpy[] = "numpy";
+static const char __pyx_k_print[] = "print";
 static const char __pyx_k_range[] = "range";
 static const char __pyx_k_shape[] = "shape";
 static const char __pyx_k_split[] = "split";
@@ -2551,6 +2566,7 @@ static const char __pyx_k_name_2[] = "__name__";
 static const char __pyx_k_pandas[] = "pandas";
 static const char __pyx_k_pickle[] = "pickle";
 static const char __pyx_k_reduce[] = "__reduce__";
+static const char __pyx_k_resize[] = "resize";
 static const char __pyx_k_starts[] = "starts";
 static const char __pyx_k_struct[] = "struct";
 static const char __pyx_k_unpack[] = "unpack";
@@ -2598,6 +2614,7 @@ static const char __pyx_k_get_include[] = "get_include";
 static const char __pyx_k_RuntimeError[] = "RuntimeError";
 static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";
 static const char __pyx_k_stringsource[] = "stringsource";
+static const char __pyx_k_timing_total[] = "timing total:";
 static const char __pyx_k_AIList___iter[] = "AIList.__iter__";
 static const char __pyx_k_ailist_ailist[] = "ailist.ailist";
 static const char __pyx_k_interval_list[] = "interval_list";
@@ -2614,10 +2631,13 @@ static const char __pyx_k_pyx_unpickle_Enum[] = "__pyx_unpickle_Enum";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_strided_and_direct[] = "<strided and direct>";
 static const char __pyx_k_strided_and_indirect[] = "<strided and indirect>";
+static const char __pyx_k_timing_fetch_results[] = "timing fetch results:";
 static const char __pyx_k_contiguous_and_direct[] = "<contiguous and direct>";
+static const char __pyx_k_timing_ailist_destroy[] = "timing ailist destroy:";
 static const char __pyx_k_MemoryView_of_r_object[] = "<MemoryView of %r object>";
 static const char __pyx_k_MemoryView_of_r_at_0x_x[] = "<MemoryView of %r at 0x%x>";
 static const char __pyx_k_contiguous_and_indirect[] = "<contiguous and indirect>";
+static const char __pyx_k_timing_query_from_array[] = "timing query_from_array:";
 static const char __pyx_k_Cannot_index_with_type_s[] = "Cannot index with type '%s'";
 static const char __pyx_k_Invalid_shape_in_axis_d_d[] = "Invalid shape in axis %d: %d.";
 static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cython.array";
@@ -2738,6 +2758,7 @@ static PyObject *__pyx_kp_s_got_differing_extents_in_dimensi;
 static PyObject *__pyx_n_s_id;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_index;
+static PyObject *__pyx_n_s_int64;
 static PyObject *__pyx_n_s_intc;
 static PyObject *__pyx_n_u_interval_list;
 static PyObject *__pyx_n_s_is_closed;
@@ -2764,12 +2785,14 @@ static PyObject *__pyx_n_s_numpy;
 static PyObject *__pyx_kp_u_numpy_core_multiarray_failed_to;
 static PyObject *__pyx_kp_u_numpy_core_umath_failed_to_impor;
 static PyObject *__pyx_n_s_obj;
+static PyObject *__pyx_n_s_ones;
 static PyObject *__pyx_n_s_os;
 static PyObject *__pyx_n_s_pack;
 static PyObject *__pyx_n_s_pandas;
 static PyObject *__pyx_n_s_path;
 static PyObject *__pyx_n_s_pd;
 static PyObject *__pyx_n_s_pickle;
+static PyObject *__pyx_n_s_print;
 static PyObject *__pyx_n_s_protection;
 static PyObject *__pyx_n_s_pyx_PickleError;
 static PyObject *__pyx_n_s_pyx_checksum;
@@ -2787,6 +2810,7 @@ static PyObject *__pyx_n_s_rebuild;
 static PyObject *__pyx_n_s_reduce;
 static PyObject *__pyx_n_s_reduce_cython;
 static PyObject *__pyx_n_s_reduce_ex;
+static PyObject *__pyx_n_s_resize;
 static PyObject *__pyx_n_s_send;
 static PyObject *__pyx_n_s_setstate;
 static PyObject *__pyx_n_s_setstate_cython;
@@ -2807,6 +2831,11 @@ static PyObject *__pyx_n_s_subtract;
 static PyObject *__pyx_n_s_sys;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_throw;
+static PyObject *__pyx_n_s_time;
+static PyObject *__pyx_kp_u_timing_ailist_destroy;
+static PyObject *__pyx_kp_u_timing_fetch_results;
+static PyObject *__pyx_kp_u_timing_query_from_array;
+static PyObject *__pyx_kp_u_timing_total;
 static PyObject *__pyx_n_s_to_bytes;
 static PyObject *__pyx_kp_s_unable_to_allocate_array_data;
 static PyObject *__pyx_kp_s_unable_to_allocate_shape_and_str;
@@ -2847,19 +2876,21 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_27sort(struct __pyx_obj_6ailis
 static PyObject *__pyx_pf_6ailist_6ailist_6AIList_29intersect(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_start, int __pyx_v_end); /* proto */
 static PyObject *__pyx_pf_6ailist_6ailist_6AIList_31intersect_index(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_start, int __pyx_v_end); /* proto */
 static PyObject *__pyx_pf_6ailist_6ailist_6AIList_33intersect_from_array(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, __Pyx_memviewslice __pyx_v_index); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_35coverage(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_37bin_coverage(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_39bin_nhits(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_41display(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_43merge(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_gap); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_45subtract(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_47common(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_49append(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51wps(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_protection, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_53filter(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_min_length, int __pyx_v_max_length); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_55length_dist(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_57nhits_from_array(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length); /* proto */
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_59close(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_35ifa(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, __Pyx_memviewslice __pyx_v_index); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_37ifa2(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, __Pyx_memviewslice __pyx_v_index); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_39coverage(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_41bin_coverage(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_43bin_nhits(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_45display(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_47merge(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_gap); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_49subtract(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51common(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_53append(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_55wps(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_protection, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_57filter(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_min_length, int __pyx_v_max_length); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_59length_dist(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_61nhits_from_array(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length); /* proto */
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_63close(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_6ailist_6ailist_6AIList_14is_constructed___get__(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self); /* proto */
 static int __pyx_pf_6ailist_6ailist_6AIList_14is_constructed_2__set__(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
 static PyObject *__pyx_pf_6ailist_6ailist_6AIList_9is_sorted___get__(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self); /* proto */
@@ -2964,17 +2995,17 @@ static PyObject *__pyx_codeobj__38;
 static PyObject *__pyx_codeobj__45;
 /* Late includes */
 
-/* "ailist/ailist.pyx":17
+/* "ailist/ailist.pyx":23
  * 
  * 
  * def get_include():             # <<<<<<<<<<<<<<
- * 	"""
- * 	Get file directory if C headers
+ *     """
+ *     Get file directory if C headers
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_1get_include(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_6ailist_6ailist_get_include[] = "get_include()\n\n\tGet file directory if C headers\n\n\tArguments:\n\t---------\n\t\tNone\n\n\tReturns:\n\t---------\n\t\tstr (Directory to header files)\n\t";
+static char __pyx_doc_6ailist_6ailist_get_include[] = "get_include()\n\n    Get file directory if C headers\n\n    Arguments:\n    ---------\n        None\n\n    Returns:\n    ---------\n        str (Directory to header files)\n    ";
 static PyMethodDef __pyx_mdef_6ailist_6ailist_1get_include = {"get_include", (PyCFunction)__pyx_pw_6ailist_6ailist_1get_include, METH_NOARGS, __pyx_doc_6ailist_6ailist_get_include};
 static PyObject *__pyx_pw_6ailist_6ailist_1get_include(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
@@ -2998,31 +3029,31 @@ static PyObject *__pyx_pf_6ailist_6ailist_get_include(CYTHON_UNUSED PyObject *__
   PyObject *__pyx_t_6 = NULL;
   __Pyx_RefNannySetupContext("get_include", 0);
 
-  /* "ailist/ailist.pyx":30
- * 	"""
+  /* "ailist/ailist.pyx":36
+ *     """
  * 
- * 	return os.path.split(os.path.realpath(__file__))[0]             # <<<<<<<<<<<<<<
+ *     return os.path.split(os.path.realpath(__file__))[0]             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 30, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_path); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 30, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_path); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_split); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 30, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_split); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_os); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 30, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_os); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_path); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 30, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_path); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_realpath); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 30, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_realpath); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_file); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 30, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_file); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_6 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -3037,7 +3068,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_get_include(CYTHON_UNUSED PyObject *__
   __pyx_t_3 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_6, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 30, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -3053,22 +3084,22 @@ static PyObject *__pyx_pf_6ailist_6ailist_get_include(CYTHON_UNUSED PyObject *__
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 30, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 30, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":17
+  /* "ailist/ailist.pyx":23
  * 
  * 
  * def get_include():             # <<<<<<<<<<<<<<
- * 	"""
- * 	Get file directory if C headers
+ *     """
+ *     Get file directory if C headers
  */
 
   /* function exit code */
@@ -3087,12 +3118,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_get_include(CYTHON_UNUSED PyObject *__
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":33
+/* "ailist/ailist.pyx":39
  * 
  * 
  * cpdef AIList rebuild(bytes data, bytes b_length):             # <<<<<<<<<<<<<<
- * 	"""
- * 	Rebuild function for __reduce__()
+ *     """
+ *     Rebuild function for __reduce__()
  */
 
 static PyObject *__pyx_pw_6ailist_6ailist_3rebuild(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -3104,40 +3135,40 @@ static struct __pyx_obj_6ailist_6ailist_AIList *__pyx_f_6ailist_6ailist_rebuild(
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("rebuild", 0);
 
-  /* "ailist/ailist.pyx":48
+  /* "ailist/ailist.pyx":54
  * 
- * 	# Initialize new AIList
- * 	c = AIList()             # <<<<<<<<<<<<<<
+ *     # Initialize new AIList
+ *     c = AIList()             # <<<<<<<<<<<<<<
  * 
- * 	# Build ailist from serialized data
+ *     # Build ailist from serialized data
  */
-  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 48, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_c = ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "ailist/ailist.pyx":51
+  /* "ailist/ailist.pyx":57
  * 
- * 	# Build ailist from serialized data
- * 	cdef ailist_t *interval_list = c._set_data(data, b_length)             # <<<<<<<<<<<<<<
- * 	c.set_list(interval_list)
+ *     # Build ailist from serialized data
+ *     cdef ailist_t *interval_list = c._set_data(data, b_length)             # <<<<<<<<<<<<<<
+ *     c.set_list(interval_list)
  * 
  */
   __pyx_v_interval_list = ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_c->__pyx_vtab)->_set_data(__pyx_v_c, __pyx_v_data, __pyx_v_b_length);
 
-  /* "ailist/ailist.pyx":52
- * 	# Build ailist from serialized data
- * 	cdef ailist_t *interval_list = c._set_data(data, b_length)
- * 	c.set_list(interval_list)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":58
+ *     # Build ailist from serialized data
+ *     cdef ailist_t *interval_list = c._set_data(data, b_length)
+ *     c.set_list(interval_list)             # <<<<<<<<<<<<<<
  * 
- * 	return c
+ *     return c
  */
   ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_c->__pyx_vtab)->set_list(__pyx_v_c, __pyx_v_interval_list);
 
-  /* "ailist/ailist.pyx":54
- * 	c.set_list(interval_list)
+  /* "ailist/ailist.pyx":60
+ *     c.set_list(interval_list)
  * 
- * 	return c             # <<<<<<<<<<<<<<
+ *     return c             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -3146,12 +3177,12 @@ static struct __pyx_obj_6ailist_6ailist_AIList *__pyx_f_6ailist_6ailist_rebuild(
   __pyx_r = __pyx_v_c;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":33
+  /* "ailist/ailist.pyx":39
  * 
  * 
  * cpdef AIList rebuild(bytes data, bytes b_length):             # <<<<<<<<<<<<<<
- * 	"""
- * 	Rebuild function for __reduce__()
+ *     """
+ *     Rebuild function for __reduce__()
  */
 
   /* function exit code */
@@ -3168,7 +3199,7 @@ static struct __pyx_obj_6ailist_6ailist_AIList *__pyx_f_6ailist_6ailist_rebuild(
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_3rebuild(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_2rebuild[] = "rebuild(bytes data, bytes b_length) -> AIList\n\n\tRebuild function for __reduce__()\n\n\tArguments:\n\t---------\n\t\tdata: bytes (Bytes representation of ailist_t)\n\t\tb_length: bytes (Length of ailist_t)\n\n\tReturns:\n\t---------\n\t\tc: ailist_t* (Translated ailist_t from data)\n\t";
+static char __pyx_doc_6ailist_6ailist_2rebuild[] = "rebuild(bytes data, bytes b_length) -> AIList\n\n    Rebuild function for __reduce__()\n\n    Arguments:\n    ---------\n        data: bytes (Bytes representation of ailist_t)\n        b_length: bytes (Length of ailist_t)\n\n    Returns:\n    ---------\n        c: ailist_t* (Translated ailist_t from data)\n    ";
 static PyObject *__pyx_pw_6ailist_6ailist_3rebuild(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_data = 0;
   PyObject *__pyx_v_b_length = 0;
@@ -3198,11 +3229,11 @@ static PyObject *__pyx_pw_6ailist_6ailist_3rebuild(PyObject *__pyx_self, PyObjec
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_b_length)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("rebuild", 1, 2, 2, 1); __PYX_ERR(1, 33, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("rebuild", 1, 2, 2, 1); __PYX_ERR(1, 39, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "rebuild") < 0)) __PYX_ERR(1, 33, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "rebuild") < 0)) __PYX_ERR(1, 39, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3215,14 +3246,14 @@ static PyObject *__pyx_pw_6ailist_6ailist_3rebuild(PyObject *__pyx_self, PyObjec
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("rebuild", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 33, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("rebuild", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 39, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.rebuild", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_data), (&PyBytes_Type), 1, "data", 1))) __PYX_ERR(1, 33, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_b_length), (&PyBytes_Type), 1, "b_length", 1))) __PYX_ERR(1, 33, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_data), (&PyBytes_Type), 1, "data", 1))) __PYX_ERR(1, 39, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_b_length), (&PyBytes_Type), 1, "b_length", 1))) __PYX_ERR(1, 39, __pyx_L1_error)
   __pyx_r = __pyx_pf_6ailist_6ailist_2rebuild(__pyx_self, __pyx_v_data, __pyx_v_b_length);
 
   /* function exit code */
@@ -3240,7 +3271,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_2rebuild(CYTHON_UNUSED PyObject *__pyx
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("rebuild", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = ((PyObject *)__pyx_f_6ailist_6ailist_rebuild(__pyx_v_data, __pyx_v_b_length, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 33, __pyx_L1_error)
+  __pyx_t_1 = ((PyObject *)__pyx_f_6ailist_6ailist_rebuild(__pyx_v_data, __pyx_v_b_length, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -3257,44 +3288,44 @@ static PyObject *__pyx_pf_6ailist_6ailist_2rebuild(CYTHON_UNUSED PyObject *__pyx
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":63
+/* "ailist/ailist.pyx":69
  * 
- * 	# Set the interval
- * 	cdef void set_i(Interval self, interval_t i):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Initialize wrapper of C interval
+ *     # Set the interval
+ *     cdef void set_i(Interval self, interval_t i):             # <<<<<<<<<<<<<<
+ *         """
+ *         Initialize wrapper of C interval
  */
 
 static void __pyx_f_6ailist_6ailist_8Interval_set_i(struct __pyx_obj_6ailist_6ailist_Interval *__pyx_v_self, interval_t __pyx_v_i) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_i", 0);
 
-  /* "ailist/ailist.pyx":77
+  /* "ailist/ailist.pyx":83
  * 
- * 		# Set i
- * 		self.i = i             # <<<<<<<<<<<<<<
+ *         # Set i
+ *         self.i = i             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __pyx_v_self->i = __pyx_v_i;
 
-  /* "ailist/ailist.pyx":63
+  /* "ailist/ailist.pyx":69
  * 
- * 	# Set the interval
- * 	cdef void set_i(Interval self, interval_t i):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Initialize wrapper of C interval
+ *     # Set the interval
+ *     cdef void set_i(Interval self, interval_t i):             # <<<<<<<<<<<<<<
+ *         """
+ *         Initialize wrapper of C interval
  */
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ailist/ailist.pyx":81
+/* "ailist/ailist.pyx":87
  * 
- * 	@property
- * 	def start(self):             # <<<<<<<<<<<<<<
- * 		return self.i.start
+ *     @property
+ *     def start(self):             # <<<<<<<<<<<<<<
+ *         return self.i.start
  * 
  */
 
@@ -3317,25 +3348,25 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_5start___get__(struct __pyx_
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ailist/ailist.pyx":82
- * 	@property
- * 	def start(self):
- * 		return self.i.start             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":88
+ *     @property
+ *     def start(self):
+ *         return self.i.start             # <<<<<<<<<<<<<<
  * 
- * 	@property
+ *     @property
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_uint32_t(__pyx_v_self->i.start); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 82, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_uint32_t(__pyx_v_self->i.start); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":81
+  /* "ailist/ailist.pyx":87
  * 
- * 	@property
- * 	def start(self):             # <<<<<<<<<<<<<<
- * 		return self.i.start
+ *     @property
+ *     def start(self):             # <<<<<<<<<<<<<<
+ *         return self.i.start
  * 
  */
 
@@ -3350,11 +3381,11 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_5start___get__(struct __pyx_
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":85
+/* "ailist/ailist.pyx":91
  * 
- * 	@property
- * 	def end(self):             # <<<<<<<<<<<<<<
- * 		return self.i.end
+ *     @property
+ *     def end(self):             # <<<<<<<<<<<<<<
+ *         return self.i.end
  * 
  */
 
@@ -3377,25 +3408,25 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_3end___get__(struct __pyx_ob
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ailist/ailist.pyx":86
- * 	@property
- * 	def end(self):
- * 		return self.i.end             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":92
+ *     @property
+ *     def end(self):
+ *         return self.i.end             # <<<<<<<<<<<<<<
  * 
- * 	@property
+ *     @property
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_uint32_t(__pyx_v_self->i.end); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 86, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_uint32_t(__pyx_v_self->i.end); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":85
+  /* "ailist/ailist.pyx":91
  * 
- * 	@property
- * 	def end(self):             # <<<<<<<<<<<<<<
- * 		return self.i.end
+ *     @property
+ *     def end(self):             # <<<<<<<<<<<<<<
+ *         return self.i.end
  * 
  */
 
@@ -3410,11 +3441,11 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_3end___get__(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":89
+/* "ailist/ailist.pyx":95
  * 
- * 	@property
- * 	def index(self):             # <<<<<<<<<<<<<<
- * 		return self.i.index
+ *     @property
+ *     def index(self):             # <<<<<<<<<<<<<<
+ *         return self.i.index
  * 
  */
 
@@ -3437,25 +3468,25 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_5index___get__(struct __pyx_
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ailist/ailist.pyx":90
- * 	@property
- * 	def index(self):
- * 		return self.i.index             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":96
+ *     @property
+ *     def index(self):
+ *         return self.i.index             # <<<<<<<<<<<<<<
  * 
- * 	@property
+ *     @property
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int32_t(__pyx_v_self->i.index); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 90, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int32_t(__pyx_v_self->i.index); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":89
+  /* "ailist/ailist.pyx":95
  * 
- * 	@property
- * 	def index(self):             # <<<<<<<<<<<<<<
- * 		return self.i.index
+ *     @property
+ *     def index(self):             # <<<<<<<<<<<<<<
+ *         return self.i.index
  * 
  */
 
@@ -3470,11 +3501,11 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_5index___get__(struct __pyx_
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":93
+/* "ailist/ailist.pyx":99
  * 
- * 	@property
- * 	def value(self):             # <<<<<<<<<<<<<<
- * 		return self.i.value
+ *     @property
+ *     def value(self):             # <<<<<<<<<<<<<<
+ *         return self.i.value
  * 
  */
 
@@ -3497,25 +3528,25 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_5value___get__(struct __pyx_
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ailist/ailist.pyx":94
- * 	@property
- * 	def value(self):
- * 		return self.i.value             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":100
+ *     @property
+ *     def value(self):
+ *         return self.i.value             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->i.value); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 94, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->i.value); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":93
+  /* "ailist/ailist.pyx":99
  * 
- * 	@property
- * 	def value(self):             # <<<<<<<<<<<<<<
- * 		return self.i.value
+ *     @property
+ *     def value(self):             # <<<<<<<<<<<<<<
+ *         return self.i.value
  * 
  */
 
@@ -3530,12 +3561,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_5value___get__(struct __pyx_
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":97
+/* "ailist/ailist.pyx":103
  * 
  * 
- * 	def __str__(self):             # <<<<<<<<<<<<<<
- * 		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
- * 		return format_string
+ *     def __str__(self):             # <<<<<<<<<<<<<<
+ *         format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
+ *         return format_string
  */
 
 /* Python wrapper */
@@ -3562,14 +3593,14 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval___str__(struct __pyx_obj_6ai
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "ailist/ailist.pyx":98
+  /* "ailist/ailist.pyx":104
  * 
- * 	def __str__(self):
- * 		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)             # <<<<<<<<<<<<<<
- * 		return format_string
+ *     def __str__(self):
+ *         format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)             # <<<<<<<<<<<<<<
+ *         return format_string
  * 
  */
-  __pyx_t_1 = PyTuple_New(9); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 98, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(9); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = 0;
   __pyx_t_3 = 127;
@@ -3577,9 +3608,9 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval___str__(struct __pyx_obj_6ai
   __pyx_t_2 += 9;
   __Pyx_GIVEREF(__pyx_kp_u_Interval);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_Interval);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_start); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 98, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_start); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_Format(__pyx_t_4, __pyx_n_u_d); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 98, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Format(__pyx_t_4, __pyx_n_u_d); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_3;
@@ -3591,9 +3622,9 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval___str__(struct __pyx_obj_6ai
   __pyx_t_2 += 1;
   __Pyx_GIVEREF(__pyx_kp_u_);
   PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_kp_u_);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_end); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 98, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_end); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_Format(__pyx_t_5, __pyx_n_u_d); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 98, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Format(__pyx_t_5, __pyx_n_u_d); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_3;
@@ -3605,9 +3636,9 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval___str__(struct __pyx_obj_6ai
   __pyx_t_2 += 2;
   __Pyx_GIVEREF(__pyx_kp_u__2);
   PyTuple_SET_ITEM(__pyx_t_1, 4, __pyx_kp_u__2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_index); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 98, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_index); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 98, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_3;
@@ -3619,9 +3650,9 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval___str__(struct __pyx_obj_6ai
   __pyx_t_2 += 2;
   __Pyx_GIVEREF(__pyx_kp_u__2);
   PyTuple_SET_ITEM(__pyx_t_1, 6, __pyx_kp_u__2);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_value); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 98, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_value); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 98, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_3;
@@ -3633,16 +3664,16 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval___str__(struct __pyx_obj_6ai
   __pyx_t_2 += 1;
   __Pyx_GIVEREF(__pyx_kp_u__3);
   PyTuple_SET_ITEM(__pyx_t_1, 8, __pyx_kp_u__3);
-  __pyx_t_4 = __Pyx_PyUnicode_Join(__pyx_t_1, 9, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 98, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyUnicode_Join(__pyx_t_1, 9, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_format_string = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "ailist/ailist.pyx":99
- * 	def __str__(self):
- * 		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
- * 		return format_string             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":105
+ *     def __str__(self):
+ *         format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
+ *         return format_string             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -3651,12 +3682,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval___str__(struct __pyx_obj_6ai
   __pyx_r = __pyx_v_format_string;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":97
+  /* "ailist/ailist.pyx":103
  * 
  * 
- * 	def __str__(self):             # <<<<<<<<<<<<<<
- * 		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
- * 		return format_string
+ *     def __str__(self):             # <<<<<<<<<<<<<<
+ *         format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
+ *         return format_string
  */
 
   /* function exit code */
@@ -3673,12 +3704,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval___str__(struct __pyx_obj_6ai
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":102
+/* "ailist/ailist.pyx":108
  * 
  * 
- * 	def __repr__(self):             # <<<<<<<<<<<<<<
- * 		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
- * 		return format_string
+ *     def __repr__(self):             # <<<<<<<<<<<<<<
+ *         format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
+ *         return format_string
  */
 
 /* Python wrapper */
@@ -3705,14 +3736,14 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_2__repr__(struct __pyx_obj_6
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "ailist/ailist.pyx":103
+  /* "ailist/ailist.pyx":109
  * 
- * 	def __repr__(self):
- * 		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)             # <<<<<<<<<<<<<<
- * 		return format_string
+ *     def __repr__(self):
+ *         format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)             # <<<<<<<<<<<<<<
+ *         return format_string
  * 
  */
-  __pyx_t_1 = PyTuple_New(9); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 103, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(9); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = 0;
   __pyx_t_3 = 127;
@@ -3720,9 +3751,9 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_2__repr__(struct __pyx_obj_6
   __pyx_t_2 += 9;
   __Pyx_GIVEREF(__pyx_kp_u_Interval);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_Interval);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_start); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 103, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_start); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_Format(__pyx_t_4, __pyx_n_u_d); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 103, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Format(__pyx_t_4, __pyx_n_u_d); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_3;
@@ -3734,9 +3765,9 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_2__repr__(struct __pyx_obj_6
   __pyx_t_2 += 1;
   __Pyx_GIVEREF(__pyx_kp_u_);
   PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_kp_u_);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_end); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 103, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_end); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_Format(__pyx_t_5, __pyx_n_u_d); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 103, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Format(__pyx_t_5, __pyx_n_u_d); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_3;
@@ -3748,9 +3779,9 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_2__repr__(struct __pyx_obj_6
   __pyx_t_2 += 2;
   __Pyx_GIVEREF(__pyx_kp_u__2);
   PyTuple_SET_ITEM(__pyx_t_1, 4, __pyx_kp_u__2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_index); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 103, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_index); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 103, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_4), __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_3;
@@ -3762,9 +3793,9 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_2__repr__(struct __pyx_obj_6
   __pyx_t_2 += 2;
   __Pyx_GIVEREF(__pyx_kp_u__2);
   PyTuple_SET_ITEM(__pyx_t_1, 6, __pyx_kp_u__2);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_value); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 103, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_value); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 103, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_5), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_3;
@@ -3776,16 +3807,16 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_2__repr__(struct __pyx_obj_6
   __pyx_t_2 += 1;
   __Pyx_GIVEREF(__pyx_kp_u__3);
   PyTuple_SET_ITEM(__pyx_t_1, 8, __pyx_kp_u__3);
-  __pyx_t_4 = __Pyx_PyUnicode_Join(__pyx_t_1, 9, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 103, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyUnicode_Join(__pyx_t_1, 9, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_format_string = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "ailist/ailist.pyx":104
- * 	def __repr__(self):
- * 		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
- * 		return format_string             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":110
+ *     def __repr__(self):
+ *         format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
+ *         return format_string             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -3794,12 +3825,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_2__repr__(struct __pyx_obj_6
   __pyx_r = __pyx_v_format_string;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":102
+  /* "ailist/ailist.pyx":108
  * 
  * 
- * 	def __repr__(self):             # <<<<<<<<<<<<<<
- * 		format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
- * 		return format_string
+ *     def __repr__(self):             # <<<<<<<<<<<<<<
+ *         format_string = "Interval(%d-%d, %s, %s)" % (self.start, self.end, self.index, self.value)
+ *         return format_string
  */
 
   /* function exit code */
@@ -3925,12 +3956,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_8Interval_6__setstate_cython__(CYTHON_
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":113
- * 	"""
+/* "ailist/ailist.pyx":119
+ *     """
  * 
- * 	def __cinit__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Initialize AIList object
+ *     def __cinit__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Initialize AIList object
  */
 
 /* Python wrapper */
@@ -3954,48 +3985,48 @@ static int __pyx_pf_6ailist_6ailist_6AIList___cinit__(struct __pyx_obj_6ailist_6
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ailist/ailist.pyx":118
- * 		"""
+  /* "ailist/ailist.pyx":124
+ *         """
  * 
- * 		self.interval_list = ailist_init()             # <<<<<<<<<<<<<<
- * 		self.is_constructed = False
- * 		self.is_sorted = False
+ *         self.interval_list = ailist_init()             # <<<<<<<<<<<<<<
+ *         self.is_constructed = False
+ *         self.is_sorted = False
  */
   __pyx_v_self->interval_list = ailist_init();
 
-  /* "ailist/ailist.pyx":119
+  /* "ailist/ailist.pyx":125
  * 
- * 		self.interval_list = ailist_init()
- * 		self.is_constructed = False             # <<<<<<<<<<<<<<
- * 		self.is_sorted = False
- * 		self.is_closed = False
+ *         self.interval_list = ailist_init()
+ *         self.is_constructed = False             # <<<<<<<<<<<<<<
+ *         self.is_sorted = False
+ *         self.is_closed = False
  */
   __pyx_v_self->is_constructed = 0;
 
-  /* "ailist/ailist.pyx":120
- * 		self.interval_list = ailist_init()
- * 		self.is_constructed = False
- * 		self.is_sorted = False             # <<<<<<<<<<<<<<
- * 		self.is_closed = False
+  /* "ailist/ailist.pyx":126
+ *         self.interval_list = ailist_init()
+ *         self.is_constructed = False
+ *         self.is_sorted = False             # <<<<<<<<<<<<<<
+ *         self.is_closed = False
  * 
  */
   __pyx_v_self->is_sorted = 0;
 
-  /* "ailist/ailist.pyx":121
- * 		self.is_constructed = False
- * 		self.is_sorted = False
- * 		self.is_closed = False             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":127
+ *         self.is_constructed = False
+ *         self.is_sorted = False
+ *         self.is_closed = False             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __pyx_v_self->is_closed = 0;
 
-  /* "ailist/ailist.pyx":113
- * 	"""
+  /* "ailist/ailist.pyx":119
+ *     """
  * 
- * 	def __cinit__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Initialize AIList object
+ *     def __cinit__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Initialize AIList object
  */
 
   /* function exit code */
@@ -4004,12 +4035,12 @@ static int __pyx_pf_6ailist_6ailist_6AIList___cinit__(struct __pyx_obj_6ailist_6
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":124
+/* "ailist/ailist.pyx":130
  * 
  * 
- * 	def __dealloc__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Free IntervalSkipList
+ *     def __dealloc__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Free IntervalSkipList
  */
 
 /* Python wrapper */
@@ -4029,41 +4060,41 @@ static void __pyx_pf_6ailist_6ailist_6AIList_2__dealloc__(struct __pyx_obj_6aili
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ailist/ailist.pyx":129
- * 		"""
+  /* "ailist/ailist.pyx":135
+ *         """
  * 
- * 		if hasattr(self, "interval_list"):             # <<<<<<<<<<<<<<
- * 			ailist_destroy(self.interval_list)
+ *         if hasattr(self, "interval_list"):             # <<<<<<<<<<<<<<
+ *             ailist_destroy(self.interval_list)
  * 
  */
-  __pyx_t_1 = __Pyx_HasAttr(((PyObject *)__pyx_v_self), __pyx_n_u_interval_list); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(1, 129, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_HasAttr(((PyObject *)__pyx_v_self), __pyx_n_u_interval_list); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(1, 135, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "ailist/ailist.pyx":130
+    /* "ailist/ailist.pyx":136
  * 
- * 		if hasattr(self, "interval_list"):
- * 			ailist_destroy(self.interval_list)             # <<<<<<<<<<<<<<
+ *         if hasattr(self, "interval_list"):
+ *             ailist_destroy(self.interval_list)             # <<<<<<<<<<<<<<
  * 
  * 
  */
     ailist_destroy(__pyx_v_self->interval_list);
 
-    /* "ailist/ailist.pyx":129
- * 		"""
+    /* "ailist/ailist.pyx":135
+ *         """
  * 
- * 		if hasattr(self, "interval_list"):             # <<<<<<<<<<<<<<
- * 			ailist_destroy(self.interval_list)
+ *         if hasattr(self, "interval_list"):             # <<<<<<<<<<<<<<
+ *             ailist_destroy(self.interval_list)
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":124
+  /* "ailist/ailist.pyx":130
  * 
  * 
- * 	def __dealloc__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Free IntervalSkipList
+ *     def __dealloc__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Free IntervalSkipList
  */
 
   /* function exit code */
@@ -4074,12 +4105,12 @@ static void __pyx_pf_6ailist_6ailist_6AIList_2__dealloc__(struct __pyx_obj_6aili
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ailist/ailist.pyx":133
+/* "ailist/ailist.pyx":139
  * 
  * 
- * 	cdef bytes _get_data(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Function to convert ailist_t to bytes
+ *     cdef bytes _get_data(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Function to convert ailist_t to bytes
  */
 
 static PyObject *__pyx_f_6ailist_6ailist_6AIList__get_data(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self) {
@@ -4088,27 +4119,27 @@ static PyObject *__pyx_f_6ailist_6ailist_6AIList__get_data(struct __pyx_obj_6ail
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("_get_data", 0);
 
-  /* "ailist/ailist.pyx":139
- * 		"""
+  /* "ailist/ailist.pyx":145
+ *         """
  * 
- * 		return <bytes>(<char*>self.interval_list.interval_list)[:(sizeof(interval_t)*self.interval_list.nr)]             # <<<<<<<<<<<<<<
+ *         return <bytes>(<char*>self.interval_list.interval_list)[:(sizeof(interval_t)*self.interval_list.nr)]             # <<<<<<<<<<<<<<
  * 
- * 	cdef ailist_t *_set_data(self, bytes data, bytes b_length):
+ *     cdef ailist_t *_set_data(self, bytes data, bytes b_length):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBytes_FromStringAndSize(((char *)__pyx_v_self->interval_list->interval_list) + 0, ((sizeof(interval_t)) * __pyx_v_self->interval_list->nr) - 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 139, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyBytes_FromStringAndSize(((char *)__pyx_v_self->interval_list->interval_list) + 0, ((sizeof(interval_t)) * __pyx_v_self->interval_list->nr) - 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject*)__pyx_t_1));
   __pyx_r = ((PyObject*)__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":133
+  /* "ailist/ailist.pyx":139
  * 
  * 
- * 	cdef bytes _get_data(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Function to convert ailist_t to bytes
+ *     cdef bytes _get_data(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Function to convert ailist_t to bytes
  */
 
   /* function exit code */
@@ -4122,12 +4153,12 @@ static PyObject *__pyx_f_6ailist_6ailist_6AIList__get_data(struct __pyx_obj_6ail
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":141
- * 		return <bytes>(<char*>self.interval_list.interval_list)[:(sizeof(interval_t)*self.interval_list.nr)]
+/* "ailist/ailist.pyx":147
+ *         return <bytes>(<char*>self.interval_list.interval_list)[:(sizeof(interval_t)*self.interval_list.nr)]
  * 
- * 	cdef ailist_t *_set_data(self, bytes data, bytes b_length):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Function to build ailist_t object from
+ *     cdef ailist_t *_set_data(self, bytes data, bytes b_length):             # <<<<<<<<<<<<<<
+ *         """
+ *         Function to build ailist_t object from
  */
 
 static ailist_t *__pyx_f_6ailist_6ailist_6AIList__set_data(CYTHON_UNUSED struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, PyObject *__pyx_v_data, PyObject *__pyx_v_b_length) {
@@ -4148,16 +4179,16 @@ static ailist_t *__pyx_f_6ailist_6ailist_6AIList__set_data(CYTHON_UNUSED struct 
   int __pyx_t_9;
   __Pyx_RefNannySetupContext("_set_data", 0);
 
-  /* "ailist/ailist.pyx":157
+  /* "ailist/ailist.pyx":163
  * 
- * 		# Convert bytes to ints
- * 		cdef int length = int.from_bytes(b_length, byteorder)             # <<<<<<<<<<<<<<
+ *         # Convert bytes to ints
+ *         cdef int length = int.from_bytes(b_length, byteorder)             # <<<<<<<<<<<<<<
  * 
- * 		# Create new ailist_t
+ *         # Create new ailist_t
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)(&PyInt_Type)), __pyx_n_s_from_bytes); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 157, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)(&PyInt_Type)), __pyx_n_s_from_bytes); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 157, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
@@ -4174,7 +4205,7 @@ static ailist_t *__pyx_f_6ailist_6ailist_6AIList__set_data(CYTHON_UNUSED struct 
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_b_length, __pyx_t_3};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 157, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 163, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -4183,14 +4214,14 @@ static ailist_t *__pyx_f_6ailist_6ailist_6AIList__set_data(CYTHON_UNUSED struct 
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_b_length, __pyx_t_3};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 157, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 163, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else
   #endif
   {
-    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 157, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 163, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (__pyx_t_4) {
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -4201,52 +4232,52 @@ static ailist_t *__pyx_f_6ailist_6ailist_6AIList__set_data(CYTHON_UNUSED struct 
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_5, __pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 157, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 163, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 157, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 163, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_length = __pyx_t_5;
 
-  /* "ailist/ailist.pyx":160
+  /* "ailist/ailist.pyx":166
  * 
- * 		# Create new ailist_t
- * 		cdef ailist_t *ail = ailist_init()             # <<<<<<<<<<<<<<
- * 		cdef interval_t *interval_list = <interval_t*>malloc(length * sizeof(interval_t))
- * 		memcpy(interval_list, <char*>data, sizeof(interval_t)*length)
+ *         # Create new ailist_t
+ *         cdef ailist_t *ail = ailist_init()             # <<<<<<<<<<<<<<
+ *         cdef interval_t *interval_list = <interval_t*>malloc(length * sizeof(interval_t))
+ *         memcpy(interval_list, <char*>data, sizeof(interval_t)*length)
  */
   __pyx_v_ail = ailist_init();
 
-  /* "ailist/ailist.pyx":161
- * 		# Create new ailist_t
- * 		cdef ailist_t *ail = ailist_init()
- * 		cdef interval_t *interval_list = <interval_t*>malloc(length * sizeof(interval_t))             # <<<<<<<<<<<<<<
- * 		memcpy(interval_list, <char*>data, sizeof(interval_t)*length)
+  /* "ailist/ailist.pyx":167
+ *         # Create new ailist_t
+ *         cdef ailist_t *ail = ailist_init()
+ *         cdef interval_t *interval_list = <interval_t*>malloc(length * sizeof(interval_t))             # <<<<<<<<<<<<<<
+ *         memcpy(interval_list, <char*>data, sizeof(interval_t)*length)
  * 
  */
   __pyx_v_interval_list = ((interval_t *)malloc((__pyx_v_length * (sizeof(interval_t)))));
 
-  /* "ailist/ailist.pyx":162
- * 		cdef ailist_t *ail = ailist_init()
- * 		cdef interval_t *interval_list = <interval_t*>malloc(length * sizeof(interval_t))
- * 		memcpy(interval_list, <char*>data, sizeof(interval_t)*length)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":168
+ *         cdef ailist_t *ail = ailist_init()
+ *         cdef interval_t *interval_list = <interval_t*>malloc(length * sizeof(interval_t))
+ *         memcpy(interval_list, <char*>data, sizeof(interval_t)*length)             # <<<<<<<<<<<<<<
  * 
- * 		# Iteratively add intervals to interval_list
+ *         # Iteratively add intervals to interval_list
  */
   if (unlikely(__pyx_v_data == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(1, 162, __pyx_L1_error)
+    __PYX_ERR(1, 168, __pyx_L1_error)
   }
-  __pyx_t_7 = __Pyx_PyBytes_AsWritableString(__pyx_v_data); if (unlikely((!__pyx_t_7) && PyErr_Occurred())) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyBytes_AsWritableString(__pyx_v_data); if (unlikely((!__pyx_t_7) && PyErr_Occurred())) __PYX_ERR(1, 168, __pyx_L1_error)
   (void)(memcpy(__pyx_v_interval_list, ((char *)__pyx_t_7), ((sizeof(interval_t)) * __pyx_v_length)));
 
-  /* "ailist/ailist.pyx":166
- * 		# Iteratively add intervals to interval_list
- * 		cdef int i
- * 		for i in range(length):             # <<<<<<<<<<<<<<
- * 			ailist_add(ail, interval_list[i].start, interval_list[i].end, interval_list[i].index, interval_list[i].value)
+  /* "ailist/ailist.pyx":172
+ *         # Iteratively add intervals to interval_list
+ *         cdef int i
+ *         for i in range(length):             # <<<<<<<<<<<<<<
+ *             ailist_add(ail, interval_list[i].start, interval_list[i].end, interval_list[i].index, interval_list[i].value)
  * 
  */
   __pyx_t_5 = __pyx_v_length;
@@ -4254,32 +4285,32 @@ static ailist_t *__pyx_f_6ailist_6ailist_6AIList__set_data(CYTHON_UNUSED struct 
   for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
     __pyx_v_i = __pyx_t_9;
 
-    /* "ailist/ailist.pyx":167
- * 		cdef int i
- * 		for i in range(length):
- * 			ailist_add(ail, interval_list[i].start, interval_list[i].end, interval_list[i].index, interval_list[i].value)             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":173
+ *         cdef int i
+ *         for i in range(length):
+ *             ailist_add(ail, interval_list[i].start, interval_list[i].end, interval_list[i].index, interval_list[i].value)             # <<<<<<<<<<<<<<
  * 
- * 		return ail
+ *         return ail
  */
     ailist_add(__pyx_v_ail, (__pyx_v_interval_list[__pyx_v_i]).start, (__pyx_v_interval_list[__pyx_v_i]).end, (__pyx_v_interval_list[__pyx_v_i]).index, (__pyx_v_interval_list[__pyx_v_i]).value);
   }
 
-  /* "ailist/ailist.pyx":169
- * 			ailist_add(ail, interval_list[i].start, interval_list[i].end, interval_list[i].index, interval_list[i].value)
+  /* "ailist/ailist.pyx":175
+ *             ailist_add(ail, interval_list[i].start, interval_list[i].end, interval_list[i].index, interval_list[i].value)
  * 
- * 		return ail             # <<<<<<<<<<<<<<
+ *         return ail             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __pyx_r = __pyx_v_ail;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":141
- * 		return <bytes>(<char*>self.interval_list.interval_list)[:(sizeof(interval_t)*self.interval_list.nr)]
+  /* "ailist/ailist.pyx":147
+ *         return <bytes>(<char*>self.interval_list.interval_list)[:(sizeof(interval_t)*self.interval_list.nr)]
  * 
- * 	cdef ailist_t *_set_data(self, bytes data, bytes b_length):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Function to build ailist_t object from
+ *     cdef ailist_t *_set_data(self, bytes data, bytes b_length):             # <<<<<<<<<<<<<<
+ *         """
+ *         Function to build ailist_t object from
  */
 
   /* function exit code */
@@ -4296,17 +4327,17 @@ static ailist_t *__pyx_f_6ailist_6ailist_6AIList__set_data(CYTHON_UNUSED struct 
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":172
+/* "ailist/ailist.pyx":178
  * 
  * 
- * 	def __reduce__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Used for pickling. Convert ailist to bytes and back.
+ *     def __reduce__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Used for pickling. Convert ailist to bytes and back.
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_5__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_4__reduce__[] = "AIList.__reduce__(self)\n\n\t\tUsed for pickling. Convert ailist to bytes and back.\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_4__reduce__[] = "AIList.__reduce__(self)\n\n        Used for pickling. Convert ailist to bytes and back.\n        ";
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_5__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
@@ -4332,54 +4363,54 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4__reduce__(struct __pyx_obj_6
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("__reduce__", 0);
 
-  /* "ailist/ailist.pyx":178
+  /* "ailist/ailist.pyx":184
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":179
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":185
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Convert ints to bytes
+ *         # Convert ints to bytes
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 179, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 185, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 179, __pyx_L1_error)
+    __PYX_ERR(1, 185, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":178
+    /* "ailist/ailist.pyx":184
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":182
+  /* "ailist/ailist.pyx":188
  * 
- * 		# Convert ints to bytes
- * 		b_length = int(self.interval_list.nr).to_bytes(4, byteorder)             # <<<<<<<<<<<<<<
+ *         # Convert ints to bytes
+ *         b_length = int(self.interval_list.nr).to_bytes(4, byteorder)             # <<<<<<<<<<<<<<
  * 
- * 		# Convert ailist_t to bytes
+ *         # Convert ailist_t to bytes
  */
-  __pyx_t_3 = __Pyx_PyInt_From_int64_t(__pyx_v_self->interval_list->nr); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 182, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int64_t(__pyx_v_self->interval_list->nr); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 188, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyInt_Type)), __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 182, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyInt_Type)), __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 188, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_to_bytes); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 182, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_to_bytes); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 188, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 182, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 188, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   __pyx_t_6 = 0;
@@ -4396,7 +4427,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4__reduce__(struct __pyx_obj_6
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_int_4, __pyx_t_4};
-    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 182, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 188, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -4405,14 +4436,14 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4__reduce__(struct __pyx_obj_6
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_int_4, __pyx_t_4};
-    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 182, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 188, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 182, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 188, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_5) {
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -4423,7 +4454,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4__reduce__(struct __pyx_obj_6
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_4);
     __pyx_t_4 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 182, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 188, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
@@ -4431,29 +4462,29 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4__reduce__(struct __pyx_obj_6
   __pyx_v_b_length = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "ailist/ailist.pyx":185
+  /* "ailist/ailist.pyx":191
  * 
- * 		# Convert ailist_t to bytes
- * 		data = self._get_data()             # <<<<<<<<<<<<<<
+ *         # Convert ailist_t to bytes
+ *         data = self._get_data()             # <<<<<<<<<<<<<<
  * 
- * 		return (rebuild, (data, b_length))
+ *         return (rebuild, (data, b_length))
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_get_data(__pyx_v_self); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 185, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_get_data(__pyx_v_self); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_data = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "ailist/ailist.pyx":187
- * 		data = self._get_data()
+  /* "ailist/ailist.pyx":193
+ *         data = self._get_data()
  * 
- * 		return (rebuild, (data, b_length))             # <<<<<<<<<<<<<<
+ *         return (rebuild, (data, b_length))             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_rebuild); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 187, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_rebuild); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 187, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_v_data);
   __Pyx_GIVEREF(__pyx_v_data);
@@ -4461,7 +4492,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4__reduce__(struct __pyx_obj_6
   __Pyx_INCREF(__pyx_v_b_length);
   __Pyx_GIVEREF(__pyx_v_b_length);
   PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_b_length);
-  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 187, __pyx_L1_error)
+  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_2);
@@ -4473,12 +4504,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4__reduce__(struct __pyx_obj_6
   __pyx_t_7 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":172
+  /* "ailist/ailist.pyx":178
  * 
  * 
- * 	def __reduce__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Used for pickling. Convert ailist to bytes and back.
+ *     def __reduce__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Used for pickling. Convert ailist to bytes and back.
  */
 
   /* function exit code */
@@ -4498,12 +4529,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4__reduce__(struct __pyx_obj_6
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":191
+/* "ailist/ailist.pyx":197
  * 
- * 	@property
- * 	def size(self):             # <<<<<<<<<<<<<<
- * 		# Check if object is still open
- * 		if self.is_closed:
+ *     @property
+ *     def size(self):             # <<<<<<<<<<<<<<
+ *         # Check if object is still open
+ *         if self.is_closed:
  */
 
 /* Python wrapper */
@@ -4526,58 +4557,58 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4size___get__(struct __pyx_obj
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ailist/ailist.pyx":193
- * 	def size(self):
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":199
+ *     def size(self):
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":194
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":200
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		return self.interval_list.nr
+ *         return self.interval_list.nr
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 194, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 200, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 194, __pyx_L1_error)
+    __PYX_ERR(1, 200, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":193
- * 	def size(self):
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+    /* "ailist/ailist.pyx":199
+ *     def size(self):
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":196
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":202
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		return self.interval_list.nr             # <<<<<<<<<<<<<<
+ *         return self.interval_list.nr             # <<<<<<<<<<<<<<
  * 
- * 	@property
+ *     @property
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyInt_From_int64_t(__pyx_v_self->interval_list->nr); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 196, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int64_t(__pyx_v_self->interval_list->nr); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":191
+  /* "ailist/ailist.pyx":197
  * 
- * 	@property
- * 	def size(self):             # <<<<<<<<<<<<<<
- * 		# Check if object is still open
- * 		if self.is_closed:
+ *     @property
+ *     def size(self):             # <<<<<<<<<<<<<<
+ *         # Check if object is still open
+ *         if self.is_closed:
  */
 
   /* function exit code */
@@ -4591,12 +4622,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4size___get__(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":199
+/* "ailist/ailist.pyx":205
  * 
- * 	@property
- * 	def first(self):             # <<<<<<<<<<<<<<
- * 		# Check if object is still open
- * 		if self.is_closed:
+ *     @property
+ *     def first(self):             # <<<<<<<<<<<<<<
+ *         # Check if object is still open
+ *         if self.is_closed:
  */
 
 /* Python wrapper */
@@ -4620,96 +4651,96 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_5first___get__(struct __pyx_ob
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ailist/ailist.pyx":201
- * 	def first(self):
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":207
+ *     def first(self):
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":202
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":208
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Check if ther are any intervals
+ *         # Check if ther are any intervals
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 202, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 202, __pyx_L1_error)
+    __PYX_ERR(1, 208, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":201
- * 	def first(self):
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+    /* "ailist/ailist.pyx":207
+ *     def first(self):
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":205
+  /* "ailist/ailist.pyx":211
  * 
- * 		# Check if ther are any intervals
- * 		if self.size == 0:             # <<<<<<<<<<<<<<
- * 			return None
- * 		else:
+ *         # Check if ther are any intervals
+ *         if self.size == 0:             # <<<<<<<<<<<<<<
+ *             return None
+ *         else:
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 205, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 211, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 205, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 211, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 205, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 211, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":206
- * 		# Check if ther are any intervals
- * 		if self.size == 0:
- * 			return None             # <<<<<<<<<<<<<<
- * 		else:
- * 			return self.interval_list.first
+    /* "ailist/ailist.pyx":212
+ *         # Check if ther are any intervals
+ *         if self.size == 0:
+ *             return None             # <<<<<<<<<<<<<<
+ *         else:
+ *             return self.interval_list.first
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "ailist/ailist.pyx":205
+    /* "ailist/ailist.pyx":211
  * 
- * 		# Check if ther are any intervals
- * 		if self.size == 0:             # <<<<<<<<<<<<<<
- * 			return None
- * 		else:
+ *         # Check if ther are any intervals
+ *         if self.size == 0:             # <<<<<<<<<<<<<<
+ *             return None
+ *         else:
  */
   }
 
-  /* "ailist/ailist.pyx":208
- * 			return None
- * 		else:
- * 			return self.interval_list.first             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":214
+ *             return None
+ *         else:
+ *             return self.interval_list.first             # <<<<<<<<<<<<<<
  * 
- * 	@property
+ *     @property
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_3 = __Pyx_PyInt_From_uint32_t(__pyx_v_self->interval_list->first); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 208, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_uint32_t(__pyx_v_self->interval_list->first); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 214, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
   }
 
-  /* "ailist/ailist.pyx":199
+  /* "ailist/ailist.pyx":205
  * 
- * 	@property
- * 	def first(self):             # <<<<<<<<<<<<<<
- * 		# Check if object is still open
- * 		if self.is_closed:
+ *     @property
+ *     def first(self):             # <<<<<<<<<<<<<<
+ *         # Check if object is still open
+ *         if self.is_closed:
  */
 
   /* function exit code */
@@ -4724,12 +4755,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_5first___get__(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":211
+/* "ailist/ailist.pyx":217
  * 
- * 	@property
- * 	def last(self):             # <<<<<<<<<<<<<<
- * 		# Check if object is still open
- * 		if self.is_closed:
+ *     @property
+ *     def last(self):             # <<<<<<<<<<<<<<
+ *         # Check if object is still open
+ *         if self.is_closed:
  */
 
 /* Python wrapper */
@@ -4753,96 +4784,96 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4last___get__(struct __pyx_obj
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ailist/ailist.pyx":213
- * 	def last(self):
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":219
+ *     def last(self):
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":214
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":220
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Check if there are any intervals
+ *         # Check if there are any intervals
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 214, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 220, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 214, __pyx_L1_error)
+    __PYX_ERR(1, 220, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":213
- * 	def last(self):
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+    /* "ailist/ailist.pyx":219
+ *     def last(self):
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":217
+  /* "ailist/ailist.pyx":223
  * 
- * 		# Check if there are any intervals
- * 		if self.size == 0:             # <<<<<<<<<<<<<<
- * 			return None
- * 		else:
+ *         # Check if there are any intervals
+ *         if self.size == 0:             # <<<<<<<<<<<<<<
+ *             return None
+ *         else:
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 217, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 223, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 217, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 223, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 217, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 223, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":218
- * 		# Check if there are any intervals
- * 		if self.size == 0:
- * 			return None             # <<<<<<<<<<<<<<
- * 		else:
- * 			return self.interval_list.last
+    /* "ailist/ailist.pyx":224
+ *         # Check if there are any intervals
+ *         if self.size == 0:
+ *             return None             # <<<<<<<<<<<<<<
+ *         else:
+ *             return self.interval_list.last
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "ailist/ailist.pyx":217
+    /* "ailist/ailist.pyx":223
  * 
- * 		# Check if there are any intervals
- * 		if self.size == 0:             # <<<<<<<<<<<<<<
- * 			return None
- * 		else:
+ *         # Check if there are any intervals
+ *         if self.size == 0:             # <<<<<<<<<<<<<<
+ *             return None
+ *         else:
  */
   }
 
-  /* "ailist/ailist.pyx":220
- * 			return None
- * 		else:
- * 			return self.interval_list.last             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":226
+ *             return None
+ *         else:
+ *             return self.interval_list.last             # <<<<<<<<<<<<<<
  * 
- * 	@property
+ *     @property
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_3 = __Pyx_PyInt_From_uint32_t(__pyx_v_self->interval_list->last); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 220, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_uint32_t(__pyx_v_self->interval_list->last); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 226, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
   }
 
-  /* "ailist/ailist.pyx":211
+  /* "ailist/ailist.pyx":217
  * 
- * 	@property
- * 	def last(self):             # <<<<<<<<<<<<<<
- * 		# Check if object is still open
- * 		if self.is_closed:
+ *     @property
+ *     def last(self):             # <<<<<<<<<<<<<<
+ *         # Check if object is still open
+ *         if self.is_closed:
  */
 
   /* function exit code */
@@ -4857,12 +4888,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_4last___get__(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":223
+/* "ailist/ailist.pyx":229
  * 
- * 	@property
- * 	def range(self):             # <<<<<<<<<<<<<<
- * 		# Check if object is still open
- * 		if self.is_closed:
+ *     @property
+ *     def range(self):             # <<<<<<<<<<<<<<
+ *         # Check if object is still open
+ *         if self.is_closed:
  */
 
 /* Python wrapper */
@@ -4887,89 +4918,89 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_5range___get__(struct __pyx_ob
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "ailist/ailist.pyx":225
- * 	def range(self):
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":231
+ *     def range(self):
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":226
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":232
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Check if ther are any intervals
+ *         # Check if ther are any intervals
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 226, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 232, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 226, __pyx_L1_error)
+    __PYX_ERR(1, 232, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":225
- * 	def range(self):
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+    /* "ailist/ailist.pyx":231
+ *     def range(self):
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":229
+  /* "ailist/ailist.pyx":235
  * 
- * 		# Check if ther are any intervals
- * 		if self.size == 0:             # <<<<<<<<<<<<<<
- * 			return 0
- * 		else:
+ *         # Check if ther are any intervals
+ *         if self.size == 0:             # <<<<<<<<<<<<<<
+ *             return 0
+ *         else:
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 229, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 229, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 229, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 235, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":230
- * 		# Check if ther are any intervals
- * 		if self.size == 0:
- * 			return 0             # <<<<<<<<<<<<<<
- * 		else:
- * 			return self.last - self.first
+    /* "ailist/ailist.pyx":236
+ *         # Check if ther are any intervals
+ *         if self.size == 0:
+ *             return 0             # <<<<<<<<<<<<<<
+ *         else:
+ *             return self.last - self.first
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(__pyx_int_0);
     __pyx_r = __pyx_int_0;
     goto __pyx_L0;
 
-    /* "ailist/ailist.pyx":229
+    /* "ailist/ailist.pyx":235
  * 
- * 		# Check if ther are any intervals
- * 		if self.size == 0:             # <<<<<<<<<<<<<<
- * 			return 0
- * 		else:
+ *         # Check if ther are any intervals
+ *         if self.size == 0:             # <<<<<<<<<<<<<<
+ *             return 0
+ *         else:
  */
   }
 
-  /* "ailist/ailist.pyx":232
- * 			return 0
- * 		else:
- * 			return self.last - self.first             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":238
+ *             return 0
+ *         else:
+ *             return self.last - self.first             # <<<<<<<<<<<<<<
  * 
  * 
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 232, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 238, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 232, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 238, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = PyNumber_Subtract(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 232, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Subtract(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 238, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -4978,12 +5009,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_5range___get__(struct __pyx_ob
     goto __pyx_L0;
   }
 
-  /* "ailist/ailist.pyx":223
+  /* "ailist/ailist.pyx":229
  * 
- * 	@property
- * 	def range(self):             # <<<<<<<<<<<<<<
- * 		# Check if object is still open
- * 		if self.is_closed:
+ *     @property
+ *     def range(self):             # <<<<<<<<<<<<<<
+ *         # Check if object is still open
+ *         if self.is_closed:
  */
 
   /* function exit code */
@@ -4999,17 +5030,17 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_5range___get__(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":235
+/* "ailist/ailist.pyx":241
  * 
  * 
- * 	def __len__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Return size of interval_list
+ *     def __len__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Return size of interval_list
  */
 
 /* Python wrapper */
 static Py_ssize_t __pyx_pw_6ailist_6ailist_6AIList_7__len__(PyObject *__pyx_v_self); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_6__len__[] = "\n\t\tReturn size of interval_list\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_6__len__[] = "\n        Return size of interval_list\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
 struct wrapperbase __pyx_wrapperbase_6ailist_6ailist_6AIList_6__len__;
 #endif
@@ -5032,58 +5063,58 @@ static Py_ssize_t __pyx_pf_6ailist_6ailist_6AIList_6__len__(struct __pyx_obj_6ai
   Py_ssize_t __pyx_t_3;
   __Pyx_RefNannySetupContext("__len__", 0);
 
-  /* "ailist/ailist.pyx":241
+  /* "ailist/ailist.pyx":247
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":242
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":248
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		return self.size
+ *         return self.size
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 242, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 248, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 242, __pyx_L1_error)
+    __PYX_ERR(1, 248, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":241
+    /* "ailist/ailist.pyx":247
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":244
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":250
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		return self.size             # <<<<<<<<<<<<<<
+ *         return self.size             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 250, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_3 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyIndex_AsSsize_t(__pyx_t_2); if (unlikely((__pyx_t_3 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 250, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_3;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":235
+  /* "ailist/ailist.pyx":241
  * 
  * 
- * 	def __len__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Return size of interval_list
+ *     def __len__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Return size of interval_list
  */
 
   /* function exit code */
@@ -5097,17 +5128,17 @@ static Py_ssize_t __pyx_pf_6ailist_6ailist_6AIList_6__len__(struct __pyx_obj_6ai
 }
 static PyObject *__pyx_gb_6ailist_6ailist_6AIList_10generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "ailist/ailist.pyx":247
+/* "ailist/ailist.pyx":253
  * 
  * 
- * 	def __iter__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Iterate over AIList object
+ *     def __iter__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Iterate over AIList object
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_9__iter__(PyObject *__pyx_v_self); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_8__iter__[] = "\n\t\tIterate over AIList object\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_8__iter__[] = "\n        Iterate over AIList object\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
 struct wrapperbase __pyx_wrapperbase_6ailist_6ailist_6AIList_8__iter__;
 #endif
@@ -5131,7 +5162,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_8__iter__(struct __pyx_obj_6ai
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_6ailist_6ailist___pyx_scope_struct____iter__ *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(1, 247, __pyx_L1_error)
+    __PYX_ERR(1, 253, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -5139,7 +5170,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_8__iter__(struct __pyx_obj_6ai
   __Pyx_INCREF((PyObject *)__pyx_cur_scope->__pyx_v_self);
   __Pyx_GIVEREF((PyObject *)__pyx_cur_scope->__pyx_v_self);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_6ailist_6ailist_6AIList_10generator, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter, __pyx_n_s_AIList___iter, __pyx_n_s_ailist_ailist); if (unlikely(!gen)) __PYX_ERR(1, 247, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_6ailist_6ailist_6AIList_10generator, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter, __pyx_n_s_AIList___iter, __pyx_n_s_ailist_ailist); if (unlikely(!gen)) __PYX_ERR(1, 253, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -5175,59 +5206,59 @@ static PyObject *__pyx_gb_6ailist_6ailist_6AIList_10generator(__pyx_CoroutineObj
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(1, 247, __pyx_L1_error)
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(1, 253, __pyx_L1_error)
 
-  /* "ailist/ailist.pyx":253
+  /* "ailist/ailist.pyx":259
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_cur_scope->__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":254
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":260
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Iterate over interval list
+ *         # Iterate over interval list
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 254, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 260, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 254, __pyx_L1_error)
+    __PYX_ERR(1, 260, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":253
+    /* "ailist/ailist.pyx":259
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":258
- * 		# Iterate over interval list
- * 		cdef Interval interval
- * 		for i in range(self.size):             # <<<<<<<<<<<<<<
- * 			interval = Interval()
- * 			interval.set_i(self.interval_list.interval_list[i])
+  /* "ailist/ailist.pyx":264
+ *         # Iterate over interval list
+ *         cdef Interval interval
+ *         for i in range(self.size):             # <<<<<<<<<<<<<<
+ *             interval = Interval()
+ *             interval.set_i(self.interval_list.interval_list[i])
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_cur_scope->__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 258, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_cur_scope->__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 264, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 258, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 264, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
     __pyx_t_2 = __pyx_t_3; __Pyx_INCREF(__pyx_t_2); __pyx_t_4 = 0;
     __pyx_t_5 = NULL;
   } else {
-    __pyx_t_4 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 258, __pyx_L1_error)
+    __pyx_t_4 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 264, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 258, __pyx_L1_error)
+    __pyx_t_5 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 264, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   for (;;) {
@@ -5235,17 +5266,17 @@ static PyObject *__pyx_gb_6ailist_6ailist_6AIList_10generator(__pyx_CoroutineObj
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_3); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(1, 258, __pyx_L1_error)
+        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_3); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(1, 264, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 258, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 264, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       } else {
         if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_3); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(1, 258, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_3); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(1, 264, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 258, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 264, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       }
@@ -5255,7 +5286,7 @@ static PyObject *__pyx_gb_6ailist_6ailist_6AIList_10generator(__pyx_CoroutineObj
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(1, 258, __pyx_L1_error)
+          else __PYX_ERR(1, 264, __pyx_L1_error)
         }
         break;
       }
@@ -5266,34 +5297,34 @@ static PyObject *__pyx_gb_6ailist_6ailist_6AIList_10generator(__pyx_CoroutineObj
     __Pyx_GIVEREF(__pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "ailist/ailist.pyx":259
- * 		cdef Interval interval
- * 		for i in range(self.size):
- * 			interval = Interval()             # <<<<<<<<<<<<<<
- * 			interval.set_i(self.interval_list.interval_list[i])
+    /* "ailist/ailist.pyx":265
+ *         cdef Interval interval
+ *         for i in range(self.size):
+ *             interval = Interval()             # <<<<<<<<<<<<<<
+ *             interval.set_i(self.interval_list.interval_list[i])
  * 
  */
-    __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_Interval)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 259, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_Interval)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 265, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_XGOTREF(((PyObject *)__pyx_cur_scope->__pyx_v_interval));
     __Pyx_XDECREF_SET(__pyx_cur_scope->__pyx_v_interval, ((struct __pyx_obj_6ailist_6ailist_Interval *)__pyx_t_3));
     __Pyx_GIVEREF(__pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "ailist/ailist.pyx":260
- * 		for i in range(self.size):
- * 			interval = Interval()
- * 			interval.set_i(self.interval_list.interval_list[i])             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":266
+ *         for i in range(self.size):
+ *             interval = Interval()
+ *             interval.set_i(self.interval_list.interval_list[i])             # <<<<<<<<<<<<<<
  * 
- * 			yield interval
+ *             yield interval
  */
-    __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_cur_scope->__pyx_v_i); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 260, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_cur_scope->__pyx_v_i); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 266, __pyx_L1_error)
     ((struct __pyx_vtabstruct_6ailist_6ailist_Interval *)__pyx_cur_scope->__pyx_v_interval->__pyx_vtab)->set_i(__pyx_cur_scope->__pyx_v_interval, (__pyx_cur_scope->__pyx_v_self->interval_list->interval_list[__pyx_t_6]));
 
-    /* "ailist/ailist.pyx":262
- * 			interval.set_i(self.interval_list.interval_list[i])
+    /* "ailist/ailist.pyx":268
+ *             interval.set_i(self.interval_list.interval_list[i])
  * 
- * 			yield interval             # <<<<<<<<<<<<<<
+ *             yield interval             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -5315,25 +5346,25 @@ static PyObject *__pyx_gb_6ailist_6ailist_6AIList_10generator(__pyx_CoroutineObj
     __Pyx_XGOTREF(__pyx_t_2);
     __pyx_t_4 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_5 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(1, 262, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(1, 268, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":258
- * 		# Iterate over interval list
- * 		cdef Interval interval
- * 		for i in range(self.size):             # <<<<<<<<<<<<<<
- * 			interval = Interval()
- * 			interval.set_i(self.interval_list.interval_list[i])
+    /* "ailist/ailist.pyx":264
+ *         # Iterate over interval list
+ *         cdef Interval interval
+ *         for i in range(self.size):             # <<<<<<<<<<<<<<
+ *             interval = Interval()
+ *             interval.set_i(self.interval_list.interval_list[i])
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
-  /* "ailist/ailist.pyx":247
+  /* "ailist/ailist.pyx":253
  * 
  * 
- * 	def __iter__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Iterate over AIList object
+ *     def __iter__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Iterate over AIList object
  */
 
   /* function exit code */
@@ -5354,17 +5385,17 @@ static PyObject *__pyx_gb_6ailist_6ailist_6AIList_10generator(__pyx_CoroutineObj
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":265
+/* "ailist/ailist.pyx":271
  * 
  * 
- * 	def __sub__(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Subtract values
+ *     def __sub__(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Subtract values
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_12__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_11__sub__[] = "\n\t\tSubtract values\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_11__sub__[] = "\n        Subtract values\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
 struct wrapperbase __pyx_wrapperbase_6ailist_6ailist_6AIList_11__sub__;
 #endif
@@ -5372,7 +5403,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_12__sub__(PyObject *__pyx_v_se
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__sub__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 265, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 271, __pyx_L1_error)
   __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_11__sub__(((PyObject *)__pyx_v_self), ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_query_ail));
 
   /* function exit code */
@@ -5393,50 +5424,50 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_11__sub__(PyObject *__pyx_v_se
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("__sub__", 0);
 
-  /* "ailist/ailist.pyx":271
+  /* "ailist/ailist.pyx":277
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_is_closed); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 271, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_is_closed); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 271, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 277, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (unlikely(__pyx_t_2)) {
 
-    /* "ailist/ailist.pyx":272
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":278
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		return self.subtract(query_ail)
+ *         return self.subtract(query_ail)
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 272, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(1, 272, __pyx_L1_error)
+    __PYX_ERR(1, 278, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":271
+    /* "ailist/ailist.pyx":277
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":274
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":280
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		return self.subtract(query_ail)             # <<<<<<<<<<<<<<
+ *         return self.subtract(query_ail)             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_subtract); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 274, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_subtract); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 280, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -5450,19 +5481,19 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_11__sub__(PyObject *__pyx_v_se
   }
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, ((PyObject *)__pyx_v_query_ail)) : __Pyx_PyObject_CallOneArg(__pyx_t_3, ((PyObject *)__pyx_v_query_ail));
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 274, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 280, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":265
+  /* "ailist/ailist.pyx":271
  * 
  * 
- * 	def __sub__(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Subtract values
+ *     def __sub__(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Subtract values
  */
 
   /* function exit code */
@@ -5478,17 +5509,17 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_11__sub__(PyObject *__pyx_v_se
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":277
+/* "ailist/ailist.pyx":283
  * 
  * 
- * 	def __add__(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Common values
+ *     def __add__(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Common values
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_14__add__(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_13__add__[] = "\n\t\tCommon values\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_13__add__[] = "\n        Common values\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
 struct wrapperbase __pyx_wrapperbase_6ailist_6ailist_6AIList_13__add__;
 #endif
@@ -5496,7 +5527,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_14__add__(PyObject *__pyx_v_se
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__add__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 277, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 283, __pyx_L1_error)
   __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_13__add__(((PyObject *)__pyx_v_self), ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_query_ail));
 
   /* function exit code */
@@ -5517,50 +5548,50 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_13__add__(PyObject *__pyx_v_se
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("__add__", 0);
 
-  /* "ailist/ailist.pyx":283
+  /* "ailist/ailist.pyx":289
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_is_closed); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 283, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_is_closed); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 289, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 283, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 289, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (unlikely(__pyx_t_2)) {
 
-    /* "ailist/ailist.pyx":284
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":290
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		return self.common(query_ail)
+ *         return self.common(query_ail)
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 284, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 290, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(1, 284, __pyx_L1_error)
+    __PYX_ERR(1, 290, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":283
+    /* "ailist/ailist.pyx":289
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":286
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":292
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		return self.common(query_ail)             # <<<<<<<<<<<<<<
+ *         return self.common(query_ail)             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_common); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 286, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_common); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -5574,19 +5605,19 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_13__add__(PyObject *__pyx_v_se
   }
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, ((PyObject *)__pyx_v_query_ail)) : __Pyx_PyObject_CallOneArg(__pyx_t_3, ((PyObject *)__pyx_v_query_ail));
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 286, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":277
+  /* "ailist/ailist.pyx":283
  * 
  * 
- * 	def __add__(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Common values
+ *     def __add__(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Common values
  */
 
   /* function exit code */
@@ -5602,17 +5633,17 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_13__add__(PyObject *__pyx_v_se
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":289
+/* "ailist/ailist.pyx":295
  * 
  * 
- * 	def __or__(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Common values
+ *     def __or__(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Common values
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_16__or__(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_15__or__[] = "\n\t\tCommon values\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_15__or__[] = "\n        Common values\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
 struct wrapperbase __pyx_wrapperbase_6ailist_6ailist_6AIList_15__or__;
 #endif
@@ -5620,7 +5651,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_16__or__(PyObject *__pyx_v_sel
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__or__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 289, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 295, __pyx_L1_error)
   __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_15__or__(((PyObject *)__pyx_v_self), ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_query_ail));
 
   /* function exit code */
@@ -5641,50 +5672,50 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_15__or__(PyObject *__pyx_v_sel
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("__or__", 0);
 
-  /* "ailist/ailist.pyx":295
+  /* "ailist/ailist.pyx":301
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_is_closed); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 295, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_is_closed); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 301, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 295, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 301, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (unlikely(__pyx_t_2)) {
 
-    /* "ailist/ailist.pyx":296
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":302
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		return self.append(query_ail)
+ *         return self.append(query_ail)
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 296, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 302, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(1, 296, __pyx_L1_error)
+    __PYX_ERR(1, 302, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":295
+    /* "ailist/ailist.pyx":301
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":298
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":304
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		return self.append(query_ail)             # <<<<<<<<<<<<<<
+ *         return self.append(query_ail)             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_append); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 298, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_append); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -5698,19 +5729,19 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_15__or__(PyObject *__pyx_v_sel
   }
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, ((PyObject *)__pyx_v_query_ail)) : __Pyx_PyObject_CallOneArg(__pyx_t_3, ((PyObject *)__pyx_v_query_ail));
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 298, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":289
+  /* "ailist/ailist.pyx":295
  * 
  * 
- * 	def __or__(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Common values
+ *     def __or__(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Common values
  */
 
   /* function exit code */
@@ -5726,17 +5757,17 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_15__or__(PyObject *__pyx_v_sel
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":301
+/* "ailist/ailist.pyx":307
  * 
  * 
- * 	def __getitem__(self, key):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Index Intervals by value
+ *     def __getitem__(self, key):             # <<<<<<<<<<<<<<
+ *         """
+ *         Index Intervals by value
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_18__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_17__getitem__[] = "\n\t\tIndex Intervals by value\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_17__getitem__[] = "\n        Index Intervals by value\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
 struct wrapperbase __pyx_wrapperbase_6ailist_6ailist_6AIList_17__getitem__;
 #endif
@@ -5763,100 +5794,100 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_17__getitem__(struct __pyx_obj
   Py_ssize_t __pyx_t_6;
   __Pyx_RefNannySetupContext("__getitem__", 0);
 
-  /* "ailist/ailist.pyx":307
+  /* "ailist/ailist.pyx":313
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":308
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":314
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Check if key is greater than length
+ *         # Check if key is greater than length
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 308, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 314, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 308, __pyx_L1_error)
+    __PYX_ERR(1, 314, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":307
+    /* "ailist/ailist.pyx":313
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":311
+  /* "ailist/ailist.pyx":317
  * 
- * 		# Check if key is greater than length
- * 		if key > self.interval_list.nr:             # <<<<<<<<<<<<<<
- * 			raise IndexError("Value larger than ailist length")
+ *         # Check if key is greater than length
+ *         if key > self.interval_list.nr:             # <<<<<<<<<<<<<<
+ *             raise IndexError("Value larger than ailist length")
  * 
  */
-  __pyx_t_2 = __Pyx_PyInt_From_int64_t(__pyx_v_self->interval_list->nr); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 311, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int64_t(__pyx_v_self->interval_list->nr); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyObject_RichCompare(__pyx_v_key, __pyx_t_2, Py_GT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 311, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_v_key, __pyx_t_2, Py_GT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 317, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 311, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 317, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":312
- * 		# Check if key is greater than length
- * 		if key > self.interval_list.nr:
- * 			raise IndexError("Value larger than ailist length")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":318
+ *         # Check if key is greater than length
+ *         if key > self.interval_list.nr:
+ *             raise IndexError("Value larger than ailist length")             # <<<<<<<<<<<<<<
  * 
- * 		# Check if negative
+ *         # Check if negative
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_IndexError, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 312, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_IndexError, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 318, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 312, __pyx_L1_error)
+    __PYX_ERR(1, 318, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":311
+    /* "ailist/ailist.pyx":317
  * 
- * 		# Check if key is greater than length
- * 		if key > self.interval_list.nr:             # <<<<<<<<<<<<<<
- * 			raise IndexError("Value larger than ailist length")
+ *         # Check if key is greater than length
+ *         if key > self.interval_list.nr:             # <<<<<<<<<<<<<<
+ *             raise IndexError("Value larger than ailist length")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":315
+  /* "ailist/ailist.pyx":321
  * 
- * 		# Check if negative
- * 		if key < 0:             # <<<<<<<<<<<<<<
- * 			return self.__getitem__(self.interval_list.nr + key)
+ *         # Check if negative
+ *         if key < 0:             # <<<<<<<<<<<<<<
+ *             return self.__getitem__(self.interval_list.nr + key)
  * 
  */
-  __pyx_t_3 = PyObject_RichCompare(__pyx_v_key, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 315, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 315, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_v_key, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 321, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 321, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":316
- * 		# Check if negative
- * 		if key < 0:
- * 			return self.__getitem__(self.interval_list.nr + key)             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":322
+ *         # Check if negative
+ *         if key < 0:
+ *             return self.__getitem__(self.interval_list.nr + key)             # <<<<<<<<<<<<<<
  * 
- * 		# Create Interval wrapper
+ *         # Create Interval wrapper
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_getitem); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 316, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_getitem); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 322, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyInt_From_int64_t(__pyx_v_self->interval_list->nr); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 316, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int64_t(__pyx_v_self->interval_list->nr); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 322, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyNumber_Add(__pyx_t_4, __pyx_v_key); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 316, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_Add(__pyx_t_4, __pyx_v_key); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 322, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -5872,48 +5903,48 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_17__getitem__(struct __pyx_obj
     __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 316, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 322, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "ailist/ailist.pyx":315
+    /* "ailist/ailist.pyx":321
  * 
- * 		# Check if negative
- * 		if key < 0:             # <<<<<<<<<<<<<<
- * 			return self.__getitem__(self.interval_list.nr + key)
+ *         # Check if negative
+ *         if key < 0:             # <<<<<<<<<<<<<<
+ *             return self.__getitem__(self.interval_list.nr + key)
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":319
+  /* "ailist/ailist.pyx":325
  * 
- * 		# Create Interval wrapper
- * 		output_interval = Interval()             # <<<<<<<<<<<<<<
- * 		output_interval.set_i(self.interval_list.interval_list[key])
+ *         # Create Interval wrapper
+ *         output_interval = Interval()             # <<<<<<<<<<<<<<
+ *         output_interval.set_i(self.interval_list.interval_list[key])
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_Interval)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 319, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_Interval)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 325, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_v_output_interval = ((struct __pyx_obj_6ailist_6ailist_Interval *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "ailist/ailist.pyx":320
- * 		# Create Interval wrapper
- * 		output_interval = Interval()
- * 		output_interval.set_i(self.interval_list.interval_list[key])             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":326
+ *         # Create Interval wrapper
+ *         output_interval = Interval()
+ *         output_interval.set_i(self.interval_list.interval_list[key])             # <<<<<<<<<<<<<<
  * 
- * 		return output_interval
+ *         return output_interval
  */
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_key); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 320, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_key); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 326, __pyx_L1_error)
   ((struct __pyx_vtabstruct_6ailist_6ailist_Interval *)__pyx_v_output_interval->__pyx_vtab)->set_i(__pyx_v_output_interval, (__pyx_v_self->interval_list->interval_list[__pyx_t_6]));
 
-  /* "ailist/ailist.pyx":322
- * 		output_interval.set_i(self.interval_list.interval_list[key])
+  /* "ailist/ailist.pyx":328
+ *         output_interval.set_i(self.interval_list.interval_list[key])
  * 
- * 		return output_interval             # <<<<<<<<<<<<<<
+ *         return output_interval             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -5922,12 +5953,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_17__getitem__(struct __pyx_obj
   __pyx_r = ((PyObject *)__pyx_v_output_interval);
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":301
+  /* "ailist/ailist.pyx":307
  * 
  * 
- * 	def __getitem__(self, key):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Index Intervals by value
+ *     def __getitem__(self, key):             # <<<<<<<<<<<<<<
+ *         """
+ *         Index Intervals by value
  */
 
   /* function exit code */
@@ -5945,17 +5976,17 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_17__getitem__(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":325
+/* "ailist/ailist.pyx":331
  * 
  * 
- * 	def __repr__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Representation of ailist object
+ *     def __repr__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Representation of ailist object
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_20__repr__(PyObject *__pyx_v_self); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_19__repr__[] = "\n\t\tRepresentation of ailist object\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_19__repr__[] = "\n        Representation of ailist object\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
 struct wrapperbase __pyx_wrapperbase_6ailist_6ailist_6AIList_19__repr__;
 #endif
@@ -5986,95 +6017,95 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_19__repr__(struct __pyx_obj_6a
   int64_t __pyx_t_9;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "ailist/ailist.pyx":331
+  /* "ailist/ailist.pyx":337
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":332
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":338
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Initialize string
+ *         # Initialize string
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 332, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 338, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 332, __pyx_L1_error)
+    __PYX_ERR(1, 338, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":331
+    /* "ailist/ailist.pyx":337
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":335
+  /* "ailist/ailist.pyx":341
  * 
- * 		# Initialize string
- * 		repr_string = "AIList\n"             # <<<<<<<<<<<<<<
- * 		if self.size == 0:
- * 			repr_string += " range: (None-None)\n"
+ *         # Initialize string
+ *         repr_string = "AIList\n"             # <<<<<<<<<<<<<<
+ *         if self.size == 0:
+ *             repr_string += " range: (None-None)\n"
  */
   __Pyx_INCREF(__pyx_n_u_AIList);
   __pyx_v_repr_string = __pyx_n_u_AIList;
 
-  /* "ailist/ailist.pyx":336
- * 		# Initialize string
- * 		repr_string = "AIList\n"
- * 		if self.size == 0:             # <<<<<<<<<<<<<<
- * 			repr_string += " range: (None-None)\n"
- * 		else:
+  /* "ailist/ailist.pyx":342
+ *         # Initialize string
+ *         repr_string = "AIList\n"
+ *         if self.size == 0:             # <<<<<<<<<<<<<<
+ *             repr_string += " range: (None-None)\n"
+ *         else:
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 336, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 342, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 336, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 342, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 336, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(1, 342, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":337
- * 		repr_string = "AIList\n"
- * 		if self.size == 0:
- * 			repr_string += " range: (None-None)\n"             # <<<<<<<<<<<<<<
- * 		else:
- * 			repr_string += " range: (%d-%d)\n" % (self.first, self.last)
+    /* "ailist/ailist.pyx":343
+ *         repr_string = "AIList\n"
+ *         if self.size == 0:
+ *             repr_string += " range: (None-None)\n"             # <<<<<<<<<<<<<<
+ *         else:
+ *             repr_string += " range: (%d-%d)\n" % (self.first, self.last)
  */
-    __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_v_repr_string, __pyx_kp_u_range_None_None); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 337, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_v_repr_string, __pyx_kp_u_range_None_None); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 343, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF_SET(__pyx_v_repr_string, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "ailist/ailist.pyx":336
- * 		# Initialize string
- * 		repr_string = "AIList\n"
- * 		if self.size == 0:             # <<<<<<<<<<<<<<
- * 			repr_string += " range: (None-None)\n"
- * 		else:
+    /* "ailist/ailist.pyx":342
+ *         # Initialize string
+ *         repr_string = "AIList\n"
+ *         if self.size == 0:             # <<<<<<<<<<<<<<
+ *             repr_string += " range: (None-None)\n"
+ *         else:
  */
     goto __pyx_L4;
   }
 
-  /* "ailist/ailist.pyx":339
- * 			repr_string += " range: (None-None)\n"
- * 		else:
- * 			repr_string += " range: (%d-%d)\n" % (self.first, self.last)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":345
+ *             repr_string += " range: (None-None)\n"
+ *         else:
+ *             repr_string += " range: (%d-%d)\n" % (self.first, self.last)             # <<<<<<<<<<<<<<
  * 
- * 		# Iterate over interval_list
+ *         # Iterate over interval_list
  */
   /*else*/ {
-    __pyx_t_3 = PyTuple_New(5); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 339, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(5); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 345, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = 0;
     __pyx_t_5 = 127;
@@ -6082,9 +6113,9 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_19__repr__(struct __pyx_obj_6a
     __pyx_t_4 += 9;
     __Pyx_GIVEREF(__pyx_kp_u_range_2);
     PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_kp_u_range_2);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 339, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 345, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_6 = __Pyx_PyObject_Format(__pyx_t_2, __pyx_n_u_d); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 339, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Format(__pyx_t_2, __pyx_n_u_d); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 345, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_6) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_6) : __pyx_t_5;
@@ -6096,9 +6127,9 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_19__repr__(struct __pyx_obj_6a
     __pyx_t_4 += 1;
     __Pyx_GIVEREF(__pyx_kp_u_);
     PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_kp_u_);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 339, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 345, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_2 = __Pyx_PyObject_Format(__pyx_t_6, __pyx_n_u_d); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 339, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Format(__pyx_t_6, __pyx_n_u_d); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 345, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
@@ -6110,10 +6141,10 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_19__repr__(struct __pyx_obj_6a
     __pyx_t_4 += 2;
     __Pyx_GIVEREF(__pyx_kp_u__8);
     PyTuple_SET_ITEM(__pyx_t_3, 4, __pyx_kp_u__8);
-    __pyx_t_2 = __Pyx_PyUnicode_Join(__pyx_t_3, 5, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 339, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyUnicode_Join(__pyx_t_3, 5, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 345, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_v_repr_string, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 339, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_v_repr_string, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 345, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF_SET(__pyx_v_repr_string, ((PyObject*)__pyx_t_3));
@@ -6121,263 +6152,32 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_19__repr__(struct __pyx_obj_6a
   }
   __pyx_L4:;
 
-  /* "ailist/ailist.pyx":342
+  /* "ailist/ailist.pyx":348
  * 
- * 		# Iterate over interval_list
- * 		if self.interval_list.nr > 10:             # <<<<<<<<<<<<<<
- * 			for i in range(5):
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+ *         # Iterate over interval_list
+ *         if self.interval_list.nr > 10:             # <<<<<<<<<<<<<<
+ *             for i in range(5):
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
  */
   __pyx_t_1 = ((__pyx_v_self->interval_list->nr > 10) != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":343
- * 		# Iterate over interval_list
- * 		if self.interval_list.nr > 10:
- * 			for i in range(5):             # <<<<<<<<<<<<<<
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
- * 			repr_string += "   ...\n"
+    /* "ailist/ailist.pyx":349
+ *         # Iterate over interval_list
+ *         if self.interval_list.nr > 10:
+ *             for i in range(5):             # <<<<<<<<<<<<<<
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+ *             repr_string += "   ...\n"
  */
     for (__pyx_t_7 = 0; __pyx_t_7 < 5; __pyx_t_7+=1) {
       __pyx_v_i = __pyx_t_7;
 
-      /* "ailist/ailist.pyx":344
- * 		if self.interval_list.nr > 10:
- * 			for i in range(5):
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)             # <<<<<<<<<<<<<<
- * 			repr_string += "   ...\n"
- * 			for i in range(-5, -1, 1):
- */
-      __pyx_t_3 = PyTuple_New(9); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = 0;
-      __pyx_t_5 = 127;
-      __Pyx_INCREF(__pyx_kp_u__9);
-      __pyx_t_4 += 4;
-      __Pyx_GIVEREF(__pyx_kp_u__9);
-      PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_kp_u__9);
-      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_start); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Format(__pyx_t_6, __pyx_n_u_d); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
-      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
-      __Pyx_GIVEREF(__pyx_t_2);
-      PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2);
-      __pyx_t_2 = 0;
-      __Pyx_INCREF(__pyx_kp_u_);
-      __pyx_t_4 += 1;
-      __Pyx_GIVEREF(__pyx_kp_u_);
-      PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_kp_u_);
-      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_end); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Format(__pyx_t_6, __pyx_n_u_d); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
-      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
-      __Pyx_GIVEREF(__pyx_t_2);
-      PyTuple_SET_ITEM(__pyx_t_3, 3, __pyx_t_2);
-      __pyx_t_2 = 0;
-      __Pyx_INCREF(__pyx_kp_u__2);
-      __pyx_t_4 += 2;
-      __Pyx_GIVEREF(__pyx_kp_u__2);
-      PyTuple_SET_ITEM(__pyx_t_3, 4, __pyx_kp_u__2);
-      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_index); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_6), __pyx_empty_unicode); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
-      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
-      __Pyx_GIVEREF(__pyx_t_2);
-      PyTuple_SET_ITEM(__pyx_t_3, 5, __pyx_t_2);
-      __pyx_t_2 = 0;
-      __Pyx_INCREF(__pyx_kp_u__2);
-      __pyx_t_4 += 2;
-      __Pyx_GIVEREF(__pyx_kp_u__2);
-      PyTuple_SET_ITEM(__pyx_t_3, 6, __pyx_kp_u__2);
-      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_value); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_6), __pyx_empty_unicode); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
-      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
-      __Pyx_GIVEREF(__pyx_t_2);
-      PyTuple_SET_ITEM(__pyx_t_3, 7, __pyx_t_2);
-      __pyx_t_2 = 0;
-      __Pyx_INCREF(__pyx_kp_u__8);
-      __pyx_t_4 += 2;
-      __Pyx_GIVEREF(__pyx_kp_u__8);
-      PyTuple_SET_ITEM(__pyx_t_3, 8, __pyx_kp_u__8);
-      __pyx_t_2 = __Pyx_PyUnicode_Join(__pyx_t_3, 9, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_v_repr_string, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 344, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_3);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_DECREF_SET(__pyx_v_repr_string, ((PyObject*)__pyx_t_3));
-      __pyx_t_3 = 0;
-    }
-
-    /* "ailist/ailist.pyx":345
- * 			for i in range(5):
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
- * 			repr_string += "   ...\n"             # <<<<<<<<<<<<<<
- * 			for i in range(-5, -1, 1):
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
- */
-    __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_v_repr_string, __pyx_kp_u__10); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 345, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_DECREF_SET(__pyx_v_repr_string, ((PyObject*)__pyx_t_3));
-    __pyx_t_3 = 0;
-
-    /* "ailist/ailist.pyx":346
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
- * 			repr_string += "   ...\n"
- * 			for i in range(-5, -1, 1):             # <<<<<<<<<<<<<<
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
- * 		else:
- */
-    for (__pyx_t_7 = -5L; __pyx_t_7 < -1L; __pyx_t_7+=1) {
-      __pyx_v_i = __pyx_t_7;
-
-      /* "ailist/ailist.pyx":347
- * 			repr_string += "   ...\n"
- * 			for i in range(-5, -1, 1):
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)             # <<<<<<<<<<<<<<
- * 		else:
- * 			for i in range(self.interval_list.nr):
- */
-      __pyx_t_3 = PyTuple_New(9); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = 0;
-      __pyx_t_5 = 127;
-      __Pyx_INCREF(__pyx_kp_u__9);
-      __pyx_t_4 += 4;
-      __Pyx_GIVEREF(__pyx_kp_u__9);
-      PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_kp_u__9);
-      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_start); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Format(__pyx_t_6, __pyx_n_u_d); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
-      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
-      __Pyx_GIVEREF(__pyx_t_2);
-      PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2);
-      __pyx_t_2 = 0;
-      __Pyx_INCREF(__pyx_kp_u_);
-      __pyx_t_4 += 1;
-      __Pyx_GIVEREF(__pyx_kp_u_);
-      PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_kp_u_);
-      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_end); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Format(__pyx_t_6, __pyx_n_u_d); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
-      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
-      __Pyx_GIVEREF(__pyx_t_2);
-      PyTuple_SET_ITEM(__pyx_t_3, 3, __pyx_t_2);
-      __pyx_t_2 = 0;
-      __Pyx_INCREF(__pyx_kp_u__2);
-      __pyx_t_4 += 2;
-      __Pyx_GIVEREF(__pyx_kp_u__2);
-      PyTuple_SET_ITEM(__pyx_t_3, 4, __pyx_kp_u__2);
-      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_index); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_6), __pyx_empty_unicode); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
-      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
-      __Pyx_GIVEREF(__pyx_t_2);
-      PyTuple_SET_ITEM(__pyx_t_3, 5, __pyx_t_2);
-      __pyx_t_2 = 0;
-      __Pyx_INCREF(__pyx_kp_u__2);
-      __pyx_t_4 += 2;
-      __Pyx_GIVEREF(__pyx_kp_u__2);
-      PyTuple_SET_ITEM(__pyx_t_3, 6, __pyx_kp_u__2);
-      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_value); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_6), __pyx_empty_unicode); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
-      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
-      __Pyx_GIVEREF(__pyx_t_2);
-      PyTuple_SET_ITEM(__pyx_t_3, 7, __pyx_t_2);
-      __pyx_t_2 = 0;
-      __Pyx_INCREF(__pyx_kp_u__8);
-      __pyx_t_4 += 2;
-      __Pyx_GIVEREF(__pyx_kp_u__8);
-      PyTuple_SET_ITEM(__pyx_t_3, 8, __pyx_kp_u__8);
-      __pyx_t_2 = __Pyx_PyUnicode_Join(__pyx_t_3, 9, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_v_repr_string, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 347, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_3);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_DECREF_SET(__pyx_v_repr_string, ((PyObject*)__pyx_t_3));
-      __pyx_t_3 = 0;
-    }
-
-    /* "ailist/ailist.pyx":342
- * 
- * 		# Iterate over interval_list
- * 		if self.interval_list.nr > 10:             # <<<<<<<<<<<<<<
- * 			for i in range(5):
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
- */
-    goto __pyx_L5;
-  }
-
-  /* "ailist/ailist.pyx":349
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
- * 		else:
- * 			for i in range(self.interval_list.nr):             # <<<<<<<<<<<<<<
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
- * 
- */
-  /*else*/ {
-    __pyx_t_7 = __pyx_v_self->interval_list->nr;
-    __pyx_t_8 = __pyx_t_7;
-    for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
-      __pyx_v_i = __pyx_t_9;
-
       /* "ailist/ailist.pyx":350
- * 		else:
- * 			for i in range(self.interval_list.nr):
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)             # <<<<<<<<<<<<<<
- * 
- * 		return repr_string
+ *         if self.interval_list.nr > 10:
+ *             for i in range(5):
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)             # <<<<<<<<<<<<<<
+ *             repr_string += "   ...\n"
+ *             for i in range(-5, -1, 1):
  */
       __pyx_t_3 = PyTuple_New(9); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 350, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
@@ -6464,13 +6264,244 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_19__repr__(struct __pyx_obj_6a
       __Pyx_DECREF_SET(__pyx_v_repr_string, ((PyObject*)__pyx_t_3));
       __pyx_t_3 = 0;
     }
+
+    /* "ailist/ailist.pyx":351
+ *             for i in range(5):
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+ *             repr_string += "   ...\n"             # <<<<<<<<<<<<<<
+ *             for i in range(-5, -1, 1):
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+ */
+    __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_v_repr_string, __pyx_kp_u__10); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 351, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF_SET(__pyx_v_repr_string, ((PyObject*)__pyx_t_3));
+    __pyx_t_3 = 0;
+
+    /* "ailist/ailist.pyx":352
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+ *             repr_string += "   ...\n"
+ *             for i in range(-5, -1, 1):             # <<<<<<<<<<<<<<
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+ *         else:
+ */
+    for (__pyx_t_7 = -5L; __pyx_t_7 < -1L; __pyx_t_7+=1) {
+      __pyx_v_i = __pyx_t_7;
+
+      /* "ailist/ailist.pyx":353
+ *             repr_string += "   ...\n"
+ *             for i in range(-5, -1, 1):
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)             # <<<<<<<<<<<<<<
+ *         else:
+ *             for i in range(self.interval_list.nr):
+ */
+      __pyx_t_3 = PyTuple_New(9); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_4 = 0;
+      __pyx_t_5 = 127;
+      __Pyx_INCREF(__pyx_kp_u__9);
+      __pyx_t_4 += 4;
+      __Pyx_GIVEREF(__pyx_kp_u__9);
+      PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_kp_u__9);
+      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_start); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_2 = __Pyx_PyObject_Format(__pyx_t_6, __pyx_n_u_d); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
+      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
+      __Pyx_GIVEREF(__pyx_t_2);
+      PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2);
+      __pyx_t_2 = 0;
+      __Pyx_INCREF(__pyx_kp_u_);
+      __pyx_t_4 += 1;
+      __Pyx_GIVEREF(__pyx_kp_u_);
+      PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_kp_u_);
+      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_end); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_2 = __Pyx_PyObject_Format(__pyx_t_6, __pyx_n_u_d); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
+      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
+      __Pyx_GIVEREF(__pyx_t_2);
+      PyTuple_SET_ITEM(__pyx_t_3, 3, __pyx_t_2);
+      __pyx_t_2 = 0;
+      __Pyx_INCREF(__pyx_kp_u__2);
+      __pyx_t_4 += 2;
+      __Pyx_GIVEREF(__pyx_kp_u__2);
+      PyTuple_SET_ITEM(__pyx_t_3, 4, __pyx_kp_u__2);
+      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_index); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_2 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_6), __pyx_empty_unicode); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
+      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
+      __Pyx_GIVEREF(__pyx_t_2);
+      PyTuple_SET_ITEM(__pyx_t_3, 5, __pyx_t_2);
+      __pyx_t_2 = 0;
+      __Pyx_INCREF(__pyx_kp_u__2);
+      __pyx_t_4 += 2;
+      __Pyx_GIVEREF(__pyx_kp_u__2);
+      PyTuple_SET_ITEM(__pyx_t_3, 6, __pyx_kp_u__2);
+      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_value); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_2 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_6), __pyx_empty_unicode); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
+      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
+      __Pyx_GIVEREF(__pyx_t_2);
+      PyTuple_SET_ITEM(__pyx_t_3, 7, __pyx_t_2);
+      __pyx_t_2 = 0;
+      __Pyx_INCREF(__pyx_kp_u__8);
+      __pyx_t_4 += 2;
+      __Pyx_GIVEREF(__pyx_kp_u__8);
+      PyTuple_SET_ITEM(__pyx_t_3, 8, __pyx_kp_u__8);
+      __pyx_t_2 = __Pyx_PyUnicode_Join(__pyx_t_3, 9, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_v_repr_string, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 353, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_DECREF_SET(__pyx_v_repr_string, ((PyObject*)__pyx_t_3));
+      __pyx_t_3 = 0;
+    }
+
+    /* "ailist/ailist.pyx":348
+ * 
+ *         # Iterate over interval_list
+ *         if self.interval_list.nr > 10:             # <<<<<<<<<<<<<<
+ *             for i in range(5):
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+ */
+    goto __pyx_L5;
+  }
+
+  /* "ailist/ailist.pyx":355
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+ *         else:
+ *             for i in range(self.interval_list.nr):             # <<<<<<<<<<<<<<
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+ * 
+ */
+  /*else*/ {
+    __pyx_t_7 = __pyx_v_self->interval_list->nr;
+    __pyx_t_8 = __pyx_t_7;
+    for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
+      __pyx_v_i = __pyx_t_9;
+
+      /* "ailist/ailist.pyx":356
+ *         else:
+ *             for i in range(self.interval_list.nr):
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)             # <<<<<<<<<<<<<<
+ * 
+ *         return repr_string
+ */
+      __pyx_t_3 = PyTuple_New(9); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_4 = 0;
+      __pyx_t_5 = 127;
+      __Pyx_INCREF(__pyx_kp_u__9);
+      __pyx_t_4 += 4;
+      __Pyx_GIVEREF(__pyx_kp_u__9);
+      PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_kp_u__9);
+      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_start); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_2 = __Pyx_PyObject_Format(__pyx_t_6, __pyx_n_u_d); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
+      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
+      __Pyx_GIVEREF(__pyx_t_2);
+      PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2);
+      __pyx_t_2 = 0;
+      __Pyx_INCREF(__pyx_kp_u_);
+      __pyx_t_4 += 1;
+      __Pyx_GIVEREF(__pyx_kp_u_);
+      PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_kp_u_);
+      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_end); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_2 = __Pyx_PyObject_Format(__pyx_t_6, __pyx_n_u_d); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
+      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
+      __Pyx_GIVEREF(__pyx_t_2);
+      PyTuple_SET_ITEM(__pyx_t_3, 3, __pyx_t_2);
+      __pyx_t_2 = 0;
+      __Pyx_INCREF(__pyx_kp_u__2);
+      __pyx_t_4 += 2;
+      __Pyx_GIVEREF(__pyx_kp_u__2);
+      PyTuple_SET_ITEM(__pyx_t_3, 4, __pyx_kp_u__2);
+      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_index); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_2 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_6), __pyx_empty_unicode); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
+      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
+      __Pyx_GIVEREF(__pyx_t_2);
+      PyTuple_SET_ITEM(__pyx_t_3, 5, __pyx_t_2);
+      __pyx_t_2 = 0;
+      __Pyx_INCREF(__pyx_kp_u__2);
+      __pyx_t_4 += 2;
+      __Pyx_GIVEREF(__pyx_kp_u__2);
+      PyTuple_SET_ITEM(__pyx_t_3, 6, __pyx_kp_u__2);
+      __pyx_t_2 = __Pyx_GetItemInt(((PyObject *)__pyx_v_self), __pyx_v_i, int64_t, 1, __Pyx_PyInt_From_int64_t, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_value); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_2 = __Pyx_PyObject_FormatSimpleAndDecref(PyObject_Unicode(__pyx_t_6), __pyx_empty_unicode); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_2) : __pyx_t_5;
+      __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_2);
+      __Pyx_GIVEREF(__pyx_t_2);
+      PyTuple_SET_ITEM(__pyx_t_3, 7, __pyx_t_2);
+      __pyx_t_2 = 0;
+      __Pyx_INCREF(__pyx_kp_u__8);
+      __pyx_t_4 += 2;
+      __Pyx_GIVEREF(__pyx_kp_u__8);
+      PyTuple_SET_ITEM(__pyx_t_3, 8, __pyx_kp_u__8);
+      __pyx_t_2 = __Pyx_PyUnicode_Join(__pyx_t_3, 9, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_v_repr_string, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 356, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_DECREF_SET(__pyx_v_repr_string, ((PyObject*)__pyx_t_3));
+      __pyx_t_3 = 0;
+    }
   }
   __pyx_L5:;
 
-  /* "ailist/ailist.pyx":352
- * 				repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
+  /* "ailist/ailist.pyx":358
+ *                 repr_string += "   (%d-%d, %s, %s)\n" % (self[i].start, self[i].end, self[i].index, self[i].value)
  * 
- * 		return repr_string             # <<<<<<<<<<<<<<
+ *         return repr_string             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -6479,12 +6510,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_19__repr__(struct __pyx_obj_6a
   __pyx_r = __pyx_v_repr_string;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":325
+  /* "ailist/ailist.pyx":331
  * 
  * 
- * 	def __repr__(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Representation of ailist object
+ *     def __repr__(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Representation of ailist object
  */
 
   /* function exit code */
@@ -6501,12 +6532,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_19__repr__(struct __pyx_obj_6a
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":355
+/* "ailist/ailist.pyx":361
  * 
  * 
- * 	cdef void set_list(AIList self, ailist_t *input_list):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Set wrapper of C ailist
+ *     cdef void set_list(AIList self, ailist_t *input_list):             # <<<<<<<<<<<<<<
+ *         """
+ *         Set wrapper of C ailist
  */
 
 static void __pyx_f_6ailist_6ailist_6AIList_set_list(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, ailist_t *__pyx_v_input_list) {
@@ -6514,69 +6545,69 @@ static void __pyx_f_6ailist_6ailist_6AIList_set_list(struct __pyx_obj_6ailist_6a
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("set_list", 0);
 
-  /* "ailist/ailist.pyx":369
+  /* "ailist/ailist.pyx":375
  * 
- * 		# Free old skiplist
- * 		if self.interval_list:             # <<<<<<<<<<<<<<
- * 			ailist_destroy(self.interval_list)
+ *         # Free old skiplist
+ *         if self.interval_list:             # <<<<<<<<<<<<<<
+ *             ailist_destroy(self.interval_list)
  * 
  */
   __pyx_t_1 = (__pyx_v_self->interval_list != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":370
- * 		# Free old skiplist
- * 		if self.interval_list:
- * 			ailist_destroy(self.interval_list)             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":376
+ *         # Free old skiplist
+ *         if self.interval_list:
+ *             ailist_destroy(self.interval_list)             # <<<<<<<<<<<<<<
  * 
- * 		# Replace new skiplist
+ *         # Replace new skiplist
  */
     ailist_destroy(__pyx_v_self->interval_list);
 
-    /* "ailist/ailist.pyx":369
+    /* "ailist/ailist.pyx":375
  * 
- * 		# Free old skiplist
- * 		if self.interval_list:             # <<<<<<<<<<<<<<
- * 			ailist_destroy(self.interval_list)
+ *         # Free old skiplist
+ *         if self.interval_list:             # <<<<<<<<<<<<<<
+ *             ailist_destroy(self.interval_list)
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":373
+  /* "ailist/ailist.pyx":379
  * 
- * 		# Replace new skiplist
- * 		self.interval_list = input_list             # <<<<<<<<<<<<<<
- * 		self.is_closed = False
+ *         # Replace new skiplist
+ *         self.interval_list = input_list             # <<<<<<<<<<<<<<
+ *         self.is_closed = False
  * 
  */
   __pyx_v_self->interval_list = __pyx_v_input_list;
 
-  /* "ailist/ailist.pyx":374
- * 		# Replace new skiplist
- * 		self.interval_list = input_list
- * 		self.is_closed = False             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":380
+ *         # Replace new skiplist
+ *         self.interval_list = input_list
+ *         self.is_closed = False             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __pyx_v_self->is_closed = 0;
 
-  /* "ailist/ailist.pyx":355
+  /* "ailist/ailist.pyx":361
  * 
  * 
- * 	cdef void set_list(AIList self, ailist_t *input_list):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Set wrapper of C ailist
+ *     cdef void set_list(AIList self, ailist_t *input_list):             # <<<<<<<<<<<<<<
+ *         """
+ *         Set wrapper of C ailist
  */
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ailist/ailist.pyx":377
+/* "ailist/ailist.pyx":383
  * 
  * 
- * 	cdef void _insert(AIList self, int start, int end, double value):             # <<<<<<<<<<<<<<
- * 		ailist_add(self.interval_list, start, end, self.interval_list.nr, value)
+ *     cdef void _insert(AIList self, int start, int end, double value):             # <<<<<<<<<<<<<<
+ *         ailist_add(self.interval_list, start, end, self.interval_list.nr, value)
  * 
  */
 
@@ -6584,20 +6615,20 @@ static void __pyx_f_6ailist_6ailist_6AIList__insert(struct __pyx_obj_6ailist_6ai
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_insert", 0);
 
-  /* "ailist/ailist.pyx":378
+  /* "ailist/ailist.pyx":384
  * 
- * 	cdef void _insert(AIList self, int start, int end, double value):
- * 		ailist_add(self.interval_list, start, end, self.interval_list.nr, value)             # <<<<<<<<<<<<<<
+ *     cdef void _insert(AIList self, int start, int end, double value):
+ *         ailist_add(self.interval_list, start, end, self.interval_list.nr, value)             # <<<<<<<<<<<<<<
  * 
- * 	def add(self, int start, int end, double value=0.0):
+ *     def add(self, int start, int end, double value=0.0):
  */
   ailist_add(__pyx_v_self->interval_list, __pyx_v_start, __pyx_v_end, __pyx_v_self->interval_list->nr, __pyx_v_value);
 
-  /* "ailist/ailist.pyx":377
+  /* "ailist/ailist.pyx":383
  * 
  * 
- * 	cdef void _insert(AIList self, int start, int end, double value):             # <<<<<<<<<<<<<<
- * 		ailist_add(self.interval_list, start, end, self.interval_list.nr, value)
+ *     cdef void _insert(AIList self, int start, int end, double value):             # <<<<<<<<<<<<<<
+ *         ailist_add(self.interval_list, start, end, self.interval_list.nr, value)
  * 
  */
 
@@ -6605,17 +6636,17 @@ static void __pyx_f_6ailist_6ailist_6AIList__insert(struct __pyx_obj_6ailist_6ai
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ailist/ailist.pyx":380
- * 		ailist_add(self.interval_list, start, end, self.interval_list.nr, value)
+/* "ailist/ailist.pyx":386
+ *         ailist_add(self.interval_list, start, end, self.interval_list.nr, value)
  * 
- * 	def add(self, int start, int end, double value=0.0):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Add an interval to AIList inplace
+ *     def add(self, int start, int end, double value=0.0):             # <<<<<<<<<<<<<<
+ *         """
+ *         Add an interval to AIList inplace
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_22add(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_21add[] = "AIList.add(self, int start, int end, double value=0.0)\n\n\t\tAdd an interval to AIList inplace\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tstart: int (Start position of interval)\n\t\t\tend: int (End position of interval)\n\t\t\tvalue: double (Value of interval [default = 0.0])\n\n\t\tReturns:\n\t\t---------\n\t\t\tNothing\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_21add[] = "AIList.add(self, int start, int end, double value=0.0)\n\n        Add an interval to AIList inplace\n        \n        Arguments:\n        ---------\n            start: int (Start position of interval)\n            end: int (End position of interval)\n            value: double (Value of interval [default = 0.0])\n\n        Returns:\n        ---------\n            Nothing\n        ";
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_22add(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_start;
   int __pyx_v_end;
@@ -6648,7 +6679,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_22add(PyObject *__pyx_v_self, 
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_end)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("add", 0, 2, 3, 1); __PYX_ERR(1, 380, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("add", 0, 2, 3, 1); __PYX_ERR(1, 386, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -6658,7 +6689,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_22add(PyObject *__pyx_v_self, 
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "add") < 0)) __PYX_ERR(1, 380, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "add") < 0)) __PYX_ERR(1, 386, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -6670,17 +6701,17 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_22add(PyObject *__pyx_v_self, 
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_start = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_start == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 380, __pyx_L3_error)
-    __pyx_v_end = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_end == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 380, __pyx_L3_error)
+    __pyx_v_start = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_start == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 386, __pyx_L3_error)
+    __pyx_v_end = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_end == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 386, __pyx_L3_error)
     if (values[2]) {
-      __pyx_v_value = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_value == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 380, __pyx_L3_error)
+      __pyx_v_value = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_value == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 386, __pyx_L3_error)
     } else {
       __pyx_v_value = ((double)0.0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("add", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 380, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("add", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 386, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.add", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -6700,71 +6731,71 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_21add(struct __pyx_obj_6ailist
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("add", 0);
 
-  /* "ailist/ailist.pyx":396
+  /* "ailist/ailist.pyx":402
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":397
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":403
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		self._insert(start, end, value)
+ *         self._insert(start, end, value)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 397, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 403, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 397, __pyx_L1_error)
+    __PYX_ERR(1, 403, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":396
+    /* "ailist/ailist.pyx":402
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":399
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":405
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		self._insert(start, end, value)             # <<<<<<<<<<<<<<
- * 		self.is_constructed = False
- * 		self.is_sorted = False
+ *         self._insert(start, end, value)             # <<<<<<<<<<<<<<
+ *         self.is_constructed = False
+ *         self.is_sorted = False
  */
   ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_insert(__pyx_v_self, __pyx_v_start, __pyx_v_end, __pyx_v_value);
 
-  /* "ailist/ailist.pyx":400
+  /* "ailist/ailist.pyx":406
  * 
- * 		self._insert(start, end, value)
- * 		self.is_constructed = False             # <<<<<<<<<<<<<<
- * 		self.is_sorted = False
+ *         self._insert(start, end, value)
+ *         self.is_constructed = False             # <<<<<<<<<<<<<<
+ *         self.is_sorted = False
  * 
  */
   __pyx_v_self->is_constructed = 0;
 
-  /* "ailist/ailist.pyx":401
- * 		self._insert(start, end, value)
- * 		self.is_constructed = False
- * 		self.is_sorted = False             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":407
+ *         self._insert(start, end, value)
+ *         self.is_constructed = False
+ *         self.is_sorted = False             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __pyx_v_self->is_sorted = 0;
 
-  /* "ailist/ailist.pyx":380
- * 		ailist_add(self.interval_list, start, end, self.interval_list.nr, value)
+  /* "ailist/ailist.pyx":386
+ *         ailist_add(self.interval_list, start, end, self.interval_list.nr, value)
  * 
- * 	def add(self, int start, int end, double value=0.0):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Add an interval to AIList inplace
+ *     def add(self, int start, int end, double value=0.0):             # <<<<<<<<<<<<<<
+ *         """
+ *         Add an interval to AIList inplace
  */
 
   /* function exit code */
@@ -6780,17 +6811,17 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_21add(struct __pyx_obj_6ailist
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":404
+/* "ailist/ailist.pyx":410
  * 
  * 
- * 	def from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index, const double[::1] values):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Add an intervals from arrays to AIList inplace
+ *     def from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index, const double[::1] values):             # <<<<<<<<<<<<<<
+ *         """
+ *         Add an intervals from arrays to AIList inplace
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_24from_array(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_23from_array[] = "AIList.from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index, const double[::1] values)\n\n\t\tAdd an intervals from arrays to AIList inplace\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tstarts: numpy.ndarray{long} (Start positions of intervals)\n\t\t\tends: numpy.ndarray{long} (End positions of intervals)\n\t\t\tindex: numpy.ndarray{long} (Index of intervals)\n\t\t\tvalues: numpy.ndarray{double} (Values of intervals)\n\n\t\tReturns:\n\t\t---------\n\t\t\tNothing\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_23from_array[] = "AIList.from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index, const double[::1] values)\n\n        Add an intervals from arrays to AIList inplace\n        \n        Arguments:\n        ---------\n            starts: numpy.ndarray{long} (Start positions of intervals)\n            ends: numpy.ndarray{long} (End positions of intervals)\n            index: numpy.ndarray{long} (Index of intervals)\n            values: numpy.ndarray{double} (Values of intervals)\n\n        Returns:\n        ---------\n            Nothing\n        ";
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_24from_array(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_starts = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_ends = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -6826,23 +6857,23 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_24from_array(PyObject *__pyx_v
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_ends)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("from_array", 1, 4, 4, 1); __PYX_ERR(1, 404, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("from_array", 1, 4, 4, 1); __PYX_ERR(1, 410, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_index)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("from_array", 1, 4, 4, 2); __PYX_ERR(1, 404, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("from_array", 1, 4, 4, 2); __PYX_ERR(1, 410, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_values)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("from_array", 1, 4, 4, 3); __PYX_ERR(1, 404, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("from_array", 1, 4, 4, 3); __PYX_ERR(1, 410, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "from_array") < 0)) __PYX_ERR(1, 404, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "from_array") < 0)) __PYX_ERR(1, 410, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -6852,14 +6883,14 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_24from_array(PyObject *__pyx_v
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
-    __pyx_v_starts = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[0], 0); if (unlikely(!__pyx_v_starts.memview)) __PYX_ERR(1, 404, __pyx_L3_error)
-    __pyx_v_ends = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[1], 0); if (unlikely(!__pyx_v_ends.memview)) __PYX_ERR(1, 404, __pyx_L3_error)
-    __pyx_v_index = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[2], 0); if (unlikely(!__pyx_v_index.memview)) __PYX_ERR(1, 404, __pyx_L3_error)
-    __pyx_v_values = __Pyx_PyObject_to_MemoryviewSlice_dc_double__const__(values[3], 0); if (unlikely(!__pyx_v_values.memview)) __PYX_ERR(1, 404, __pyx_L3_error)
+    __pyx_v_starts = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[0], 0); if (unlikely(!__pyx_v_starts.memview)) __PYX_ERR(1, 410, __pyx_L3_error)
+    __pyx_v_ends = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[1], 0); if (unlikely(!__pyx_v_ends.memview)) __PYX_ERR(1, 410, __pyx_L3_error)
+    __pyx_v_index = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[2], 0); if (unlikely(!__pyx_v_index.memview)) __PYX_ERR(1, 410, __pyx_L3_error)
+    __pyx_v_values = __Pyx_PyObject_to_MemoryviewSlice_dc_double__const__(values[3], 0); if (unlikely(!__pyx_v_values.memview)) __PYX_ERR(1, 410, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("from_array", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 404, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("from_array", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 410, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.from_array", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -6886,54 +6917,54 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_23from_array(struct __pyx_obj_
   Py_ssize_t __pyx_t_8;
   __Pyx_RefNannySetupContext("from_array", 0);
 
-  /* "ailist/ailist.pyx":421
+  /* "ailist/ailist.pyx":427
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":422
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":428
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		cdef int array_length = len(starts)
+ *         cdef int array_length = len(starts)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 422, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 428, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 422, __pyx_L1_error)
+    __PYX_ERR(1, 428, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":421
+    /* "ailist/ailist.pyx":427
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":424
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":430
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		cdef int array_length = len(starts)             # <<<<<<<<<<<<<<
- * 		ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], &values[0], array_length)
- * 		self.is_constructed = False
+ *         cdef int array_length = len(starts)             # <<<<<<<<<<<<<<
+ *         ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], &values[0], array_length)
+ *         self.is_constructed = False
  */
   __pyx_t_3 = __Pyx_MemoryView_Len(__pyx_v_starts); 
   __pyx_v_array_length = __pyx_t_3;
 
-  /* "ailist/ailist.pyx":425
+  /* "ailist/ailist.pyx":431
  * 
- * 		cdef int array_length = len(starts)
- * 		ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], &values[0], array_length)             # <<<<<<<<<<<<<<
- * 		self.is_constructed = False
- * 		self.is_sorted = False
+ *         cdef int array_length = len(starts)
+ *         ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], &values[0], array_length)             # <<<<<<<<<<<<<<
+ *         self.is_constructed = False
+ *         self.is_sorted = False
  */
   __pyx_t_4 = 0;
   __pyx_t_5 = -1;
@@ -6943,7 +6974,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_23from_array(struct __pyx_obj_
   } else if (unlikely(__pyx_t_4 >= __pyx_v_starts.shape[0])) __pyx_t_5 = 0;
   if (unlikely(__pyx_t_5 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_5);
-    __PYX_ERR(1, 425, __pyx_L1_error)
+    __PYX_ERR(1, 431, __pyx_L1_error)
   }
   __pyx_t_6 = 0;
   __pyx_t_5 = -1;
@@ -6953,7 +6984,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_23from_array(struct __pyx_obj_
   } else if (unlikely(__pyx_t_6 >= __pyx_v_ends.shape[0])) __pyx_t_5 = 0;
   if (unlikely(__pyx_t_5 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_5);
-    __PYX_ERR(1, 425, __pyx_L1_error)
+    __PYX_ERR(1, 431, __pyx_L1_error)
   }
   __pyx_t_7 = 0;
   __pyx_t_5 = -1;
@@ -6963,7 +6994,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_23from_array(struct __pyx_obj_
   } else if (unlikely(__pyx_t_7 >= __pyx_v_index.shape[0])) __pyx_t_5 = 0;
   if (unlikely(__pyx_t_5 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_5);
-    __PYX_ERR(1, 425, __pyx_L1_error)
+    __PYX_ERR(1, 431, __pyx_L1_error)
   }
   __pyx_t_8 = 0;
   __pyx_t_5 = -1;
@@ -6973,34 +7004,34 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_23from_array(struct __pyx_obj_
   } else if (unlikely(__pyx_t_8 >= __pyx_v_values.shape[0])) __pyx_t_5 = 0;
   if (unlikely(__pyx_t_5 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_5);
-    __PYX_ERR(1, 425, __pyx_L1_error)
+    __PYX_ERR(1, 431, __pyx_L1_error)
   }
   ailist_from_array(__pyx_v_self->interval_list, (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_starts.data) + __pyx_t_4)) )))), (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_ends.data) + __pyx_t_6)) )))), (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_index.data) + __pyx_t_7)) )))), (&(*((double const  *) ( /* dim=0 */ ((char *) (((double const  *) __pyx_v_values.data) + __pyx_t_8)) )))), __pyx_v_array_length);
 
-  /* "ailist/ailist.pyx":426
- * 		cdef int array_length = len(starts)
- * 		ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], &values[0], array_length)
- * 		self.is_constructed = False             # <<<<<<<<<<<<<<
- * 		self.is_sorted = False
+  /* "ailist/ailist.pyx":432
+ *         cdef int array_length = len(starts)
+ *         ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], &values[0], array_length)
+ *         self.is_constructed = False             # <<<<<<<<<<<<<<
+ *         self.is_sorted = False
  * 
  */
   __pyx_v_self->is_constructed = 0;
 
-  /* "ailist/ailist.pyx":427
- * 		ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], &values[0], array_length)
- * 		self.is_constructed = False
- * 		self.is_sorted = False             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":433
+ *         ailist_from_array(self.interval_list, &starts[0], &ends[0], &index[0], &values[0], array_length)
+ *         self.is_constructed = False
+ *         self.is_sorted = False             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __pyx_v_self->is_sorted = 0;
 
-  /* "ailist/ailist.pyx":404
+  /* "ailist/ailist.pyx":410
  * 
  * 
- * 	def from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index, const double[::1] values):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Add an intervals from arrays to AIList inplace
+ *     def from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index, const double[::1] values):             # <<<<<<<<<<<<<<
+ *         """
+ *         Add an intervals from arrays to AIList inplace
  */
 
   /* function exit code */
@@ -7020,11 +7051,11 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_23from_array(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":430
+/* "ailist/ailist.pyx":436
  * 
  * 
- * 	cdef void _construct(AIList self, int min_length):             # <<<<<<<<<<<<<<
- * 		ailist_construct(self.interval_list, min_length)
+ *     cdef void _construct(AIList self, int min_length):             # <<<<<<<<<<<<<<
+ *         ailist_construct(self.interval_list, min_length)
  * 
  */
 
@@ -7032,20 +7063,20 @@ static void __pyx_f_6ailist_6ailist_6AIList__construct(struct __pyx_obj_6ailist_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_construct", 0);
 
-  /* "ailist/ailist.pyx":431
+  /* "ailist/ailist.pyx":437
  * 
- * 	cdef void _construct(AIList self, int min_length):
- * 		ailist_construct(self.interval_list, min_length)             # <<<<<<<<<<<<<<
+ *     cdef void _construct(AIList self, int min_length):
+ *         ailist_construct(self.interval_list, min_length)             # <<<<<<<<<<<<<<
  * 
- * 	def construct(self, int min_length=20):
+ *     def construct(self, int min_length=20):
  */
   ailist_construct(__pyx_v_self->interval_list, __pyx_v_min_length);
 
-  /* "ailist/ailist.pyx":430
+  /* "ailist/ailist.pyx":436
  * 
  * 
- * 	cdef void _construct(AIList self, int min_length):             # <<<<<<<<<<<<<<
- * 		ailist_construct(self.interval_list, min_length)
+ *     cdef void _construct(AIList self, int min_length):             # <<<<<<<<<<<<<<
+ *         ailist_construct(self.interval_list, min_length)
  * 
  */
 
@@ -7053,17 +7084,17 @@ static void __pyx_f_6ailist_6ailist_6AIList__construct(struct __pyx_obj_6ailist_
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ailist/ailist.pyx":433
- * 		ailist_construct(self.interval_list, min_length)
+/* "ailist/ailist.pyx":439
+ *         ailist_construct(self.interval_list, min_length)
  * 
- * 	def construct(self, int min_length=20):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Construct ailist_t *Required to call intersect
+ *     def construct(self, int min_length=20):             # <<<<<<<<<<<<<<
+ *         """
+ *         Construct ailist_t *Required to call intersect
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_26construct(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_25construct[] = "AIList.construct(self, int min_length=20)\n\n\t\tConstruct ailist_t *Required to call intersect\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_25construct[] = "AIList.construct(self, int min_length=20)\n\n        Construct ailist_t *Required to call intersect\n        ";
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_26construct(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_min_length;
   PyObject *__pyx_r = 0;
@@ -7090,7 +7121,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_26construct(PyObject *__pyx_v_
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "construct") < 0)) __PYX_ERR(1, 433, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "construct") < 0)) __PYX_ERR(1, 439, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -7101,14 +7132,14 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_26construct(PyObject *__pyx_v_
       }
     }
     if (values[0]) {
-      __pyx_v_min_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_min_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 433, __pyx_L3_error)
+      __pyx_v_min_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_min_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 439, __pyx_L3_error)
     } else {
       __pyx_v_min_length = ((int)20);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("construct", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 433, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("construct", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 439, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.construct", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -7128,102 +7159,102 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_25construct(struct __pyx_obj_6
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("construct", 0);
 
-  /* "ailist/ailist.pyx":439
+  /* "ailist/ailist.pyx":445
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":440
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":446
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Check if already constructed
+ *         # Check if already constructed
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 440, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 446, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 440, __pyx_L1_error)
+    __PYX_ERR(1, 446, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":439
+    /* "ailist/ailist.pyx":445
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":443
+  /* "ailist/ailist.pyx":449
  * 
- * 		# Check if already constructed
- * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
- * 			self._construct(min_length)
- * 			self.is_constructed = True
+ *         # Check if already constructed
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self._construct(min_length)
+ *             self.is_constructed = True
  */
   __pyx_t_1 = ((__pyx_v_self->is_constructed == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":444
- * 		# Check if already constructed
- * 		if self.is_constructed == False:
- * 			self._construct(min_length)             # <<<<<<<<<<<<<<
- * 			self.is_constructed = True
- * 			self.is_sorted = True
+    /* "ailist/ailist.pyx":450
+ *         # Check if already constructed
+ *         if self.is_constructed == False:
+ *             self._construct(min_length)             # <<<<<<<<<<<<<<
+ *             self.is_constructed = True
+ *             self.is_sorted = True
  */
     ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_construct(__pyx_v_self, __pyx_v_min_length);
 
-    /* "ailist/ailist.pyx":445
- * 		if self.is_constructed == False:
- * 			self._construct(min_length)
- * 			self.is_constructed = True             # <<<<<<<<<<<<<<
- * 			self.is_sorted = True
- * 		else:
+    /* "ailist/ailist.pyx":451
+ *         if self.is_constructed == False:
+ *             self._construct(min_length)
+ *             self.is_constructed = True             # <<<<<<<<<<<<<<
+ *             self.is_sorted = True
+ *         else:
  */
     __pyx_v_self->is_constructed = 1;
 
-    /* "ailist/ailist.pyx":446
- * 			self._construct(min_length)
- * 			self.is_constructed = True
- * 			self.is_sorted = True             # <<<<<<<<<<<<<<
- * 		else:
- * 			pass
+    /* "ailist/ailist.pyx":452
+ *             self._construct(min_length)
+ *             self.is_constructed = True
+ *             self.is_sorted = True             # <<<<<<<<<<<<<<
+ *         else:
+ *             pass
  */
     __pyx_v_self->is_sorted = 1;
 
-    /* "ailist/ailist.pyx":443
+    /* "ailist/ailist.pyx":449
  * 
- * 		# Check if already constructed
- * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
- * 			self._construct(min_length)
- * 			self.is_constructed = True
+ *         # Check if already constructed
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self._construct(min_length)
+ *             self.is_constructed = True
  */
     goto __pyx_L4;
   }
 
-  /* "ailist/ailist.pyx":448
- * 			self.is_sorted = True
- * 		else:
- * 			pass             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":454
+ *             self.is_sorted = True
+ *         else:
+ *             pass             # <<<<<<<<<<<<<<
  * 
- * 
+ *     cdef void _sort(AIList self):
  */
   /*else*/ {
   }
   __pyx_L4:;
 
-  /* "ailist/ailist.pyx":433
- * 		ailist_construct(self.interval_list, min_length)
+  /* "ailist/ailist.pyx":439
+ *         ailist_construct(self.interval_list, min_length)
  * 
- * 	def construct(self, int min_length=20):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Construct ailist_t *Required to call intersect
+ *     def construct(self, int min_length=20):             # <<<<<<<<<<<<<<
+ *         """
+ *         Construct ailist_t *Required to call intersect
  */
 
   /* function exit code */
@@ -7239,11 +7270,11 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_25construct(struct __pyx_obj_6
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":451
+/* "ailist/ailist.pyx":456
+ *             pass
  * 
- * 
- * 	cdef void _sort(AIList self):             # <<<<<<<<<<<<<<
- * 		ailist_sort(self.interval_list)
+ *     cdef void _sort(AIList self):             # <<<<<<<<<<<<<<
+ *         ailist_sort(self.interval_list)
  * 
  */
 
@@ -7251,20 +7282,20 @@ static void __pyx_f_6ailist_6ailist_6AIList__sort(struct __pyx_obj_6ailist_6aili
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_sort", 0);
 
-  /* "ailist/ailist.pyx":452
+  /* "ailist/ailist.pyx":457
  * 
- * 	cdef void _sort(AIList self):
- * 		ailist_sort(self.interval_list)             # <<<<<<<<<<<<<<
+ *     cdef void _sort(AIList self):
+ *         ailist_sort(self.interval_list)             # <<<<<<<<<<<<<<
  * 
- * 	def sort(self):
+ *     def sort(self):
  */
   ailist_sort(__pyx_v_self->interval_list);
 
-  /* "ailist/ailist.pyx":451
+  /* "ailist/ailist.pyx":456
+ *             pass
  * 
- * 
- * 	cdef void _sort(AIList self):             # <<<<<<<<<<<<<<
- * 		ailist_sort(self.interval_list)
+ *     cdef void _sort(AIList self):             # <<<<<<<<<<<<<<
+ *         ailist_sort(self.interval_list)
  * 
  */
 
@@ -7272,17 +7303,17 @@ static void __pyx_f_6ailist_6ailist_6AIList__sort(struct __pyx_obj_6ailist_6aili
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ailist/ailist.pyx":454
- * 		ailist_sort(self.interval_list)
+/* "ailist/ailist.pyx":459
+ *         ailist_sort(self.interval_list)
  * 
- * 	def sort(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Sort intervals inplace
+ *     def sort(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Sort intervals inplace
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_28sort(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_27sort[] = "AIList.sort(self)\n\n\t\tSort intervals inplace\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_27sort[] = "AIList.sort(self)\n\n        Sort intervals inplace\n        ";
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_28sort(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
@@ -7301,62 +7332,62 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_27sort(struct __pyx_obj_6ailis
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("sort", 0);
 
-  /* "ailist/ailist.pyx":460
+  /* "ailist/ailist.pyx":465
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":461
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":466
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		self._sort()
+ *         self._sort()
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 461, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 466, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 461, __pyx_L1_error)
+    __PYX_ERR(1, 466, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":460
+    /* "ailist/ailist.pyx":465
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":463
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":468
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		self._sort()             # <<<<<<<<<<<<<<
- * 		self.is_sorted = True
+ *         self._sort()             # <<<<<<<<<<<<<<
+ *         self.is_sorted = True
  * 
  */
   ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_sort(__pyx_v_self);
 
-  /* "ailist/ailist.pyx":464
+  /* "ailist/ailist.pyx":469
  * 
- * 		self._sort()
- * 		self.is_sorted = True             # <<<<<<<<<<<<<<
+ *         self._sort()
+ *         self.is_sorted = True             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __pyx_v_self->is_sorted = 1;
 
-  /* "ailist/ailist.pyx":454
- * 		ailist_sort(self.interval_list)
+  /* "ailist/ailist.pyx":459
+ *         ailist_sort(self.interval_list)
  * 
- * 	def sort(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Sort intervals inplace
+ *     def sort(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Sort intervals inplace
  */
 
   /* function exit code */
@@ -7372,11 +7403,11 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_27sort(struct __pyx_obj_6ailis
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":467
+/* "ailist/ailist.pyx":472
  * 
  * 
- * 	cdef ailist_t *_intersect(AIList self, int start, int end):             # <<<<<<<<<<<<<<
- * 		cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
+ *     cdef ailist_t *_intersect(AIList self, int start, int end):             # <<<<<<<<<<<<<<
+ *         cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
  * 
  */
 
@@ -7386,30 +7417,30 @@ static ailist_t *__pyx_f_6ailist_6ailist_6AIList__intersect(struct __pyx_obj_6ai
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_intersect", 0);
 
-  /* "ailist/ailist.pyx":468
+  /* "ailist/ailist.pyx":473
  * 
- * 	cdef ailist_t *_intersect(AIList self, int start, int end):
- * 		cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)             # <<<<<<<<<<<<<<
+ *     cdef ailist_t *_intersect(AIList self, int start, int end):
+ *         cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)             # <<<<<<<<<<<<<<
  * 
- * 		return overlaps
+ *         return overlaps
  */
   __pyx_v_overlaps = ailist_query(__pyx_v_self->interval_list, __pyx_v_start, __pyx_v_end);
 
-  /* "ailist/ailist.pyx":470
- * 		cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
+  /* "ailist/ailist.pyx":475
+ *         cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
  * 
- * 		return overlaps             # <<<<<<<<<<<<<<
+ *         return overlaps             # <<<<<<<<<<<<<<
  * 
- * 	def intersect(self, int start, int end):
+ *     def intersect(self, int start, int end):
  */
   __pyx_r = __pyx_v_overlaps;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":467
+  /* "ailist/ailist.pyx":472
  * 
  * 
- * 	cdef ailist_t *_intersect(AIList self, int start, int end):             # <<<<<<<<<<<<<<
- * 		cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
+ *     cdef ailist_t *_intersect(AIList self, int start, int end):             # <<<<<<<<<<<<<<
+ *         cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
  * 
  */
 
@@ -7419,17 +7450,17 @@ static ailist_t *__pyx_f_6ailist_6ailist_6AIList__intersect(struct __pyx_obj_6ai
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":472
- * 		return overlaps
+/* "ailist/ailist.pyx":477
+ *         return overlaps
  * 
- * 	def intersect(self, int start, int end):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find intervals overlapping given range
+ *     def intersect(self, int start, int end):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find intervals overlapping given range
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_30intersect(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_29intersect[] = "AIList.intersect(self, int start, int end)\n\n\t\tFind intervals overlapping given range\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tstart: int (Start position of query range)\n\t\t\tend: int (End position of query range)\n\n\t\tReturns:\n\t\t---------\n\t\t\toverlaps: AIList (Overlapping intervals)\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_29intersect[] = "AIList.intersect(self, int start, int end)\n\n        Find intervals overlapping given range\n        Arguments:\n        ---------\n            start: int (Start position of query range)\n            end: int (End position of query range)\n\n        Returns:\n        ---------\n            overlaps: AIList (Overlapping intervals)\n        ";
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_30intersect(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_start;
   int __pyx_v_end;
@@ -7459,11 +7490,11 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_30intersect(PyObject *__pyx_v_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_end)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("intersect", 1, 2, 2, 1); __PYX_ERR(1, 472, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("intersect", 1, 2, 2, 1); __PYX_ERR(1, 477, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "intersect") < 0)) __PYX_ERR(1, 472, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "intersect") < 0)) __PYX_ERR(1, 477, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -7471,12 +7502,12 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_30intersect(PyObject *__pyx_v_
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_start = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_start == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 472, __pyx_L3_error)
-    __pyx_v_end = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_end == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 472, __pyx_L3_error)
+    __pyx_v_start = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_start == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 477, __pyx_L3_error)
+    __pyx_v_end = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_end == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 477, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("intersect", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 472, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("intersect", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 477, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.intersect", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -7500,56 +7531,56 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_29intersect(struct __pyx_obj_6
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("intersect", 0);
 
-  /* "ailist/ailist.pyx":487
+  /* "ailist/ailist.pyx":491
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":488
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":492
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		if self.is_constructed == False:
+ *         if self.is_constructed == False:
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 488, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 492, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 488, __pyx_L1_error)
+    __PYX_ERR(1, 492, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":487
+    /* "ailist/ailist.pyx":491
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":490
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":494
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
- * 			self.construct()
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
  * 
  */
   __pyx_t_1 = ((__pyx_v_self->is_constructed == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":491
+    /* "ailist/ailist.pyx":495
  * 
- * 		if self.is_constructed == False:
- * 			self.construct()             # <<<<<<<<<<<<<<
+ *         if self.is_constructed == False:
+ *             self.construct()             # <<<<<<<<<<<<<<
  * 
- * 		cdef ailist_t *i_list = self._intersect(start, end)
+ *         cdef ailist_t *i_list = self._intersect(start, end)
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_construct); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 491, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_construct); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 495, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -7563,54 +7594,54 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_29intersect(struct __pyx_obj_6
     }
     __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 491, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 495, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "ailist/ailist.pyx":490
- * 			raise NameError("AIList object has been closed.")
+    /* "ailist/ailist.pyx":494
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
- * 			self.construct()
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":493
- * 			self.construct()
+  /* "ailist/ailist.pyx":497
+ *             self.construct()
  * 
- * 		cdef ailist_t *i_list = self._intersect(start, end)             # <<<<<<<<<<<<<<
- * 		cdef AIList overlaps = AIList()
- * 		overlaps.set_list(i_list)
+ *         cdef ailist_t *i_list = self._intersect(start, end)             # <<<<<<<<<<<<<<
+ *         cdef AIList overlaps = AIList()
+ *         overlaps.set_list(i_list)
  */
   __pyx_v_i_list = ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_intersect(__pyx_v_self, __pyx_v_start, __pyx_v_end);
 
-  /* "ailist/ailist.pyx":494
+  /* "ailist/ailist.pyx":498
  * 
- * 		cdef ailist_t *i_list = self._intersect(start, end)
- * 		cdef AIList overlaps = AIList()             # <<<<<<<<<<<<<<
- * 		overlaps.set_list(i_list)
+ *         cdef ailist_t *i_list = self._intersect(start, end)
+ *         cdef AIList overlaps = AIList()             # <<<<<<<<<<<<<<
+ *         overlaps.set_list(i_list)
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 494, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 498, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_overlaps = ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "ailist/ailist.pyx":495
- * 		cdef ailist_t *i_list = self._intersect(start, end)
- * 		cdef AIList overlaps = AIList()
- * 		overlaps.set_list(i_list)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":499
+ *         cdef ailist_t *i_list = self._intersect(start, end)
+ *         cdef AIList overlaps = AIList()
+ *         overlaps.set_list(i_list)             # <<<<<<<<<<<<<<
  * 
- * 		return overlaps
+ *         return overlaps
  */
   ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_overlaps->__pyx_vtab)->set_list(__pyx_v_overlaps, __pyx_v_i_list);
 
-  /* "ailist/ailist.pyx":497
- * 		overlaps.set_list(i_list)
+  /* "ailist/ailist.pyx":501
+ *         overlaps.set_list(i_list)
  * 
- * 		return overlaps             # <<<<<<<<<<<<<<
+ *         return overlaps             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -7619,12 +7650,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_29intersect(struct __pyx_obj_6
   __pyx_r = ((PyObject *)__pyx_v_overlaps);
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":472
- * 		return overlaps
+  /* "ailist/ailist.pyx":477
+ *         return overlaps
  * 
- * 	def intersect(self, int start, int end):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find intervals overlapping given range
+ *     def intersect(self, int start, int end):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find intervals overlapping given range
  */
 
   /* function exit code */
@@ -7641,12 +7672,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_29intersect(struct __pyx_obj_6
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":500
+/* "ailist/ailist.pyx":504
  * 
  * 
- * 	cdef np.ndarray _intersect_index(AIList self, int start, int end):             # <<<<<<<<<<<<<<
- * 		cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
- * 		cdef long[::1] indices = np.zeros(overlaps.nr, dtype=np.long)
+ *     cdef np.ndarray _intersect_index(AIList self, int start, int end):             # <<<<<<<<<<<<<<
+ *         cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
+ *         cdef long[::1] indices = np.zeros(overlaps.nr, dtype=np.long)
  */
 
 static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__intersect_index(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_start, int __pyx_v_end) {
@@ -7664,60 +7695,60 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__intersect_index(struct __
   int __pyx_t_8;
   __Pyx_RefNannySetupContext("_intersect_index", 0);
 
-  /* "ailist/ailist.pyx":501
+  /* "ailist/ailist.pyx":505
  * 
- * 	cdef np.ndarray _intersect_index(AIList self, int start, int end):
- * 		cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)             # <<<<<<<<<<<<<<
- * 		cdef long[::1] indices = np.zeros(overlaps.nr, dtype=np.long)
+ *     cdef np.ndarray _intersect_index(AIList self, int start, int end):
+ *         cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)             # <<<<<<<<<<<<<<
+ *         cdef long[::1] indices = np.zeros(overlaps.nr, dtype=np.long)
  * 
  */
   __pyx_v_overlaps = ailist_query(__pyx_v_self->interval_list, __pyx_v_start, __pyx_v_end);
 
-  /* "ailist/ailist.pyx":502
- * 	cdef np.ndarray _intersect_index(AIList self, int start, int end):
- * 		cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
- * 		cdef long[::1] indices = np.zeros(overlaps.nr, dtype=np.long)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":506
+ *     cdef np.ndarray _intersect_index(AIList self, int start, int end):
+ *         cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
+ *         cdef long[::1] indices = np.zeros(overlaps.nr, dtype=np.long)             # <<<<<<<<<<<<<<
  * 
- * 		ailist_extract_index(overlaps, &indices[0])
+ *         ailist_extract_index(overlaps, &indices[0])
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 502, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 502, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_int64_t(__pyx_v_overlaps->nr); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 502, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int64_t(__pyx_v_overlaps->nr); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 502, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 502, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 502, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_long); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 502, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_long); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 502, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 506, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 502, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_long(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 502, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_long(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 506, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_indices = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "ailist/ailist.pyx":504
- * 		cdef long[::1] indices = np.zeros(overlaps.nr, dtype=np.long)
+  /* "ailist/ailist.pyx":508
+ *         cdef long[::1] indices = np.zeros(overlaps.nr, dtype=np.long)
  * 
- * 		ailist_extract_index(overlaps, &indices[0])             # <<<<<<<<<<<<<<
+ *         ailist_extract_index(overlaps, &indices[0])             # <<<<<<<<<<<<<<
  * 
- * 		return np.asarray(indices)
+ *         return np.asarray(indices)
  */
   __pyx_t_7 = 0;
   __pyx_t_8 = -1;
@@ -7727,24 +7758,24 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__intersect_index(struct __
   } else if (unlikely(__pyx_t_7 >= __pyx_v_indices.shape[0])) __pyx_t_8 = 0;
   if (unlikely(__pyx_t_8 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_8);
-    __PYX_ERR(1, 504, __pyx_L1_error)
+    __PYX_ERR(1, 508, __pyx_L1_error)
   }
   ailist_extract_index(__pyx_v_overlaps, (&(*((long *) ( /* dim=0 */ ((char *) (((long *) __pyx_v_indices.data) + __pyx_t_7)) )))));
 
-  /* "ailist/ailist.pyx":506
- * 		ailist_extract_index(overlaps, &indices[0])
+  /* "ailist/ailist.pyx":510
+ *         ailist_extract_index(overlaps, &indices[0])
  * 
- * 		return np.asarray(indices)             # <<<<<<<<<<<<<<
+ *         return np.asarray(indices)             # <<<<<<<<<<<<<<
  * 
- * 	def intersect_index(self, int start, int end):
+ *     def intersect_index(self, int start, int end):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 506, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 510, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 506, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 510, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_indices, 1, (PyObject *(*)(char *)) __pyx_memview_get_long, (int (*)(char *, PyObject *)) __pyx_memview_set_long, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 506, __pyx_L1_error)
+  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_indices, 1, (PyObject *(*)(char *)) __pyx_memview_get_long, (int (*)(char *, PyObject *)) __pyx_memview_set_long, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 510, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
@@ -7759,20 +7790,20 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__intersect_index(struct __
   __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 506, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 510, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 506, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 510, __pyx_L1_error)
   __pyx_r = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":500
+  /* "ailist/ailist.pyx":504
  * 
  * 
- * 	cdef np.ndarray _intersect_index(AIList self, int start, int end):             # <<<<<<<<<<<<<<
- * 		cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
- * 		cdef long[::1] indices = np.zeros(overlaps.nr, dtype=np.long)
+ *     cdef np.ndarray _intersect_index(AIList self, int start, int end):             # <<<<<<<<<<<<<<
+ *         cdef ailist_t *overlaps = ailist_query(self.interval_list, start, end)
+ *         cdef long[::1] indices = np.zeros(overlaps.nr, dtype=np.long)
  */
 
   /* function exit code */
@@ -7792,17 +7823,17 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__intersect_index(struct __
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":508
- * 		return np.asarray(indices)
+/* "ailist/ailist.pyx":512
+ *         return np.asarray(indices)
  * 
- * 	def intersect_index(self, int start, int end):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find interval indices overlapping given range
+ *     def intersect_index(self, int start, int end):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find interval indices overlapping given range
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_32intersect_index(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_31intersect_index[] = "AIList.intersect_index(self, int start, int end)\n\n\t\tFind interval indices overlapping given range\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tstart: int (Start position of query range)\n\t\t\tend: int (End position of query range)\n\n\t\tReturns:\n\t\t---------\n\t\t\tindice: np.ndarray{int} (Overlapping interval indices)\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_31intersect_index[] = "AIList.intersect_index(self, int start, int end)\n\n        Find interval indices overlapping given range\n        \n        Arguments:\n        ---------\n            start: int (Start position of query range)\n            end: int (End position of query range)\n\n        Returns:\n        ---------\n            indice: np.ndarray{int} (Overlapping interval indices)\n        ";
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_32intersect_index(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_start;
   int __pyx_v_end;
@@ -7832,11 +7863,11 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_32intersect_index(PyObject *__
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_end)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("intersect_index", 1, 2, 2, 1); __PYX_ERR(1, 508, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("intersect_index", 1, 2, 2, 1); __PYX_ERR(1, 512, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "intersect_index") < 0)) __PYX_ERR(1, 508, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "intersect_index") < 0)) __PYX_ERR(1, 512, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -7844,12 +7875,12 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_32intersect_index(PyObject *__
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_start = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_start == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 508, __pyx_L3_error)
-    __pyx_v_end = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_end == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 508, __pyx_L3_error)
+    __pyx_v_start = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_start == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 512, __pyx_L3_error)
+    __pyx_v_end = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_end == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 512, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("intersect_index", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 508, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("intersect_index", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 512, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.intersect_index", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -7872,56 +7903,56 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_31intersect_index(struct __pyx
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("intersect_index", 0);
 
-  /* "ailist/ailist.pyx":523
+  /* "ailist/ailist.pyx":527
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":524
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":528
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Check if object has been constructed
+ *         # Check if object has been constructed
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 524, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 528, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 524, __pyx_L1_error)
+    __PYX_ERR(1, 528, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":523
+    /* "ailist/ailist.pyx":527
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":527
+  /* "ailist/ailist.pyx":531
  * 
- * 		# Check if object has been constructed
- * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
- * 			self.construct()
+ *         # Check if object has been constructed
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
  * 
  */
   __pyx_t_1 = ((__pyx_v_self->is_constructed == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":528
- * 		# Check if object has been constructed
- * 		if self.is_constructed == False:
- * 			self.construct()             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":532
+ *         # Check if object has been constructed
+ *         if self.is_constructed == False:
+ *             self.construct()             # <<<<<<<<<<<<<<
  * 
- * 		cdef np.ndarray indices = self._intersect_index(start, end)
+ *         cdef np.ndarray indices = self._intersect_index(start, end)
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_construct); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 528, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_construct); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 532, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -7935,36 +7966,36 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_31intersect_index(struct __pyx
     }
     __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 528, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 532, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "ailist/ailist.pyx":527
+    /* "ailist/ailist.pyx":531
  * 
- * 		# Check if object has been constructed
- * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
- * 			self.construct()
+ *         # Check if object has been constructed
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":530
- * 			self.construct()
+  /* "ailist/ailist.pyx":534
+ *             self.construct()
  * 
- * 		cdef np.ndarray indices = self._intersect_index(start, end)             # <<<<<<<<<<<<<<
+ *         cdef np.ndarray indices = self._intersect_index(start, end)             # <<<<<<<<<<<<<<
  * 
- * 		return indices
+ *         return indices
  */
-  __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_intersect_index(__pyx_v_self, __pyx_v_start, __pyx_v_end)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 530, __pyx_L1_error)
+  __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_intersect_index(__pyx_v_self, __pyx_v_start, __pyx_v_end)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 534, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_indices = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "ailist/ailist.pyx":532
- * 		cdef np.ndarray indices = self._intersect_index(start, end)
+  /* "ailist/ailist.pyx":536
+ *         cdef np.ndarray indices = self._intersect_index(start, end)
  * 
- * 		return indices             # <<<<<<<<<<<<<<
+ *         return indices             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -7973,12 +8004,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_31intersect_index(struct __pyx
   __pyx_r = ((PyObject *)__pyx_v_indices);
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":508
- * 		return np.asarray(indices)
+  /* "ailist/ailist.pyx":512
+ *         return np.asarray(indices)
  * 
- * 	def intersect_index(self, int start, int end):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find interval indices overlapping given range
+ *     def intersect_index(self, int start, int end):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find interval indices overlapping given range
  */
 
   /* function exit code */
@@ -7995,207 +8026,17 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_31intersect_index(struct __pyx
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":538
- * 	@cython.wraparound(False)
- * 	@cython.initializedcheck(False)
- * 	cdef long[:,::1] _intersect_from_array(AIList self, const long[::1] starts, const long[::1] ends, const long[::1] indices):             # <<<<<<<<<<<<<<
- * 		cdef int length = len(starts)
- * 		cdef ailist_t *total_overlaps = ailist_query_from_array(self.interval_list, &starts[0], &ends[0], &indices[0], length)
- */
-
-static __Pyx_memviewslice __pyx_f_6ailist_6ailist_6AIList__intersect_from_array(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, __Pyx_memviewslice __pyx_v_indices) {
-  int __pyx_v_length;
-  ailist_t *__pyx_v_total_overlaps;
-  __Pyx_memviewslice __pyx_v_results = { 0, 0, { 0 }, { 0 }, { 0 } };
-  int __pyx_v_i;
-  __Pyx_memviewslice __pyx_r = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __Pyx_RefNannyDeclarations
-  size_t __pyx_t_1;
-  Py_ssize_t __pyx_t_2;
-  Py_ssize_t __pyx_t_3;
-  Py_ssize_t __pyx_t_4;
-  PyObject *__pyx_t_5 = NULL;
-  PyObject *__pyx_t_6 = NULL;
-  PyObject *__pyx_t_7 = NULL;
-  PyObject *__pyx_t_8 = NULL;
-  PyObject *__pyx_t_9 = NULL;
-  __Pyx_memviewslice __pyx_t_10 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  int64_t __pyx_t_11;
-  int64_t __pyx_t_12;
-  int __pyx_t_13;
-  Py_ssize_t __pyx_t_14;
-  Py_ssize_t __pyx_t_15;
-  int32_t __pyx_t_16;
-  Py_ssize_t __pyx_t_17;
-  Py_ssize_t __pyx_t_18;
-  __Pyx_RefNannySetupContext("_intersect_from_array", 0);
-
-  /* "ailist/ailist.pyx":539
- * 	@cython.initializedcheck(False)
- * 	cdef long[:,::1] _intersect_from_array(AIList self, const long[::1] starts, const long[::1] ends, const long[::1] indices):
- * 		cdef int length = len(starts)             # <<<<<<<<<<<<<<
- * 		cdef ailist_t *total_overlaps = ailist_query_from_array(self.interval_list, &starts[0], &ends[0], &indices[0], length)
+/* "ailist/ailist.pyx":540
  * 
- */
-  __pyx_t_1 = __Pyx_MemoryView_Len(__pyx_v_starts); 
-  __pyx_v_length = __pyx_t_1;
-
-  /* "ailist/ailist.pyx":540
- * 	cdef long[:,::1] _intersect_from_array(AIList self, const long[::1] starts, const long[::1] ends, const long[::1] indices):
- * 		cdef int length = len(starts)
- * 		cdef ailist_t *total_overlaps = ailist_query_from_array(self.interval_list, &starts[0], &ends[0], &indices[0], length)             # <<<<<<<<<<<<<<
  * 
- * 		cdef long[:,::1] results = np.zeros((2,total_overlaps.nr), dtype=np.long)
- */
-  __pyx_t_2 = 0;
-  __pyx_t_3 = 0;
-  __pyx_t_4 = 0;
-  __pyx_v_total_overlaps = ailist_query_from_array(__pyx_v_self->interval_list, (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_starts.data) + __pyx_t_2)) )))), (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_ends.data) + __pyx_t_3)) )))), (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_indices.data) + __pyx_t_4)) )))), __pyx_v_length);
-
-  /* "ailist/ailist.pyx":542
- * 		cdef ailist_t *total_overlaps = ailist_query_from_array(self.interval_list, &starts[0], &ends[0], &indices[0], length)
- * 
- * 		cdef long[:,::1] results = np.zeros((2,total_overlaps.nr), dtype=np.long)             # <<<<<<<<<<<<<<
- * 
- * 		cdef int i
- */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 542, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 542, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_6);
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyInt_From_int64_t(__pyx_v_total_overlaps->nr); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 542, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 542, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_INCREF(__pyx_int_2);
-  __Pyx_GIVEREF(__pyx_int_2);
-  PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_int_2);
-  __Pyx_GIVEREF(__pyx_t_5);
-  PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_t_5);
-  __pyx_t_5 = 0;
-  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 542, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GIVEREF(__pyx_t_7);
-  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_7);
-  __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 542, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 542, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_long); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 542, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_9);
-  __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_dtype, __pyx_t_9) < 0) __PYX_ERR(1, 542, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_5, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 542, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_9);
-  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_10 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_long(__pyx_t_9, PyBUF_WRITABLE); if (unlikely(!__pyx_t_10.memview)) __PYX_ERR(1, 542, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_v_results = __pyx_t_10;
-  __pyx_t_10.memview = NULL;
-  __pyx_t_10.data = NULL;
-
-  /* "ailist/ailist.pyx":545
- * 
- * 		cdef int i
- * 		for i in range(total_overlaps.nr):             # <<<<<<<<<<<<<<
- * 			results[0, i] = <int>total_overlaps.interval_list[i].value
- * 			results[1, i] = total_overlaps.interval_list[i].index
- */
-  __pyx_t_11 = __pyx_v_total_overlaps->nr;
-  __pyx_t_12 = __pyx_t_11;
-  for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
-    __pyx_v_i = __pyx_t_13;
-
-    /* "ailist/ailist.pyx":546
- * 		cdef int i
- * 		for i in range(total_overlaps.nr):
- * 			results[0, i] = <int>total_overlaps.interval_list[i].value             # <<<<<<<<<<<<<<
- * 			results[1, i] = total_overlaps.interval_list[i].index
- * 
- */
-    __pyx_t_14 = 0;
-    __pyx_t_15 = __pyx_v_i;
-    *((long *) ( /* dim=1 */ ((char *) (((long *) ( /* dim=0 */ (__pyx_v_results.data + __pyx_t_14 * __pyx_v_results.strides[0]) )) + __pyx_t_15)) )) = ((int)(__pyx_v_total_overlaps->interval_list[__pyx_v_i]).value);
-
-    /* "ailist/ailist.pyx":547
- * 		for i in range(total_overlaps.nr):
- * 			results[0, i] = <int>total_overlaps.interval_list[i].value
- * 			results[1, i] = total_overlaps.interval_list[i].index             # <<<<<<<<<<<<<<
- * 
- * 		ailist_destroy(total_overlaps)
- */
-    __pyx_t_16 = (__pyx_v_total_overlaps->interval_list[__pyx_v_i]).index;
-    __pyx_t_17 = 1;
-    __pyx_t_18 = __pyx_v_i;
-    *((long *) ( /* dim=1 */ ((char *) (((long *) ( /* dim=0 */ (__pyx_v_results.data + __pyx_t_17 * __pyx_v_results.strides[0]) )) + __pyx_t_18)) )) = __pyx_t_16;
-  }
-
-  /* "ailist/ailist.pyx":549
- * 			results[1, i] = total_overlaps.interval_list[i].index
- * 
- * 		ailist_destroy(total_overlaps)             # <<<<<<<<<<<<<<
- * 
- * 		#return np.asarray(results)
- */
-  ailist_destroy(__pyx_v_total_overlaps);
-
-  /* "ailist/ailist.pyx":552
- * 
- * 		#return np.asarray(results)
- * 		return results             # <<<<<<<<<<<<<<
- * 
- * 	def intersect_from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index):
- */
-  __PYX_INC_MEMVIEW(&__pyx_v_results, 0);
-  __pyx_r = __pyx_v_results;
-  goto __pyx_L0;
-
-  /* "ailist/ailist.pyx":538
- * 	@cython.wraparound(False)
- * 	@cython.initializedcheck(False)
- * 	cdef long[:,::1] _intersect_from_array(AIList self, const long[::1] starts, const long[::1] ends, const long[::1] indices):             # <<<<<<<<<<<<<<
- * 		cdef int length = len(starts)
- * 		cdef ailist_t *total_overlaps = ailist_query_from_array(self.interval_list, &starts[0], &ends[0], &indices[0], length)
- */
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_XDECREF(__pyx_t_9);
-  __PYX_XDEC_MEMVIEW(&__pyx_t_10, 1);
-  __pyx_r.data = NULL;
-  __pyx_r.memview = NULL;
-  __Pyx_AddTraceback("ailist.ailist.AIList._intersect_from_array", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  goto __pyx_L2;
-  __pyx_L0:;
-  if (unlikely(!__pyx_r.memview)) {
-    PyErr_SetString(PyExc_TypeError, "Memoryview return value is not initialized");
-  }
-  __pyx_L2:;
-  __PYX_XDEC_MEMVIEW(&__pyx_v_results, 1);
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-/* "ailist/ailist.pyx":554
- * 		return results
- * 
- * 	def intersect_from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find interval indices overlapping given ranges
+ *     def intersect_from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find interval indices overlapping given ranges
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_34intersect_from_array(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_33intersect_from_array[] = "AIList.intersect_from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index)\n\n\t\tFind interval indices overlapping given ranges\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tstarts: numpy.ndarray{long} (Start positions of intervals)\n\t\t\tends: numpy.ndarray{long} (End positions of intervals)\n\t\t\tindex: numpy.ndarray{long} (Index of intervals)\n\n\t\tReturns:\n\t\t---------\n\t\t\tindice: np.ndarray{int} (Overlapping interval indices)\n\t\t";
+static char __pyx_doc_6ailist_6ailist_6AIList_33intersect_from_array[] = "AIList.intersect_from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index)\n\n        Find interval indices overlapping given ranges\n        \n        Arguments:\n        ---------\n            starts: numpy.ndarray{long} (Start positions of intervals)\n            ends: numpy.ndarray{long} (End positions of intervals)\n            index: numpy.ndarray{long} (Index of intervals)\n\n        Returns:\n        ---------\n            indice: np.ndarray{int} (Overlapping interval indices)\n        ";
 static PyObject *__pyx_pw_6ailist_6ailist_6AIList_34intersect_from_array(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_starts = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_ends = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -8228,17 +8069,17 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_34intersect_from_array(PyObjec
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_ends)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("intersect_from_array", 1, 3, 3, 1); __PYX_ERR(1, 554, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("intersect_from_array", 1, 3, 3, 1); __PYX_ERR(1, 540, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_index)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("intersect_from_array", 1, 3, 3, 2); __PYX_ERR(1, 554, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("intersect_from_array", 1, 3, 3, 2); __PYX_ERR(1, 540, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "intersect_from_array") < 0)) __PYX_ERR(1, 554, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "intersect_from_array") < 0)) __PYX_ERR(1, 540, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -8247,13 +8088,13 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_34intersect_from_array(PyObjec
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
-    __pyx_v_starts = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[0], 0); if (unlikely(!__pyx_v_starts.memview)) __PYX_ERR(1, 554, __pyx_L3_error)
-    __pyx_v_ends = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[1], 0); if (unlikely(!__pyx_v_ends.memview)) __PYX_ERR(1, 554, __pyx_L3_error)
-    __pyx_v_index = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[2], 0); if (unlikely(!__pyx_v_index.memview)) __PYX_ERR(1, 554, __pyx_L3_error)
+    __pyx_v_starts = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[0], 0); if (unlikely(!__pyx_v_starts.memview)) __PYX_ERR(1, 540, __pyx_L3_error)
+    __pyx_v_ends = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[1], 0); if (unlikely(!__pyx_v_ends.memview)) __PYX_ERR(1, 540, __pyx_L3_error)
+    __pyx_v_index = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[2], 0); if (unlikely(!__pyx_v_index.memview)) __PYX_ERR(1, 540, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("intersect_from_array", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 554, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("intersect_from_array", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 540, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.intersect_from_array", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -8279,56 +8120,56 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_33intersect_from_array(struct 
   PyObject *__pyx_t_6 = NULL;
   __Pyx_RefNannySetupContext("intersect_from_array", 0);
 
-  /* "ailist/ailist.pyx":570
+  /* "ailist/ailist.pyx":556
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":571
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":557
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		if self.is_constructed == False:
+ *         if self.is_constructed == False:
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 571, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 557, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 571, __pyx_L1_error)
+    __PYX_ERR(1, 557, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":570
+    /* "ailist/ailist.pyx":556
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":573
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":559
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
- * 			self.construct()
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
  * 
  */
   __pyx_t_1 = ((__pyx_v_self->is_constructed == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":574
+    /* "ailist/ailist.pyx":560
  * 
- * 		if self.is_constructed == False:
- * 			self.construct()             # <<<<<<<<<<<<<<
+ *         if self.is_constructed == False:
+ *             self.construct()             # <<<<<<<<<<<<<<
  * 
- * 		cdef long[:,::1] indices = self._intersect_from_array(starts, ends, index)
+ *         cdef long[:,::1] indices = self._intersect_from_array(starts, ends, index)
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_construct); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 574, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_construct); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 560, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -8342,45 +8183,45 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_33intersect_from_array(struct 
     }
     __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 574, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 560, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "ailist/ailist.pyx":573
- * 			raise NameError("AIList object has been closed.")
+    /* "ailist/ailist.pyx":559
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
- * 			self.construct()
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":576
- * 			self.construct()
+  /* "ailist/ailist.pyx":562
+ *             self.construct()
  * 
- * 		cdef long[:,::1] indices = self._intersect_from_array(starts, ends, index)             # <<<<<<<<<<<<<<
- * 		cdef np.ndarray indices_arr = np.asarray(indices)
+ *         cdef long[:,::1] indices = self._intersect_from_array(starts, ends, index)             # <<<<<<<<<<<<<<
+ *         cdef np.ndarray indices_arr = np.asarray(indices)
  * 
  */
-  __pyx_t_5 = ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_intersect_from_array(__pyx_v_self, __pyx_v_starts, __pyx_v_ends, __pyx_v_index); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 576, __pyx_L1_error)
+  __pyx_t_5 = ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_intersect_from_array(__pyx_v_self, __pyx_v_starts, __pyx_v_ends, __pyx_v_index); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 562, __pyx_L1_error)
   __pyx_v_indices = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "ailist/ailist.pyx":577
+  /* "ailist/ailist.pyx":563
  * 
- * 		cdef long[:,::1] indices = self._intersect_from_array(starts, ends, index)
- * 		cdef np.ndarray indices_arr = np.asarray(indices)             # <<<<<<<<<<<<<<
+ *         cdef long[:,::1] indices = self._intersect_from_array(starts, ends, index)
+ *         cdef np.ndarray indices_arr = np.asarray(indices)             # <<<<<<<<<<<<<<
  * 
- * 		return indices_arr[0,:], indices_arr[1,:]
+ *         return indices_arr[0,:], indices_arr[1,:]
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 577, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 563, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_asarray); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 577, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_asarray); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 563, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_indices, 2, (PyObject *(*)(char *)) __pyx_memview_get_long, (int (*)(char *, PyObject *)) __pyx_memview_set_long, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 577, __pyx_L1_error)
+  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_indices, 2, (PyObject *(*)(char *)) __pyx_memview_get_long, (int (*)(char *, PyObject *)) __pyx_memview_set_long, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 563, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_6 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -8395,26 +8236,26 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_33intersect_from_array(struct 
   __pyx_t_2 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_6, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 577, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 563, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 577, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 563, __pyx_L1_error)
   __pyx_v_indices_arr = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "ailist/ailist.pyx":579
- * 		cdef np.ndarray indices_arr = np.asarray(indices)
+  /* "ailist/ailist.pyx":565
+ *         cdef np.ndarray indices_arr = np.asarray(indices)
  * 
- * 		return indices_arr[0,:], indices_arr[1,:]             # <<<<<<<<<<<<<<
+ *         return indices_arr[0,:], indices_arr[1,:]             # <<<<<<<<<<<<<<
  * 
- * 
+ *     @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_indices_arr), __pyx_tuple__12); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 579, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_indices_arr), __pyx_tuple__12); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 565, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_indices_arr), __pyx_tuple__13); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 579, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_indices_arr), __pyx_tuple__13); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 565, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 579, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 565, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
@@ -8426,12 +8267,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_33intersect_from_array(struct 
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":554
- * 		return results
+  /* "ailist/ailist.pyx":540
  * 
- * 	def intersect_from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find interval indices overlapping given ranges
+ * 
+ *     def intersect_from_array(self, const long[::1] starts, const long[::1] ends, const long[::1] index):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find interval indices overlapping given ranges
  */
 
   /* function exit code */
@@ -8454,12 +8295,2597 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_33intersect_from_array(struct 
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":582
+/* "ailist/ailist.pyx":570
+ *     @cython.wraparound(False)
+ *     @cython.initializedcheck(False)
+ *     cdef long[:,::1] _intersect_from_array(AIList self, const long[::1] starts, const long[::1] ends, const long[::1] indices):             # <<<<<<<<<<<<<<
+ *         cdef int length = len(starts)
+ *         start = time()
+ */
+
+static __Pyx_memviewslice __pyx_f_6ailist_6ailist_6AIList__intersect_from_array(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, __Pyx_memviewslice __pyx_v_indices) {
+  int __pyx_v_length;
+  PyObject *__pyx_v_start = NULL;
+  ailist_t *__pyx_v_total_overlaps;
+  PyObject *__pyx_v_end = NULL;
+  PyObject *__pyx_v_qfa = NULL;
+  PyObject *__pyx_v_results_arr = NULL;
+  __Pyx_memviewslice __pyx_v_results = { 0, 0, { 0 }, { 0 }, { 0 } };
+  int __pyx_v_i;
+  PyObject *__pyx_v_fr = NULL;
+  __Pyx_memviewslice __pyx_r = { 0, 0, { 0 }, { 0 }, { 0 } };
+  __Pyx_RefNannyDeclarations
+  size_t __pyx_t_1;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *__pyx_t_4 = NULL;
+  Py_ssize_t __pyx_t_5;
+  Py_ssize_t __pyx_t_6;
+  Py_ssize_t __pyx_t_7;
+  PyObject *__pyx_t_8 = NULL;
+  PyObject *__pyx_t_9 = NULL;
+  __Pyx_memviewslice __pyx_t_10 = { 0, 0, { 0 }, { 0 }, { 0 } };
+  int64_t __pyx_t_11;
+  int64_t __pyx_t_12;
+  int __pyx_t_13;
+  Py_ssize_t __pyx_t_14;
+  Py_ssize_t __pyx_t_15;
+  int32_t __pyx_t_16;
+  Py_ssize_t __pyx_t_17;
+  Py_ssize_t __pyx_t_18;
+  __Pyx_RefNannySetupContext("_intersect_from_array", 0);
+
+  /* "ailist/ailist.pyx":571
+ *     @cython.initializedcheck(False)
+ *     cdef long[:,::1] _intersect_from_array(AIList self, const long[::1] starts, const long[::1] ends, const long[::1] indices):
+ *         cdef int length = len(starts)             # <<<<<<<<<<<<<<
+ *         start = time()
+ *         cdef ailist_t *total_overlaps = ailist_query_from_array(self.interval_list, &starts[0], &ends[0], &indices[0], length)
+ */
+  __pyx_t_1 = __Pyx_MemoryView_Len(__pyx_v_starts); 
+  __pyx_v_length = __pyx_t_1;
+
+  /* "ailist/ailist.pyx":572
+ *     cdef long[:,::1] _intersect_from_array(AIList self, const long[::1] starts, const long[::1] ends, const long[::1] indices):
+ *         cdef int length = len(starts)
+ *         start = time()             # <<<<<<<<<<<<<<
+ *         cdef ailist_t *total_overlaps = ailist_query_from_array(self.interval_list, &starts[0], &ends[0], &indices[0], length)
+ *         end = time()
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 572, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_4 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+    __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
+    if (likely(__pyx_t_4)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+      __Pyx_INCREF(__pyx_t_4);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_3, function);
+    }
+  }
+  __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 572, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_start = __pyx_t_2;
+  __pyx_t_2 = 0;
+
+  /* "ailist/ailist.pyx":573
+ *         cdef int length = len(starts)
+ *         start = time()
+ *         cdef ailist_t *total_overlaps = ailist_query_from_array(self.interval_list, &starts[0], &ends[0], &indices[0], length)             # <<<<<<<<<<<<<<
+ *         end = time()
+ *         qfa = end - start
+ */
+  __pyx_t_5 = 0;
+  __pyx_t_6 = 0;
+  __pyx_t_7 = 0;
+  __pyx_v_total_overlaps = ailist_query_from_array(__pyx_v_self->interval_list, (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_starts.data) + __pyx_t_5)) )))), (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_ends.data) + __pyx_t_6)) )))), (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_indices.data) + __pyx_t_7)) )))), __pyx_v_length);
+
+  /* "ailist/ailist.pyx":574
+ *         start = time()
+ *         cdef ailist_t *total_overlaps = ailist_query_from_array(self.interval_list, &starts[0], &ends[0], &indices[0], length)
+ *         end = time()             # <<<<<<<<<<<<<<
+ *         qfa = end - start
+ *         print("timing query_from_array:", qfa)
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_time); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 574, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_4 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+    __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
+    if (likely(__pyx_t_4)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+      __Pyx_INCREF(__pyx_t_4);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_3, function);
+    }
+  }
+  __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 574, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_end = __pyx_t_2;
+  __pyx_t_2 = 0;
+
+  /* "ailist/ailist.pyx":575
+ *         cdef ailist_t *total_overlaps = ailist_query_from_array(self.interval_list, &starts[0], &ends[0], &indices[0], length)
+ *         end = time()
+ *         qfa = end - start             # <<<<<<<<<<<<<<
+ *         print("timing query_from_array:", qfa)
+ * 
+ */
+  __pyx_t_2 = PyNumber_Subtract(__pyx_v_end, __pyx_v_start); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 575, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_v_qfa = __pyx_t_2;
+  __pyx_t_2 = 0;
+
+  /* "ailist/ailist.pyx":576
+ *         end = time()
+ *         qfa = end - start
+ *         print("timing query_from_array:", qfa)             # <<<<<<<<<<<<<<
+ * 
+ *         results_arr = np.zeros((2,total_overlaps.nr), dtype=np.long)
+ */
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 576, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_INCREF(__pyx_kp_u_timing_query_from_array);
+  __Pyx_GIVEREF(__pyx_kp_u_timing_query_from_array);
+  PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_kp_u_timing_query_from_array);
+  __Pyx_INCREF(__pyx_v_qfa);
+  __Pyx_GIVEREF(__pyx_v_qfa);
+  PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_v_qfa);
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 576, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+  /* "ailist/ailist.pyx":578
+ *         print("timing query_from_array:", qfa)
+ * 
+ *         results_arr = np.zeros((2,total_overlaps.nr), dtype=np.long)             # <<<<<<<<<<<<<<
+ *         cdef long[:,::1] results
+ *         results = results_arr
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 578, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 578, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_t_3 = __Pyx_PyInt_From_int64_t(__pyx_v_total_overlaps->nr); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 578, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 578, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_INCREF(__pyx_int_2);
+  __Pyx_GIVEREF(__pyx_int_2);
+  PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_int_2);
+  __Pyx_GIVEREF(__pyx_t_3);
+  PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3);
+  __pyx_t_3 = 0;
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 578, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_GIVEREF(__pyx_t_4);
+  PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4);
+  __pyx_t_4 = 0;
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 578, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 578, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_8);
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_long); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 578, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_9) < 0) __PYX_ERR(1, 578, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 578, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __pyx_v_results_arr = __pyx_t_9;
+  __pyx_t_9 = 0;
+
+  /* "ailist/ailist.pyx":580
+ *         results_arr = np.zeros((2,total_overlaps.nr), dtype=np.long)
+ *         cdef long[:,::1] results
+ *         results = results_arr             # <<<<<<<<<<<<<<
+ * 
+ *         start = time()
+ */
+  __pyx_t_10 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_long(__pyx_v_results_arr, PyBUF_WRITABLE); if (unlikely(!__pyx_t_10.memview)) __PYX_ERR(1, 580, __pyx_L1_error)
+  __pyx_v_results = __pyx_t_10;
+  __pyx_t_10.memview = NULL;
+  __pyx_t_10.data = NULL;
+
+  /* "ailist/ailist.pyx":582
+ *         results = results_arr
+ * 
+ *         start = time()             # <<<<<<<<<<<<<<
+ *         cdef int i
+ *         for i in range(total_overlaps.nr):
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_time); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 582, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_3 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_4);
+    if (likely(__pyx_t_3)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+      __Pyx_INCREF(__pyx_t_3);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_4, function);
+    }
+  }
+  __pyx_t_9 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
+  __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 582, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF_SET(__pyx_v_start, __pyx_t_9);
+  __pyx_t_9 = 0;
+
+  /* "ailist/ailist.pyx":584
+ *         start = time()
+ *         cdef int i
+ *         for i in range(total_overlaps.nr):             # <<<<<<<<<<<<<<
+ *             results[0, i] = <int>total_overlaps.interval_list[i].value
+ *             results[1, i] = total_overlaps.interval_list[i].index
+ */
+  __pyx_t_11 = __pyx_v_total_overlaps->nr;
+  __pyx_t_12 = __pyx_t_11;
+  for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
+    __pyx_v_i = __pyx_t_13;
+
+    /* "ailist/ailist.pyx":585
+ *         cdef int i
+ *         for i in range(total_overlaps.nr):
+ *             results[0, i] = <int>total_overlaps.interval_list[i].value             # <<<<<<<<<<<<<<
+ *             results[1, i] = total_overlaps.interval_list[i].index
+ *         end = time()
+ */
+    __pyx_t_14 = 0;
+    __pyx_t_15 = __pyx_v_i;
+    *((long *) ( /* dim=1 */ ((char *) (((long *) ( /* dim=0 */ (__pyx_v_results.data + __pyx_t_14 * __pyx_v_results.strides[0]) )) + __pyx_t_15)) )) = ((int)(__pyx_v_total_overlaps->interval_list[__pyx_v_i]).value);
+
+    /* "ailist/ailist.pyx":586
+ *         for i in range(total_overlaps.nr):
+ *             results[0, i] = <int>total_overlaps.interval_list[i].value
+ *             results[1, i] = total_overlaps.interval_list[i].index             # <<<<<<<<<<<<<<
+ *         end = time()
+ * 
+ */
+    __pyx_t_16 = (__pyx_v_total_overlaps->interval_list[__pyx_v_i]).index;
+    __pyx_t_17 = 1;
+    __pyx_t_18 = __pyx_v_i;
+    *((long *) ( /* dim=1 */ ((char *) (((long *) ( /* dim=0 */ (__pyx_v_results.data + __pyx_t_17 * __pyx_v_results.strides[0]) )) + __pyx_t_18)) )) = __pyx_t_16;
+  }
+
+  /* "ailist/ailist.pyx":587
+ *             results[0, i] = <int>total_overlaps.interval_list[i].value
+ *             results[1, i] = total_overlaps.interval_list[i].index
+ *         end = time()             # <<<<<<<<<<<<<<
+ * 
+ *         fr = end - start
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_time); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 587, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_3 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_4);
+    if (likely(__pyx_t_3)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+      __Pyx_INCREF(__pyx_t_3);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_4, function);
+    }
+  }
+  __pyx_t_9 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
+  __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 587, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF_SET(__pyx_v_end, __pyx_t_9);
+  __pyx_t_9 = 0;
+
+  /* "ailist/ailist.pyx":589
+ *         end = time()
+ * 
+ *         fr = end - start             # <<<<<<<<<<<<<<
+ *         print("timing fetch results:", fr)
+ *         print("timing total:", fr + qfa)
+ */
+  __pyx_t_9 = PyNumber_Subtract(__pyx_v_end, __pyx_v_start); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 589, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __pyx_v_fr = __pyx_t_9;
+  __pyx_t_9 = 0;
+
+  /* "ailist/ailist.pyx":590
+ * 
+ *         fr = end - start
+ *         print("timing fetch results:", fr)             # <<<<<<<<<<<<<<
+ *         print("timing total:", fr + qfa)
+ * 
+ */
+  __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 590, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __Pyx_INCREF(__pyx_kp_u_timing_fetch_results);
+  __Pyx_GIVEREF(__pyx_kp_u_timing_fetch_results);
+  PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_kp_u_timing_fetch_results);
+  __Pyx_INCREF(__pyx_v_fr);
+  __Pyx_GIVEREF(__pyx_v_fr);
+  PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_v_fr);
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 590, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+
+  /* "ailist/ailist.pyx":591
+ *         fr = end - start
+ *         print("timing fetch results:", fr)
+ *         print("timing total:", fr + qfa)             # <<<<<<<<<<<<<<
+ * 
+ *         start = time()
+ */
+  __pyx_t_4 = PyNumber_Add(__pyx_v_fr, __pyx_v_qfa); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 591, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 591, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __Pyx_INCREF(__pyx_kp_u_timing_total);
+  __Pyx_GIVEREF(__pyx_kp_u_timing_total);
+  PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_kp_u_timing_total);
+  __Pyx_GIVEREF(__pyx_t_4);
+  PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_t_4);
+  __pyx_t_4 = 0;
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 591, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+
+  /* "ailist/ailist.pyx":593
+ *         print("timing total:", fr + qfa)
+ * 
+ *         start = time()             # <<<<<<<<<<<<<<
+ *         ailist_destroy(total_overlaps)
+ *         end = time()
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_time); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 593, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __pyx_t_3 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_9))) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+    if (likely(__pyx_t_3)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+      __Pyx_INCREF(__pyx_t_3);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_9, function);
+    }
+  }
+  __pyx_t_4 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
+  __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 593, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+  __Pyx_DECREF_SET(__pyx_v_start, __pyx_t_4);
+  __pyx_t_4 = 0;
+
+  /* "ailist/ailist.pyx":594
+ * 
+ *         start = time()
+ *         ailist_destroy(total_overlaps)             # <<<<<<<<<<<<<<
+ *         end = time()
+ * 
+ */
+  ailist_destroy(__pyx_v_total_overlaps);
+
+  /* "ailist/ailist.pyx":595
+ *         start = time()
+ *         ailist_destroy(total_overlaps)
+ *         end = time()             # <<<<<<<<<<<<<<
+ * 
+ *         print("timing ailist destroy:", end - start)
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_time); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 595, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __pyx_t_3 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_9))) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+    if (likely(__pyx_t_3)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+      __Pyx_INCREF(__pyx_t_3);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_9, function);
+    }
+  }
+  __pyx_t_4 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
+  __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 595, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+  __Pyx_DECREF_SET(__pyx_v_end, __pyx_t_4);
+  __pyx_t_4 = 0;
+
+  /* "ailist/ailist.pyx":597
+ *         end = time()
+ * 
+ *         print("timing ailist destroy:", end - start)             # <<<<<<<<<<<<<<
+ * 
+ *         #return np.asarray(results)
+ */
+  __pyx_t_4 = PyNumber_Subtract(__pyx_v_end, __pyx_v_start); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 597, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 597, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __Pyx_INCREF(__pyx_kp_u_timing_ailist_destroy);
+  __Pyx_GIVEREF(__pyx_kp_u_timing_ailist_destroy);
+  PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_kp_u_timing_ailist_destroy);
+  __Pyx_GIVEREF(__pyx_t_4);
+  PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_t_4);
+  __pyx_t_4 = 0;
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 597, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+
+  /* "ailist/ailist.pyx":600
+ * 
+ *         #return np.asarray(results)
+ *         return results_arr             # <<<<<<<<<<<<<<
  * 
  * 
- * 	cdef np.ndarray _coverage(AIList self):             # <<<<<<<<<<<<<<
- * 		# Initialize coverage
- * 		cdef double[::1] coverage = np.zeros(self.range, dtype=np.double)
+ */
+  __pyx_t_10 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_long(__pyx_v_results_arr, PyBUF_WRITABLE); if (unlikely(!__pyx_t_10.memview)) __PYX_ERR(1, 600, __pyx_L1_error)
+  __pyx_r = __pyx_t_10;
+  __pyx_t_10.memview = NULL;
+  __pyx_t_10.data = NULL;
+  goto __pyx_L0;
+
+  /* "ailist/ailist.pyx":570
+ *     @cython.wraparound(False)
+ *     @cython.initializedcheck(False)
+ *     cdef long[:,::1] _intersect_from_array(AIList self, const long[::1] starts, const long[::1] ends, const long[::1] indices):             # <<<<<<<<<<<<<<
+ *         cdef int length = len(starts)
+ *         start = time()
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4);
+  __Pyx_XDECREF(__pyx_t_8);
+  __Pyx_XDECREF(__pyx_t_9);
+  __PYX_XDEC_MEMVIEW(&__pyx_t_10, 1);
+  __pyx_r.data = NULL;
+  __pyx_r.memview = NULL;
+  __Pyx_AddTraceback("ailist.ailist.AIList._intersect_from_array", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  goto __pyx_L2;
+  __pyx_L0:;
+  if (unlikely(!__pyx_r.memview)) {
+    PyErr_SetString(PyExc_TypeError, "Memoryview return value is not initialized");
+  }
+  __pyx_L2:;
+  __Pyx_XDECREF(__pyx_v_start);
+  __Pyx_XDECREF(__pyx_v_end);
+  __Pyx_XDECREF(__pyx_v_qfa);
+  __Pyx_XDECREF(__pyx_v_results_arr);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_results, 1);
+  __Pyx_XDECREF(__pyx_v_fr);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "ailist/ailist.pyx":627
+ *     @cython.wraparound(False)
+ *     @cython.initializedcheck(False)
+ *     def ifa(self, const long[::1] starts, const long[::1] ends, const long[::1] index):             # <<<<<<<<<<<<<<
+ * 
+ *         # Check if object is still open
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_36ifa(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_35ifa[] = "AIList.ifa(self, const long[::1] starts, const long[::1] ends, const long[::1] index)";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_36ifa(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  __Pyx_memviewslice __pyx_v_starts = { 0, 0, { 0 }, { 0 }, { 0 } };
+  __Pyx_memviewslice __pyx_v_ends = { 0, 0, { 0 }, { 0 }, { 0 } };
+  __Pyx_memviewslice __pyx_v_index = { 0, 0, { 0 }, { 0 }, { 0 } };
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("ifa (wrapper)", 0);
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_starts,&__pyx_n_s_ends,&__pyx_n_s_index,0};
+    PyObject* values[3] = {0,0,0};
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+        CYTHON_FALLTHROUGH;
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_starts)) != 0)) kw_args--;
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_ends)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("ifa", 1, 3, 3, 1); __PYX_ERR(1, 627, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  2:
+        if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_index)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("ifa", 1, 3, 3, 2); __PYX_ERR(1, 627, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "ifa") < 0)) __PYX_ERR(1, 627, __pyx_L3_error)
+      }
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+      values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+    }
+    __pyx_v_starts = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[0], 0); if (unlikely(!__pyx_v_starts.memview)) __PYX_ERR(1, 627, __pyx_L3_error)
+    __pyx_v_ends = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[1], 0); if (unlikely(!__pyx_v_ends.memview)) __PYX_ERR(1, 627, __pyx_L3_error)
+    __pyx_v_index = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[2], 0); if (unlikely(!__pyx_v_index.memview)) __PYX_ERR(1, 627, __pyx_L3_error)
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("ifa", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 627, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("ailist.ailist.AIList.ifa", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_35ifa(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_starts, __pyx_v_ends, __pyx_v_index);
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_35ifa(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, __Pyx_memviewslice __pyx_v_index) {
+  int __pyx_v_length;
+  int __pyx_v_nfound;
+  PyObject *__pyx_v_output_arr = NULL;
+  PyObject *__pyx_v_output_arr_other = NULL;
+  __Pyx_memviewslice __pyx_v_output = { 0, 0, { 0 }, { 0 }, { 0 } };
+  __Pyx_memviewslice __pyx_v_output_other = { 0, 0, { 0 }, { 0 }, { 0 } };
+  int __pyx_v_i;
+  int __pyx_v_k;
+  int __pyx_v_t;
+  int32_t __pyx_v_qs;
+  int32_t __pyx_v_qe;
+  CYTHON_UNUSED int32_t __pyx_v_qx;
+  int32_t __pyx_v_cs;
+  int32_t __pyx_v_ce;
+  ailist_t *__pyx_v_ail;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  int __pyx_t_1;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *__pyx_t_4 = NULL;
+  size_t __pyx_t_5;
+  PyObject *__pyx_t_6 = NULL;
+  PyObject *__pyx_t_7 = NULL;
+  __Pyx_memviewslice __pyx_t_8 = { 0, 0, { 0 }, { 0 }, { 0 } };
+  ailist_t *__pyx_t_9;
+  Py_ssize_t __pyx_t_10;
+  int __pyx_t_11;
+  Py_ssize_t __pyx_t_12;
+  long __pyx_t_13;
+  Py_ssize_t __pyx_t_14;
+  long __pyx_t_15;
+  Py_ssize_t __pyx_t_16;
+  long __pyx_t_17;
+  int __pyx_t_18;
+  int __pyx_t_19;
+  int __pyx_t_20;
+  int __pyx_t_21;
+  int __pyx_t_22;
+  Py_ssize_t __pyx_t_23;
+  int32_t __pyx_t_24;
+  Py_ssize_t __pyx_t_25;
+  int32_t __pyx_t_26;
+  int __pyx_t_27;
+  Py_ssize_t __pyx_t_28;
+  int32_t __pyx_t_29;
+  Py_ssize_t __pyx_t_30;
+  __Pyx_RefNannySetupContext("ifa", 0);
+
+  /* "ailist/ailist.pyx":630
+ * 
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
+ * 
+ */
+  __pyx_t_1 = (__pyx_v_self->is_closed != 0);
+  if (unlikely(__pyx_t_1)) {
+
+    /* "ailist/ailist.pyx":631
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+ * 
+ *         if self.is_constructed == False:
+ */
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 631, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_Raise(__pyx_t_2, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __PYX_ERR(1, 631, __pyx_L1_error)
+
+    /* "ailist/ailist.pyx":630
+ * 
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
+ * 
+ */
+  }
+
+  /* "ailist/ailist.pyx":633
+ *             raise NameError("AIList object has been closed.")
+ * 
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
+ * 
+ */
+  __pyx_t_1 = ((__pyx_v_self->is_constructed == 0) != 0);
+  if (__pyx_t_1) {
+
+    /* "ailist/ailist.pyx":634
+ * 
+ *         if self.is_constructed == False:
+ *             self.construct()             # <<<<<<<<<<<<<<
+ * 
+ *         cdef int length = len(starts)
+ */
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_construct); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 634, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_4 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_4)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_4);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 634, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "ailist/ailist.pyx":633
+ *             raise NameError("AIList object has been closed.")
+ * 
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
+ * 
+ */
+  }
+
+  /* "ailist/ailist.pyx":636
+ *             self.construct()
+ * 
+ *         cdef int length = len(starts)             # <<<<<<<<<<<<<<
+ *         cdef int nfound = 0
+ * 
+ */
+  __pyx_t_5 = __Pyx_MemoryView_Len(__pyx_v_starts); 
+  __pyx_v_length = __pyx_t_5;
+
+  /* "ailist/ailist.pyx":637
+ * 
+ *         cdef int length = len(starts)
+ *         cdef int nfound = 0             # <<<<<<<<<<<<<<
+ * 
+ *         output_arr = np.ones(length, dtype=np.int64) * -1
+ */
+  __pyx_v_nfound = 0;
+
+  /* "ailist/ailist.pyx":639
+ *         cdef int nfound = 0
+ * 
+ *         output_arr = np.ones(length, dtype=np.int64) * -1             # <<<<<<<<<<<<<<
+ *         output_arr_other = np.ones(length, dtype=np.int64) * -1
+ * 
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 639, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ones); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 639, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 639, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 639, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_GIVEREF(__pyx_t_2);
+  PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
+  __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 639, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 639, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_6);
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_int64); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 639, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_7);
+  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(1, 639, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 639, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_7);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_7, __pyx_int_neg_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 639, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+  __pyx_v_output_arr = __pyx_t_2;
+  __pyx_t_2 = 0;
+
+  /* "ailist/ailist.pyx":640
+ * 
+ *         output_arr = np.ones(length, dtype=np.int64) * -1
+ *         output_arr_other = np.ones(length, dtype=np.int64) * -1             # <<<<<<<<<<<<<<
+ * 
+ *         cdef int64_t [::1] output
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 640, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ones); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 640, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_7);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 640, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 640, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_GIVEREF(__pyx_t_2);
+  PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
+  __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 640, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 640, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_int64); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 640, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_6);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(1, 640, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 640, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_6);
+  __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_6, __pyx_int_neg_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 640, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+  __pyx_v_output_arr_other = __pyx_t_2;
+  __pyx_t_2 = 0;
+
+  /* "ailist/ailist.pyx":645
+ *         cdef int64_t [::1] output_other
+ * 
+ *         output = output_arr             # <<<<<<<<<<<<<<
+ *         output_other = output_arr_other
+ * 
+ */
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 645, __pyx_L1_error)
+  __pyx_v_output = __pyx_t_8;
+  __pyx_t_8.memview = NULL;
+  __pyx_t_8.data = NULL;
+
+  /* "ailist/ailist.pyx":646
+ * 
+ *         output = output_arr
+ *         output_other = output_arr_other             # <<<<<<<<<<<<<<
+ * 
+ *         cdef int i = 0
+ */
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr_other, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 646, __pyx_L1_error)
+  __pyx_v_output_other = __pyx_t_8;
+  __pyx_t_8.memview = NULL;
+  __pyx_t_8.data = NULL;
+
+  /* "ailist/ailist.pyx":648
+ *         output_other = output_arr_other
+ * 
+ *         cdef int i = 0             # <<<<<<<<<<<<<<
+ *         cdef int k = 0
+ *         cdef int t = 0
+ */
+  __pyx_v_i = 0;
+
+  /* "ailist/ailist.pyx":649
+ * 
+ *         cdef int i = 0
+ *         cdef int k = 0             # <<<<<<<<<<<<<<
+ *         cdef int t = 0
+ *         cdef int32_t qs, qe, qx, cs, ce
+ */
+  __pyx_v_k = 0;
+
+  /* "ailist/ailist.pyx":650
+ *         cdef int i = 0
+ *         cdef int k = 0
+ *         cdef int t = 0             # <<<<<<<<<<<<<<
+ *         cdef int32_t qs, qe, qx, cs, ce
+ *         cdef ailist_t *ail = self.interval_list
+ */
+  __pyx_v_t = 0;
+
+  /* "ailist/ailist.pyx":652
+ *         cdef int t = 0
+ *         cdef int32_t qs, qe, qx, cs, ce
+ *         cdef ailist_t *ail = self.interval_list             # <<<<<<<<<<<<<<
+ * 
+ *         for i in range(len(starts)):
+ */
+  __pyx_t_9 = __pyx_v_self->interval_list;
+  __pyx_v_ail = __pyx_t_9;
+
+  /* "ailist/ailist.pyx":654
+ *         cdef ailist_t *ail = self.interval_list
+ * 
+ *         for i in range(len(starts)):             # <<<<<<<<<<<<<<
+ * 
+ *             qs, qe, qx = starts[i], ends[i], index[i]
+ */
+  __pyx_t_5 = __Pyx_MemoryView_Len(__pyx_v_starts); 
+  __pyx_t_10 = __pyx_t_5;
+  for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
+    __pyx_v_i = __pyx_t_11;
+
+    /* "ailist/ailist.pyx":656
+ *         for i in range(len(starts)):
+ * 
+ *             qs, qe, qx = starts[i], ends[i], index[i]             # <<<<<<<<<<<<<<
+ * 
+ *             for k in range(ail.nc):
+ */
+    __pyx_t_12 = __pyx_v_i;
+    __pyx_t_13 = (*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_starts.data) + __pyx_t_12)) )));
+    __pyx_t_14 = __pyx_v_i;
+    __pyx_t_15 = (*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_ends.data) + __pyx_t_14)) )));
+    __pyx_t_16 = __pyx_v_i;
+    __pyx_t_17 = (*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_index.data) + __pyx_t_16)) )));
+    __pyx_v_qs = __pyx_t_13;
+    __pyx_v_qe = __pyx_t_15;
+    __pyx_v_qx = __pyx_t_17;
+
+    /* "ailist/ailist.pyx":658
+ *             qs, qe, qx = starts[i], ends[i], index[i]
+ * 
+ *             for k in range(ail.nc):             # <<<<<<<<<<<<<<
+ * 
+ *                 cs = ail.idxC[k]
+ */
+    __pyx_t_18 = __pyx_v_ail->nc;
+    __pyx_t_19 = __pyx_t_18;
+    for (__pyx_t_20 = 0; __pyx_t_20 < __pyx_t_19; __pyx_t_20+=1) {
+      __pyx_v_k = __pyx_t_20;
+
+      /* "ailist/ailist.pyx":660
+ *             for k in range(ail.nc):
+ * 
+ *                 cs = ail.idxC[k]             # <<<<<<<<<<<<<<
+ *                 ce = cs + ail.lenC[k]
+ * 
+ */
+      __pyx_v_cs = (__pyx_v_ail->idxC[__pyx_v_k]);
+
+      /* "ailist/ailist.pyx":661
+ * 
+ *                 cs = ail.idxC[k]
+ *                 ce = cs + ail.lenC[k]             # <<<<<<<<<<<<<<
+ * 
+ *                 if ail.lenC[k] > 15:
+ */
+      __pyx_v_ce = (__pyx_v_cs + (__pyx_v_ail->lenC[__pyx_v_k]));
+
+      /* "ailist/ailist.pyx":663
+ *                 ce = cs + ail.lenC[k]
+ * 
+ *                 if ail.lenC[k] > 15:             # <<<<<<<<<<<<<<
+ *                     # print("    if")
+ * 
+ */
+      __pyx_t_1 = (((__pyx_v_ail->lenC[__pyx_v_k]) > 15) != 0);
+      if (__pyx_t_1) {
+
+        /* "ailist/ailist.pyx":666
+ *                     # print("    if")
+ * 
+ *                     t = binary_search(ail.interval_list, cs, ce, qe)             # <<<<<<<<<<<<<<
+ * 
+ *                     while (t >= cs and ail.maxE[t] > qs):
+ */
+        __pyx_v_t = binary_search(__pyx_v_ail->interval_list, __pyx_v_cs, __pyx_v_ce, __pyx_v_qe);
+
+        /* "ailist/ailist.pyx":668
+ *                     t = binary_search(ail.interval_list, cs, ce, qe)
+ * 
+ *                     while (t >= cs and ail.maxE[t] > qs):             # <<<<<<<<<<<<<<
+ *                         # print("      t", t)
+ * 
+ */
+        while (1) {
+          __pyx_t_21 = ((__pyx_v_t >= __pyx_v_cs) != 0);
+          if (__pyx_t_21) {
+          } else {
+            __pyx_t_1 = __pyx_t_21;
+            goto __pyx_L12_bool_binop_done;
+          }
+          __pyx_t_21 = (((__pyx_v_ail->maxE[__pyx_v_t]) > __pyx_v_qs) != 0);
+          __pyx_t_1 = __pyx_t_21;
+          __pyx_L12_bool_binop_done:;
+          if (!__pyx_t_1) break;
+
+          /* "ailist/ailist.pyx":671
+ *                         # print("      t", t)
+ * 
+ *                         if (ail.interval_list[t].end > qs):             # <<<<<<<<<<<<<<
+ *                             # print("        ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ */
+          __pyx_t_1 = (((__pyx_v_ail->interval_list[__pyx_v_t]).end > __pyx_v_qs) != 0);
+          if (__pyx_t_1) {
+
+            /* "ailist/ailist.pyx":674
+ *                             # print("        ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ *                             if nfound >= length:             # <<<<<<<<<<<<<<
+ * 
+ *                                 length = (length + 1) * 2
+ */
+            __pyx_t_1 = ((__pyx_v_nfound >= __pyx_v_length) != 0);
+            if (__pyx_t_1) {
+
+              /* "ailist/ailist.pyx":676
+ *                             if nfound >= length:
+ * 
+ *                                 length = (length + 1) * 2             # <<<<<<<<<<<<<<
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ */
+              __pyx_v_length = ((__pyx_v_length + 1) * 2);
+
+              /* "ailist/ailist.pyx":677
+ * 
+ *                                 length = (length + 1) * 2
+ *                                 output_arr = np.resize(output_arr, length)             # <<<<<<<<<<<<<<
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr
+ */
+              __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 677, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_6);
+              __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_resize); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 677, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_4);
+              __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+              __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 677, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_6);
+              __pyx_t_7 = NULL;
+              __pyx_t_22 = 0;
+              if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
+                __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_4);
+                if (likely(__pyx_t_7)) {
+                  PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+                  __Pyx_INCREF(__pyx_t_7);
+                  __Pyx_INCREF(function);
+                  __Pyx_DECREF_SET(__pyx_t_4, function);
+                  __pyx_t_22 = 1;
+                }
+              }
+              #if CYTHON_FAST_PYCALL
+              if (PyFunction_Check(__pyx_t_4)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_output_arr, __pyx_t_6};
+                __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_22, 2+__pyx_t_22); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 677, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+              } else
+              #endif
+              #if CYTHON_FAST_PYCCALL
+              if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_output_arr, __pyx_t_6};
+                __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_22, 2+__pyx_t_22); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 677, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+              } else
+              #endif
+              {
+                __pyx_t_3 = PyTuple_New(2+__pyx_t_22); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 677, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_3);
+                if (__pyx_t_7) {
+                  __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_7); __pyx_t_7 = NULL;
+                }
+                __Pyx_INCREF(__pyx_v_output_arr);
+                __Pyx_GIVEREF(__pyx_v_output_arr);
+                PyTuple_SET_ITEM(__pyx_t_3, 0+__pyx_t_22, __pyx_v_output_arr);
+                __Pyx_GIVEREF(__pyx_t_6);
+                PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_22, __pyx_t_6);
+                __pyx_t_6 = 0;
+                __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 677, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              }
+              __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+              __Pyx_DECREF_SET(__pyx_v_output_arr, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "ailist/ailist.pyx":678
+ *                                 length = (length + 1) * 2
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)             # <<<<<<<<<<<<<<
+ *                                 output = output_arr
+ *                                 output_other = output_arr_other
+ */
+              __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 678, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_4);
+              __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_resize); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 678, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+              __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 678, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_4);
+              __pyx_t_6 = NULL;
+              __pyx_t_22 = 0;
+              if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+                __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_3);
+                if (likely(__pyx_t_6)) {
+                  PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+                  __Pyx_INCREF(__pyx_t_6);
+                  __Pyx_INCREF(function);
+                  __Pyx_DECREF_SET(__pyx_t_3, function);
+                  __pyx_t_22 = 1;
+                }
+              }
+              #if CYTHON_FAST_PYCALL
+              if (PyFunction_Check(__pyx_t_3)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_output_arr_other, __pyx_t_4};
+                __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_22, 2+__pyx_t_22); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 678, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+              } else
+              #endif
+              #if CYTHON_FAST_PYCCALL
+              if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_output_arr_other, __pyx_t_4};
+                __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_22, 2+__pyx_t_22); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 678, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+              } else
+              #endif
+              {
+                __pyx_t_7 = PyTuple_New(2+__pyx_t_22); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 678, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_7);
+                if (__pyx_t_6) {
+                  __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __pyx_t_6 = NULL;
+                }
+                __Pyx_INCREF(__pyx_v_output_arr_other);
+                __Pyx_GIVEREF(__pyx_v_output_arr_other);
+                PyTuple_SET_ITEM(__pyx_t_7, 0+__pyx_t_22, __pyx_v_output_arr_other);
+                __Pyx_GIVEREF(__pyx_t_4);
+                PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_22, __pyx_t_4);
+                __pyx_t_4 = 0;
+                __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 678, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+              }
+              __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              __Pyx_DECREF_SET(__pyx_v_output_arr_other, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "ailist/ailist.pyx":679
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr             # <<<<<<<<<<<<<<
+ *                                 output_other = output_arr_other
+ * 
+ */
+              __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 679, __pyx_L1_error)
+              __PYX_XDEC_MEMVIEW(&__pyx_v_output, 1);
+              __pyx_v_output = __pyx_t_8;
+              __pyx_t_8.memview = NULL;
+              __pyx_t_8.data = NULL;
+
+              /* "ailist/ailist.pyx":680
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr
+ *                                 output_other = output_arr_other             # <<<<<<<<<<<<<<
+ * 
+ *                             output[nfound] = i
+ */
+              __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr_other, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 680, __pyx_L1_error)
+              __PYX_XDEC_MEMVIEW(&__pyx_v_output_other, 1);
+              __pyx_v_output_other = __pyx_t_8;
+              __pyx_t_8.memview = NULL;
+              __pyx_t_8.data = NULL;
+
+              /* "ailist/ailist.pyx":674
+ *                             # print("        ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ *                             if nfound >= length:             # <<<<<<<<<<<<<<
+ * 
+ *                                 length = (length + 1) * 2
+ */
+            }
+
+            /* "ailist/ailist.pyx":682
+ *                                 output_other = output_arr_other
+ * 
+ *                             output[nfound] = i             # <<<<<<<<<<<<<<
+ *                             output_other[nfound] = ail.interval_list[t].index
+ *                             nfound += 1
+ */
+            __pyx_t_23 = __pyx_v_nfound;
+            *((int64_t *) ( /* dim=0 */ ((char *) (((int64_t *) __pyx_v_output.data) + __pyx_t_23)) )) = __pyx_v_i;
+
+            /* "ailist/ailist.pyx":683
+ * 
+ *                             output[nfound] = i
+ *                             output_other[nfound] = ail.interval_list[t].index             # <<<<<<<<<<<<<<
+ *                             nfound += 1
+ * 
+ */
+            __pyx_t_24 = (__pyx_v_ail->interval_list[__pyx_v_t]).index;
+            __pyx_t_25 = __pyx_v_nfound;
+            *((int64_t *) ( /* dim=0 */ ((char *) (((int64_t *) __pyx_v_output_other.data) + __pyx_t_25)) )) = __pyx_t_24;
+
+            /* "ailist/ailist.pyx":684
+ *                             output[nfound] = i
+ *                             output_other[nfound] = ail.interval_list[t].index
+ *                             nfound += 1             # <<<<<<<<<<<<<<
+ * 
+ *                             # print("        nfound", nfound)
+ */
+            __pyx_v_nfound = (__pyx_v_nfound + 1);
+
+            /* "ailist/ailist.pyx":671
+ *                         # print("      t", t)
+ * 
+ *                         if (ail.interval_list[t].end > qs):             # <<<<<<<<<<<<<<
+ *                             # print("        ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ */
+          }
+
+          /* "ailist/ailist.pyx":690
+ *                             # print("        output_arr_other", output_arr_other)
+ * 
+ *                         t -= 1             # <<<<<<<<<<<<<<
+ *                 else:
+ *                     # print("    else")
+ */
+          __pyx_v_t = (__pyx_v_t - 1);
+        }
+
+        /* "ailist/ailist.pyx":663
+ *                 ce = cs + ail.lenC[k]
+ * 
+ *                 if ail.lenC[k] > 15:             # <<<<<<<<<<<<<<
+ *                     # print("    if")
+ * 
+ */
+        goto __pyx_L9;
+      }
+
+      /* "ailist/ailist.pyx":693
+ *                 else:
+ *                     # print("    else")
+ *                     for t in range(cs, ce):             # <<<<<<<<<<<<<<
+ *                         # print("      t", t)
+ *                         # print("      ail.interval_list[t].start", ail.interval_list[t].start)
+ */
+      /*else*/ {
+        __pyx_t_24 = __pyx_v_ce;
+        __pyx_t_26 = __pyx_t_24;
+        for (__pyx_t_22 = __pyx_v_cs; __pyx_t_22 < __pyx_t_26; __pyx_t_22+=1) {
+          __pyx_v_t = __pyx_t_22;
+
+          /* "ailist/ailist.pyx":698
+ *                         # print("      ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ *                         if (ail.interval_list[t].start < qe and ail.interval_list[t].end > qs):             # <<<<<<<<<<<<<<
+ * 
+ *                             if nfound >= length:
+ */
+          __pyx_t_21 = (((__pyx_v_ail->interval_list[__pyx_v_t]).start < __pyx_v_qe) != 0);
+          if (__pyx_t_21) {
+          } else {
+            __pyx_t_1 = __pyx_t_21;
+            goto __pyx_L19_bool_binop_done;
+          }
+          __pyx_t_21 = (((__pyx_v_ail->interval_list[__pyx_v_t]).end > __pyx_v_qs) != 0);
+          __pyx_t_1 = __pyx_t_21;
+          __pyx_L19_bool_binop_done:;
+          if (__pyx_t_1) {
+
+            /* "ailist/ailist.pyx":700
+ *                         if (ail.interval_list[t].start < qe and ail.interval_list[t].end > qs):
+ * 
+ *                             if nfound >= length:             # <<<<<<<<<<<<<<
+ * 
+ *                                 length = (length + 1) * 2
+ */
+            __pyx_t_1 = ((__pyx_v_nfound >= __pyx_v_length) != 0);
+            if (__pyx_t_1) {
+
+              /* "ailist/ailist.pyx":702
+ *                             if nfound >= length:
+ * 
+ *                                 length = (length + 1) * 2             # <<<<<<<<<<<<<<
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ */
+              __pyx_v_length = ((__pyx_v_length + 1) * 2);
+
+              /* "ailist/ailist.pyx":703
+ * 
+ *                                 length = (length + 1) * 2
+ *                                 output_arr = np.resize(output_arr, length)             # <<<<<<<<<<<<<<
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr
+ */
+              __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 703, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_resize); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 703, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_7);
+              __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 703, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              __pyx_t_4 = NULL;
+              __pyx_t_27 = 0;
+              if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_7))) {
+                __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_7);
+                if (likely(__pyx_t_4)) {
+                  PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_7);
+                  __Pyx_INCREF(__pyx_t_4);
+                  __Pyx_INCREF(function);
+                  __Pyx_DECREF_SET(__pyx_t_7, function);
+                  __pyx_t_27 = 1;
+                }
+              }
+              #if CYTHON_FAST_PYCALL
+              if (PyFunction_Check(__pyx_t_7)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_output_arr, __pyx_t_3};
+                __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_27, 2+__pyx_t_27); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 703, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              } else
+              #endif
+              #if CYTHON_FAST_PYCCALL
+              if (__Pyx_PyFastCFunction_Check(__pyx_t_7)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_output_arr, __pyx_t_3};
+                __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_27, 2+__pyx_t_27); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 703, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              } else
+              #endif
+              {
+                __pyx_t_6 = PyTuple_New(2+__pyx_t_27); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 703, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_6);
+                if (__pyx_t_4) {
+                  __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
+                }
+                __Pyx_INCREF(__pyx_v_output_arr);
+                __Pyx_GIVEREF(__pyx_v_output_arr);
+                PyTuple_SET_ITEM(__pyx_t_6, 0+__pyx_t_27, __pyx_v_output_arr);
+                __Pyx_GIVEREF(__pyx_t_3);
+                PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_27, __pyx_t_3);
+                __pyx_t_3 = 0;
+                __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 703, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+              }
+              __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+              __Pyx_DECREF_SET(__pyx_v_output_arr, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "ailist/ailist.pyx":704
+ *                                 length = (length + 1) * 2
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)             # <<<<<<<<<<<<<<
+ *                                 output = output_arr
+ *                                 output_other = output_arr_other
+ */
+              __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 704, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_7);
+              __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_resize); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 704, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_6);
+              __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+              __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 704, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_7);
+              __pyx_t_3 = NULL;
+              __pyx_t_27 = 0;
+              if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
+                __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_6);
+                if (likely(__pyx_t_3)) {
+                  PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_6);
+                  __Pyx_INCREF(__pyx_t_3);
+                  __Pyx_INCREF(function);
+                  __Pyx_DECREF_SET(__pyx_t_6, function);
+                  __pyx_t_27 = 1;
+                }
+              }
+              #if CYTHON_FAST_PYCALL
+              if (PyFunction_Check(__pyx_t_6)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_output_arr_other, __pyx_t_7};
+                __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_27, 2+__pyx_t_27); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 704, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+              } else
+              #endif
+              #if CYTHON_FAST_PYCCALL
+              if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_output_arr_other, __pyx_t_7};
+                __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_27, 2+__pyx_t_27); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 704, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+              } else
+              #endif
+              {
+                __pyx_t_4 = PyTuple_New(2+__pyx_t_27); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 704, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_4);
+                if (__pyx_t_3) {
+                  __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3); __pyx_t_3 = NULL;
+                }
+                __Pyx_INCREF(__pyx_v_output_arr_other);
+                __Pyx_GIVEREF(__pyx_v_output_arr_other);
+                PyTuple_SET_ITEM(__pyx_t_4, 0+__pyx_t_27, __pyx_v_output_arr_other);
+                __Pyx_GIVEREF(__pyx_t_7);
+                PyTuple_SET_ITEM(__pyx_t_4, 1+__pyx_t_27, __pyx_t_7);
+                __pyx_t_7 = 0;
+                __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 704, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+              }
+              __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+              __Pyx_DECREF_SET(__pyx_v_output_arr_other, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "ailist/ailist.pyx":705
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr             # <<<<<<<<<<<<<<
+ *                                 output_other = output_arr_other
+ * 
+ */
+              __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 705, __pyx_L1_error)
+              __PYX_XDEC_MEMVIEW(&__pyx_v_output, 1);
+              __pyx_v_output = __pyx_t_8;
+              __pyx_t_8.memview = NULL;
+              __pyx_t_8.data = NULL;
+
+              /* "ailist/ailist.pyx":706
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr
+ *                                 output_other = output_arr_other             # <<<<<<<<<<<<<<
+ * 
+ *                             output[nfound] = i
+ */
+              __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr_other, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 706, __pyx_L1_error)
+              __PYX_XDEC_MEMVIEW(&__pyx_v_output_other, 1);
+              __pyx_v_output_other = __pyx_t_8;
+              __pyx_t_8.memview = NULL;
+              __pyx_t_8.data = NULL;
+
+              /* "ailist/ailist.pyx":700
+ *                         if (ail.interval_list[t].start < qe and ail.interval_list[t].end > qs):
+ * 
+ *                             if nfound >= length:             # <<<<<<<<<<<<<<
+ * 
+ *                                 length = (length + 1) * 2
+ */
+            }
+
+            /* "ailist/ailist.pyx":708
+ *                                 output_other = output_arr_other
+ * 
+ *                             output[nfound] = i             # <<<<<<<<<<<<<<
+ *                             output_other[nfound] = ail.interval_list[t].index
+ *                             # print("        nfound", nfound)
+ */
+            __pyx_t_28 = __pyx_v_nfound;
+            *((int64_t *) ( /* dim=0 */ ((char *) (((int64_t *) __pyx_v_output.data) + __pyx_t_28)) )) = __pyx_v_i;
+
+            /* "ailist/ailist.pyx":709
+ * 
+ *                             output[nfound] = i
+ *                             output_other[nfound] = ail.interval_list[t].index             # <<<<<<<<<<<<<<
+ *                             # print("        nfound", nfound)
+ *                             # print("        output_arr", output_arr)
+ */
+            __pyx_t_29 = (__pyx_v_ail->interval_list[__pyx_v_t]).index;
+            __pyx_t_30 = __pyx_v_nfound;
+            *((int64_t *) ( /* dim=0 */ ((char *) (((int64_t *) __pyx_v_output_other.data) + __pyx_t_30)) )) = __pyx_t_29;
+
+            /* "ailist/ailist.pyx":714
+ *                             # print("        output_arr_other", output_arr_other)
+ * 
+ *                             nfound += 1             # <<<<<<<<<<<<<<
+ * 
+ *         return output_arr[:nfound], output_arr_other[:nfound]
+ */
+            __pyx_v_nfound = (__pyx_v_nfound + 1);
+
+            /* "ailist/ailist.pyx":698
+ *                         # print("      ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ *                         if (ail.interval_list[t].start < qe and ail.interval_list[t].end > qs):             # <<<<<<<<<<<<<<
+ * 
+ *                             if nfound >= length:
+ */
+          }
+        }
+      }
+      __pyx_L9:;
+    }
+  }
+
+  /* "ailist/ailist.pyx":716
+ *                             nfound += 1
+ * 
+ *         return output_arr[:nfound], output_arr_other[:nfound]             # <<<<<<<<<<<<<<
+ * 
+ * 
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_2 = __Pyx_PyObject_GetSlice(__pyx_v_output_arr, 0, __pyx_v_nfound, NULL, NULL, NULL, 0, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 716, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyObject_GetSlice(__pyx_v_output_arr_other, 0, __pyx_v_nfound, NULL, NULL, NULL, 0, 1, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 716, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_6);
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 716, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_GIVEREF(__pyx_t_2);
+  PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
+  __Pyx_GIVEREF(__pyx_t_6);
+  PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_6);
+  __pyx_t_2 = 0;
+  __pyx_t_6 = 0;
+  __pyx_r = __pyx_t_4;
+  __pyx_t_4 = 0;
+  goto __pyx_L0;
+
+  /* "ailist/ailist.pyx":627
+ *     @cython.wraparound(False)
+ *     @cython.initializedcheck(False)
+ *     def ifa(self, const long[::1] starts, const long[::1] ends, const long[::1] index):             # <<<<<<<<<<<<<<
+ * 
+ *         # Check if object is still open
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4);
+  __Pyx_XDECREF(__pyx_t_6);
+  __Pyx_XDECREF(__pyx_t_7);
+  __PYX_XDEC_MEMVIEW(&__pyx_t_8, 1);
+  __Pyx_AddTraceback("ailist.ailist.AIList.ifa", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_output_arr);
+  __Pyx_XDECREF(__pyx_v_output_arr_other);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_output, 1);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_output_other, 1);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_starts, 1);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_ends, 1);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_index, 1);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "ailist/ailist.pyx":722
+ *     @cython.wraparound(False)
+ *     @cython.initializedcheck(False)
+ *     def ifa2(self, const long[::1] starts, const long[::1] ends, const long[::1] index):             # <<<<<<<<<<<<<<
+ * 
+ *         # Check if object is still open
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_38ifa2(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_37ifa2[] = "AIList.ifa2(self, const long[::1] starts, const long[::1] ends, const long[::1] index)";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_38ifa2(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  __Pyx_memviewslice __pyx_v_starts = { 0, 0, { 0 }, { 0 }, { 0 } };
+  __Pyx_memviewslice __pyx_v_ends = { 0, 0, { 0 }, { 0 }, { 0 } };
+  __Pyx_memviewslice __pyx_v_index = { 0, 0, { 0 }, { 0 }, { 0 } };
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("ifa2 (wrapper)", 0);
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_starts,&__pyx_n_s_ends,&__pyx_n_s_index,0};
+    PyObject* values[3] = {0,0,0};
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+        CYTHON_FALLTHROUGH;
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_starts)) != 0)) kw_args--;
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_ends)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("ifa2", 1, 3, 3, 1); __PYX_ERR(1, 722, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  2:
+        if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_index)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("ifa2", 1, 3, 3, 2); __PYX_ERR(1, 722, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "ifa2") < 0)) __PYX_ERR(1, 722, __pyx_L3_error)
+      }
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+      values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+    }
+    __pyx_v_starts = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[0], 0); if (unlikely(!__pyx_v_starts.memview)) __PYX_ERR(1, 722, __pyx_L3_error)
+    __pyx_v_ends = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[1], 0); if (unlikely(!__pyx_v_ends.memview)) __PYX_ERR(1, 722, __pyx_L3_error)
+    __pyx_v_index = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[2], 0); if (unlikely(!__pyx_v_index.memview)) __PYX_ERR(1, 722, __pyx_L3_error)
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("ifa2", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 722, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("ailist.ailist.AIList.ifa2", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_37ifa2(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_starts, __pyx_v_ends, __pyx_v_index);
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_37ifa2(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, __Pyx_memviewslice __pyx_v_index) {
+  int __pyx_v_length;
+  int __pyx_v_nfound;
+  PyObject *__pyx_v_output_arr = NULL;
+  PyObject *__pyx_v_output_arr_other = NULL;
+  __Pyx_memviewslice __pyx_v_output = { 0, 0, { 0 }, { 0 }, { 0 } };
+  __Pyx_memviewslice __pyx_v_output_other = { 0, 0, { 0 }, { 0 }, { 0 } };
+  int __pyx_v_i;
+  int __pyx_v_k;
+  int __pyx_v_t;
+  int32_t __pyx_v_qs;
+  int32_t __pyx_v_qe;
+  CYTHON_UNUSED int32_t __pyx_v_qx;
+  int32_t __pyx_v_cs;
+  int32_t __pyx_v_ce;
+  ailist_t *__pyx_v_ail;
+  uint32_t __pyx_v_max_e;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  int __pyx_t_1;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *__pyx_t_4 = NULL;
+  size_t __pyx_t_5;
+  PyObject *__pyx_t_6 = NULL;
+  PyObject *__pyx_t_7 = NULL;
+  __Pyx_memviewslice __pyx_t_8 = { 0, 0, { 0 }, { 0 }, { 0 } };
+  ailist_t *__pyx_t_9;
+  int __pyx_t_10;
+  int __pyx_t_11;
+  int __pyx_t_12;
+  Py_ssize_t __pyx_t_13;
+  int __pyx_t_14;
+  Py_ssize_t __pyx_t_15;
+  long __pyx_t_16;
+  Py_ssize_t __pyx_t_17;
+  long __pyx_t_18;
+  Py_ssize_t __pyx_t_19;
+  long __pyx_t_20;
+  int __pyx_t_21;
+  int __pyx_t_22;
+  Py_ssize_t __pyx_t_23;
+  int32_t __pyx_t_24;
+  Py_ssize_t __pyx_t_25;
+  Py_ssize_t __pyx_t_26;
+  Py_ssize_t __pyx_t_27;
+  Py_ssize_t __pyx_t_28;
+  int32_t __pyx_t_29;
+  int __pyx_t_30;
+  Py_ssize_t __pyx_t_31;
+  int32_t __pyx_t_32;
+  Py_ssize_t __pyx_t_33;
+  __Pyx_RefNannySetupContext("ifa2", 0);
+
+  /* "ailist/ailist.pyx":725
+ * 
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
+ * 
+ */
+  __pyx_t_1 = (__pyx_v_self->is_closed != 0);
+  if (unlikely(__pyx_t_1)) {
+
+    /* "ailist/ailist.pyx":726
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+ * 
+ *         if self.is_constructed == False:
+ */
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 726, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_Raise(__pyx_t_2, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __PYX_ERR(1, 726, __pyx_L1_error)
+
+    /* "ailist/ailist.pyx":725
+ * 
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
+ * 
+ */
+  }
+
+  /* "ailist/ailist.pyx":728
+ *             raise NameError("AIList object has been closed.")
+ * 
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
+ * 
+ */
+  __pyx_t_1 = ((__pyx_v_self->is_constructed == 0) != 0);
+  if (__pyx_t_1) {
+
+    /* "ailist/ailist.pyx":729
+ * 
+ *         if self.is_constructed == False:
+ *             self.construct()             # <<<<<<<<<<<<<<
+ * 
+ *         cdef int length = len(starts)
+ */
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_construct); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 729, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_4 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_4)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_4);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 729, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "ailist/ailist.pyx":728
+ *             raise NameError("AIList object has been closed.")
+ * 
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
+ * 
+ */
+  }
+
+  /* "ailist/ailist.pyx":731
+ *             self.construct()
+ * 
+ *         cdef int length = len(starts)             # <<<<<<<<<<<<<<
+ *         cdef int nfound = 0
+ * 
+ */
+  __pyx_t_5 = __Pyx_MemoryView_Len(__pyx_v_starts); 
+  __pyx_v_length = __pyx_t_5;
+
+  /* "ailist/ailist.pyx":732
+ * 
+ *         cdef int length = len(starts)
+ *         cdef int nfound = 0             # <<<<<<<<<<<<<<
+ * 
+ *         output_arr = np.ones(length, dtype=np.int64) * -1
+ */
+  __pyx_v_nfound = 0;
+
+  /* "ailist/ailist.pyx":734
+ *         cdef int nfound = 0
+ * 
+ *         output_arr = np.ones(length, dtype=np.int64) * -1             # <<<<<<<<<<<<<<
+ *         output_arr_other = np.ones(length, dtype=np.int64) * -1
+ * 
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 734, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ones); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 734, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 734, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 734, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_GIVEREF(__pyx_t_2);
+  PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
+  __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 734, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 734, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_6);
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_int64); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 734, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_7);
+  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(1, 734, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 734, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_7);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_7, __pyx_int_neg_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 734, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+  __pyx_v_output_arr = __pyx_t_2;
+  __pyx_t_2 = 0;
+
+  /* "ailist/ailist.pyx":735
+ * 
+ *         output_arr = np.ones(length, dtype=np.int64) * -1
+ *         output_arr_other = np.ones(length, dtype=np.int64) * -1             # <<<<<<<<<<<<<<
+ * 
+ *         cdef int64_t [::1] output
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 735, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ones); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 735, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_7);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 735, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 735, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_GIVEREF(__pyx_t_2);
+  PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
+  __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 735, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 735, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_int64); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 735, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_6);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(1, 735, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 735, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_6);
+  __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_6, __pyx_int_neg_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 735, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+  __pyx_v_output_arr_other = __pyx_t_2;
+  __pyx_t_2 = 0;
+
+  /* "ailist/ailist.pyx":740
+ *         cdef int64_t [::1] output_other
+ * 
+ *         output = output_arr             # <<<<<<<<<<<<<<
+ *         output_other = output_arr_other
+ * 
+ */
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 740, __pyx_L1_error)
+  __pyx_v_output = __pyx_t_8;
+  __pyx_t_8.memview = NULL;
+  __pyx_t_8.data = NULL;
+
+  /* "ailist/ailist.pyx":741
+ * 
+ *         output = output_arr
+ *         output_other = output_arr_other             # <<<<<<<<<<<<<<
+ * 
+ *         cdef int i = 0
+ */
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr_other, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 741, __pyx_L1_error)
+  __pyx_v_output_other = __pyx_t_8;
+  __pyx_t_8.memview = NULL;
+  __pyx_t_8.data = NULL;
+
+  /* "ailist/ailist.pyx":743
+ *         output_other = output_arr_other
+ * 
+ *         cdef int i = 0             # <<<<<<<<<<<<<<
+ *         cdef int k = 0
+ *         cdef int t = 0
+ */
+  __pyx_v_i = 0;
+
+  /* "ailist/ailist.pyx":744
+ * 
+ *         cdef int i = 0
+ *         cdef int k = 0             # <<<<<<<<<<<<<<
+ *         cdef int t = 0
+ *         cdef int32_t qs, qe, qx, cs, ce
+ */
+  __pyx_v_k = 0;
+
+  /* "ailist/ailist.pyx":745
+ *         cdef int i = 0
+ *         cdef int k = 0
+ *         cdef int t = 0             # <<<<<<<<<<<<<<
+ *         cdef int32_t qs, qe, qx, cs, ce
+ *         cdef ailist_t *ail = self.interval_list
+ */
+  __pyx_v_t = 0;
+
+  /* "ailist/ailist.pyx":747
+ *         cdef int t = 0
+ *         cdef int32_t qs, qe, qx, cs, ce
+ *         cdef ailist_t *ail = self.interval_list             # <<<<<<<<<<<<<<
+ *         cdef uint32_t max_e = 0
+ * 
+ */
+  __pyx_t_9 = __pyx_v_self->interval_list;
+  __pyx_v_ail = __pyx_t_9;
+
+  /* "ailist/ailist.pyx":748
+ *         cdef int32_t qs, qe, qx, cs, ce
+ *         cdef ailist_t *ail = self.interval_list
+ *         cdef uint32_t max_e = 0             # <<<<<<<<<<<<<<
+ * 
+ *         for k in range(ail.nc):
+ */
+  __pyx_v_max_e = 0;
+
+  /* "ailist/ailist.pyx":750
+ *         cdef uint32_t max_e = 0
+ * 
+ *         for k in range(ail.nc):             # <<<<<<<<<<<<<<
+ * 
+ *             cs = ail.idxC[k]
+ */
+  __pyx_t_10 = __pyx_v_ail->nc;
+  __pyx_t_11 = __pyx_t_10;
+  for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
+    __pyx_v_k = __pyx_t_12;
+
+    /* "ailist/ailist.pyx":752
+ *         for k in range(ail.nc):
+ * 
+ *             cs = ail.idxC[k]             # <<<<<<<<<<<<<<
+ *             ce = cs + ail.lenC[k]
+ * 
+ */
+    __pyx_v_cs = (__pyx_v_ail->idxC[__pyx_v_k]);
+
+    /* "ailist/ailist.pyx":753
+ * 
+ *             cs = ail.idxC[k]
+ *             ce = cs + ail.lenC[k]             # <<<<<<<<<<<<<<
+ * 
+ *             if ail.lenC[k] > 15:
+ */
+    __pyx_v_ce = (__pyx_v_cs + (__pyx_v_ail->lenC[__pyx_v_k]));
+
+    /* "ailist/ailist.pyx":755
+ *             ce = cs + ail.lenC[k]
+ * 
+ *             if ail.lenC[k] > 15:             # <<<<<<<<<<<<<<
+ *                 # print("    if")
+ *                 max_e = ail.maxE[t]
+ */
+    __pyx_t_1 = (((__pyx_v_ail->lenC[__pyx_v_k]) > 15) != 0);
+    if (__pyx_t_1) {
+
+      /* "ailist/ailist.pyx":757
+ *             if ail.lenC[k] > 15:
+ *                 # print("    if")
+ *                 max_e = ail.maxE[t]             # <<<<<<<<<<<<<<
+ * 
+ *                 for i in range(len(starts)):
+ */
+      __pyx_v_max_e = (__pyx_v_ail->maxE[__pyx_v_t]);
+
+      /* "ailist/ailist.pyx":759
+ *                 max_e = ail.maxE[t]
+ * 
+ *                 for i in range(len(starts)):             # <<<<<<<<<<<<<<
+ * 
+ *                     qs, qe, qx = starts[i], ends[i], index[i]
+ */
+      __pyx_t_5 = __Pyx_MemoryView_Len(__pyx_v_starts); 
+      __pyx_t_13 = __pyx_t_5;
+      for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
+        __pyx_v_i = __pyx_t_14;
+
+        /* "ailist/ailist.pyx":761
+ *                 for i in range(len(starts)):
+ * 
+ *                     qs, qe, qx = starts[i], ends[i], index[i]             # <<<<<<<<<<<<<<
+ * 
+ *                     t = binary_search(ail.interval_list, cs, ce, qe)
+ */
+        __pyx_t_15 = __pyx_v_i;
+        __pyx_t_16 = (*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_starts.data) + __pyx_t_15)) )));
+        __pyx_t_17 = __pyx_v_i;
+        __pyx_t_18 = (*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_ends.data) + __pyx_t_17)) )));
+        __pyx_t_19 = __pyx_v_i;
+        __pyx_t_20 = (*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_index.data) + __pyx_t_19)) )));
+        __pyx_v_qs = __pyx_t_16;
+        __pyx_v_qe = __pyx_t_18;
+        __pyx_v_qx = __pyx_t_20;
+
+        /* "ailist/ailist.pyx":763
+ *                     qs, qe, qx = starts[i], ends[i], index[i]
+ * 
+ *                     t = binary_search(ail.interval_list, cs, ce, qe)             # <<<<<<<<<<<<<<
+ * 
+ *                     while (t >= cs and max_e > qs):
+ */
+        __pyx_v_t = binary_search(__pyx_v_ail->interval_list, __pyx_v_cs, __pyx_v_ce, __pyx_v_qe);
+
+        /* "ailist/ailist.pyx":765
+ *                     t = binary_search(ail.interval_list, cs, ce, qe)
+ * 
+ *                     while (t >= cs and max_e > qs):             # <<<<<<<<<<<<<<
+ *                         # print("      t", t)
+ * 
+ */
+        while (1) {
+          __pyx_t_21 = ((__pyx_v_t >= __pyx_v_cs) != 0);
+          if (__pyx_t_21) {
+          } else {
+            __pyx_t_1 = __pyx_t_21;
+            goto __pyx_L12_bool_binop_done;
+          }
+          __pyx_t_21 = ((__pyx_v_max_e > __pyx_v_qs) != 0);
+          __pyx_t_1 = __pyx_t_21;
+          __pyx_L12_bool_binop_done:;
+          if (!__pyx_t_1) break;
+
+          /* "ailist/ailist.pyx":768
+ *                         # print("      t", t)
+ * 
+ *                         if (ail.interval_list[t].end > qs):             # <<<<<<<<<<<<<<
+ *                             # print("        ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ */
+          __pyx_t_1 = (((__pyx_v_ail->interval_list[__pyx_v_t]).end > __pyx_v_qs) != 0);
+          if (__pyx_t_1) {
+
+            /* "ailist/ailist.pyx":771
+ *                             # print("        ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ *                             if nfound >= length:             # <<<<<<<<<<<<<<
+ * 
+ *                                 length = (length + 1) * 2
+ */
+            __pyx_t_1 = ((__pyx_v_nfound >= __pyx_v_length) != 0);
+            if (__pyx_t_1) {
+
+              /* "ailist/ailist.pyx":773
+ *                             if nfound >= length:
+ * 
+ *                                 length = (length + 1) * 2             # <<<<<<<<<<<<<<
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ */
+              __pyx_v_length = ((__pyx_v_length + 1) * 2);
+
+              /* "ailist/ailist.pyx":774
+ * 
+ *                                 length = (length + 1) * 2
+ *                                 output_arr = np.resize(output_arr, length)             # <<<<<<<<<<<<<<
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr
+ */
+              __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 774, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_6);
+              __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_resize); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 774, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_4);
+              __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+              __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 774, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_6);
+              __pyx_t_7 = NULL;
+              __pyx_t_22 = 0;
+              if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
+                __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_4);
+                if (likely(__pyx_t_7)) {
+                  PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+                  __Pyx_INCREF(__pyx_t_7);
+                  __Pyx_INCREF(function);
+                  __Pyx_DECREF_SET(__pyx_t_4, function);
+                  __pyx_t_22 = 1;
+                }
+              }
+              #if CYTHON_FAST_PYCALL
+              if (PyFunction_Check(__pyx_t_4)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_output_arr, __pyx_t_6};
+                __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_22, 2+__pyx_t_22); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 774, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+              } else
+              #endif
+              #if CYTHON_FAST_PYCCALL
+              if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_output_arr, __pyx_t_6};
+                __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_22, 2+__pyx_t_22); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 774, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+              } else
+              #endif
+              {
+                __pyx_t_3 = PyTuple_New(2+__pyx_t_22); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 774, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_3);
+                if (__pyx_t_7) {
+                  __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_7); __pyx_t_7 = NULL;
+                }
+                __Pyx_INCREF(__pyx_v_output_arr);
+                __Pyx_GIVEREF(__pyx_v_output_arr);
+                PyTuple_SET_ITEM(__pyx_t_3, 0+__pyx_t_22, __pyx_v_output_arr);
+                __Pyx_GIVEREF(__pyx_t_6);
+                PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_22, __pyx_t_6);
+                __pyx_t_6 = 0;
+                __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 774, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              }
+              __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+              __Pyx_DECREF_SET(__pyx_v_output_arr, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "ailist/ailist.pyx":775
+ *                                 length = (length + 1) * 2
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)             # <<<<<<<<<<<<<<
+ *                                 output = output_arr
+ *                                 output_other = output_arr_other
+ */
+              __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 775, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_4);
+              __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_resize); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 775, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+              __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 775, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_4);
+              __pyx_t_6 = NULL;
+              __pyx_t_22 = 0;
+              if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+                __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_3);
+                if (likely(__pyx_t_6)) {
+                  PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+                  __Pyx_INCREF(__pyx_t_6);
+                  __Pyx_INCREF(function);
+                  __Pyx_DECREF_SET(__pyx_t_3, function);
+                  __pyx_t_22 = 1;
+                }
+              }
+              #if CYTHON_FAST_PYCALL
+              if (PyFunction_Check(__pyx_t_3)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_output_arr_other, __pyx_t_4};
+                __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_22, 2+__pyx_t_22); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 775, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+              } else
+              #endif
+              #if CYTHON_FAST_PYCCALL
+              if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_output_arr_other, __pyx_t_4};
+                __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_22, 2+__pyx_t_22); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 775, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+              } else
+              #endif
+              {
+                __pyx_t_7 = PyTuple_New(2+__pyx_t_22); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 775, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_7);
+                if (__pyx_t_6) {
+                  __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __pyx_t_6 = NULL;
+                }
+                __Pyx_INCREF(__pyx_v_output_arr_other);
+                __Pyx_GIVEREF(__pyx_v_output_arr_other);
+                PyTuple_SET_ITEM(__pyx_t_7, 0+__pyx_t_22, __pyx_v_output_arr_other);
+                __Pyx_GIVEREF(__pyx_t_4);
+                PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_22, __pyx_t_4);
+                __pyx_t_4 = 0;
+                __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 775, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+              }
+              __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              __Pyx_DECREF_SET(__pyx_v_output_arr_other, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "ailist/ailist.pyx":776
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr             # <<<<<<<<<<<<<<
+ *                                 output_other = output_arr_other
+ * 
+ */
+              __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 776, __pyx_L1_error)
+              __PYX_XDEC_MEMVIEW(&__pyx_v_output, 1);
+              __pyx_v_output = __pyx_t_8;
+              __pyx_t_8.memview = NULL;
+              __pyx_t_8.data = NULL;
+
+              /* "ailist/ailist.pyx":777
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr
+ *                                 output_other = output_arr_other             # <<<<<<<<<<<<<<
+ * 
+ *                             output[nfound] = i
+ */
+              __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr_other, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 777, __pyx_L1_error)
+              __PYX_XDEC_MEMVIEW(&__pyx_v_output_other, 1);
+              __pyx_v_output_other = __pyx_t_8;
+              __pyx_t_8.memview = NULL;
+              __pyx_t_8.data = NULL;
+
+              /* "ailist/ailist.pyx":771
+ *                             # print("        ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ *                             if nfound >= length:             # <<<<<<<<<<<<<<
+ * 
+ *                                 length = (length + 1) * 2
+ */
+            }
+
+            /* "ailist/ailist.pyx":779
+ *                                 output_other = output_arr_other
+ * 
+ *                             output[nfound] = i             # <<<<<<<<<<<<<<
+ *                             output_other[nfound] = ail.interval_list[t].index
+ *                             nfound += 1
+ */
+            __pyx_t_23 = __pyx_v_nfound;
+            *((int64_t *) ( /* dim=0 */ ((char *) (((int64_t *) __pyx_v_output.data) + __pyx_t_23)) )) = __pyx_v_i;
+
+            /* "ailist/ailist.pyx":780
+ * 
+ *                             output[nfound] = i
+ *                             output_other[nfound] = ail.interval_list[t].index             # <<<<<<<<<<<<<<
+ *                             nfound += 1
+ * 
+ */
+            __pyx_t_24 = (__pyx_v_ail->interval_list[__pyx_v_t]).index;
+            __pyx_t_25 = __pyx_v_nfound;
+            *((int64_t *) ( /* dim=0 */ ((char *) (((int64_t *) __pyx_v_output_other.data) + __pyx_t_25)) )) = __pyx_t_24;
+
+            /* "ailist/ailist.pyx":781
+ *                             output[nfound] = i
+ *                             output_other[nfound] = ail.interval_list[t].index
+ *                             nfound += 1             # <<<<<<<<<<<<<<
+ * 
+ *                         # print("        nfound", nfound)
+ */
+            __pyx_v_nfound = (__pyx_v_nfound + 1);
+
+            /* "ailist/ailist.pyx":768
+ *                         # print("      t", t)
+ * 
+ *                         if (ail.interval_list[t].end > qs):             # <<<<<<<<<<<<<<
+ *                             # print("        ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ */
+          }
+
+          /* "ailist/ailist.pyx":787
+ *                         # print("        output_arr_other", output_arr_other)
+ * 
+ *                         t -= 1             # <<<<<<<<<<<<<<
+ *             else:
+ *                 # print("    else")
+ */
+          __pyx_v_t = (__pyx_v_t - 1);
+        }
+      }
+
+      /* "ailist/ailist.pyx":755
+ *             ce = cs + ail.lenC[k]
+ * 
+ *             if ail.lenC[k] > 15:             # <<<<<<<<<<<<<<
+ *                 # print("    if")
+ *                 max_e = ail.maxE[t]
+ */
+      goto __pyx_L7;
+    }
+
+    /* "ailist/ailist.pyx":790
+ *             else:
+ *                 # print("    else")
+ *                 for i in range(len(starts)):             # <<<<<<<<<<<<<<
+ * 
+ *                     qs, qe, qx = starts[i], ends[i], index[i]
+ */
+    /*else*/ {
+      __pyx_t_5 = __Pyx_MemoryView_Len(__pyx_v_starts); 
+      __pyx_t_13 = __pyx_t_5;
+      for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
+        __pyx_v_i = __pyx_t_14;
+
+        /* "ailist/ailist.pyx":792
+ *                 for i in range(len(starts)):
+ * 
+ *                     qs, qe, qx = starts[i], ends[i], index[i]             # <<<<<<<<<<<<<<
+ * 
+ *                     for t in range(cs, ce):
+ */
+        __pyx_t_26 = __pyx_v_i;
+        __pyx_t_20 = (*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_starts.data) + __pyx_t_26)) )));
+        __pyx_t_27 = __pyx_v_i;
+        __pyx_t_18 = (*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_ends.data) + __pyx_t_27)) )));
+        __pyx_t_28 = __pyx_v_i;
+        __pyx_t_16 = (*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_index.data) + __pyx_t_28)) )));
+        __pyx_v_qs = __pyx_t_20;
+        __pyx_v_qe = __pyx_t_18;
+        __pyx_v_qx = __pyx_t_16;
+
+        /* "ailist/ailist.pyx":794
+ *                     qs, qe, qx = starts[i], ends[i], index[i]
+ * 
+ *                     for t in range(cs, ce):             # <<<<<<<<<<<<<<
+ *                         # print("      t", t)
+ *                         # print("      ail.interval_list[t].start", ail.interval_list[t].start)
+ */
+        __pyx_t_24 = __pyx_v_ce;
+        __pyx_t_29 = __pyx_t_24;
+        for (__pyx_t_22 = __pyx_v_cs; __pyx_t_22 < __pyx_t_29; __pyx_t_22+=1) {
+          __pyx_v_t = __pyx_t_22;
+
+          /* "ailist/ailist.pyx":799
+ *                         # print("      ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ *                         if (ail.interval_list[t].start < qe and ail.interval_list[t].end > qs):             # <<<<<<<<<<<<<<
+ * 
+ *                             if nfound >= length:
+ */
+          __pyx_t_21 = (((__pyx_v_ail->interval_list[__pyx_v_t]).start < __pyx_v_qe) != 0);
+          if (__pyx_t_21) {
+          } else {
+            __pyx_t_1 = __pyx_t_21;
+            goto __pyx_L21_bool_binop_done;
+          }
+          __pyx_t_21 = (((__pyx_v_ail->interval_list[__pyx_v_t]).end > __pyx_v_qs) != 0);
+          __pyx_t_1 = __pyx_t_21;
+          __pyx_L21_bool_binop_done:;
+          if (__pyx_t_1) {
+
+            /* "ailist/ailist.pyx":801
+ *                         if (ail.interval_list[t].start < qe and ail.interval_list[t].end > qs):
+ * 
+ *                             if nfound >= length:             # <<<<<<<<<<<<<<
+ * 
+ *                                 length = (length + 1) * 2
+ */
+            __pyx_t_1 = ((__pyx_v_nfound >= __pyx_v_length) != 0);
+            if (__pyx_t_1) {
+
+              /* "ailist/ailist.pyx":803
+ *                             if nfound >= length:
+ * 
+ *                                 length = (length + 1) * 2             # <<<<<<<<<<<<<<
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ */
+              __pyx_v_length = ((__pyx_v_length + 1) * 2);
+
+              /* "ailist/ailist.pyx":804
+ * 
+ *                                 length = (length + 1) * 2
+ *                                 output_arr = np.resize(output_arr, length)             # <<<<<<<<<<<<<<
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr
+ */
+              __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 804, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_resize); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 804, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_7);
+              __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 804, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              __pyx_t_4 = NULL;
+              __pyx_t_30 = 0;
+              if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_7))) {
+                __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_7);
+                if (likely(__pyx_t_4)) {
+                  PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_7);
+                  __Pyx_INCREF(__pyx_t_4);
+                  __Pyx_INCREF(function);
+                  __Pyx_DECREF_SET(__pyx_t_7, function);
+                  __pyx_t_30 = 1;
+                }
+              }
+              #if CYTHON_FAST_PYCALL
+              if (PyFunction_Check(__pyx_t_7)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_output_arr, __pyx_t_3};
+                __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_30, 2+__pyx_t_30); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 804, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              } else
+              #endif
+              #if CYTHON_FAST_PYCCALL
+              if (__Pyx_PyFastCFunction_Check(__pyx_t_7)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_output_arr, __pyx_t_3};
+                __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_30, 2+__pyx_t_30); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 804, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              } else
+              #endif
+              {
+                __pyx_t_6 = PyTuple_New(2+__pyx_t_30); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 804, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_6);
+                if (__pyx_t_4) {
+                  __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
+                }
+                __Pyx_INCREF(__pyx_v_output_arr);
+                __Pyx_GIVEREF(__pyx_v_output_arr);
+                PyTuple_SET_ITEM(__pyx_t_6, 0+__pyx_t_30, __pyx_v_output_arr);
+                __Pyx_GIVEREF(__pyx_t_3);
+                PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_30, __pyx_t_3);
+                __pyx_t_3 = 0;
+                __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 804, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+              }
+              __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+              __Pyx_DECREF_SET(__pyx_v_output_arr, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "ailist/ailist.pyx":805
+ *                                 length = (length + 1) * 2
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)             # <<<<<<<<<<<<<<
+ *                                 output = output_arr
+ *                                 output_other = output_arr_other
+ */
+              __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 805, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_7);
+              __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_resize); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 805, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_6);
+              __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+              __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 805, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_7);
+              __pyx_t_3 = NULL;
+              __pyx_t_30 = 0;
+              if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
+                __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_6);
+                if (likely(__pyx_t_3)) {
+                  PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_6);
+                  __Pyx_INCREF(__pyx_t_3);
+                  __Pyx_INCREF(function);
+                  __Pyx_DECREF_SET(__pyx_t_6, function);
+                  __pyx_t_30 = 1;
+                }
+              }
+              #if CYTHON_FAST_PYCALL
+              if (PyFunction_Check(__pyx_t_6)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_output_arr_other, __pyx_t_7};
+                __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_30, 2+__pyx_t_30); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 805, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+              } else
+              #endif
+              #if CYTHON_FAST_PYCCALL
+              if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
+                PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_output_arr_other, __pyx_t_7};
+                __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_30, 2+__pyx_t_30); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 805, __pyx_L1_error)
+                __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+              } else
+              #endif
+              {
+                __pyx_t_4 = PyTuple_New(2+__pyx_t_30); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 805, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_4);
+                if (__pyx_t_3) {
+                  __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3); __pyx_t_3 = NULL;
+                }
+                __Pyx_INCREF(__pyx_v_output_arr_other);
+                __Pyx_GIVEREF(__pyx_v_output_arr_other);
+                PyTuple_SET_ITEM(__pyx_t_4, 0+__pyx_t_30, __pyx_v_output_arr_other);
+                __Pyx_GIVEREF(__pyx_t_7);
+                PyTuple_SET_ITEM(__pyx_t_4, 1+__pyx_t_30, __pyx_t_7);
+                __pyx_t_7 = 0;
+                __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 805, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+              }
+              __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+              __Pyx_DECREF_SET(__pyx_v_output_arr_other, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "ailist/ailist.pyx":806
+ *                                 output_arr = np.resize(output_arr, length)
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr             # <<<<<<<<<<<<<<
+ *                                 output_other = output_arr_other
+ * 
+ */
+              __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 806, __pyx_L1_error)
+              __PYX_XDEC_MEMVIEW(&__pyx_v_output, 1);
+              __pyx_v_output = __pyx_t_8;
+              __pyx_t_8.memview = NULL;
+              __pyx_t_8.data = NULL;
+
+              /* "ailist/ailist.pyx":807
+ *                                 output_arr_other = np.resize(output_arr_other, length)
+ *                                 output = output_arr
+ *                                 output_other = output_arr_other             # <<<<<<<<<<<<<<
+ * 
+ *                             output[nfound] = i
+ */
+              __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(__pyx_v_output_arr_other, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 807, __pyx_L1_error)
+              __PYX_XDEC_MEMVIEW(&__pyx_v_output_other, 1);
+              __pyx_v_output_other = __pyx_t_8;
+              __pyx_t_8.memview = NULL;
+              __pyx_t_8.data = NULL;
+
+              /* "ailist/ailist.pyx":801
+ *                         if (ail.interval_list[t].start < qe and ail.interval_list[t].end > qs):
+ * 
+ *                             if nfound >= length:             # <<<<<<<<<<<<<<
+ * 
+ *                                 length = (length + 1) * 2
+ */
+            }
+
+            /* "ailist/ailist.pyx":809
+ *                                 output_other = output_arr_other
+ * 
+ *                             output[nfound] = i             # <<<<<<<<<<<<<<
+ *                             output_other[nfound] = ail.interval_list[t].index
+ *                             # print("        nfound", nfound)
+ */
+            __pyx_t_31 = __pyx_v_nfound;
+            *((int64_t *) ( /* dim=0 */ ((char *) (((int64_t *) __pyx_v_output.data) + __pyx_t_31)) )) = __pyx_v_i;
+
+            /* "ailist/ailist.pyx":810
+ * 
+ *                             output[nfound] = i
+ *                             output_other[nfound] = ail.interval_list[t].index             # <<<<<<<<<<<<<<
+ *                             # print("        nfound", nfound)
+ *                             # print("        output_arr", output_arr)
+ */
+            __pyx_t_32 = (__pyx_v_ail->interval_list[__pyx_v_t]).index;
+            __pyx_t_33 = __pyx_v_nfound;
+            *((int64_t *) ( /* dim=0 */ ((char *) (((int64_t *) __pyx_v_output_other.data) + __pyx_t_33)) )) = __pyx_t_32;
+
+            /* "ailist/ailist.pyx":815
+ *                             # print("        output_arr_other", output_arr_other)
+ * 
+ *                             nfound += 1             # <<<<<<<<<<<<<<
+ * 
+ *         return output_arr[:nfound], output_arr_other[:nfound]
+ */
+            __pyx_v_nfound = (__pyx_v_nfound + 1);
+
+            /* "ailist/ailist.pyx":799
+ *                         # print("      ail.interval_list[t].end", ail.interval_list[t].end)
+ * 
+ *                         if (ail.interval_list[t].start < qe and ail.interval_list[t].end > qs):             # <<<<<<<<<<<<<<
+ * 
+ *                             if nfound >= length:
+ */
+          }
+        }
+      }
+    }
+    __pyx_L7:;
+  }
+
+  /* "ailist/ailist.pyx":817
+ *                             nfound += 1
+ * 
+ *         return output_arr[:nfound], output_arr_other[:nfound]             # <<<<<<<<<<<<<<
+ * 
+ * 
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_2 = __Pyx_PyObject_GetSlice(__pyx_v_output_arr, 0, __pyx_v_nfound, NULL, NULL, NULL, 0, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 817, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_6 = __Pyx_PyObject_GetSlice(__pyx_v_output_arr_other, 0, __pyx_v_nfound, NULL, NULL, NULL, 0, 1, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 817, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_6);
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 817, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_GIVEREF(__pyx_t_2);
+  PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
+  __Pyx_GIVEREF(__pyx_t_6);
+  PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_6);
+  __pyx_t_2 = 0;
+  __pyx_t_6 = 0;
+  __pyx_r = __pyx_t_4;
+  __pyx_t_4 = 0;
+  goto __pyx_L0;
+
+  /* "ailist/ailist.pyx":722
+ *     @cython.wraparound(False)
+ *     @cython.initializedcheck(False)
+ *     def ifa2(self, const long[::1] starts, const long[::1] ends, const long[::1] index):             # <<<<<<<<<<<<<<
+ * 
+ *         # Check if object is still open
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4);
+  __Pyx_XDECREF(__pyx_t_6);
+  __Pyx_XDECREF(__pyx_t_7);
+  __PYX_XDEC_MEMVIEW(&__pyx_t_8, 1);
+  __Pyx_AddTraceback("ailist.ailist.AIList.ifa2", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_output_arr);
+  __Pyx_XDECREF(__pyx_v_output_arr_other);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_output, 1);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_output_other, 1);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_starts, 1);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_ends, 1);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_index, 1);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "ailist/ailist.pyx":820
+ * 
+ * 
+ *     cdef np.ndarray _coverage(AIList self):             # <<<<<<<<<<<<<<
+ *         # Initialize coverage
+ *         cdef double[::1] coverage = np.zeros(self.range, dtype=np.double)
  */
 
 static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__coverage(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self) {
@@ -8476,51 +10902,51 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__coverage(struct __pyx_obj
   int __pyx_t_8;
   __Pyx_RefNannySetupContext("_coverage", 0);
 
-  /* "ailist/ailist.pyx":584
- * 	cdef np.ndarray _coverage(AIList self):
- * 		# Initialize coverage
- * 		cdef double[::1] coverage = np.zeros(self.range, dtype=np.double)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":822
+ *     cdef np.ndarray _coverage(AIList self):
+ *         # Initialize coverage
+ *         cdef double[::1] coverage = np.zeros(self.range, dtype=np.double)             # <<<<<<<<<<<<<<
  * 
- * 		ailist_coverage(self.interval_list, &coverage[0])
+ *         ailist_coverage(self.interval_list, &coverage[0])
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 584, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 822, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 584, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 822, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_range); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 584, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_range); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 822, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 584, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 822, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 584, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 822, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 584, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 822, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_double); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 584, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_double); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 822, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 584, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 822, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 584, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 822, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 584, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 822, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_coverage = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "ailist/ailist.pyx":586
- * 		cdef double[::1] coverage = np.zeros(self.range, dtype=np.double)
+  /* "ailist/ailist.pyx":824
+ *         cdef double[::1] coverage = np.zeros(self.range, dtype=np.double)
  * 
- * 		ailist_coverage(self.interval_list, &coverage[0])             # <<<<<<<<<<<<<<
+ *         ailist_coverage(self.interval_list, &coverage[0])             # <<<<<<<<<<<<<<
  * 
- * 		return np.asarray(coverage)
+ *         return np.asarray(coverage)
  */
   __pyx_t_7 = 0;
   __pyx_t_8 = -1;
@@ -8530,24 +10956,24 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__coverage(struct __pyx_obj
   } else if (unlikely(__pyx_t_7 >= __pyx_v_coverage.shape[0])) __pyx_t_8 = 0;
   if (unlikely(__pyx_t_8 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_8);
-    __PYX_ERR(1, 586, __pyx_L1_error)
+    __PYX_ERR(1, 824, __pyx_L1_error)
   }
   ailist_coverage(__pyx_v_self->interval_list, (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_coverage.data) + __pyx_t_7)) )))));
 
-  /* "ailist/ailist.pyx":588
- * 		ailist_coverage(self.interval_list, &coverage[0])
+  /* "ailist/ailist.pyx":826
+ *         ailist_coverage(self.interval_list, &coverage[0])
  * 
- * 		return np.asarray(coverage)             # <<<<<<<<<<<<<<
+ *         return np.asarray(coverage)             # <<<<<<<<<<<<<<
  * 
- * 	def coverage(self):
+ *     def coverage(self):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 588, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 826, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 588, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 826, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_coverage, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 588, __pyx_L1_error)
+  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_coverage, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 826, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
@@ -8562,20 +10988,20 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__coverage(struct __pyx_obj
   __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 588, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 826, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 588, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 826, __pyx_L1_error)
   __pyx_r = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":582
+  /* "ailist/ailist.pyx":820
  * 
  * 
- * 	cdef np.ndarray _coverage(AIList self):             # <<<<<<<<<<<<<<
- * 		# Initialize coverage
- * 		cdef double[::1] coverage = np.zeros(self.range, dtype=np.double)
+ *     cdef np.ndarray _coverage(AIList self):             # <<<<<<<<<<<<<<
+ *         # Initialize coverage
+ *         cdef double[::1] coverage = np.zeros(self.range, dtype=np.double)
  */
 
   /* function exit code */
@@ -8595,29 +11021,29 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__coverage(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":590
- * 		return np.asarray(coverage)
+/* "ailist/ailist.pyx":828
+ *         return np.asarray(coverage)
  * 
- * 	def coverage(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find number of intervals overlapping every
+ *     def coverage(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find number of intervals overlapping every
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_36coverage(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_35coverage[] = "AIList.coverage(self)\n\n\t\tFind number of intervals overlapping every\n\t\tposition in the AList range\n\n\t\tReturns:\n\t\t---------\n\t\t\tpandas.Series{double} (Position on index and coverage as values)\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_36coverage(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_40coverage(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_39coverage[] = "AIList.coverage(self)\n\n        Find number of intervals overlapping every\n        position in the AList range\n\n        Returns:\n        ---------\n            pandas.Series{double} (Position on index and coverage as values)\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_40coverage(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("coverage (wrapper)", 0);
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_35coverage(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_39coverage(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_35coverage(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_39coverage(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self) {
   PyArrayObject *__pyx_v_coverage = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -8634,78 +11060,78 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_35coverage(struct __pyx_obj_6a
   PyObject *__pyx_t_11 = NULL;
   __Pyx_RefNannySetupContext("coverage", 0);
 
-  /* "ailist/ailist.pyx":601
+  /* "ailist/ailist.pyx":839
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":602
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":840
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Initialize coverage
+ *         # Initialize coverage
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 602, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 840, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 602, __pyx_L1_error)
+    __PYX_ERR(1, 840, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":601
+    /* "ailist/ailist.pyx":839
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":607
- * 		cdef np.ndarray coverage
- * 		# Calculate coverage
- * 		coverage = self._coverage()             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":845
+ *         cdef np.ndarray coverage
+ *         # Calculate coverage
+ *         coverage = self._coverage()             # <<<<<<<<<<<<<<
  * 
- * 		return pd.Series(coverage, index=np.arange(self.first, self.last))
+ *         return pd.Series(coverage, index=np.arange(self.first, self.last))
  */
-  __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_coverage(__pyx_v_self)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 607, __pyx_L1_error)
+  __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_coverage(__pyx_v_self)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 845, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_coverage = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "ailist/ailist.pyx":609
- * 		coverage = self._coverage()
+  /* "ailist/ailist.pyx":847
+ *         coverage = self._coverage()
  * 
- * 		return pd.Series(coverage, index=np.arange(self.first, self.last))             # <<<<<<<<<<<<<<
+ *         return pd.Series(coverage, index=np.arange(self.first, self.last))             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pd); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 609, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pd); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 847, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Series); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 609, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Series); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 847, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 609, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 847, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_coverage));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_coverage));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_v_coverage));
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 609, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 847, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 609, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 847, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_arange); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 609, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_arange); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 847, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 609, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 847, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 609, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 847, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __pyx_t_9 = NULL;
   __pyx_t_10 = 0;
@@ -8722,7 +11148,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_35coverage(struct __pyx_obj_6a
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_7)) {
     PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_t_6, __pyx_t_8};
-    __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 609, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 847, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -8732,7 +11158,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_35coverage(struct __pyx_obj_6a
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_7)) {
     PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_t_6, __pyx_t_8};
-    __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 609, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 847, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -8740,7 +11166,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_35coverage(struct __pyx_obj_6a
   } else
   #endif
   {
-    __pyx_t_11 = PyTuple_New(2+__pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 609, __pyx_L1_error)
+    __pyx_t_11 = PyTuple_New(2+__pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 847, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     if (__pyx_t_9) {
       __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_9); __pyx_t_9 = NULL;
@@ -8751,14 +11177,14 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_35coverage(struct __pyx_obj_6a
     PyTuple_SET_ITEM(__pyx_t_11, 1+__pyx_t_10, __pyx_t_8);
     __pyx_t_6 = 0;
     __pyx_t_8 = 0;
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_11, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 609, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_11, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 847, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   }
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_index, __pyx_t_5) < 0) __PYX_ERR(1, 609, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_index, __pyx_t_5) < 0) __PYX_ERR(1, 847, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 609, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 847, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -8767,12 +11193,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_35coverage(struct __pyx_obj_6a
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":590
- * 		return np.asarray(coverage)
+  /* "ailist/ailist.pyx":828
+ *         return np.asarray(coverage)
  * 
- * 	def coverage(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find number of intervals overlapping every
+ *     def coverage(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find number of intervals overlapping every
  */
 
   /* function exit code */
@@ -8795,12 +11221,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_35coverage(struct __pyx_obj_6a
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":612
+/* "ailist/ailist.pyx":850
  * 
  * 
- * 	cdef np.ndarray _bin_coverage(AIList self, int bin_size):             # <<<<<<<<<<<<<<
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *     cdef np.ndarray _bin_coverage(AIList self, int bin_size):             # <<<<<<<<<<<<<<
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
  */
 
 static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size) {
@@ -8818,23 +11244,23 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage(struct __pyx
   Py_ssize_t __pyx_t_8;
   __Pyx_RefNannySetupContext("_bin_coverage", 0);
 
-  /* "ailist/ailist.pyx":614
- * 	cdef np.ndarray _bin_coverage(AIList self, int bin_size):
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)             # <<<<<<<<<<<<<<
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+  /* "ailist/ailist.pyx":852
+ *     cdef np.ndarray _bin_coverage(AIList self, int bin_size):
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)             # <<<<<<<<<<<<<<
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_math); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 614, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_math); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 852, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 614, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 852, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 614, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 852, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 614, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 852, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 614, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 852, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -8851,70 +11277,70 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage(struct __pyx
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 614, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 852, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 614, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 852, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 614, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 852, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyNumber_FloorDivide(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 614, __pyx_L1_error)
+  __pyx_t_4 = PyNumber_FloorDivide(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 852, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyNumber_Subtract(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 614, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_Subtract(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 852, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 614, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 852, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_n_bins = __pyx_t_6;
 
-  /* "ailist/ailist.pyx":615
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":853
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)             # <<<<<<<<<<<<<<
  * 
- * 		ailist_bin_coverage(self.interval_list, &bins[0], bin_size)
+ *         ailist_bin_coverage(self.interval_list, &bins[0], bin_size)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 615, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 853, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 615, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 853, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_n_bins); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 615, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_n_bins); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 853, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 615, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 853, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 615, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 853, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 615, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 853, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_double); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 615, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_double); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 853, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(1, 615, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(1, 853, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 615, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 853, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 615, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 853, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_bins = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "ailist/ailist.pyx":617
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+  /* "ailist/ailist.pyx":855
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
  * 
- * 		ailist_bin_coverage(self.interval_list, &bins[0], bin_size)             # <<<<<<<<<<<<<<
+ *         ailist_bin_coverage(self.interval_list, &bins[0], bin_size)             # <<<<<<<<<<<<<<
  * 
- * 		return np.asarray(bins)
+ *         return np.asarray(bins)
  */
   __pyx_t_8 = 0;
   __pyx_t_6 = -1;
@@ -8924,24 +11350,24 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage(struct __pyx
   } else if (unlikely(__pyx_t_8 >= __pyx_v_bins.shape[0])) __pyx_t_6 = 0;
   if (unlikely(__pyx_t_6 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_6);
-    __PYX_ERR(1, 617, __pyx_L1_error)
+    __PYX_ERR(1, 855, __pyx_L1_error)
   }
   ailist_bin_coverage(__pyx_v_self->interval_list, (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_bins.data) + __pyx_t_8)) )))), __pyx_v_bin_size);
 
-  /* "ailist/ailist.pyx":619
- * 		ailist_bin_coverage(self.interval_list, &bins[0], bin_size)
+  /* "ailist/ailist.pyx":857
+ *         ailist_bin_coverage(self.interval_list, &bins[0], bin_size)
  * 
- * 		return np.asarray(bins)             # <<<<<<<<<<<<<<
+ *         return np.asarray(bins)             # <<<<<<<<<<<<<<
  * 
- * 	cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length):
+ *     cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 619, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 857, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 619, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 857, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_bins, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 619, __pyx_L1_error)
+  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_bins, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 857, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
@@ -8956,20 +11382,20 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage(struct __pyx
   __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 619, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 857, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 619, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 857, __pyx_L1_error)
   __pyx_r = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":612
+  /* "ailist/ailist.pyx":850
  * 
  * 
- * 	cdef np.ndarray _bin_coverage(AIList self, int bin_size):             # <<<<<<<<<<<<<<
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *     cdef np.ndarray _bin_coverage(AIList self, int bin_size):             # <<<<<<<<<<<<<<
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
  */
 
   /* function exit code */
@@ -8989,12 +11415,12 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage(struct __pyx
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":621
- * 		return np.asarray(bins)
+/* "ailist/ailist.pyx":859
+ *         return np.asarray(bins)
  * 
- * 	cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length):             # <<<<<<<<<<<<<<
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *     cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length):             # <<<<<<<<<<<<<<
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
  */
 
 static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage_length(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size, int __pyx_v_min_length, int __pyx_v_max_length) {
@@ -9012,23 +11438,23 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage_length(struc
   Py_ssize_t __pyx_t_8;
   __Pyx_RefNannySetupContext("_bin_coverage_length", 0);
 
-  /* "ailist/ailist.pyx":623
- * 	cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length):
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)             # <<<<<<<<<<<<<<
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+  /* "ailist/ailist.pyx":861
+ *     cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length):
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)             # <<<<<<<<<<<<<<
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_math); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 623, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_math); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 861, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 623, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 861, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 623, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 861, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 623, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 861, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 623, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 861, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -9045,70 +11471,70 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage_length(struc
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 623, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 861, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 623, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 861, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 623, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 861, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyNumber_FloorDivide(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 623, __pyx_L1_error)
+  __pyx_t_4 = PyNumber_FloorDivide(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 861, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyNumber_Subtract(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 623, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_Subtract(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 861, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 623, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 861, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_n_bins = __pyx_t_6;
 
-  /* "ailist/ailist.pyx":624
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":862
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)             # <<<<<<<<<<<<<<
  * 
- * 		ailist_bin_coverage_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
+ *         ailist_bin_coverage_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 624, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 862, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 624, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 862, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_n_bins); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 624, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_n_bins); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 862, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 624, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 862, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 624, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 862, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 624, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 862, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_double); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 624, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_double); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 862, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(1, 624, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(1, 862, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 624, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 862, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 624, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 862, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_bins = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "ailist/ailist.pyx":626
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+  /* "ailist/ailist.pyx":864
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
  * 
- * 		ailist_bin_coverage_length(self.interval_list, &bins[0], bin_size, min_length, max_length)             # <<<<<<<<<<<<<<
+ *         ailist_bin_coverage_length(self.interval_list, &bins[0], bin_size, min_length, max_length)             # <<<<<<<<<<<<<<
  * 
- * 		return np.asarray(bins)
+ *         return np.asarray(bins)
  */
   __pyx_t_8 = 0;
   __pyx_t_6 = -1;
@@ -9118,24 +11544,24 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage_length(struc
   } else if (unlikely(__pyx_t_8 >= __pyx_v_bins.shape[0])) __pyx_t_6 = 0;
   if (unlikely(__pyx_t_6 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_6);
-    __PYX_ERR(1, 626, __pyx_L1_error)
+    __PYX_ERR(1, 864, __pyx_L1_error)
   }
   ailist_bin_coverage_length(__pyx_v_self->interval_list, (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_bins.data) + __pyx_t_8)) )))), __pyx_v_bin_size, __pyx_v_min_length, __pyx_v_max_length);
 
-  /* "ailist/ailist.pyx":628
- * 		ailist_bin_coverage_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
+  /* "ailist/ailist.pyx":866
+ *         ailist_bin_coverage_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
  * 
- * 		return np.asarray(bins)             # <<<<<<<<<<<<<<
+ *         return np.asarray(bins)             # <<<<<<<<<<<<<<
  * 
- * 	def bin_coverage(self, int bin_size=100000, min_length=None, max_length=None):
+ *     def bin_coverage(self, int bin_size=100000, min_length=None, max_length=None):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 628, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 866, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 628, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 866, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_bins, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 628, __pyx_L1_error)
+  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_bins, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 866, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
@@ -9150,20 +11576,20 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage_length(struc
   __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 628, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 866, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 628, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 866, __pyx_L1_error)
   __pyx_r = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":621
- * 		return np.asarray(bins)
+  /* "ailist/ailist.pyx":859
+ *         return np.asarray(bins)
  * 
- * 	cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length):             # <<<<<<<<<<<<<<
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *     cdef np.ndarray _bin_coverage_length(AIList self, int bin_size, int min_length, int max_length):             # <<<<<<<<<<<<<<
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
  */
 
   /* function exit code */
@@ -9183,18 +11609,18 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_coverage_length(struc
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":630
- * 		return np.asarray(bins)
+/* "ailist/ailist.pyx":868
+ *         return np.asarray(bins)
  * 
- * 	def bin_coverage(self, int bin_size=100000, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find sum of coverage within binned
+ *     def bin_coverage(self, int bin_size=100000, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find sum of coverage within binned
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_38bin_coverage(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_37bin_coverage[] = "AIList.bin_coverage(self, int bin_size=100000, min_length=None, max_length=None)\n\n\t\tFind sum of coverage within binned\n\t\tpositions\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tbin_size: int (Size of the bin to use)\n\t\t\tmin_length: int (Minimum length of intervals to include [default = None])\n\t\t\tmax_length: int (Maximum length of intervals to include [default = None])\n\n\t\tReturns:\n\t\t---------\n\t\t\tpandas.Series{double} (Position on index and coverage as values)\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_38bin_coverage(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_42bin_coverage(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_41bin_coverage[] = "AIList.bin_coverage(self, int bin_size=100000, min_length=None, max_length=None)\n\n        Find sum of coverage within binned\n        positions\n        \n        Arguments:\n        ---------\n            bin_size: int (Size of the bin to use)\n            min_length: int (Minimum length of intervals to include [default = None])\n            max_length: int (Maximum length of intervals to include [default = None])\n\n        Returns:\n        ---------\n            pandas.Series{double} (Position on index and coverage as values)\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_42bin_coverage(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_bin_size;
   PyObject *__pyx_v_min_length = 0;
   PyObject *__pyx_v_max_length = 0;
@@ -9240,7 +11666,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_38bin_coverage(PyObject *__pyx
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "bin_coverage") < 0)) __PYX_ERR(1, 630, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "bin_coverage") < 0)) __PYX_ERR(1, 868, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -9255,7 +11681,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_38bin_coverage(PyObject *__pyx
       }
     }
     if (values[0]) {
-      __pyx_v_bin_size = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_bin_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 630, __pyx_L3_error)
+      __pyx_v_bin_size = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_bin_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 868, __pyx_L3_error)
     } else {
       __pyx_v_bin_size = ((int)0x186A0);
     }
@@ -9264,20 +11690,20 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_38bin_coverage(PyObject *__pyx
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("bin_coverage", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 630, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("bin_coverage", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 868, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.bin_coverage", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_37bin_coverage(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_bin_size, __pyx_v_min_length, __pyx_v_max_length);
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_41bin_coverage(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_bin_size, __pyx_v_min_length, __pyx_v_max_length);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_37bin_coverage(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_41bin_coverage(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length) {
   PyArrayObject *__pyx_v_bins = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -9296,44 +11722,44 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_37bin_coverage(struct __pyx_ob
   PyObject *__pyx_t_13 = NULL;
   __Pyx_RefNannySetupContext("bin_coverage", 0);
 
-  /* "ailist/ailist.pyx":647
+  /* "ailist/ailist.pyx":885
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":648
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":886
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Initialize coverage
+ *         # Initialize coverage
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 648, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 886, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 648, __pyx_L1_error)
+    __PYX_ERR(1, 886, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":647
+    /* "ailist/ailist.pyx":885
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":653
- * 		cdef np.ndarray bins
- * 		# Calculate coverage
- * 		if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
- * 			bins = self._bin_coverage(bin_size)
- * 		else:
+  /* "ailist/ailist.pyx":891
+ *         cdef np.ndarray bins
+ *         # Calculate coverage
+ *         if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
+ *             bins = self._bin_coverage(bin_size)
+ *         else:
  */
   __pyx_t_3 = (__pyx_v_min_length == Py_None);
   __pyx_t_4 = (__pyx_t_3 != 0);
@@ -9348,72 +11774,72 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_37bin_coverage(struct __pyx_ob
   __pyx_L5_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":654
- * 		# Calculate coverage
- * 		if min_length is None or max_length is None:
- * 			bins = self._bin_coverage(bin_size)             # <<<<<<<<<<<<<<
- * 		else:
- * 			bins = self._bin_coverage_length(bin_size, min_length, max_length)
+    /* "ailist/ailist.pyx":892
+ *         # Calculate coverage
+ *         if min_length is None or max_length is None:
+ *             bins = self._bin_coverage(bin_size)             # <<<<<<<<<<<<<<
+ *         else:
+ *             bins = self._bin_coverage_length(bin_size, min_length, max_length)
  */
-    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_bin_coverage(__pyx_v_self, __pyx_v_bin_size)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 654, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_bin_coverage(__pyx_v_self, __pyx_v_bin_size)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 892, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_bins = ((PyArrayObject *)__pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "ailist/ailist.pyx":653
- * 		cdef np.ndarray bins
- * 		# Calculate coverage
- * 		if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
- * 			bins = self._bin_coverage(bin_size)
- * 		else:
+    /* "ailist/ailist.pyx":891
+ *         cdef np.ndarray bins
+ *         # Calculate coverage
+ *         if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
+ *             bins = self._bin_coverage(bin_size)
+ *         else:
  */
     goto __pyx_L4;
   }
 
-  /* "ailist/ailist.pyx":656
- * 			bins = self._bin_coverage(bin_size)
- * 		else:
- * 			bins = self._bin_coverage_length(bin_size, min_length, max_length)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":894
+ *             bins = self._bin_coverage(bin_size)
+ *         else:
+ *             bins = self._bin_coverage_length(bin_size, min_length, max_length)             # <<<<<<<<<<<<<<
  * 
- * 		return pd.Series(bins, index=(np.arange(len(bins)) + int(self.first / bin_size)) * bin_size)
+ *         return pd.Series(bins, index=(np.arange(len(bins)) + int(self.first / bin_size)) * bin_size)
  */
   /*else*/ {
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_v_min_length); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 656, __pyx_L1_error)
-    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_v_max_length); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 656, __pyx_L1_error)
-    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_bin_coverage_length(__pyx_v_self, __pyx_v_bin_size, __pyx_t_5, __pyx_t_6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 656, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_v_min_length); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 894, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_v_max_length); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 894, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_bin_coverage_length(__pyx_v_self, __pyx_v_bin_size, __pyx_t_5, __pyx_t_6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 894, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_bins = ((PyArrayObject *)__pyx_t_2);
     __pyx_t_2 = 0;
   }
   __pyx_L4:;
 
-  /* "ailist/ailist.pyx":658
- * 			bins = self._bin_coverage_length(bin_size, min_length, max_length)
+  /* "ailist/ailist.pyx":896
+ *             bins = self._bin_coverage_length(bin_size, min_length, max_length)
  * 
- * 		return pd.Series(bins, index=(np.arange(len(bins)) + int(self.first / bin_size)) * bin_size)             # <<<<<<<<<<<<<<
+ *         return pd.Series(bins, index=(np.arange(len(bins)) + int(self.first / bin_size)) * bin_size)             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pd); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pd); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Series); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Series); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_bins));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_bins));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_v_bins));
-  __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_arange); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_arange); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __pyx_t_12 = PyObject_Length(((PyObject *)__pyx_v_bins)); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(1, 658, __pyx_L1_error)
-  __pyx_t_10 = PyInt_FromSsize_t(__pyx_t_12); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_12 = PyObject_Length(((PyObject *)__pyx_v_bins)); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(1, 896, __pyx_L1_error)
+  __pyx_t_10 = PyInt_FromSsize_t(__pyx_t_12); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __pyx_t_13 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_11))) {
@@ -9428,33 +11854,33 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_37bin_coverage(struct __pyx_ob
   __pyx_t_9 = (__pyx_t_13) ? __Pyx_PyObject_Call2Args(__pyx_t_11, __pyx_t_13, __pyx_t_10) : __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_t_10);
   __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 658, __pyx_L1_error)
+  if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_13 = __Pyx_PyNumber_Divide(__pyx_t_11, __pyx_t_10); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_13 = __Pyx_PyNumber_Divide(__pyx_t_11, __pyx_t_10); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_t_13); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_t_13); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-  __pyx_t_13 = PyNumber_Add(__pyx_t_9, __pyx_t_10); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_13 = PyNumber_Add(__pyx_t_9, __pyx_t_10); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_9 = PyNumber_Multiply(__pyx_t_13, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_9 = PyNumber_Multiply(__pyx_t_13, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_index, __pyx_t_9) < 0) __PYX_ERR(1, 658, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_index, __pyx_t_9) < 0) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 658, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 896, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -9463,12 +11889,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_37bin_coverage(struct __pyx_ob
   __pyx_t_9 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":630
- * 		return np.asarray(bins)
+  /* "ailist/ailist.pyx":868
+ *         return np.asarray(bins)
  * 
- * 	def bin_coverage(self, int bin_size=100000, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find sum of coverage within binned
+ *     def bin_coverage(self, int bin_size=100000, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find sum of coverage within binned
  */
 
   /* function exit code */
@@ -9489,12 +11915,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_37bin_coverage(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":661
+/* "ailist/ailist.pyx":899
  * 
  * 
- * 	cdef np.ndarray _bin_nhits(AIList self, int bin_size):             # <<<<<<<<<<<<<<
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *     cdef np.ndarray _bin_nhits(AIList self, int bin_size):             # <<<<<<<<<<<<<<
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
  */
 
 static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size) {
@@ -9512,23 +11938,23 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits(struct __pyx_ob
   Py_ssize_t __pyx_t_8;
   __Pyx_RefNannySetupContext("_bin_nhits", 0);
 
-  /* "ailist/ailist.pyx":663
- * 	cdef np.ndarray _bin_nhits(AIList self, int bin_size):
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)             # <<<<<<<<<<<<<<
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+  /* "ailist/ailist.pyx":901
+ *     cdef np.ndarray _bin_nhits(AIList self, int bin_size):
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)             # <<<<<<<<<<<<<<
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_math); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 663, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_math); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 901, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 663, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 901, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 663, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 901, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 663, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 901, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 663, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 901, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -9545,70 +11971,70 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits(struct __pyx_ob
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 663, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 901, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 663, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 901, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 663, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 901, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyNumber_FloorDivide(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 663, __pyx_L1_error)
+  __pyx_t_4 = PyNumber_FloorDivide(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 901, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyNumber_Subtract(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 663, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_Subtract(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 901, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 663, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 901, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_n_bins = __pyx_t_6;
 
-  /* "ailist/ailist.pyx":664
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":902
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)             # <<<<<<<<<<<<<<
  * 
- * 		ailist_bin_nhits(self.interval_list, &bins[0], bin_size)
+ *         ailist_bin_nhits(self.interval_list, &bins[0], bin_size)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 664, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 902, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 664, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 902, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_n_bins); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 664, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_n_bins); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 902, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 664, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 902, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 664, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 902, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 664, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 902, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_double); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 664, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_double); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 902, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(1, 664, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(1, 902, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 664, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 902, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 664, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 902, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_bins = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "ailist/ailist.pyx":666
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+  /* "ailist/ailist.pyx":904
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
  * 
- * 		ailist_bin_nhits(self.interval_list, &bins[0], bin_size)             # <<<<<<<<<<<<<<
+ *         ailist_bin_nhits(self.interval_list, &bins[0], bin_size)             # <<<<<<<<<<<<<<
  * 
- * 		return np.asarray(bins)
+ *         return np.asarray(bins)
  */
   __pyx_t_8 = 0;
   __pyx_t_6 = -1;
@@ -9618,24 +12044,24 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits(struct __pyx_ob
   } else if (unlikely(__pyx_t_8 >= __pyx_v_bins.shape[0])) __pyx_t_6 = 0;
   if (unlikely(__pyx_t_6 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_6);
-    __PYX_ERR(1, 666, __pyx_L1_error)
+    __PYX_ERR(1, 904, __pyx_L1_error)
   }
   ailist_bin_nhits(__pyx_v_self->interval_list, (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_bins.data) + __pyx_t_8)) )))), __pyx_v_bin_size);
 
-  /* "ailist/ailist.pyx":668
- * 		ailist_bin_nhits(self.interval_list, &bins[0], bin_size)
+  /* "ailist/ailist.pyx":906
+ *         ailist_bin_nhits(self.interval_list, &bins[0], bin_size)
  * 
- * 		return np.asarray(bins)             # <<<<<<<<<<<<<<
+ *         return np.asarray(bins)             # <<<<<<<<<<<<<<
  * 
- * 	cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length):
+ *     cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 668, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 906, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 668, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 906, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_bins, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 668, __pyx_L1_error)
+  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_bins, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 906, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
@@ -9650,20 +12076,20 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits(struct __pyx_ob
   __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 668, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 906, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 668, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 906, __pyx_L1_error)
   __pyx_r = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":661
+  /* "ailist/ailist.pyx":899
  * 
  * 
- * 	cdef np.ndarray _bin_nhits(AIList self, int bin_size):             # <<<<<<<<<<<<<<
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *     cdef np.ndarray _bin_nhits(AIList self, int bin_size):             # <<<<<<<<<<<<<<
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
  */
 
   /* function exit code */
@@ -9683,12 +12109,12 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":670
- * 		return np.asarray(bins)
+/* "ailist/ailist.pyx":908
+ *         return np.asarray(bins)
  * 
- * 	cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length):             # <<<<<<<<<<<<<<
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *     cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length):             # <<<<<<<<<<<<<<
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
  */
 
 static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits_length(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size, int __pyx_v_min_length, int __pyx_v_max_length) {
@@ -9706,23 +12132,23 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits_length(struct _
   Py_ssize_t __pyx_t_8;
   __Pyx_RefNannySetupContext("_bin_nhits_length", 0);
 
-  /* "ailist/ailist.pyx":672
- * 	cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length):
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)             # <<<<<<<<<<<<<<
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+  /* "ailist/ailist.pyx":910
+ *     cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length):
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)             # <<<<<<<<<<<<<<
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_math); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 672, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_math); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 910, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 672, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 910, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 672, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 910, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 672, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 910, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 672, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 910, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -9739,70 +12165,70 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits_length(struct _
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 672, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 910, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 672, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 910, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 672, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 910, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyNumber_FloorDivide(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 672, __pyx_L1_error)
+  __pyx_t_4 = PyNumber_FloorDivide(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 910, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyNumber_Subtract(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 672, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_Subtract(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 910, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 672, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 910, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_n_bins = __pyx_t_6;
 
-  /* "ailist/ailist.pyx":673
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":911
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)             # <<<<<<<<<<<<<<
  * 
- * 		ailist_bin_nhits_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
+ *         ailist_bin_nhits_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 673, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 911, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 673, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 911, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_n_bins); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 673, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_n_bins); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 911, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 673, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 911, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 673, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 911, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 673, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 911, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_double); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 673, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_double); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 911, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(1, 673, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(1, 911, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 673, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 911, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 673, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 911, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_bins = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "ailist/ailist.pyx":675
- * 		cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
+  /* "ailist/ailist.pyx":913
+ *         cdef double[::1] bins = np.zeros(n_bins, dtype=np.double)
  * 
- * 		ailist_bin_nhits_length(self.interval_list, &bins[0], bin_size, min_length, max_length)             # <<<<<<<<<<<<<<
+ *         ailist_bin_nhits_length(self.interval_list, &bins[0], bin_size, min_length, max_length)             # <<<<<<<<<<<<<<
  * 
- * 		return np.asarray(bins)
+ *         return np.asarray(bins)
  */
   __pyx_t_8 = 0;
   __pyx_t_6 = -1;
@@ -9812,24 +12238,24 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits_length(struct _
   } else if (unlikely(__pyx_t_8 >= __pyx_v_bins.shape[0])) __pyx_t_6 = 0;
   if (unlikely(__pyx_t_6 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_6);
-    __PYX_ERR(1, 675, __pyx_L1_error)
+    __PYX_ERR(1, 913, __pyx_L1_error)
   }
   ailist_bin_nhits_length(__pyx_v_self->interval_list, (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_bins.data) + __pyx_t_8)) )))), __pyx_v_bin_size, __pyx_v_min_length, __pyx_v_max_length);
 
-  /* "ailist/ailist.pyx":677
- * 		ailist_bin_nhits_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
+  /* "ailist/ailist.pyx":915
+ *         ailist_bin_nhits_length(self.interval_list, &bins[0], bin_size, min_length, max_length)
  * 
- * 		return np.asarray(bins)             # <<<<<<<<<<<<<<
+ *         return np.asarray(bins)             # <<<<<<<<<<<<<<
  * 
- * 	def bin_nhits(self, int bin_size=100000, min_length=None, max_length=None):
+ *     def bin_nhits(self, int bin_size=100000, min_length=None, max_length=None):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 677, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 915, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 677, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 915, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_bins, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 677, __pyx_L1_error)
+  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_bins, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 915, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
@@ -9844,20 +12270,20 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits_length(struct _
   __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 677, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 915, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 677, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 915, __pyx_L1_error)
   __pyx_r = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":670
- * 		return np.asarray(bins)
+  /* "ailist/ailist.pyx":908
+ *         return np.asarray(bins)
  * 
- * 	cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length):             # <<<<<<<<<<<<<<
- * 		# Initialize coverage
- * 		cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
+ *     cdef np.ndarray _bin_nhits_length(AIList self, int bin_size, int min_length, int max_length):             # <<<<<<<<<<<<<<
+ *         # Initialize coverage
+ *         cdef int n_bins = math.ceil(self.last / bin_size) - (self.first // bin_size)
  */
 
   /* function exit code */
@@ -9877,18 +12303,18 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__bin_nhits_length(struct _
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":679
- * 		return np.asarray(bins)
+/* "ailist/ailist.pyx":917
+ *         return np.asarray(bins)
  * 
- * 	def bin_nhits(self, int bin_size=100000, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find number of intervals overlapping binned
+ *     def bin_nhits(self, int bin_size=100000, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find number of intervals overlapping binned
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_40bin_nhits(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_39bin_nhits[] = "AIList.bin_nhits(self, int bin_size=100000, min_length=None, max_length=None)\n\n\t\tFind number of intervals overlapping binned\n\t\tpositions\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tbin_size: int (Size of the bin to use)\n\t\t\tmin_length: int (Minimum length of intervals to include [default = None])\n\t\t\tmax_length: int (Maximum length of intervals to include [default = None])\n\n\t\tReturns:\n\t\t---------\n\t\t\tpandas.Series{double} (Position on index and coverage as values)\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_40bin_nhits(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_44bin_nhits(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_43bin_nhits[] = "AIList.bin_nhits(self, int bin_size=100000, min_length=None, max_length=None)\n\n        Find number of intervals overlapping binned\n        positions\n        \n        Arguments:\n        ---------\n            bin_size: int (Size of the bin to use)\n            min_length: int (Minimum length of intervals to include [default = None])\n            max_length: int (Maximum length of intervals to include [default = None])\n\n        Returns:\n        ---------\n            pandas.Series{double} (Position on index and coverage as values)\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_44bin_nhits(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_bin_size;
   PyObject *__pyx_v_min_length = 0;
   PyObject *__pyx_v_max_length = 0;
@@ -9934,7 +12360,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_40bin_nhits(PyObject *__pyx_v_
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "bin_nhits") < 0)) __PYX_ERR(1, 679, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "bin_nhits") < 0)) __PYX_ERR(1, 917, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -9949,7 +12375,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_40bin_nhits(PyObject *__pyx_v_
       }
     }
     if (values[0]) {
-      __pyx_v_bin_size = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_bin_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 679, __pyx_L3_error)
+      __pyx_v_bin_size = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_bin_size == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 917, __pyx_L3_error)
     } else {
       __pyx_v_bin_size = ((int)0x186A0);
     }
@@ -9958,20 +12384,20 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_40bin_nhits(PyObject *__pyx_v_
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("bin_nhits", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 679, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("bin_nhits", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 917, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.bin_nhits", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_39bin_nhits(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_bin_size, __pyx_v_min_length, __pyx_v_max_length);
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_43bin_nhits(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_bin_size, __pyx_v_min_length, __pyx_v_max_length);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_39bin_nhits(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_43bin_nhits(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_bin_size, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length) {
   PyArrayObject *__pyx_v_bins = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -9990,44 +12416,44 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_39bin_nhits(struct __pyx_obj_6
   PyObject *__pyx_t_13 = NULL;
   __Pyx_RefNannySetupContext("bin_nhits", 0);
 
-  /* "ailist/ailist.pyx":696
+  /* "ailist/ailist.pyx":934
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":697
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":935
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Initialize coverage
+ *         # Initialize coverage
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 697, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 935, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 697, __pyx_L1_error)
+    __PYX_ERR(1, 935, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":696
+    /* "ailist/ailist.pyx":934
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":702
- * 		cdef np.ndarray bins
- * 		# Calculate coverage
- * 		if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
- * 			bins = self._bin_nhits(bin_size)
- * 		else:
+  /* "ailist/ailist.pyx":940
+ *         cdef np.ndarray bins
+ *         # Calculate coverage
+ *         if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
+ *             bins = self._bin_nhits(bin_size)
+ *         else:
  */
   __pyx_t_3 = (__pyx_v_min_length == Py_None);
   __pyx_t_4 = (__pyx_t_3 != 0);
@@ -10042,72 +12468,72 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_39bin_nhits(struct __pyx_obj_6
   __pyx_L5_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":703
- * 		# Calculate coverage
- * 		if min_length is None or max_length is None:
- * 			bins = self._bin_nhits(bin_size)             # <<<<<<<<<<<<<<
- * 		else:
- * 			bins = self._bin_nhits_length(bin_size, min_length, max_length)
+    /* "ailist/ailist.pyx":941
+ *         # Calculate coverage
+ *         if min_length is None or max_length is None:
+ *             bins = self._bin_nhits(bin_size)             # <<<<<<<<<<<<<<
+ *         else:
+ *             bins = self._bin_nhits_length(bin_size, min_length, max_length)
  */
-    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_bin_nhits(__pyx_v_self, __pyx_v_bin_size)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 703, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_bin_nhits(__pyx_v_self, __pyx_v_bin_size)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 941, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_bins = ((PyArrayObject *)__pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "ailist/ailist.pyx":702
- * 		cdef np.ndarray bins
- * 		# Calculate coverage
- * 		if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
- * 			bins = self._bin_nhits(bin_size)
- * 		else:
+    /* "ailist/ailist.pyx":940
+ *         cdef np.ndarray bins
+ *         # Calculate coverage
+ *         if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
+ *             bins = self._bin_nhits(bin_size)
+ *         else:
  */
     goto __pyx_L4;
   }
 
-  /* "ailist/ailist.pyx":705
- * 			bins = self._bin_nhits(bin_size)
- * 		else:
- * 			bins = self._bin_nhits_length(bin_size, min_length, max_length)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":943
+ *             bins = self._bin_nhits(bin_size)
+ *         else:
+ *             bins = self._bin_nhits_length(bin_size, min_length, max_length)             # <<<<<<<<<<<<<<
  * 
- * 		return pd.Series(bins, index=(np.arange(len(bins)) + int(self.first / bin_size)) * bin_size)
+ *         return pd.Series(bins, index=(np.arange(len(bins)) + int(self.first / bin_size)) * bin_size)
  */
   /*else*/ {
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_v_min_length); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 705, __pyx_L1_error)
-    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_v_max_length); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 705, __pyx_L1_error)
-    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_bin_nhits_length(__pyx_v_self, __pyx_v_bin_size, __pyx_t_5, __pyx_t_6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 705, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_v_min_length); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 943, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_v_max_length); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 943, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_bin_nhits_length(__pyx_v_self, __pyx_v_bin_size, __pyx_t_5, __pyx_t_6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 943, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_bins = ((PyArrayObject *)__pyx_t_2);
     __pyx_t_2 = 0;
   }
   __pyx_L4:;
 
-  /* "ailist/ailist.pyx":707
- * 			bins = self._bin_nhits_length(bin_size, min_length, max_length)
+  /* "ailist/ailist.pyx":945
+ *             bins = self._bin_nhits_length(bin_size, min_length, max_length)
  * 
- * 		return pd.Series(bins, index=(np.arange(len(bins)) + int(self.first / bin_size)) * bin_size)             # <<<<<<<<<<<<<<
+ *         return pd.Series(bins, index=(np.arange(len(bins)) + int(self.first / bin_size)) * bin_size)             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pd); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pd); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Series); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Series); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_bins));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_bins));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_v_bins));
-  __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_arange); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_arange); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __pyx_t_12 = PyObject_Length(((PyObject *)__pyx_v_bins)); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(1, 707, __pyx_L1_error)
-  __pyx_t_10 = PyInt_FromSsize_t(__pyx_t_12); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_12 = PyObject_Length(((PyObject *)__pyx_v_bins)); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(1, 945, __pyx_L1_error)
+  __pyx_t_10 = PyInt_FromSsize_t(__pyx_t_12); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __pyx_t_13 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_11))) {
@@ -10122,33 +12548,33 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_39bin_nhits(struct __pyx_obj_6
   __pyx_t_9 = (__pyx_t_13) ? __Pyx_PyObject_Call2Args(__pyx_t_11, __pyx_t_13, __pyx_t_10) : __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_t_10);
   __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 707, __pyx_L1_error)
+  if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_13 = __Pyx_PyNumber_Divide(__pyx_t_11, __pyx_t_10); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_13 = __Pyx_PyNumber_Divide(__pyx_t_11, __pyx_t_10); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_t_13); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_t_13); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-  __pyx_t_13 = PyNumber_Add(__pyx_t_9, __pyx_t_10); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_13 = PyNumber_Add(__pyx_t_9, __pyx_t_10); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_bin_size); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_9 = PyNumber_Multiply(__pyx_t_13, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_9 = PyNumber_Multiply(__pyx_t_13, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_index, __pyx_t_9) < 0) __PYX_ERR(1, 707, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_index, __pyx_t_9) < 0) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -10157,12 +12583,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_39bin_nhits(struct __pyx_obj_6
   __pyx_t_9 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":679
- * 		return np.asarray(bins)
+  /* "ailist/ailist.pyx":917
+ *         return np.asarray(bins)
  * 
- * 	def bin_nhits(self, int bin_size=100000, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find number of intervals overlapping binned
+ *     def bin_nhits(self, int bin_size=100000, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find number of intervals overlapping binned
  */
 
   /* function exit code */
@@ -10183,82 +12609,82 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_39bin_nhits(struct __pyx_obj_6
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":710
+/* "ailist/ailist.pyx":948
  * 
  * 
- * 	def display(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Print all intervals
+ *     def display(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Print all intervals
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_42display(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_41display[] = "AIList.display(self)\n\n\t\tPrint all intervals\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_42display(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_46display(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_45display[] = "AIList.display(self)\n\n        Print all intervals\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_46display(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("display (wrapper)", 0);
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_41display(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_45display(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_41display(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_45display(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("display", 0);
 
-  /* "ailist/ailist.pyx":716
+  /* "ailist/ailist.pyx":954
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":717
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":955
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		display_list(self.interval_list)
+ *         display_list(self.interval_list)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 717, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 955, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 717, __pyx_L1_error)
+    __PYX_ERR(1, 955, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":716
+    /* "ailist/ailist.pyx":954
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":719
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":957
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		display_list(self.interval_list)             # <<<<<<<<<<<<<<
+ *         display_list(self.interval_list)             # <<<<<<<<<<<<<<
  * 
  * 
  */
   display_list(__pyx_v_self->interval_list);
 
-  /* "ailist/ailist.pyx":710
+  /* "ailist/ailist.pyx":948
  * 
  * 
- * 	def display(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Print all intervals
+ *     def display(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Print all intervals
  */
 
   /* function exit code */
@@ -10274,18 +12700,18 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_41display(struct __pyx_obj_6ai
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":722
+/* "ailist/ailist.pyx":960
  * 
  * 
- * 	def merge(self, int gap=0):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Merge intervals within a gap
+ *     def merge(self, int gap=0):             # <<<<<<<<<<<<<<
+ *         """
+ *         Merge intervals within a gap
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_44merge(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_43merge[] = "AIList.merge(self, int gap=0)\n\n\t\tMerge intervals within a gap\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tgap: int (Gap between intervals to merge)\n\n\t\tReturns:\n\t\t---------\n\t\t\tmerged_list: AIList (Merged intervals)\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_44merge(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_48merge(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_47merge[] = "AIList.merge(self, int gap=0)\n\n        Merge intervals within a gap\n        \n        Arguments:\n        ---------\n            gap: int (Gap between intervals to merge)\n\n        Returns:\n        ---------\n            merged_list: AIList (Merged intervals)\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_48merge(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_gap;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
@@ -10311,7 +12737,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_44merge(PyObject *__pyx_v_self
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "merge") < 0)) __PYX_ERR(1, 722, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "merge") < 0)) __PYX_ERR(1, 960, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -10322,27 +12748,27 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_44merge(PyObject *__pyx_v_self
       }
     }
     if (values[0]) {
-      __pyx_v_gap = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_gap == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 722, __pyx_L3_error)
+      __pyx_v_gap = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_gap == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 960, __pyx_L3_error)
     } else {
       __pyx_v_gap = ((int)0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("merge", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 722, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("merge", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 960, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.merge", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_43merge(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_gap);
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_47merge(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_gap);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_43merge(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_gap) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_47merge(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_gap) {
   struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_merged_list = 0;
   ailist_t *__pyx_v_merged_clist;
   PyObject *__pyx_r = NULL;
@@ -10353,56 +12779,56 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_43merge(struct __pyx_obj_6aili
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("merge", 0);
 
-  /* "ailist/ailist.pyx":736
+  /* "ailist/ailist.pyx":974
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":737
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":975
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Make sure list is sorted
+ *         # Make sure list is sorted
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 737, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 975, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 737, __pyx_L1_error)
+    __PYX_ERR(1, 975, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":736
+    /* "ailist/ailist.pyx":974
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":740
+  /* "ailist/ailist.pyx":978
  * 
- * 		# Make sure list is sorted
- * 		if self.is_sorted == False:             # <<<<<<<<<<<<<<
- * 			self.sort()
+ *         # Make sure list is sorted
+ *         if self.is_sorted == False:             # <<<<<<<<<<<<<<
+ *             self.sort()
  * 
  */
   __pyx_t_1 = ((__pyx_v_self->is_sorted == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":741
- * 		# Make sure list is sorted
- * 		if self.is_sorted == False:
- * 			self.sort()             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":979
+ *         # Make sure list is sorted
+ *         if self.is_sorted == False:
+ *             self.sort()             # <<<<<<<<<<<<<<
  * 
- * 		cdef AIList merged_list = AIList()
+ *         cdef AIList merged_list = AIList()
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_sort); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 741, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_sort); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 979, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -10416,54 +12842,54 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_43merge(struct __pyx_obj_6aili
     }
     __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 741, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 979, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "ailist/ailist.pyx":740
+    /* "ailist/ailist.pyx":978
  * 
- * 		# Make sure list is sorted
- * 		if self.is_sorted == False:             # <<<<<<<<<<<<<<
- * 			self.sort()
+ *         # Make sure list is sorted
+ *         if self.is_sorted == False:             # <<<<<<<<<<<<<<
+ *             self.sort()
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":743
- * 			self.sort()
+  /* "ailist/ailist.pyx":981
+ *             self.sort()
  * 
- * 		cdef AIList merged_list = AIList()             # <<<<<<<<<<<<<<
- * 		cdef ailist_t *merged_clist = ailist_merge(self.interval_list, gap)
+ *         cdef AIList merged_list = AIList()             # <<<<<<<<<<<<<<
+ *         cdef ailist_t *merged_clist = ailist_merge(self.interval_list, gap)
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 743, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 981, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_merged_list = ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "ailist/ailist.pyx":744
+  /* "ailist/ailist.pyx":982
  * 
- * 		cdef AIList merged_list = AIList()
- * 		cdef ailist_t *merged_clist = ailist_merge(self.interval_list, gap)             # <<<<<<<<<<<<<<
+ *         cdef AIList merged_list = AIList()
+ *         cdef ailist_t *merged_clist = ailist_merge(self.interval_list, gap)             # <<<<<<<<<<<<<<
  * 
- * 		merged_list.set_list(merged_clist)
+ *         merged_list.set_list(merged_clist)
  */
   __pyx_v_merged_clist = ailist_merge(__pyx_v_self->interval_list, __pyx_v_gap);
 
-  /* "ailist/ailist.pyx":746
- * 		cdef ailist_t *merged_clist = ailist_merge(self.interval_list, gap)
+  /* "ailist/ailist.pyx":984
+ *         cdef ailist_t *merged_clist = ailist_merge(self.interval_list, gap)
  * 
- * 		merged_list.set_list(merged_clist)             # <<<<<<<<<<<<<<
+ *         merged_list.set_list(merged_clist)             # <<<<<<<<<<<<<<
  * 
- * 		return merged_list
+ *         return merged_list
  */
   ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_merged_list->__pyx_vtab)->set_list(__pyx_v_merged_list, __pyx_v_merged_clist);
 
-  /* "ailist/ailist.pyx":748
- * 		merged_list.set_list(merged_clist)
+  /* "ailist/ailist.pyx":986
+ *         merged_list.set_list(merged_clist)
  * 
- * 		return merged_list             # <<<<<<<<<<<<<<
+ *         return merged_list             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -10472,12 +12898,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_43merge(struct __pyx_obj_6aili
   __pyx_r = ((PyObject *)__pyx_v_merged_list);
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":722
+  /* "ailist/ailist.pyx":960
  * 
  * 
- * 	def merge(self, int gap=0):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Merge intervals within a gap
+ *     def merge(self, int gap=0):             # <<<<<<<<<<<<<<
+ *         """
+ *         Merge intervals within a gap
  */
 
   /* function exit code */
@@ -10494,23 +12920,23 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_43merge(struct __pyx_obj_6aili
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":751
+/* "ailist/ailist.pyx":989
  * 
  * 
- * 	def subtract(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Subtract intervals within another AIList
+ *     def subtract(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Subtract intervals within another AIList
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_46subtract(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_45subtract[] = "AIList.subtract(self, AIList query_ail)\n\n\t\tSubtract intervals within another AIList\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tquery_ail: AIList (AIList of intervals to subtract)\n\n\t\tReturns:\n\t\t---------\n\t\t\tsubtracted_list: AIList (Subtracted intervals)\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_46subtract(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_50subtract(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_49subtract[] = "AIList.subtract(self, AIList query_ail)\n\n        Subtract intervals within another AIList\n        \n        Arguments:\n        ---------\n            query_ail: AIList (AIList of intervals to subtract)\n\n        Returns:\n        ---------\n            subtracted_list: AIList (Subtracted intervals)\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_50subtract(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("subtract (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 751, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_45subtract(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_query_ail));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 989, __pyx_L1_error)
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_49subtract(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_query_ail));
 
   /* function exit code */
   goto __pyx_L0;
@@ -10521,7 +12947,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_46subtract(PyObject *__pyx_v_s
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_45subtract(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_49subtract(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail) {
   struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_subtracted_list = 0;
   ailist_t *__pyx_v_subtracted_clist;
   PyObject *__pyx_r = NULL;
@@ -10533,11 +12959,11 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_45subtract(struct __pyx_obj_6a
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("subtract", 0);
 
-  /* "ailist/ailist.pyx":765
+  /* "ailist/ailist.pyx":1003
  * 
- * 		# Check if object is still open
- * 		if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_2 = (__pyx_v_self->is_closed != 0);
@@ -10551,46 +12977,46 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_45subtract(struct __pyx_obj_6a
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":766
- * 		# Check if object is still open
- * 		if self.is_closed or query_ail.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":1004
+ *         # Check if object is still open
+ *         if self.is_closed or query_ail.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Make sure list is sorted
+ *         # Make sure list is sorted
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 766, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1004, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 766, __pyx_L1_error)
+    __PYX_ERR(1, 1004, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":765
+    /* "ailist/ailist.pyx":1003
  * 
- * 		# Check if object is still open
- * 		if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":769
+  /* "ailist/ailist.pyx":1007
  * 
- * 		# Make sure list is sorted
- * 		if self.is_sorted == False:             # <<<<<<<<<<<<<<
- * 			self.sort()
- * 		if query_ail.is_sorted == False:
+ *         # Make sure list is sorted
+ *         if self.is_sorted == False:             # <<<<<<<<<<<<<<
+ *             self.sort()
+ *         if query_ail.is_sorted == False:
  */
   __pyx_t_1 = ((__pyx_v_self->is_sorted == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":770
- * 		# Make sure list is sorted
- * 		if self.is_sorted == False:
- * 			self.sort()             # <<<<<<<<<<<<<<
- * 		if query_ail.is_sorted == False:
- * 			query_ail.sort()
+    /* "ailist/ailist.pyx":1008
+ *         # Make sure list is sorted
+ *         if self.is_sorted == False:
+ *             self.sort()             # <<<<<<<<<<<<<<
+ *         if query_ail.is_sorted == False:
+ *             query_ail.sort()
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_sort); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 770, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_sort); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1008, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -10604,38 +13030,38 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_45subtract(struct __pyx_obj_6a
     }
     __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 770, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1008, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ailist/ailist.pyx":769
+    /* "ailist/ailist.pyx":1007
  * 
- * 		# Make sure list is sorted
- * 		if self.is_sorted == False:             # <<<<<<<<<<<<<<
- * 			self.sort()
- * 		if query_ail.is_sorted == False:
+ *         # Make sure list is sorted
+ *         if self.is_sorted == False:             # <<<<<<<<<<<<<<
+ *             self.sort()
+ *         if query_ail.is_sorted == False:
  */
   }
 
-  /* "ailist/ailist.pyx":771
- * 		if self.is_sorted == False:
- * 			self.sort()
- * 		if query_ail.is_sorted == False:             # <<<<<<<<<<<<<<
- * 			query_ail.sort()
+  /* "ailist/ailist.pyx":1009
+ *         if self.is_sorted == False:
+ *             self.sort()
+ *         if query_ail.is_sorted == False:             # <<<<<<<<<<<<<<
+ *             query_ail.sort()
  * 
  */
   __pyx_t_1 = ((__pyx_v_query_ail->is_sorted == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":772
- * 			self.sort()
- * 		if query_ail.is_sorted == False:
- * 			query_ail.sort()             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":1010
+ *             self.sort()
+ *         if query_ail.is_sorted == False:
+ *             query_ail.sort()             # <<<<<<<<<<<<<<
  * 
- * 		cdef AIList subtracted_list = AIList()
+ *         cdef AIList subtracted_list = AIList()
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_query_ail), __pyx_n_s_sort); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 772, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_query_ail), __pyx_n_s_sort); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1010, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -10649,54 +13075,54 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_45subtract(struct __pyx_obj_6a
     }
     __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 772, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1010, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ailist/ailist.pyx":771
- * 		if self.is_sorted == False:
- * 			self.sort()
- * 		if query_ail.is_sorted == False:             # <<<<<<<<<<<<<<
- * 			query_ail.sort()
+    /* "ailist/ailist.pyx":1009
+ *         if self.is_sorted == False:
+ *             self.sort()
+ *         if query_ail.is_sorted == False:             # <<<<<<<<<<<<<<
+ *             query_ail.sort()
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":774
- * 			query_ail.sort()
+  /* "ailist/ailist.pyx":1012
+ *             query_ail.sort()
  * 
- * 		cdef AIList subtracted_list = AIList()             # <<<<<<<<<<<<<<
- * 		cdef ailist_t *subtracted_clist = ailist_subtract(query_ail.interval_list,
- * 														  self.interval_list)
+ *         cdef AIList subtracted_list = AIList()             # <<<<<<<<<<<<<<
+ *         cdef ailist_t *subtracted_clist = ailist_subtract(query_ail.interval_list,
+ *                                                           self.interval_list)
  */
-  __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 774, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1012, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_v_subtracted_list = ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "ailist/ailist.pyx":775
+  /* "ailist/ailist.pyx":1013
  * 
- * 		cdef AIList subtracted_list = AIList()
- * 		cdef ailist_t *subtracted_clist = ailist_subtract(query_ail.interval_list,             # <<<<<<<<<<<<<<
- * 														  self.interval_list)
+ *         cdef AIList subtracted_list = AIList()
+ *         cdef ailist_t *subtracted_clist = ailist_subtract(query_ail.interval_list,             # <<<<<<<<<<<<<<
+ *                                                           self.interval_list)
  * 
  */
   __pyx_v_subtracted_clist = ailist_subtract(__pyx_v_query_ail->interval_list, __pyx_v_self->interval_list);
 
-  /* "ailist/ailist.pyx":778
- * 														  self.interval_list)
+  /* "ailist/ailist.pyx":1016
+ *                                                           self.interval_list)
  * 
- * 		subtracted_list.set_list(subtracted_clist)             # <<<<<<<<<<<<<<
+ *         subtracted_list.set_list(subtracted_clist)             # <<<<<<<<<<<<<<
  * 
- * 		return subtracted_list
+ *         return subtracted_list
  */
   ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_subtracted_list->__pyx_vtab)->set_list(__pyx_v_subtracted_list, __pyx_v_subtracted_clist);
 
-  /* "ailist/ailist.pyx":780
- * 		subtracted_list.set_list(subtracted_clist)
+  /* "ailist/ailist.pyx":1018
+ *         subtracted_list.set_list(subtracted_clist)
  * 
- * 		return subtracted_list             # <<<<<<<<<<<<<<
+ *         return subtracted_list             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -10705,12 +13131,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_45subtract(struct __pyx_obj_6a
   __pyx_r = ((PyObject *)__pyx_v_subtracted_list);
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":751
+  /* "ailist/ailist.pyx":989
  * 
  * 
- * 	def subtract(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Subtract intervals within another AIList
+ *     def subtract(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Subtract intervals within another AIList
  */
 
   /* function exit code */
@@ -10727,23 +13153,23 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_45subtract(struct __pyx_obj_6a
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":783
+/* "ailist/ailist.pyx":1021
  * 
  * 
- * 	def common(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Common intervals within another AIList
+ *     def common(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Common intervals within another AIList
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_48common(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_47common[] = "AIList.common(self, AIList query_ail)\n\n\t\tCommon intervals within another AIList\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tquery_ail: AIList (AIList of intervals to find commons)\n\n\t\tReturns:\n\t\t---------\n\t\t\tcommon_list: AIList (Common intervals)\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_48common(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_52common(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_51common[] = "AIList.common(self, AIList query_ail)\n\n        Common intervals within another AIList\n        \n        Arguments:\n        ---------\n            query_ail: AIList (AIList of intervals to find commons)\n\n        Returns:\n        ---------\n            common_list: AIList (Common intervals)\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_52common(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("common (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 783, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_47common(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_query_ail));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 1021, __pyx_L1_error)
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_51common(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_query_ail));
 
   /* function exit code */
   goto __pyx_L0;
@@ -10754,7 +13180,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_48common(PyObject *__pyx_v_sel
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_47common(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51common(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail) {
   struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_common_list = 0;
   ailist_t *__pyx_v_common_clist;
   PyObject *__pyx_r = NULL;
@@ -10766,11 +13192,11 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_47common(struct __pyx_obj_6ail
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("common", 0);
 
-  /* "ailist/ailist.pyx":797
+  /* "ailist/ailist.pyx":1035
  * 
- * 		# Check if object is still open
- * 		if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_2 = (__pyx_v_self->is_closed != 0);
@@ -10784,46 +13210,46 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_47common(struct __pyx_obj_6ail
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":798
- * 		# Check if object is still open
- * 		if self.is_closed or query_ail.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":1036
+ *         # Check if object is still open
+ *         if self.is_closed or query_ail.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Make sure list is sorted
+ *         # Make sure list is sorted
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 798, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1036, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 798, __pyx_L1_error)
+    __PYX_ERR(1, 1036, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":797
+    /* "ailist/ailist.pyx":1035
  * 
- * 		# Check if object is still open
- * 		if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":801
+  /* "ailist/ailist.pyx":1039
  * 
- * 		# Make sure list is sorted
- * 		if self.is_sorted == False:             # <<<<<<<<<<<<<<
- * 			self.sort()
- * 		if query_ail.is_sorted == False:
+ *         # Make sure list is sorted
+ *         if self.is_sorted == False:             # <<<<<<<<<<<<<<
+ *             self.sort()
+ *         if query_ail.is_sorted == False:
  */
   __pyx_t_1 = ((__pyx_v_self->is_sorted == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":802
- * 		# Make sure list is sorted
- * 		if self.is_sorted == False:
- * 			self.sort()             # <<<<<<<<<<<<<<
- * 		if query_ail.is_sorted == False:
- * 			query_ail.sort()
+    /* "ailist/ailist.pyx":1040
+ *         # Make sure list is sorted
+ *         if self.is_sorted == False:
+ *             self.sort()             # <<<<<<<<<<<<<<
+ *         if query_ail.is_sorted == False:
+ *             query_ail.sort()
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_sort); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 802, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_sort); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1040, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -10837,38 +13263,38 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_47common(struct __pyx_obj_6ail
     }
     __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 802, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1040, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ailist/ailist.pyx":801
+    /* "ailist/ailist.pyx":1039
  * 
- * 		# Make sure list is sorted
- * 		if self.is_sorted == False:             # <<<<<<<<<<<<<<
- * 			self.sort()
- * 		if query_ail.is_sorted == False:
+ *         # Make sure list is sorted
+ *         if self.is_sorted == False:             # <<<<<<<<<<<<<<
+ *             self.sort()
+ *         if query_ail.is_sorted == False:
  */
   }
 
-  /* "ailist/ailist.pyx":803
- * 		if self.is_sorted == False:
- * 			self.sort()
- * 		if query_ail.is_sorted == False:             # <<<<<<<<<<<<<<
- * 			query_ail.sort()
+  /* "ailist/ailist.pyx":1041
+ *         if self.is_sorted == False:
+ *             self.sort()
+ *         if query_ail.is_sorted == False:             # <<<<<<<<<<<<<<
+ *             query_ail.sort()
  * 
  */
   __pyx_t_1 = ((__pyx_v_query_ail->is_sorted == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":804
- * 			self.sort()
- * 		if query_ail.is_sorted == False:
- * 			query_ail.sort()             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":1042
+ *             self.sort()
+ *         if query_ail.is_sorted == False:
+ *             query_ail.sort()             # <<<<<<<<<<<<<<
  * 
- * 		cdef AIList common_list = AIList()
+ *         cdef AIList common_list = AIList()
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_query_ail), __pyx_n_s_sort); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 804, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_query_ail), __pyx_n_s_sort); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1042, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -10882,54 +13308,54 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_47common(struct __pyx_obj_6ail
     }
     __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 804, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1042, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ailist/ailist.pyx":803
- * 		if self.is_sorted == False:
- * 			self.sort()
- * 		if query_ail.is_sorted == False:             # <<<<<<<<<<<<<<
- * 			query_ail.sort()
+    /* "ailist/ailist.pyx":1041
+ *         if self.is_sorted == False:
+ *             self.sort()
+ *         if query_ail.is_sorted == False:             # <<<<<<<<<<<<<<
+ *             query_ail.sort()
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":806
- * 			query_ail.sort()
+  /* "ailist/ailist.pyx":1044
+ *             query_ail.sort()
  * 
- * 		cdef AIList common_list = AIList()             # <<<<<<<<<<<<<<
- * 		cdef ailist_t *common_clist = ailist_common(query_ail.interval_list,
- * 													self.interval_list)
+ *         cdef AIList common_list = AIList()             # <<<<<<<<<<<<<<
+ *         cdef ailist_t *common_clist = ailist_common(query_ail.interval_list,
+ *                                                     self.interval_list)
  */
-  __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 806, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1044, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_v_common_list = ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "ailist/ailist.pyx":807
+  /* "ailist/ailist.pyx":1045
  * 
- * 		cdef AIList common_list = AIList()
- * 		cdef ailist_t *common_clist = ailist_common(query_ail.interval_list,             # <<<<<<<<<<<<<<
- * 													self.interval_list)
+ *         cdef AIList common_list = AIList()
+ *         cdef ailist_t *common_clist = ailist_common(query_ail.interval_list,             # <<<<<<<<<<<<<<
+ *                                                     self.interval_list)
  * 
  */
   __pyx_v_common_clist = ailist_common(__pyx_v_query_ail->interval_list, __pyx_v_self->interval_list);
 
-  /* "ailist/ailist.pyx":810
- * 													self.interval_list)
+  /* "ailist/ailist.pyx":1048
+ *                                                     self.interval_list)
  * 
- * 		common_list.set_list(common_clist)             # <<<<<<<<<<<<<<
+ *         common_list.set_list(common_clist)             # <<<<<<<<<<<<<<
  * 
- * 		return common_list
+ *         return common_list
  */
   ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_common_list->__pyx_vtab)->set_list(__pyx_v_common_list, __pyx_v_common_clist);
 
-  /* "ailist/ailist.pyx":812
- * 		common_list.set_list(common_clist)
+  /* "ailist/ailist.pyx":1050
+ *         common_list.set_list(common_clist)
  * 
- * 		return common_list             # <<<<<<<<<<<<<<
+ *         return common_list             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -10938,12 +13364,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_47common(struct __pyx_obj_6ail
   __pyx_r = ((PyObject *)__pyx_v_common_list);
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":783
+  /* "ailist/ailist.pyx":1021
  * 
  * 
- * 	def common(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Common intervals within another AIList
+ *     def common(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Common intervals within another AIList
  */
 
   /* function exit code */
@@ -10960,23 +13386,23 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_47common(struct __pyx_obj_6ail
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":815
+/* "ailist/ailist.pyx":1053
  * 
  * 
- * 	def append(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Union of intervals within two AIList
+ *     def append(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Union of intervals within two AIList
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_50append(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_49append[] = "AIList.append(self, AIList query_ail)\n\n\t\tUnion of intervals within two AIList\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tquery_ail: AIList (AIList of intervals to append)\n\n\t\tReturns:\n\t\t---------\n\t\t\tunion_list: AIList (Union of intervals)\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_50append(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_54append(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_53append[] = "AIList.append(self, AIList query_ail)\n\n        Union of intervals within two AIList\n        \n        Arguments:\n        ---------\n            query_ail: AIList (AIList of intervals to append)\n\n        Returns:\n        ---------\n            union_list: AIList (Union of intervals)\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_54append(PyObject *__pyx_v_self, PyObject *__pyx_v_query_ail) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("append (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 815, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_49append(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_query_ail));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_query_ail), __pyx_ptype_6ailist_6ailist_AIList, 1, "query_ail", 0))) __PYX_ERR(1, 1053, __pyx_L1_error)
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_53append(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_query_ail));
 
   /* function exit code */
   goto __pyx_L0;
@@ -10987,7 +13413,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_50append(PyObject *__pyx_v_sel
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_49append(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_53append(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_query_ail) {
   struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_union_list = 0;
   ailist_t *__pyx_v_union_clist;
   PyObject *__pyx_r = NULL;
@@ -10997,11 +13423,11 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_49append(struct __pyx_obj_6ail
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("append", 0);
 
-  /* "ailist/ailist.pyx":829
+  /* "ailist/ailist.pyx":1067
  * 
- * 		# Check if object is still open
- * 		if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_2 = (__pyx_v_self->is_closed != 0);
@@ -11015,62 +13441,62 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_49append(struct __pyx_obj_6ail
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":830
- * 		# Check if object is still open
- * 		if self.is_closed or query_ail.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":1068
+ *         # Check if object is still open
+ *         if self.is_closed or query_ail.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		cdef AIList union_list = AIList()
+ *         cdef AIList union_list = AIList()
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 830, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1068, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 830, __pyx_L1_error)
+    __PYX_ERR(1, 1068, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":829
+    /* "ailist/ailist.pyx":1067
  * 
- * 		# Check if object is still open
- * 		if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed or query_ail.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":832
- * 			raise NameError("AIList object has been closed.")
+  /* "ailist/ailist.pyx":1070
+ *             raise NameError("AIList object has been closed.")
  * 
- * 		cdef AIList union_list = AIList()             # <<<<<<<<<<<<<<
- * 		cdef ailist_t *union_clist = ailist_append(query_ail.interval_list,
- * 												   self.interval_list)
+ *         cdef AIList union_list = AIList()             # <<<<<<<<<<<<<<
+ *         cdef ailist_t *union_clist = ailist_append(query_ail.interval_list,
+ *                                                    self.interval_list)
  */
-  __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 832, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1070, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_v_union_list = ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "ailist/ailist.pyx":833
+  /* "ailist/ailist.pyx":1071
  * 
- * 		cdef AIList union_list = AIList()
- * 		cdef ailist_t *union_clist = ailist_append(query_ail.interval_list,             # <<<<<<<<<<<<<<
- * 												   self.interval_list)
+ *         cdef AIList union_list = AIList()
+ *         cdef ailist_t *union_clist = ailist_append(query_ail.interval_list,             # <<<<<<<<<<<<<<
+ *                                                    self.interval_list)
  * 
  */
   __pyx_v_union_clist = ailist_append(__pyx_v_query_ail->interval_list, __pyx_v_self->interval_list);
 
-  /* "ailist/ailist.pyx":836
- * 												   self.interval_list)
+  /* "ailist/ailist.pyx":1074
+ *                                                    self.interval_list)
  * 
- * 		union_list.set_list(union_clist)             # <<<<<<<<<<<<<<
+ *         union_list.set_list(union_clist)             # <<<<<<<<<<<<<<
  * 
- * 		return union_list
+ *         return union_list
  */
   ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_union_list->__pyx_vtab)->set_list(__pyx_v_union_list, __pyx_v_union_clist);
 
-  /* "ailist/ailist.pyx":838
- * 		union_list.set_list(union_clist)
+  /* "ailist/ailist.pyx":1076
+ *         union_list.set_list(union_clist)
  * 
- * 		return union_list             # <<<<<<<<<<<<<<
+ *         return union_list             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -11079,12 +13505,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_49append(struct __pyx_obj_6ail
   __pyx_r = ((PyObject *)__pyx_v_union_list);
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":815
+  /* "ailist/ailist.pyx":1053
  * 
  * 
- * 	def append(self, AIList query_ail):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Union of intervals within two AIList
+ *     def append(self, AIList query_ail):             # <<<<<<<<<<<<<<
+ *         """
+ *         Union of intervals within two AIList
  */
 
   /* function exit code */
@@ -11099,12 +13525,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_49append(struct __pyx_obj_6ail
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":841
+/* "ailist/ailist.pyx":1079
  * 
  * 
- * 	cdef np.ndarray _wps(AIList self, int protection):             # <<<<<<<<<<<<<<
- * 		# Initialize wps
- * 		cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
+ *     cdef np.ndarray _wps(AIList self, int protection):             # <<<<<<<<<<<<<<
+ *         # Initialize wps
+ *         cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
  */
 
 static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__wps(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_protection) {
@@ -11121,51 +13547,51 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__wps(struct __pyx_obj_6ail
   int __pyx_t_8;
   __Pyx_RefNannySetupContext("_wps", 0);
 
-  /* "ailist/ailist.pyx":843
- * 	cdef np.ndarray _wps(AIList self, int protection):
- * 		# Initialize wps
- * 		cdef double[::1] wps = np.zeros(self.range, dtype=np.double)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":1081
+ *     cdef np.ndarray _wps(AIList self, int protection):
+ *         # Initialize wps
+ *         cdef double[::1] wps = np.zeros(self.range, dtype=np.double)             # <<<<<<<<<<<<<<
  * 
- * 		ailist_wps(self.interval_list, &wps[0], protection)
+ *         ailist_wps(self.interval_list, &wps[0], protection)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 843, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 843, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_range); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 843, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_range); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 843, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 843, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 843, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_double); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 843, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_double); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 843, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 843, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 843, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_wps = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "ailist/ailist.pyx":845
- * 		cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
+  /* "ailist/ailist.pyx":1083
+ *         cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
  * 
- * 		ailist_wps(self.interval_list, &wps[0], protection)             # <<<<<<<<<<<<<<
+ *         ailist_wps(self.interval_list, &wps[0], protection)             # <<<<<<<<<<<<<<
  * 
- * 		return np.asarray(wps)
+ *         return np.asarray(wps)
  */
   __pyx_t_7 = 0;
   __pyx_t_8 = -1;
@@ -11175,24 +13601,24 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__wps(struct __pyx_obj_6ail
   } else if (unlikely(__pyx_t_7 >= __pyx_v_wps.shape[0])) __pyx_t_8 = 0;
   if (unlikely(__pyx_t_8 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_8);
-    __PYX_ERR(1, 845, __pyx_L1_error)
+    __PYX_ERR(1, 1083, __pyx_L1_error)
   }
   ailist_wps(__pyx_v_self->interval_list, (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_wps.data) + __pyx_t_7)) )))), __pyx_v_protection);
 
-  /* "ailist/ailist.pyx":847
- * 		ailist_wps(self.interval_list, &wps[0], protection)
+  /* "ailist/ailist.pyx":1085
+ *         ailist_wps(self.interval_list, &wps[0], protection)
  * 
- * 		return np.asarray(wps)             # <<<<<<<<<<<<<<
+ *         return np.asarray(wps)             # <<<<<<<<<<<<<<
  * 
- * 	cdef np.ndarray _wps_length(AIList self, int protection, int min_length, int max_length):
+ *     cdef np.ndarray _wps_length(AIList self, int protection, int min_length, int max_length):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 847, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1085, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 847, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1085, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_wps, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 847, __pyx_L1_error)
+  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_wps, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1085, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
@@ -11207,20 +13633,20 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__wps(struct __pyx_obj_6ail
   __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 847, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1085, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 847, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 1085, __pyx_L1_error)
   __pyx_r = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":841
+  /* "ailist/ailist.pyx":1079
  * 
  * 
- * 	cdef np.ndarray _wps(AIList self, int protection):             # <<<<<<<<<<<<<<
- * 		# Initialize wps
- * 		cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
+ *     cdef np.ndarray _wps(AIList self, int protection):             # <<<<<<<<<<<<<<
+ *         # Initialize wps
+ *         cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
  */
 
   /* function exit code */
@@ -11240,12 +13666,12 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__wps(struct __pyx_obj_6ail
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":849
- * 		return np.asarray(wps)
+/* "ailist/ailist.pyx":1087
+ *         return np.asarray(wps)
  * 
- * 	cdef np.ndarray _wps_length(AIList self, int protection, int min_length, int max_length):             # <<<<<<<<<<<<<<
- * 		# Initialize wps
- * 		cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
+ *     cdef np.ndarray _wps_length(AIList self, int protection, int min_length, int max_length):             # <<<<<<<<<<<<<<
+ *         # Initialize wps
+ *         cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
  */
 
 static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__wps_length(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_protection, int __pyx_v_min_length, int __pyx_v_max_length) {
@@ -11262,51 +13688,51 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__wps_length(struct __pyx_o
   int __pyx_t_8;
   __Pyx_RefNannySetupContext("_wps_length", 0);
 
-  /* "ailist/ailist.pyx":851
- * 	cdef np.ndarray _wps_length(AIList self, int protection, int min_length, int max_length):
- * 		# Initialize wps
- * 		cdef double[::1] wps = np.zeros(self.range, dtype=np.double)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":1089
+ *     cdef np.ndarray _wps_length(AIList self, int protection, int min_length, int max_length):
+ *         # Initialize wps
+ *         cdef double[::1] wps = np.zeros(self.range, dtype=np.double)             # <<<<<<<<<<<<<<
  * 
- * 		ailist_wps_length(self.interval_list, &wps[0], protection, min_length, max_length)
+ *         ailist_wps_length(self.interval_list, &wps[0], protection, min_length, max_length)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 851, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 851, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_range); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 851, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_range); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 851, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 851, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 851, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_double); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 851, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_double); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 851, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 851, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 851, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_wps = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "ailist/ailist.pyx":853
- * 		cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
+  /* "ailist/ailist.pyx":1091
+ *         cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
  * 
- * 		ailist_wps_length(self.interval_list, &wps[0], protection, min_length, max_length)             # <<<<<<<<<<<<<<
+ *         ailist_wps_length(self.interval_list, &wps[0], protection, min_length, max_length)             # <<<<<<<<<<<<<<
  * 
- * 		return np.asarray(wps)
+ *         return np.asarray(wps)
  */
   __pyx_t_7 = 0;
   __pyx_t_8 = -1;
@@ -11316,24 +13742,24 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__wps_length(struct __pyx_o
   } else if (unlikely(__pyx_t_7 >= __pyx_v_wps.shape[0])) __pyx_t_8 = 0;
   if (unlikely(__pyx_t_8 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_8);
-    __PYX_ERR(1, 853, __pyx_L1_error)
+    __PYX_ERR(1, 1091, __pyx_L1_error)
   }
   ailist_wps_length(__pyx_v_self->interval_list, (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_wps.data) + __pyx_t_7)) )))), __pyx_v_protection, __pyx_v_min_length, __pyx_v_max_length);
 
-  /* "ailist/ailist.pyx":855
- * 		ailist_wps_length(self.interval_list, &wps[0], protection, min_length, max_length)
+  /* "ailist/ailist.pyx":1093
+ *         ailist_wps_length(self.interval_list, &wps[0], protection, min_length, max_length)
  * 
- * 		return np.asarray(wps)             # <<<<<<<<<<<<<<
+ *         return np.asarray(wps)             # <<<<<<<<<<<<<<
  * 
- * 	def wps(self, int protection=60, min_length=None, max_length=None):
+ *     def wps(self, int protection=60, min_length=None, max_length=None):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 855, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1093, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 855, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1093, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_wps, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 855, __pyx_L1_error)
+  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_wps, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1093, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
@@ -11348,20 +13774,20 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__wps_length(struct __pyx_o
   __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 855, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1093, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 855, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 1093, __pyx_L1_error)
   __pyx_r = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":849
- * 		return np.asarray(wps)
+  /* "ailist/ailist.pyx":1087
+ *         return np.asarray(wps)
  * 
- * 	cdef np.ndarray _wps_length(AIList self, int protection, int min_length, int max_length):             # <<<<<<<<<<<<<<
- * 		# Initialize wps
- * 		cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
+ *     cdef np.ndarray _wps_length(AIList self, int protection, int min_length, int max_length):             # <<<<<<<<<<<<<<
+ *         # Initialize wps
+ *         cdef double[::1] wps = np.zeros(self.range, dtype=np.double)
  */
 
   /* function exit code */
@@ -11381,18 +13807,18 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__wps_length(struct __pyx_o
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":857
- * 		return np.asarray(wps)
+/* "ailist/ailist.pyx":1095
+ *         return np.asarray(wps)
  * 
- * 	def wps(self, int protection=60, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Calculate Window Protection Score
+ *     def wps(self, int protection=60, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
+ *         """
+ *         Calculate Window Protection Score
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_52wps(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_51wps[] = "AIList.wps(self, int protection=60, min_length=None, max_length=None)\n\n\t\tCalculate Window Protection Score\n\t\tfor each position in AIList range\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tprotection: int (Protection window to use)\n\t\t\tmin_length: int (Minimum length of intervals to include [default = None])\n\t\t\tmax_length: int (Maximum length of intervals to include [default = None])\n\n\t\tReturns:\n\t\t---------\n\t\t\tpandas.Series{double} (Position on index and WPS as values)\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_52wps(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_56wps(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_55wps[] = "AIList.wps(self, int protection=60, min_length=None, max_length=None)\n\n        Calculate Window Protection Score\n        for each position in AIList range\n        \n        Arguments:\n        ---------\n            protection: int (Protection window to use)\n            min_length: int (Minimum length of intervals to include [default = None])\n            max_length: int (Maximum length of intervals to include [default = None])\n\n        Returns:\n        ---------\n            pandas.Series{double} (Position on index and WPS as values)\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_56wps(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_protection;
   PyObject *__pyx_v_min_length = 0;
   PyObject *__pyx_v_max_length = 0;
@@ -11438,7 +13864,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_52wps(PyObject *__pyx_v_self, 
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "wps") < 0)) __PYX_ERR(1, 857, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "wps") < 0)) __PYX_ERR(1, 1095, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -11453,7 +13879,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_52wps(PyObject *__pyx_v_self, 
       }
     }
     if (values[0]) {
-      __pyx_v_protection = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_protection == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 857, __pyx_L3_error)
+      __pyx_v_protection = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_protection == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 1095, __pyx_L3_error)
     } else {
       __pyx_v_protection = ((int)60);
     }
@@ -11462,20 +13888,20 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_52wps(PyObject *__pyx_v_self, 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("wps", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 857, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("wps", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 1095, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.wps", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_51wps(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_protection, __pyx_v_min_length, __pyx_v_max_length);
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_55wps(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_protection, __pyx_v_min_length, __pyx_v_max_length);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51wps(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_protection, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_55wps(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_protection, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length) {
   PyArrayObject *__pyx_v_wps = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -11495,44 +13921,44 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51wps(struct __pyx_obj_6ailist
   PyObject *__pyx_t_14 = NULL;
   __Pyx_RefNannySetupContext("wps", 0);
 
-  /* "ailist/ailist.pyx":874
+  /* "ailist/ailist.pyx":1112
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":875
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":1113
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Initialize wps
+ *         # Initialize wps
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 875, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1113, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 875, __pyx_L1_error)
+    __PYX_ERR(1, 1113, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":874
+    /* "ailist/ailist.pyx":1112
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":880
- * 		cdef np.ndarray wps
- * 		# Calculate wps
- * 		if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
- * 			wps = self._wps(protection)
- * 		else:
+  /* "ailist/ailist.pyx":1118
+ *         cdef np.ndarray wps
+ *         # Calculate wps
+ *         if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
+ *             wps = self._wps(protection)
+ *         else:
  */
   __pyx_t_3 = (__pyx_v_min_length == Py_None);
   __pyx_t_4 = (__pyx_t_3 != 0);
@@ -11547,73 +13973,73 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51wps(struct __pyx_obj_6ailist
   __pyx_L5_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":881
- * 		# Calculate wps
- * 		if min_length is None or max_length is None:
- * 			wps = self._wps(protection)             # <<<<<<<<<<<<<<
- * 		else:
- * 			wps = self._wps_length(protection, min_length, max_length)
+    /* "ailist/ailist.pyx":1119
+ *         # Calculate wps
+ *         if min_length is None or max_length is None:
+ *             wps = self._wps(protection)             # <<<<<<<<<<<<<<
+ *         else:
+ *             wps = self._wps_length(protection, min_length, max_length)
  */
-    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_wps(__pyx_v_self, __pyx_v_protection)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 881, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_wps(__pyx_v_self, __pyx_v_protection)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1119, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_wps = ((PyArrayObject *)__pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "ailist/ailist.pyx":880
- * 		cdef np.ndarray wps
- * 		# Calculate wps
- * 		if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
- * 			wps = self._wps(protection)
- * 		else:
+    /* "ailist/ailist.pyx":1118
+ *         cdef np.ndarray wps
+ *         # Calculate wps
+ *         if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
+ *             wps = self._wps(protection)
+ *         else:
  */
     goto __pyx_L4;
   }
 
-  /* "ailist/ailist.pyx":883
- * 			wps = self._wps(protection)
- * 		else:
- * 			wps = self._wps_length(protection, min_length, max_length)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":1121
+ *             wps = self._wps(protection)
+ *         else:
+ *             wps = self._wps_length(protection, min_length, max_length)             # <<<<<<<<<<<<<<
  * 
- * 		return pd.Series(wps, index=np.arange(self.first, self.last))
+ *         return pd.Series(wps, index=np.arange(self.first, self.last))
  */
   /*else*/ {
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_v_min_length); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 883, __pyx_L1_error)
-    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_v_max_length); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 883, __pyx_L1_error)
-    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_wps_length(__pyx_v_self, __pyx_v_protection, __pyx_t_5, __pyx_t_6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 883, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_v_min_length); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 1121, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_v_max_length); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 1121, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_wps_length(__pyx_v_self, __pyx_v_protection, __pyx_t_5, __pyx_t_6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1121, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_wps = ((PyArrayObject *)__pyx_t_2);
     __pyx_t_2 = 0;
   }
   __pyx_L4:;
 
-  /* "ailist/ailist.pyx":885
- * 			wps = self._wps_length(protection, min_length, max_length)
+  /* "ailist/ailist.pyx":1123
+ *             wps = self._wps_length(protection, min_length, max_length)
  * 
- * 		return pd.Series(wps, index=np.arange(self.first, self.last))             # <<<<<<<<<<<<<<
+ *         return pd.Series(wps, index=np.arange(self.first, self.last))             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pd); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 885, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pd); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Series); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 885, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Series); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 1123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 885, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_wps));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_wps));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_v_wps));
-  __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 885, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 1123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 885, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 1123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_arange); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 885, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_arange); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 1123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 885, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_first); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 1123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 885, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_last); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 1123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __pyx_t_13 = NULL;
   __pyx_t_6 = 0;
@@ -11630,7 +14056,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51wps(struct __pyx_obj_6ailist
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_11)) {
     PyObject *__pyx_temp[3] = {__pyx_t_13, __pyx_t_10, __pyx_t_12};
-    __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 885, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 1123, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -11640,7 +14066,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51wps(struct __pyx_obj_6ailist
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_11)) {
     PyObject *__pyx_temp[3] = {__pyx_t_13, __pyx_t_10, __pyx_t_12};
-    __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 885, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 1123, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -11648,7 +14074,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51wps(struct __pyx_obj_6ailist
   } else
   #endif
   {
-    __pyx_t_14 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 885, __pyx_L1_error)
+    __pyx_t_14 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 1123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_14);
     if (__pyx_t_13) {
       __Pyx_GIVEREF(__pyx_t_13); PyTuple_SET_ITEM(__pyx_t_14, 0, __pyx_t_13); __pyx_t_13 = NULL;
@@ -11659,14 +14085,14 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51wps(struct __pyx_obj_6ailist
     PyTuple_SET_ITEM(__pyx_t_14, 1+__pyx_t_6, __pyx_t_12);
     __pyx_t_10 = 0;
     __pyx_t_12 = 0;
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_14, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 885, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_14, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 1123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
   }
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_index, __pyx_t_9) < 0) __PYX_ERR(1, 885, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_index, __pyx_t_9) < 0) __PYX_ERR(1, 1123, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 885, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 1123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -11675,12 +14101,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51wps(struct __pyx_obj_6ailist
   __pyx_t_9 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":857
- * 		return np.asarray(wps)
+  /* "ailist/ailist.pyx":1095
+ *         return np.asarray(wps)
  * 
- * 	def wps(self, int protection=60, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Calculate Window Protection Score
+ *     def wps(self, int protection=60, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
+ *         """
+ *         Calculate Window Protection Score
  */
 
   /* function exit code */
@@ -11703,18 +14129,18 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_51wps(struct __pyx_obj_6ailist
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":888
+/* "ailist/ailist.pyx":1126
  * 
  * 
- * 	def filter(self, int min_length=1, int max_length=400):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Filter out intervals outside of a length range
+ *     def filter(self, int min_length=1, int max_length=400):             # <<<<<<<<<<<<<<
+ *         """
+ *         Filter out intervals outside of a length range
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_54filter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_53filter[] = "AIList.filter(self, int min_length=1, int max_length=400)\n\n\t\tFilter out intervals outside of a length range\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tmin_length: int (Minimum length to keep)\n\t\t\tmax_length: int (Maximum langth to keep)\n\n\t\tReturns:\n\t\t---------\n\t\t\tfiltered_ail: AIList (Filtered intervals)\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_54filter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_58filter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_57filter[] = "AIList.filter(self, int min_length=1, int max_length=400)\n\n        Filter out intervals outside of a length range\n        \n        Arguments:\n        ---------\n            min_length: int (Minimum length to keep)\n            max_length: int (Maximum langth to keep)\n\n        Returns:\n        ---------\n            filtered_ail: AIList (Filtered intervals)\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_58filter(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_min_length;
   int __pyx_v_max_length;
   PyObject *__pyx_r = 0;
@@ -11749,7 +14175,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_54filter(PyObject *__pyx_v_sel
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "filter") < 0)) __PYX_ERR(1, 888, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "filter") < 0)) __PYX_ERR(1, 1126, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -11762,32 +14188,32 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_54filter(PyObject *__pyx_v_sel
       }
     }
     if (values[0]) {
-      __pyx_v_min_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_min_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 888, __pyx_L3_error)
+      __pyx_v_min_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_min_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 1126, __pyx_L3_error)
     } else {
       __pyx_v_min_length = ((int)1);
     }
     if (values[1]) {
-      __pyx_v_max_length = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_max_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 888, __pyx_L3_error)
+      __pyx_v_max_length = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_max_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 1126, __pyx_L3_error)
     } else {
       __pyx_v_max_length = ((int)0x190);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("filter", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 888, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("filter", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 1126, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.filter", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_53filter(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_min_length, __pyx_v_max_length);
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_57filter(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_min_length, __pyx_v_max_length);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_53filter(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_min_length, int __pyx_v_max_length) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_57filter(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, int __pyx_v_min_length, int __pyx_v_max_length) {
   struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_filtered_ail = 0;
   ailist_t *__pyx_v_cfiltered_ail;
   PyObject *__pyx_r = NULL;
@@ -11796,72 +14222,72 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_53filter(struct __pyx_obj_6ail
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("filter", 0);
 
-  /* "ailist/ailist.pyx":903
+  /* "ailist/ailist.pyx":1141
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":904
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":1142
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Initialize filtered list
+ *         # Initialize filtered list
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 904, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1142, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 904, __pyx_L1_error)
+    __PYX_ERR(1, 1142, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":903
+    /* "ailist/ailist.pyx":1141
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":907
+  /* "ailist/ailist.pyx":1145
  * 
- * 		# Initialize filtered list
- * 		cdef AIList filtered_ail = AIList()             # <<<<<<<<<<<<<<
+ *         # Initialize filtered list
+ *         cdef AIList filtered_ail = AIList()             # <<<<<<<<<<<<<<
  * 
- * 		cdef ailist_t *cfiltered_ail = ailist_length_filter(self.interval_list, min_length, max_length)
+ *         cdef ailist_t *cfiltered_ail = ailist_length_filter(self.interval_list, min_length, max_length)
  */
-  __pyx_t_2 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 907, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_6ailist_6ailist_AIList)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_filtered_ail = ((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "ailist/ailist.pyx":909
- * 		cdef AIList filtered_ail = AIList()
+  /* "ailist/ailist.pyx":1147
+ *         cdef AIList filtered_ail = AIList()
  * 
- * 		cdef ailist_t *cfiltered_ail = ailist_length_filter(self.interval_list, min_length, max_length)             # <<<<<<<<<<<<<<
- * 		filtered_ail.set_list(cfiltered_ail)
+ *         cdef ailist_t *cfiltered_ail = ailist_length_filter(self.interval_list, min_length, max_length)             # <<<<<<<<<<<<<<
+ *         filtered_ail.set_list(cfiltered_ail)
  * 
  */
   __pyx_v_cfiltered_ail = ailist_length_filter(__pyx_v_self->interval_list, __pyx_v_min_length, __pyx_v_max_length);
 
-  /* "ailist/ailist.pyx":910
+  /* "ailist/ailist.pyx":1148
  * 
- * 		cdef ailist_t *cfiltered_ail = ailist_length_filter(self.interval_list, min_length, max_length)
- * 		filtered_ail.set_list(cfiltered_ail)             # <<<<<<<<<<<<<<
+ *         cdef ailist_t *cfiltered_ail = ailist_length_filter(self.interval_list, min_length, max_length)
+ *         filtered_ail.set_list(cfiltered_ail)             # <<<<<<<<<<<<<<
  * 
- * 		return filtered_ail
+ *         return filtered_ail
  */
   ((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_filtered_ail->__pyx_vtab)->set_list(__pyx_v_filtered_ail, __pyx_v_cfiltered_ail);
 
-  /* "ailist/ailist.pyx":912
- * 		filtered_ail.set_list(cfiltered_ail)
+  /* "ailist/ailist.pyx":1150
+ *         filtered_ail.set_list(cfiltered_ail)
  * 
- * 		return filtered_ail             # <<<<<<<<<<<<<<
+ *         return filtered_ail             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -11870,12 +14296,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_53filter(struct __pyx_obj_6ail
   __pyx_r = ((PyObject *)__pyx_v_filtered_ail);
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":888
+  /* "ailist/ailist.pyx":1126
  * 
  * 
- * 	def filter(self, int min_length=1, int max_length=400):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Filter out intervals outside of a length range
+ *     def filter(self, int min_length=1, int max_length=400):             # <<<<<<<<<<<<<<
+ *         """
+ *         Filter out intervals outside of a length range
  */
 
   /* function exit code */
@@ -11890,12 +14316,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_53filter(struct __pyx_obj_6ail
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":915
+/* "ailist/ailist.pyx":1153
  * 
  * 
- * 	cdef np.ndarray _length_dist(AIList self):             # <<<<<<<<<<<<<<
- * 		# Initialize distribution
- * 		cdef int max_length = ailist_max_length(self.interval_list)
+ *     cdef np.ndarray _length_dist(AIList self):             # <<<<<<<<<<<<<<
+ *         # Initialize distribution
+ *         cdef int max_length = ailist_max_length(self.interval_list)
  */
 
 static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__length_dist(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self) {
@@ -11913,60 +14339,60 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__length_dist(struct __pyx_
   int __pyx_t_8;
   __Pyx_RefNannySetupContext("_length_dist", 0);
 
-  /* "ailist/ailist.pyx":917
- * 	cdef np.ndarray _length_dist(AIList self):
- * 		# Initialize distribution
- * 		cdef int max_length = ailist_max_length(self.interval_list)             # <<<<<<<<<<<<<<
- * 		cdef int[::1] distribution = np.zeros(max_length + 1, dtype=np.intc)
+  /* "ailist/ailist.pyx":1155
+ *     cdef np.ndarray _length_dist(AIList self):
+ *         # Initialize distribution
+ *         cdef int max_length = ailist_max_length(self.interval_list)             # <<<<<<<<<<<<<<
+ *         cdef int[::1] distribution = np.zeros(max_length + 1, dtype=np.intc)
  * 
  */
   __pyx_v_max_length = ailist_max_length(__pyx_v_self->interval_list);
 
-  /* "ailist/ailist.pyx":918
- * 		# Initialize distribution
- * 		cdef int max_length = ailist_max_length(self.interval_list)
- * 		cdef int[::1] distribution = np.zeros(max_length + 1, dtype=np.intc)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":1156
+ *         # Initialize distribution
+ *         cdef int max_length = ailist_max_length(self.interval_list)
+ *         cdef int[::1] distribution = np.zeros(max_length + 1, dtype=np.intc)             # <<<<<<<<<<<<<<
  * 
- * 		# Calculate distribution
+ *         # Calculate distribution
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 918, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 918, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_max_length + 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 918, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_max_length + 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 918, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 918, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 918, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_intc); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 918, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_intc); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 918, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 1156, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 918, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 918, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 1156, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_distribution = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "ailist/ailist.pyx":921
+  /* "ailist/ailist.pyx":1159
  * 
- * 		# Calculate distribution
- * 		ailist_length_distribution(self.interval_list, &distribution[0])             # <<<<<<<<<<<<<<
+ *         # Calculate distribution
+ *         ailist_length_distribution(self.interval_list, &distribution[0])             # <<<<<<<<<<<<<<
  * 
- * 		return np.asarray(distribution, dtype=np.intc)
+ *         return np.asarray(distribution, dtype=np.intc)
  */
   __pyx_t_7 = 0;
   __pyx_t_8 = -1;
@@ -11976,55 +14402,55 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__length_dist(struct __pyx_
   } else if (unlikely(__pyx_t_7 >= __pyx_v_distribution.shape[0])) __pyx_t_8 = 0;
   if (unlikely(__pyx_t_8 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_8);
-    __PYX_ERR(1, 921, __pyx_L1_error)
+    __PYX_ERR(1, 1159, __pyx_L1_error)
   }
   ailist_length_distribution(__pyx_v_self->interval_list, (&(*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_distribution.data) + __pyx_t_7)) )))));
 
-  /* "ailist/ailist.pyx":923
- * 		ailist_length_distribution(self.interval_list, &distribution[0])
+  /* "ailist/ailist.pyx":1161
+ *         ailist_length_distribution(self.interval_list, &distribution[0])
  * 
- * 		return np.asarray(distribution, dtype=np.intc)             # <<<<<<<<<<<<<<
+ *         return np.asarray(distribution, dtype=np.intc)             # <<<<<<<<<<<<<<
  * 
- * 	def length_dist(self):
+ *     def length_dist(self):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 923, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 923, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_distribution, 1, (PyObject *(*)(char *)) __pyx_memview_get_int, (int (*)(char *, PyObject *)) __pyx_memview_set_int, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 923, __pyx_L1_error)
+  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_distribution, 1, (PyObject *(*)(char *)) __pyx_memview_get_int, (int (*)(char *, PyObject *)) __pyx_memview_set_int, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 923, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 923, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 923, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_intc); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 923, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_intc); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(1, 923, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(1, 1161, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 923, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 923, __pyx_L1_error)
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 1161, __pyx_L1_error)
   __pyx_r = ((PyArrayObject *)__pyx_t_4);
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":915
+  /* "ailist/ailist.pyx":1153
  * 
  * 
- * 	cdef np.ndarray _length_dist(AIList self):             # <<<<<<<<<<<<<<
- * 		# Initialize distribution
- * 		cdef int max_length = ailist_max_length(self.interval_list)
+ *     cdef np.ndarray _length_dist(AIList self):             # <<<<<<<<<<<<<<
+ *         # Initialize distribution
+ *         cdef int max_length = ailist_max_length(self.interval_list)
  */
 
   /* function exit code */
@@ -12044,29 +14470,29 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__length_dist(struct __pyx_
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":925
- * 		return np.asarray(distribution, dtype=np.intc)
+/* "ailist/ailist.pyx":1163
+ *         return np.asarray(distribution, dtype=np.intc)
  * 
- * 	def length_dist(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Calculate length distribution of intervals
+ *     def length_dist(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Calculate length distribution of intervals
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_56length_dist(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_55length_dist[] = "AIList.length_dist(self)\n\n\t\tCalculate length distribution of intervals\n\t\t\n\t\tReturns:\n\t\t---------\n\t\t\tdistribution: numpy.ndarray{int} (Interval length distribution)\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_56length_dist(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_60length_dist(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_59length_dist[] = "AIList.length_dist(self)\n\n        Calculate length distribution of intervals\n        \n        Returns:\n        ---------\n            distribution: numpy.ndarray{int} (Interval length distribution)\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_60length_dist(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("length_dist (wrapper)", 0);
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_55length_dist(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_59length_dist(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_55length_dist(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_59length_dist(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self) {
   PyArrayObject *__pyx_v_distribution = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -12074,54 +14500,54 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_55length_dist(struct __pyx_obj
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("length_dist", 0);
 
-  /* "ailist/ailist.pyx":935
+  /* "ailist/ailist.pyx":1173
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":936
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":1174
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Initialize distribution
+ *         # Initialize distribution
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 936, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1174, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 936, __pyx_L1_error)
+    __PYX_ERR(1, 1174, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":935
+    /* "ailist/ailist.pyx":1173
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":941
- * 		cdef np.ndarray distribution
- * 		# Calculate distribution
- * 		distribution = self._length_dist()             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":1179
+ *         cdef np.ndarray distribution
+ *         # Calculate distribution
+ *         distribution = self._length_dist()             # <<<<<<<<<<<<<<
  * 
- * 		return distribution
+ *         return distribution
  */
-  __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_length_dist(__pyx_v_self)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 941, __pyx_L1_error)
+  __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_length_dist(__pyx_v_self)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1179, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_distribution = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "ailist/ailist.pyx":943
- * 		distribution = self._length_dist()
+  /* "ailist/ailist.pyx":1181
+ *         distribution = self._length_dist()
  * 
- * 		return distribution             # <<<<<<<<<<<<<<
+ *         return distribution             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -12130,12 +14556,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_55length_dist(struct __pyx_obj
   __pyx_r = ((PyObject *)__pyx_v_distribution);
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":925
- * 		return np.asarray(distribution, dtype=np.intc)
+  /* "ailist/ailist.pyx":1163
+ *         return np.asarray(distribution, dtype=np.intc)
  * 
- * 	def length_dist(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Calculate length distribution of intervals
+ *     def length_dist(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Calculate length distribution of intervals
  */
 
   /* function exit code */
@@ -12150,12 +14576,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_55length_dist(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":946
+/* "ailist/ailist.pyx":1184
  * 
  * 
- * 	cdef np.ndarray _nhits_from_array(AIList self, const long[::1] starts, const long[::1] ends):             # <<<<<<<<<<<<<<
- * 		# Initialize hits
- * 		cdef int length = starts.size
+ *     cdef np.ndarray _nhits_from_array(AIList self, const long[::1] starts, const long[::1] ends):             # <<<<<<<<<<<<<<
+ *         # Initialize hits
+ *         cdef int length = starts.size
  */
 
 static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends) {
@@ -12175,67 +14601,67 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array(struct _
   Py_ssize_t __pyx_t_10;
   __Pyx_RefNannySetupContext("_nhits_from_array", 0);
 
-  /* "ailist/ailist.pyx":948
- * 	cdef np.ndarray _nhits_from_array(AIList self, const long[::1] starts, const long[::1] ends):
- * 		# Initialize hits
- * 		cdef int length = starts.size             # <<<<<<<<<<<<<<
- * 		cdef int[::1] nhits = np.zeros(length, dtype=np.intc)
+  /* "ailist/ailist.pyx":1186
+ *     cdef np.ndarray _nhits_from_array(AIList self, const long[::1] starts, const long[::1] ends):
+ *         # Initialize hits
+ *         cdef int length = starts.size             # <<<<<<<<<<<<<<
+ *         cdef int[::1] nhits = np.zeros(length, dtype=np.intc)
  * 
  */
-  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_starts, 1, (PyObject *(*)(char *)) __pyx_memview_get_long__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 948, __pyx_L1_error)
+  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_starts, 1, (PyObject *(*)(char *)) __pyx_memview_get_long__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 948, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 948, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 1186, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_length = __pyx_t_3;
 
-  /* "ailist/ailist.pyx":949
- * 		# Initialize hits
- * 		cdef int length = starts.size
- * 		cdef int[::1] nhits = np.zeros(length, dtype=np.intc)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":1187
+ *         # Initialize hits
+ *         cdef int length = starts.size
+ *         cdef int[::1] nhits = np.zeros(length, dtype=np.intc)             # <<<<<<<<<<<<<<
  * 
- * 		# Calculate distribution
+ *         # Calculate distribution
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 949, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 949, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 949, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 949, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 949, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 949, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_intc); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 949, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_intc); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(1, 949, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(1, 1187, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 949, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 949, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 1187, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_nhits = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "ailist/ailist.pyx":952
+  /* "ailist/ailist.pyx":1190
  * 
- * 		# Calculate distribution
- * 		ailist_nhits_from_array(self.interval_list, &starts[0], &ends[0], length, &nhits[0])             # <<<<<<<<<<<<<<
+ *         # Calculate distribution
+ *         ailist_nhits_from_array(self.interval_list, &starts[0], &ends[0], length, &nhits[0])             # <<<<<<<<<<<<<<
  * 
- * 		return np.asarray(nhits, dtype=np.intc)
+ *         return np.asarray(nhits, dtype=np.intc)
  */
   __pyx_t_8 = 0;
   __pyx_t_3 = -1;
@@ -12245,7 +14671,7 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array(struct _
   } else if (unlikely(__pyx_t_8 >= __pyx_v_starts.shape[0])) __pyx_t_3 = 0;
   if (unlikely(__pyx_t_3 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_3);
-    __PYX_ERR(1, 952, __pyx_L1_error)
+    __PYX_ERR(1, 1190, __pyx_L1_error)
   }
   __pyx_t_9 = 0;
   __pyx_t_3 = -1;
@@ -12255,7 +14681,7 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array(struct _
   } else if (unlikely(__pyx_t_9 >= __pyx_v_ends.shape[0])) __pyx_t_3 = 0;
   if (unlikely(__pyx_t_3 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_3);
-    __PYX_ERR(1, 952, __pyx_L1_error)
+    __PYX_ERR(1, 1190, __pyx_L1_error)
   }
   __pyx_t_10 = 0;
   __pyx_t_3 = -1;
@@ -12265,55 +14691,55 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array(struct _
   } else if (unlikely(__pyx_t_10 >= __pyx_v_nhits.shape[0])) __pyx_t_3 = 0;
   if (unlikely(__pyx_t_3 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_3);
-    __PYX_ERR(1, 952, __pyx_L1_error)
+    __PYX_ERR(1, 1190, __pyx_L1_error)
   }
   ailist_nhits_from_array(__pyx_v_self->interval_list, (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_starts.data) + __pyx_t_8)) )))), (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_ends.data) + __pyx_t_9)) )))), __pyx_v_length, (&(*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_nhits.data) + __pyx_t_10)) )))));
 
-  /* "ailist/ailist.pyx":954
- * 		ailist_nhits_from_array(self.interval_list, &starts[0], &ends[0], length, &nhits[0])
+  /* "ailist/ailist.pyx":1192
+ *         ailist_nhits_from_array(self.interval_list, &starts[0], &ends[0], length, &nhits[0])
  * 
- * 		return np.asarray(nhits, dtype=np.intc)             # <<<<<<<<<<<<<<
+ *         return np.asarray(nhits, dtype=np.intc)             # <<<<<<<<<<<<<<
  * 
- * 	cdef np.ndarray _nhits_from_array_length(AIList self, const long[::1] starts, const long[::1] ends, int min_length, int max_length):
+ *     cdef np.ndarray _nhits_from_array_length(AIList self, const long[::1] starts, const long[::1] ends, int min_length, int max_length):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 954, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_asarray); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 954, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_asarray); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_nhits, 1, (PyObject *(*)(char *)) __pyx_memview_get_int, (int (*)(char *, PyObject *)) __pyx_memview_set_int, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 954, __pyx_L1_error)
+  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_nhits, 1, (PyObject *(*)(char *)) __pyx_memview_get_int, (int (*)(char *, PyObject *)) __pyx_memview_set_int, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 954, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_6);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_6);
   __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 954, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 954, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_intc); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 954, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_intc); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 954, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 1192, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 954, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 954, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 1192, __pyx_L1_error)
   __pyx_r = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":946
+  /* "ailist/ailist.pyx":1184
  * 
  * 
- * 	cdef np.ndarray _nhits_from_array(AIList self, const long[::1] starts, const long[::1] ends):             # <<<<<<<<<<<<<<
- * 		# Initialize hits
- * 		cdef int length = starts.size
+ *     cdef np.ndarray _nhits_from_array(AIList self, const long[::1] starts, const long[::1] ends):             # <<<<<<<<<<<<<<
+ *         # Initialize hits
+ *         cdef int length = starts.size
  */
 
   /* function exit code */
@@ -12333,12 +14759,12 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array(struct _
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":956
- * 		return np.asarray(nhits, dtype=np.intc)
+/* "ailist/ailist.pyx":1194
+ *         return np.asarray(nhits, dtype=np.intc)
  * 
- * 	cdef np.ndarray _nhits_from_array_length(AIList self, const long[::1] starts, const long[::1] ends, int min_length, int max_length):             # <<<<<<<<<<<<<<
- * 		# Initialize hits
- * 		cdef int length = starts.size
+ *     cdef np.ndarray _nhits_from_array_length(AIList self, const long[::1] starts, const long[::1] ends, int min_length, int max_length):             # <<<<<<<<<<<<<<
+ *         # Initialize hits
+ *         cdef int length = starts.size
  */
 
 static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array_length(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, int __pyx_v_min_length, int __pyx_v_max_length) {
@@ -12358,67 +14784,67 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array_length(s
   Py_ssize_t __pyx_t_10;
   __Pyx_RefNannySetupContext("_nhits_from_array_length", 0);
 
-  /* "ailist/ailist.pyx":958
- * 	cdef np.ndarray _nhits_from_array_length(AIList self, const long[::1] starts, const long[::1] ends, int min_length, int max_length):
- * 		# Initialize hits
- * 		cdef int length = starts.size             # <<<<<<<<<<<<<<
- * 		cdef int[::1] nhits = np.zeros(length, dtype=np.intc)
+  /* "ailist/ailist.pyx":1196
+ *     cdef np.ndarray _nhits_from_array_length(AIList self, const long[::1] starts, const long[::1] ends, int min_length, int max_length):
+ *         # Initialize hits
+ *         cdef int length = starts.size             # <<<<<<<<<<<<<<
+ *         cdef int[::1] nhits = np.zeros(length, dtype=np.intc)
  * 
  */
-  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_starts, 1, (PyObject *(*)(char *)) __pyx_memview_get_long__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 958, __pyx_L1_error)
+  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_starts, 1, (PyObject *(*)(char *)) __pyx_memview_get_long__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 958, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 958, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 1196, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_length = __pyx_t_3;
 
-  /* "ailist/ailist.pyx":959
- * 		# Initialize hits
- * 		cdef int length = starts.size
- * 		cdef int[::1] nhits = np.zeros(length, dtype=np.intc)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":1197
+ *         # Initialize hits
+ *         cdef int length = starts.size
+ *         cdef int[::1] nhits = np.zeros(length, dtype=np.intc)             # <<<<<<<<<<<<<<
  * 
- * 		# Calculate distribution
+ *         # Calculate distribution
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 959, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 959, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 959, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 959, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 959, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 959, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_intc); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 959, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_intc); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(1, 959, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(1, 1197, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 959, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 959, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 1197, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_nhits = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "ailist/ailist.pyx":962
+  /* "ailist/ailist.pyx":1200
  * 
- * 		# Calculate distribution
- * 		ailist_nhits_from_array_length(self.interval_list, &starts[0], &ends[0], length, &nhits[0], min_length, max_length)             # <<<<<<<<<<<<<<
+ *         # Calculate distribution
+ *         ailist_nhits_from_array_length(self.interval_list, &starts[0], &ends[0], length, &nhits[0], min_length, max_length)             # <<<<<<<<<<<<<<
  * 
- * 		return np.asarray(nhits, dtype=np.intc)
+ *         return np.asarray(nhits, dtype=np.intc)
  */
   __pyx_t_8 = 0;
   __pyx_t_3 = -1;
@@ -12428,7 +14854,7 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array_length(s
   } else if (unlikely(__pyx_t_8 >= __pyx_v_starts.shape[0])) __pyx_t_3 = 0;
   if (unlikely(__pyx_t_3 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_3);
-    __PYX_ERR(1, 962, __pyx_L1_error)
+    __PYX_ERR(1, 1200, __pyx_L1_error)
   }
   __pyx_t_9 = 0;
   __pyx_t_3 = -1;
@@ -12438,7 +14864,7 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array_length(s
   } else if (unlikely(__pyx_t_9 >= __pyx_v_ends.shape[0])) __pyx_t_3 = 0;
   if (unlikely(__pyx_t_3 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_3);
-    __PYX_ERR(1, 962, __pyx_L1_error)
+    __PYX_ERR(1, 1200, __pyx_L1_error)
   }
   __pyx_t_10 = 0;
   __pyx_t_3 = -1;
@@ -12448,55 +14874,55 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array_length(s
   } else if (unlikely(__pyx_t_10 >= __pyx_v_nhits.shape[0])) __pyx_t_3 = 0;
   if (unlikely(__pyx_t_3 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_3);
-    __PYX_ERR(1, 962, __pyx_L1_error)
+    __PYX_ERR(1, 1200, __pyx_L1_error)
   }
   ailist_nhits_from_array_length(__pyx_v_self->interval_list, (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_starts.data) + __pyx_t_8)) )))), (&(*((long const  *) ( /* dim=0 */ ((char *) (((long const  *) __pyx_v_ends.data) + __pyx_t_9)) )))), __pyx_v_length, (&(*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_nhits.data) + __pyx_t_10)) )))), __pyx_v_min_length, __pyx_v_max_length);
 
-  /* "ailist/ailist.pyx":964
- * 		ailist_nhits_from_array_length(self.interval_list, &starts[0], &ends[0], length, &nhits[0], min_length, max_length)
+  /* "ailist/ailist.pyx":1202
+ *         ailist_nhits_from_array_length(self.interval_list, &starts[0], &ends[0], length, &nhits[0], min_length, max_length)
  * 
- * 		return np.asarray(nhits, dtype=np.intc)             # <<<<<<<<<<<<<<
+ *         return np.asarray(nhits, dtype=np.intc)             # <<<<<<<<<<<<<<
  * 
- * 	def nhits_from_array(self, const long[::1] starts, const long[::1] ends, min_length=None, max_length=None):
+ *     def nhits_from_array(self, const long[::1] starts, const long[::1] ends, min_length=None, max_length=None):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 964, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_asarray); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 964, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_asarray); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_nhits, 1, (PyObject *(*)(char *)) __pyx_memview_get_int, (int (*)(char *, PyObject *)) __pyx_memview_set_int, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 964, __pyx_L1_error)
+  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_nhits, 1, (PyObject *(*)(char *)) __pyx_memview_get_int, (int (*)(char *, PyObject *)) __pyx_memview_set_int, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 964, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_6);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_6);
   __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 964, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 964, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_intc); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 964, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_intc); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 964, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(1, 1202, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 964, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 964, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(1, 1202, __pyx_L1_error)
   __pyx_r = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":956
- * 		return np.asarray(nhits, dtype=np.intc)
+  /* "ailist/ailist.pyx":1194
+ *         return np.asarray(nhits, dtype=np.intc)
  * 
- * 	cdef np.ndarray _nhits_from_array_length(AIList self, const long[::1] starts, const long[::1] ends, int min_length, int max_length):             # <<<<<<<<<<<<<<
- * 		# Initialize hits
- * 		cdef int length = starts.size
+ *     cdef np.ndarray _nhits_from_array_length(AIList self, const long[::1] starts, const long[::1] ends, int min_length, int max_length):             # <<<<<<<<<<<<<<
+ *         # Initialize hits
+ *         cdef int length = starts.size
  */
 
   /* function exit code */
@@ -12516,18 +14942,18 @@ static PyArrayObject *__pyx_f_6ailist_6ailist_6AIList__nhits_from_array_length(s
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":966
- * 		return np.asarray(nhits, dtype=np.intc)
+/* "ailist/ailist.pyx":1204
+ *         return np.asarray(nhits, dtype=np.intc)
  * 
- * 	def nhits_from_array(self, const long[::1] starts, const long[::1] ends, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find number of intervals overlapping given
+ *     def nhits_from_array(self, const long[::1] starts, const long[::1] ends, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find number of intervals overlapping given
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_58nhits_from_array(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_57nhits_from_array[] = "AIList.nhits_from_array(self, const long[::1] starts, const long[::1] ends, min_length=None, max_length=None)\n\n\t\tFind number of intervals overlapping given\n\t\tpositions\n\t\t\n\t\tArguments:\n\t\t---------\n\t\t\tstarts: numpy.ndarray{long} (Start positions to intersect)\n\t\t\tends: numpy.ndarray{long} (End positions to intersect)\n\t\t\tmin_length: int (Minimum length of intervals to include [default = None])\n\t\t\tmax_length: int (Maximum length of intervals to include [default = None])\n\n\t\tReturns:\n\t\t---------\n\t\t\tnhits: numpy.ndarray{int} (Number of hits per position)\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_58nhits_from_array(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_62nhits_from_array(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_61nhits_from_array[] = "AIList.nhits_from_array(self, const long[::1] starts, const long[::1] ends, min_length=None, max_length=None)\n\n        Find number of intervals overlapping given\n        positions\n\n        Arguments:\n        ---------\n            starts: numpy.ndarray{long} (Start positions to intersect)\n            ends: numpy.ndarray{long} (End positions to intersect)\n            min_length: int (Minimum length of intervals to include [default = None])\n            max_length: int (Maximum length of intervals to include [default = None])\n\n        Returns:\n        ---------\n            nhits: numpy.ndarray{int} (Number of hits per position)\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_62nhits_from_array(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_starts = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_ends = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_v_min_length = 0;
@@ -12564,7 +14990,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_58nhits_from_array(PyObject *_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_ends)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("nhits_from_array", 0, 2, 4, 1); __PYX_ERR(1, 966, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("nhits_from_array", 0, 2, 4, 1); __PYX_ERR(1, 1204, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -12580,7 +15006,7 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_58nhits_from_array(PyObject *_
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "nhits_from_array") < 0)) __PYX_ERR(1, 966, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "nhits_from_array") < 0)) __PYX_ERR(1, 1204, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -12594,27 +15020,27 @@ static PyObject *__pyx_pw_6ailist_6ailist_6AIList_58nhits_from_array(PyObject *_
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_starts = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[0], 0); if (unlikely(!__pyx_v_starts.memview)) __PYX_ERR(1, 966, __pyx_L3_error)
-    __pyx_v_ends = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[1], 0); if (unlikely(!__pyx_v_ends.memview)) __PYX_ERR(1, 966, __pyx_L3_error)
+    __pyx_v_starts = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[0], 0); if (unlikely(!__pyx_v_starts.memview)) __PYX_ERR(1, 1204, __pyx_L3_error)
+    __pyx_v_ends = __Pyx_PyObject_to_MemoryviewSlice_dc_long__const__(values[1], 0); if (unlikely(!__pyx_v_ends.memview)) __PYX_ERR(1, 1204, __pyx_L3_error)
     __pyx_v_min_length = values[2];
     __pyx_v_max_length = values[3];
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("nhits_from_array", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 966, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("nhits_from_array", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 1204, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ailist.ailist.AIList.nhits_from_array", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_57nhits_from_array(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_starts, __pyx_v_ends, __pyx_v_min_length, __pyx_v_max_length);
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_61nhits_from_array(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self), __pyx_v_starts, __pyx_v_ends, __pyx_v_min_length, __pyx_v_max_length);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_57nhits_from_array(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_61nhits_from_array(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self, __Pyx_memviewslice __pyx_v_starts, __Pyx_memviewslice __pyx_v_ends, PyObject *__pyx_v_min_length, PyObject *__pyx_v_max_length) {
   PyArrayObject *__pyx_v_nhits = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -12628,56 +15054,56 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_57nhits_from_array(struct __py
   int __pyx_t_8;
   __Pyx_RefNannySetupContext("nhits_from_array", 0);
 
-  /* "ailist/ailist.pyx":984
+  /* "ailist/ailist.pyx":1222
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   __pyx_t_1 = (__pyx_v_self->is_closed != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "ailist/ailist.pyx":985
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":1223
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Make sure list is constructed
+ *         # Make sure list is constructed
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 985, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_NameError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1223, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 985, __pyx_L1_error)
+    __PYX_ERR(1, 1223, __pyx_L1_error)
 
-    /* "ailist/ailist.pyx":984
+    /* "ailist/ailist.pyx":1222
  * 
- * 		# Check if object is still open
- * 		if self.is_closed:             # <<<<<<<<<<<<<<
- * 			raise NameError("AIList object has been closed.")
+ *         # Check if object is still open
+ *         if self.is_closed:             # <<<<<<<<<<<<<<
+ *             raise NameError("AIList object has been closed.")
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":988
+  /* "ailist/ailist.pyx":1226
  * 
- * 		# Make sure list is constructed
- * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
- * 			self.construct()
+ *         # Make sure list is constructed
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
  * 
  */
   __pyx_t_1 = ((__pyx_v_self->is_constructed == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":989
- * 		# Make sure list is constructed
- * 		if self.is_constructed == False:
- * 			self.construct()             # <<<<<<<<<<<<<<
+    /* "ailist/ailist.pyx":1227
+ *         # Make sure list is constructed
+ *         if self.is_constructed == False:
+ *             self.construct()             # <<<<<<<<<<<<<<
  * 
- * 		# Initialize distribution
+ *         # Initialize distribution
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_construct); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 989, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_construct); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1227, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -12691,26 +15117,26 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_57nhits_from_array(struct __py
     }
     __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 989, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1227, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "ailist/ailist.pyx":988
+    /* "ailist/ailist.pyx":1226
  * 
- * 		# Make sure list is constructed
- * 		if self.is_constructed == False:             # <<<<<<<<<<<<<<
- * 			self.construct()
+ *         # Make sure list is constructed
+ *         if self.is_constructed == False:             # <<<<<<<<<<<<<<
+ *             self.construct()
  * 
  */
   }
 
-  /* "ailist/ailist.pyx":994
- * 		cdef np.ndarray nhits
- * 		# Calculate distribution
- * 		if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
- * 			nhits = self._nhits_from_array(starts, ends)
- * 		else:
+  /* "ailist/ailist.pyx":1232
+ *         cdef np.ndarray nhits
+ *         # Calculate distribution
+ *         if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
+ *             nhits = self._nhits_from_array(starts, ends)
+ *         else:
  */
   __pyx_t_5 = (__pyx_v_min_length == Py_None);
   __pyx_t_6 = (__pyx_t_5 != 0);
@@ -12725,49 +15151,49 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_57nhits_from_array(struct __py
   __pyx_L6_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":995
- * 		# Calculate distribution
- * 		if min_length is None or max_length is None:
- * 			nhits = self._nhits_from_array(starts, ends)             # <<<<<<<<<<<<<<
- * 		else:
- * 			nhits = self._nhits_from_array_length(starts, ends, min_length, max_length)
+    /* "ailist/ailist.pyx":1233
+ *         # Calculate distribution
+ *         if min_length is None or max_length is None:
+ *             nhits = self._nhits_from_array(starts, ends)             # <<<<<<<<<<<<<<
+ *         else:
+ *             nhits = self._nhits_from_array_length(starts, ends, min_length, max_length)
  */
-    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_nhits_from_array(__pyx_v_self, __pyx_v_starts, __pyx_v_ends)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 995, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_nhits_from_array(__pyx_v_self, __pyx_v_starts, __pyx_v_ends)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1233, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_nhits = ((PyArrayObject *)__pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "ailist/ailist.pyx":994
- * 		cdef np.ndarray nhits
- * 		# Calculate distribution
- * 		if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
- * 			nhits = self._nhits_from_array(starts, ends)
- * 		else:
+    /* "ailist/ailist.pyx":1232
+ *         cdef np.ndarray nhits
+ *         # Calculate distribution
+ *         if min_length is None or max_length is None:             # <<<<<<<<<<<<<<
+ *             nhits = self._nhits_from_array(starts, ends)
+ *         else:
  */
     goto __pyx_L5;
   }
 
-  /* "ailist/ailist.pyx":997
- * 			nhits = self._nhits_from_array(starts, ends)
- * 		else:
- * 			nhits = self._nhits_from_array_length(starts, ends, min_length, max_length)             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":1235
+ *             nhits = self._nhits_from_array(starts, ends)
+ *         else:
+ *             nhits = self._nhits_from_array_length(starts, ends, min_length, max_length)             # <<<<<<<<<<<<<<
  * 
- * 		return nhits
+ *         return nhits
  */
   /*else*/ {
-    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_min_length); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 997, __pyx_L1_error)
-    __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_v_max_length); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 997, __pyx_L1_error)
-    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_nhits_from_array_length(__pyx_v_self, __pyx_v_starts, __pyx_v_ends, __pyx_t_7, __pyx_t_8)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 997, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_min_length); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 1235, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_v_max_length); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 1235, __pyx_L1_error)
+    __pyx_t_2 = ((PyObject *)((struct __pyx_vtabstruct_6ailist_6ailist_AIList *)__pyx_v_self->__pyx_vtab)->_nhits_from_array_length(__pyx_v_self, __pyx_v_starts, __pyx_v_ends, __pyx_t_7, __pyx_t_8)); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1235, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_nhits = ((PyArrayObject *)__pyx_t_2);
     __pyx_t_2 = 0;
   }
   __pyx_L5:;
 
-  /* "ailist/ailist.pyx":999
- * 			nhits = self._nhits_from_array_length(starts, ends, min_length, max_length)
+  /* "ailist/ailist.pyx":1237
+ *             nhits = self._nhits_from_array_length(starts, ends, min_length, max_length)
  * 
- * 		return nhits             # <<<<<<<<<<<<<<
+ *         return nhits             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -12776,12 +15202,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_57nhits_from_array(struct __py
   __pyx_r = ((PyObject *)__pyx_v_nhits);
   goto __pyx_L0;
 
-  /* "ailist/ailist.pyx":966
- * 		return np.asarray(nhits, dtype=np.intc)
+  /* "ailist/ailist.pyx":1204
+ *         return np.asarray(nhits, dtype=np.intc)
  * 
- * 	def nhits_from_array(self, const long[::1] starts, const long[::1] ends, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Find number of intervals overlapping given
+ *     def nhits_from_array(self, const long[::1] starts, const long[::1] ends, min_length=None, max_length=None):             # <<<<<<<<<<<<<<
+ *         """
+ *         Find number of intervals overlapping given
  */
 
   /* function exit code */
@@ -12800,84 +15226,86 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_57nhits_from_array(struct __py
   return __pyx_r;
 }
 
-/* "ailist/ailist.pyx":1002
+/* "ailist/ailist.pyx":1240
  * 
  * 
- * 	def close(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Close object and clear memory
+ *     def close(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Close object and clear memory
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_60close(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_6ailist_6ailist_6AIList_59close[] = "AIList.close(self)\n\n\t\tClose object and clear memory\n\t\t";
-static PyObject *__pyx_pw_6ailist_6ailist_6AIList_60close(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_64close(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_6ailist_6ailist_6AIList_63close[] = "AIList.close(self)\n\n        Close object and clear memory\n        ";
+static PyObject *__pyx_pw_6ailist_6ailist_6AIList_64close(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("close (wrapper)", 0);
-  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_59close(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6ailist_6ailist_6AIList_63close(((struct __pyx_obj_6ailist_6ailist_AIList *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6ailist_6ailist_6AIList_59close(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self) {
+static PyObject *__pyx_pf_6ailist_6ailist_6AIList_63close(struct __pyx_obj_6ailist_6ailist_AIList *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("close", 0);
 
-  /* "ailist/ailist.pyx":1008
+  /* "ailist/ailist.pyx":1246
  * 
- * 		# Free interval_list memory
- * 		if self.interval_list:             # <<<<<<<<<<<<<<
- * 			ailist_destroy(self.interval_list)
- * 		self.interval_list = NULL
+ *         # Free interval_list memory
+ *         if self.interval_list:             # <<<<<<<<<<<<<<
+ *             ailist_destroy(self.interval_list)
+ *         self.interval_list = NULL
  */
   __pyx_t_1 = (__pyx_v_self->interval_list != 0);
   if (__pyx_t_1) {
 
-    /* "ailist/ailist.pyx":1009
- * 		# Free interval_list memory
- * 		if self.interval_list:
- * 			ailist_destroy(self.interval_list)             # <<<<<<<<<<<<<<
- * 		self.interval_list = NULL
+    /* "ailist/ailist.pyx":1247
+ *         # Free interval_list memory
+ *         if self.interval_list:
+ *             ailist_destroy(self.interval_list)             # <<<<<<<<<<<<<<
+ *         self.interval_list = NULL
  * 
  */
     ailist_destroy(__pyx_v_self->interval_list);
 
-    /* "ailist/ailist.pyx":1008
+    /* "ailist/ailist.pyx":1246
  * 
- * 		# Free interval_list memory
- * 		if self.interval_list:             # <<<<<<<<<<<<<<
- * 			ailist_destroy(self.interval_list)
- * 		self.interval_list = NULL
+ *         # Free interval_list memory
+ *         if self.interval_list:             # <<<<<<<<<<<<<<
+ *             ailist_destroy(self.interval_list)
+ *         self.interval_list = NULL
  */
   }
 
-  /* "ailist/ailist.pyx":1010
- * 		if self.interval_list:
- * 			ailist_destroy(self.interval_list)
- * 		self.interval_list = NULL             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":1248
+ *         if self.interval_list:
+ *             ailist_destroy(self.interval_list)
+ *         self.interval_list = NULL             # <<<<<<<<<<<<<<
  * 
- * 		self.is_closed = True
+ *         self.is_closed = True
  */
   __pyx_v_self->interval_list = NULL;
 
-  /* "ailist/ailist.pyx":1012
- * 		self.interval_list = NULL
+  /* "ailist/ailist.pyx":1250
+ *         self.interval_list = NULL
  * 
- * 		self.is_closed = True             # <<<<<<<<<<<<<<
+ *         self.is_closed = True             # <<<<<<<<<<<<<<
+ * 
+ * 
  */
   __pyx_v_self->is_closed = 1;
 
-  /* "ailist/ailist.pyx":1002
+  /* "ailist/ailist.pyx":1240
  * 
  * 
- * 	def close(self):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Close object and clear memory
+ *     def close(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Close object and clear memory
  */
 
   /* function exit code */
@@ -12887,12 +15315,12 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_59close(struct __pyx_obj_6aili
   return __pyx_r;
 }
 
-/* "ailist/ailist.pxd":100
- * 	"""
- * 	cdef ailist_t *interval_list
- * 	cdef public bint is_constructed             # <<<<<<<<<<<<<<
- * 	cdef public bint is_sorted
- * 	cdef public bint is_closed
+/* "ailist/ailist.pxd":112
+ *     """
+ *     cdef ailist_t *interval_list
+ *     cdef public bint is_constructed             # <<<<<<<<<<<<<<
+ *     cdef public bint is_sorted
+ *     cdef public bint is_closed
  */
 
 /* Python wrapper */
@@ -12914,7 +15342,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_14is_constructed___get__(struc
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->is_constructed); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 100, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->is_constructed); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -12949,7 +15377,7 @@ static int __pyx_pf_6ailist_6ailist_6AIList_14is_constructed_2__set__(struct __p
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(2, 100, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(2, 112, __pyx_L1_error)
   __pyx_v_self->is_constructed = __pyx_t_1;
 
   /* function exit code */
@@ -12963,11 +15391,11 @@ static int __pyx_pf_6ailist_6ailist_6AIList_14is_constructed_2__set__(struct __p
   return __pyx_r;
 }
 
-/* "ailist/ailist.pxd":101
- * 	cdef ailist_t *interval_list
- * 	cdef public bint is_constructed
- * 	cdef public bint is_sorted             # <<<<<<<<<<<<<<
- * 	cdef public bint is_closed
+/* "ailist/ailist.pxd":113
+ *     cdef ailist_t *interval_list
+ *     cdef public bint is_constructed
+ *     cdef public bint is_sorted             # <<<<<<<<<<<<<<
+ *     cdef public bint is_closed
  * 
  */
 
@@ -12990,7 +15418,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_9is_sorted___get__(struct __py
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->is_sorted); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 101, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->is_sorted); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 113, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -13025,7 +15453,7 @@ static int __pyx_pf_6ailist_6ailist_6AIList_9is_sorted_2__set__(struct __pyx_obj
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(2, 101, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(2, 113, __pyx_L1_error)
   __pyx_v_self->is_sorted = __pyx_t_1;
 
   /* function exit code */
@@ -13039,12 +15467,12 @@ static int __pyx_pf_6ailist_6ailist_6AIList_9is_sorted_2__set__(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "ailist/ailist.pxd":102
- * 	cdef public bint is_constructed
- * 	cdef public bint is_sorted
- * 	cdef public bint is_closed             # <<<<<<<<<<<<<<
+/* "ailist/ailist.pxd":114
+ *     cdef public bint is_constructed
+ *     cdef public bint is_sorted
+ *     cdef public bint is_closed             # <<<<<<<<<<<<<<
  * 
- * 	cdef bytes _get_data(self)
+ *     cdef bytes _get_data(self)
  */
 
 /* Python wrapper */
@@ -13066,7 +15494,7 @@ static PyObject *__pyx_pf_6ailist_6ailist_6AIList_9is_closed___get__(struct __py
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->is_closed); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 102, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->is_closed); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -13101,7 +15529,7 @@ static int __pyx_pf_6ailist_6ailist_6AIList_9is_closed_2__set__(struct __pyx_obj
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(2, 102, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(2, 114, __pyx_L1_error)
   __pyx_v_self->is_closed = __pyx_t_1;
 
   /* function exit code */
@@ -13115,7 +15543,7 @@ static int __pyx_pf_6ailist_6ailist_6AIList_9is_closed_2__set__(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":258
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":258
  *         # experimental exception made for __getbuffer__ and __releasebuffer__
  *         # -- the details of this may change.
  *         def __getbuffer__(ndarray self, Py_buffer* info, int flags):             # <<<<<<<<<<<<<<
@@ -13164,7 +15592,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_v_info->obj = Py_None; __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(__pyx_v_info->obj);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":265
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":265
  * 
  *             cdef int i, ndim
  *             cdef int endian_detector = 1             # <<<<<<<<<<<<<<
@@ -13173,7 +15601,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_endian_detector = 1;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":266
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":266
  *             cdef int i, ndim
  *             cdef int endian_detector = 1
  *             cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)             # <<<<<<<<<<<<<<
@@ -13182,7 +15610,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_little_endian = ((((char *)(&__pyx_v_endian_detector))[0]) != 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":268
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":268
  *             cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)
  * 
  *             ndim = PyArray_NDIM(self)             # <<<<<<<<<<<<<<
@@ -13191,7 +15619,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_ndim = PyArray_NDIM(__pyx_v_self);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -13205,7 +15633,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L4_bool_binop_done;
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":271
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":271
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_C_CONTIGUOUS)):             # <<<<<<<<<<<<<<
@@ -13216,7 +15644,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = __pyx_t_2;
   __pyx_L4_bool_binop_done:;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -13225,7 +15653,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   if (unlikely(__pyx_t_1)) {
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":272
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":272
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")             # <<<<<<<<<<<<<<
@@ -13238,7 +15666,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(3, 272, __pyx_L1_error)
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -13247,7 +15675,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -13261,7 +15689,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L7_bool_binop_done;
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":275
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":275
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_F_CONTIGUOUS)):             # <<<<<<<<<<<<<<
@@ -13272,7 +15700,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = __pyx_t_2;
   __pyx_L7_bool_binop_done:;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -13281,7 +15709,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   if (unlikely(__pyx_t_1)) {
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":276
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":276
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")             # <<<<<<<<<<<<<<
@@ -13294,7 +15722,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(3, 276, __pyx_L1_error)
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -13303,7 +15731,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":278
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":278
  *                 raise ValueError(u"ndarray is not Fortran contiguous")
  * 
  *             info.buf = PyArray_DATA(self)             # <<<<<<<<<<<<<<
@@ -13312,7 +15740,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->buf = PyArray_DATA(__pyx_v_self);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":279
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":279
  * 
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim             # <<<<<<<<<<<<<<
@@ -13321,7 +15749,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->ndim = __pyx_v_ndim;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":280
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":280
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -13331,7 +15759,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = (((sizeof(npy_intp)) != (sizeof(Py_ssize_t))) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":283
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":283
  *                 # Allocate new buffer for strides and shape info.
  *                 # This is allocated as one block, strides first.
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)             # <<<<<<<<<<<<<<
@@ -13340,7 +15768,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->strides = ((Py_ssize_t *)PyObject_Malloc((((sizeof(Py_ssize_t)) * 2) * ((size_t)__pyx_v_ndim))));
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":284
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":284
  *                 # This is allocated as one block, strides first.
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)
  *                 info.shape = info.strides + ndim             # <<<<<<<<<<<<<<
@@ -13349,7 +15777,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->shape = (__pyx_v_info->strides + __pyx_v_ndim);
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":285
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":285
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)
  *                 info.shape = info.strides + ndim
  *                 for i in range(ndim):             # <<<<<<<<<<<<<<
@@ -13361,7 +15789,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_5; __pyx_t_6+=1) {
       __pyx_v_i = __pyx_t_6;
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":286
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":286
  *                 info.shape = info.strides + ndim
  *                 for i in range(ndim):
  *                     info.strides[i] = PyArray_STRIDES(self)[i]             # <<<<<<<<<<<<<<
@@ -13370,7 +15798,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
       (__pyx_v_info->strides[__pyx_v_i]) = (PyArray_STRIDES(__pyx_v_self)[__pyx_v_i]);
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":287
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":287
  *                 for i in range(ndim):
  *                     info.strides[i] = PyArray_STRIDES(self)[i]
  *                     info.shape[i] = PyArray_DIMS(self)[i]             # <<<<<<<<<<<<<<
@@ -13380,7 +15808,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       (__pyx_v_info->shape[__pyx_v_i]) = (PyArray_DIMS(__pyx_v_self)[__pyx_v_i]);
     }
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":280
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":280
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -13390,7 +15818,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L9;
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":289
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":289
  *                     info.shape[i] = PyArray_DIMS(self)[i]
  *             else:
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)             # <<<<<<<<<<<<<<
@@ -13400,7 +15828,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   /*else*/ {
     __pyx_v_info->strides = ((Py_ssize_t *)PyArray_STRIDES(__pyx_v_self));
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":290
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":290
  *             else:
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)             # <<<<<<<<<<<<<<
@@ -13411,7 +15839,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   }
   __pyx_L9:;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":291
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":291
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)
  *             info.suboffsets = NULL             # <<<<<<<<<<<<<<
@@ -13420,7 +15848,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->suboffsets = NULL;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":292
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":292
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)
  *             info.suboffsets = NULL
  *             info.itemsize = PyArray_ITEMSIZE(self)             # <<<<<<<<<<<<<<
@@ -13429,7 +15857,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->itemsize = PyArray_ITEMSIZE(__pyx_v_self);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":293
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":293
  *             info.suboffsets = NULL
  *             info.itemsize = PyArray_ITEMSIZE(self)
  *             info.readonly = not PyArray_ISWRITEABLE(self)             # <<<<<<<<<<<<<<
@@ -13438,7 +15866,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->readonly = (!(PyArray_ISWRITEABLE(__pyx_v_self) != 0));
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":296
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":296
  * 
  *             cdef int t
  *             cdef char* f = NULL             # <<<<<<<<<<<<<<
@@ -13447,7 +15875,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_f = NULL;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":297
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":297
  *             cdef int t
  *             cdef char* f = NULL
  *             cdef dtype descr = <dtype>PyArray_DESCR(self)             # <<<<<<<<<<<<<<
@@ -13460,7 +15888,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_v_descr = ((PyArray_Descr *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":300
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":300
  *             cdef int offset
  * 
  *             info.obj = self             # <<<<<<<<<<<<<<
@@ -13473,7 +15901,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __Pyx_DECREF(__pyx_v_info->obj);
   __pyx_v_info->obj = ((PyObject *)__pyx_v_self);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":302
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":302
  *             info.obj = self
  * 
  *             if not PyDataType_HASFIELDS(descr):             # <<<<<<<<<<<<<<
@@ -13483,7 +15911,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = ((!(PyDataType_HASFIELDS(__pyx_v_descr) != 0)) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":303
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":303
  * 
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num             # <<<<<<<<<<<<<<
@@ -13493,7 +15921,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_4 = __pyx_v_descr->type_num;
     __pyx_v_t = __pyx_t_4;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -13513,7 +15941,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     }
     __pyx_L15_next_or:;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":305
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":305
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):             # <<<<<<<<<<<<<<
@@ -13530,7 +15958,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_1 = __pyx_t_2;
     __pyx_L14_bool_binop_done:;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -13539,7 +15967,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     if (unlikely(__pyx_t_1)) {
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":306
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":306
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -13552,7 +15980,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(3, 306, __pyx_L1_error)
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -13561,7 +15989,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     }
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":307
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":307
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")
  *                 if   t == NPY_BYTE:        f = "b"             # <<<<<<<<<<<<<<
@@ -13574,7 +16002,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_UBYTE:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":308
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":308
  *                     raise ValueError(u"Non-native byte order not supported")
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"             # <<<<<<<<<<<<<<
@@ -13585,7 +16013,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_SHORT:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":309
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":309
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"
  *                 elif t == NPY_SHORT:       f = "h"             # <<<<<<<<<<<<<<
@@ -13596,7 +16024,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_USHORT:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":310
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":310
  *                 elif t == NPY_UBYTE:       f = "B"
  *                 elif t == NPY_SHORT:       f = "h"
  *                 elif t == NPY_USHORT:      f = "H"             # <<<<<<<<<<<<<<
@@ -13607,7 +16035,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_INT:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":311
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":311
  *                 elif t == NPY_SHORT:       f = "h"
  *                 elif t == NPY_USHORT:      f = "H"
  *                 elif t == NPY_INT:         f = "i"             # <<<<<<<<<<<<<<
@@ -13618,7 +16046,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_UINT:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":312
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":312
  *                 elif t == NPY_USHORT:      f = "H"
  *                 elif t == NPY_INT:         f = "i"
  *                 elif t == NPY_UINT:        f = "I"             # <<<<<<<<<<<<<<
@@ -13629,7 +16057,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_LONG:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":313
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":313
  *                 elif t == NPY_INT:         f = "i"
  *                 elif t == NPY_UINT:        f = "I"
  *                 elif t == NPY_LONG:        f = "l"             # <<<<<<<<<<<<<<
@@ -13640,7 +16068,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_ULONG:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":314
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":314
  *                 elif t == NPY_UINT:        f = "I"
  *                 elif t == NPY_LONG:        f = "l"
  *                 elif t == NPY_ULONG:       f = "L"             # <<<<<<<<<<<<<<
@@ -13651,7 +16079,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_LONGLONG:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":315
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":315
  *                 elif t == NPY_LONG:        f = "l"
  *                 elif t == NPY_ULONG:       f = "L"
  *                 elif t == NPY_LONGLONG:    f = "q"             # <<<<<<<<<<<<<<
@@ -13662,7 +16090,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_ULONGLONG:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":316
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":316
  *                 elif t == NPY_ULONG:       f = "L"
  *                 elif t == NPY_LONGLONG:    f = "q"
  *                 elif t == NPY_ULONGLONG:   f = "Q"             # <<<<<<<<<<<<<<
@@ -13673,7 +16101,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_FLOAT:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":317
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":317
  *                 elif t == NPY_LONGLONG:    f = "q"
  *                 elif t == NPY_ULONGLONG:   f = "Q"
  *                 elif t == NPY_FLOAT:       f = "f"             # <<<<<<<<<<<<<<
@@ -13684,7 +16112,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_DOUBLE:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":318
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":318
  *                 elif t == NPY_ULONGLONG:   f = "Q"
  *                 elif t == NPY_FLOAT:       f = "f"
  *                 elif t == NPY_DOUBLE:      f = "d"             # <<<<<<<<<<<<<<
@@ -13695,7 +16123,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_LONGDOUBLE:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":319
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":319
  *                 elif t == NPY_FLOAT:       f = "f"
  *                 elif t == NPY_DOUBLE:      f = "d"
  *                 elif t == NPY_LONGDOUBLE:  f = "g"             # <<<<<<<<<<<<<<
@@ -13706,7 +16134,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_CFLOAT:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":320
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":320
  *                 elif t == NPY_DOUBLE:      f = "d"
  *                 elif t == NPY_LONGDOUBLE:  f = "g"
  *                 elif t == NPY_CFLOAT:      f = "Zf"             # <<<<<<<<<<<<<<
@@ -13717,7 +16145,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_CDOUBLE:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":321
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":321
  *                 elif t == NPY_LONGDOUBLE:  f = "g"
  *                 elif t == NPY_CFLOAT:      f = "Zf"
  *                 elif t == NPY_CDOUBLE:     f = "Zd"             # <<<<<<<<<<<<<<
@@ -13728,7 +16156,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_CLONGDOUBLE:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":322
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":322
  *                 elif t == NPY_CFLOAT:      f = "Zf"
  *                 elif t == NPY_CDOUBLE:     f = "Zd"
  *                 elif t == NPY_CLONGDOUBLE: f = "Zg"             # <<<<<<<<<<<<<<
@@ -13739,7 +16167,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_OBJECT:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":323
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":323
  *                 elif t == NPY_CDOUBLE:     f = "Zd"
  *                 elif t == NPY_CLONGDOUBLE: f = "Zg"
  *                 elif t == NPY_OBJECT:      f = "O"             # <<<<<<<<<<<<<<
@@ -13750,7 +16178,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       default:
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":325
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":325
  *                 elif t == NPY_OBJECT:      f = "O"
  *                 else:
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)             # <<<<<<<<<<<<<<
@@ -13771,7 +16199,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
     }
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":326
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":326
  *                 else:
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *                 info.format = f             # <<<<<<<<<<<<<<
@@ -13780,7 +16208,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->format = __pyx_v_f;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":327
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":327
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *                 info.format = f
  *                 return             # <<<<<<<<<<<<<<
@@ -13790,7 +16218,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_r = 0;
     goto __pyx_L0;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":302
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":302
  *             info.obj = self
  * 
  *             if not PyDataType_HASFIELDS(descr):             # <<<<<<<<<<<<<<
@@ -13799,7 +16227,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":329
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":329
  *                 return
  *             else:
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)             # <<<<<<<<<<<<<<
@@ -13809,7 +16237,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   /*else*/ {
     __pyx_v_info->format = ((char *)PyObject_Malloc(0xFF));
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":330
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":330
  *             else:
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)
  *                 info.format[0] = c'^' # Native data types, manual alignment             # <<<<<<<<<<<<<<
@@ -13818,7 +16246,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     (__pyx_v_info->format[0]) = '^';
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":331
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":331
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)
  *                 info.format[0] = c'^' # Native data types, manual alignment
  *                 offset = 0             # <<<<<<<<<<<<<<
@@ -13827,7 +16255,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_offset = 0;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":332
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":332
  *                 info.format[0] = c'^' # Native data types, manual alignment
  *                 offset = 0
  *                 f = _util_dtypestring(descr, info.format + 1,             # <<<<<<<<<<<<<<
@@ -13837,7 +16265,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_9 = __pyx_f_5numpy__util_dtypestring(__pyx_v_descr, (__pyx_v_info->format + 1), (__pyx_v_info->format + 0xFF), (&__pyx_v_offset)); if (unlikely(__pyx_t_9 == ((char *)NULL))) __PYX_ERR(3, 332, __pyx_L1_error)
     __pyx_v_f = __pyx_t_9;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":335
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":335
  *                                       info.format + _buffer_format_string_len,
  *                                       &offset)
  *                 f[0] = c'\0' # Terminate format string             # <<<<<<<<<<<<<<
@@ -13847,7 +16275,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     (__pyx_v_f[0]) = '\x00';
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":258
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":258
  *         # experimental exception made for __getbuffer__ and __releasebuffer__
  *         # -- the details of this may change.
  *         def __getbuffer__(ndarray self, Py_buffer* info, int flags):             # <<<<<<<<<<<<<<
@@ -13879,7 +16307,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":337
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":337
  *                 f[0] = c'\0' # Terminate format string
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):             # <<<<<<<<<<<<<<
@@ -13903,7 +16331,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__releasebuffer__", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":338
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":338
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):             # <<<<<<<<<<<<<<
@@ -13913,7 +16341,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __pyx_t_1 = (PyArray_HASFIELDS(__pyx_v_self) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":339
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":339
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)             # <<<<<<<<<<<<<<
@@ -13922,7 +16350,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
     PyObject_Free(__pyx_v_info->format);
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":338
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":338
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):             # <<<<<<<<<<<<<<
@@ -13931,7 +16359,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":340
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":340
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -13941,7 +16369,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __pyx_t_1 = (((sizeof(npy_intp)) != (sizeof(Py_ssize_t))) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":341
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":341
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):
  *                 PyObject_Free(info.strides)             # <<<<<<<<<<<<<<
@@ -13950,7 +16378,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
     PyObject_Free(__pyx_v_info->strides);
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":340
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":340
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -13959,7 +16387,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":337
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":337
  *                 f[0] = c'\0' # Terminate format string
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):             # <<<<<<<<<<<<<<
@@ -13971,7 +16399,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":821
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":821
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -13985,7 +16413,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":822
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":822
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -13999,7 +16427,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":821
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":821
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -14018,7 +16446,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":824
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":824
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -14032,7 +16460,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":825
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":825
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -14046,7 +16474,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":824
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":824
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -14065,7 +16493,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":827
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":827
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -14079,7 +16507,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":828
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":828
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -14093,7 +16521,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":827
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":827
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -14112,7 +16540,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":830
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":830
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -14126,7 +16554,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":831
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":831
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -14140,7 +16568,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":830
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":830
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -14159,7 +16587,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":833
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":833
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -14173,7 +16601,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":834
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":834
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -14187,7 +16615,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":833
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":833
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -14206,7 +16634,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":836
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":836
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -14220,7 +16648,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":837
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":837
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -14230,7 +16658,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = (PyDataType_HASSUBARRAY(__pyx_v_d) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":838
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":838
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -14242,7 +16670,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":837
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":837
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -14251,7 +16679,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":840
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":840
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -14265,7 +16693,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":836
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":836
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -14280,7 +16708,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":842
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":842
  *         return ()
  * 
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
@@ -14309,7 +16737,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   char *__pyx_t_9;
   __Pyx_RefNannySetupContext("_util_dtypestring", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":847
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":847
  * 
  *     cdef dtype child
  *     cdef int endian_detector = 1             # <<<<<<<<<<<<<<
@@ -14318,7 +16746,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
   __pyx_v_endian_detector = 1;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":848
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":848
  *     cdef dtype child
  *     cdef int endian_detector = 1
  *     cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)             # <<<<<<<<<<<<<<
@@ -14327,7 +16755,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
   __pyx_v_little_endian = ((((char *)(&__pyx_v_endian_detector))[0]) != 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":851
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":851
  *     cdef tuple fields
  * 
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
@@ -14350,7 +16778,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_childname, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":852
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":852
  * 
  *     for childname in descr.names:
  *         fields = descr.fields[childname]             # <<<<<<<<<<<<<<
@@ -14367,7 +16795,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_fields, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":853
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":853
  *     for childname in descr.names:
  *         fields = descr.fields[childname]
  *         child, new_offset = fields             # <<<<<<<<<<<<<<
@@ -14402,7 +16830,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_new_offset, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":855
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":855
  *         child, new_offset = fields
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
@@ -14419,7 +16847,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = ((((__pyx_v_end - __pyx_v_f) - ((int)__pyx_t_5)) < 15) != 0);
     if (unlikely(__pyx_t_6)) {
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":856
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":856
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
@@ -14432,7 +16860,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(3, 856, __pyx_L1_error)
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":855
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":855
  *         child, new_offset = fields
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
@@ -14441,7 +16869,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     }
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -14461,7 +16889,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     }
     __pyx_L8_next_or:;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":859
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":859
  * 
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):             # <<<<<<<<<<<<<<
@@ -14478,7 +16906,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = __pyx_t_7;
     __pyx_L7_bool_binop_done:;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -14487,7 +16915,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     if (unlikely(__pyx_t_6)) {
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":860
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":860
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):
  *             raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -14500,7 +16928,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(3, 860, __pyx_L1_error)
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -14509,7 +16937,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     }
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":870
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":870
  * 
  *         # Output padding bytes
  *         while offset[0] < new_offset:             # <<<<<<<<<<<<<<
@@ -14525,7 +16953,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       if (!__pyx_t_6) break;
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":871
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":871
  *         # Output padding bytes
  *         while offset[0] < new_offset:
  *             f[0] = 120 # "x"; pad byte             # <<<<<<<<<<<<<<
@@ -14534,7 +16962,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       (__pyx_v_f[0]) = 0x78;
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":872
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":872
  *         while offset[0] < new_offset:
  *             f[0] = 120 # "x"; pad byte
  *             f += 1             # <<<<<<<<<<<<<<
@@ -14543,7 +16971,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       __pyx_v_f = (__pyx_v_f + 1);
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":873
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":873
  *             f[0] = 120 # "x"; pad byte
  *             f += 1
  *             offset[0] += 1             # <<<<<<<<<<<<<<
@@ -14554,7 +16982,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       (__pyx_v_offset[__pyx_t_8]) = ((__pyx_v_offset[__pyx_t_8]) + 1);
     }
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":875
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":875
  *             offset[0] += 1
  * 
  *         offset[0] += child.itemsize             # <<<<<<<<<<<<<<
@@ -14564,7 +16992,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_8 = 0;
     (__pyx_v_offset[__pyx_t_8]) = ((__pyx_v_offset[__pyx_t_8]) + __pyx_v_child->elsize);
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":877
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":877
  *         offset[0] += child.itemsize
  * 
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
@@ -14574,7 +17002,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = ((!(PyDataType_HASFIELDS(__pyx_v_child) != 0)) != 0);
     if (__pyx_t_6) {
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":878
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":878
  * 
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num             # <<<<<<<<<<<<<<
@@ -14586,7 +17014,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_XDECREF_SET(__pyx_v_t, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":879
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":879
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
@@ -14596,7 +17024,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __pyx_t_6 = (((__pyx_v_end - __pyx_v_f) < 5) != 0);
       if (unlikely(__pyx_t_6)) {
 
-        /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":880
+        /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":880
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
@@ -14609,7 +17037,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __PYX_ERR(3, 880, __pyx_L1_error)
 
-        /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":879
+        /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":879
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
@@ -14618,7 +17046,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":883
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":883
  * 
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"             # <<<<<<<<<<<<<<
@@ -14636,7 +17064,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":884
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":884
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"             # <<<<<<<<<<<<<<
@@ -14654,7 +17082,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":885
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":885
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"             # <<<<<<<<<<<<<<
@@ -14672,7 +17100,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":886
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":886
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"             # <<<<<<<<<<<<<<
@@ -14690,7 +17118,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":887
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":887
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"
  *             elif t == NPY_INT:         f[0] = 105 #"i"             # <<<<<<<<<<<<<<
@@ -14708,7 +17136,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":888
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":888
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"
  *             elif t == NPY_INT:         f[0] = 105 #"i"
  *             elif t == NPY_UINT:        f[0] =  73 #"I"             # <<<<<<<<<<<<<<
@@ -14726,7 +17154,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":889
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":889
  *             elif t == NPY_INT:         f[0] = 105 #"i"
  *             elif t == NPY_UINT:        f[0] =  73 #"I"
  *             elif t == NPY_LONG:        f[0] = 108 #"l"             # <<<<<<<<<<<<<<
@@ -14744,7 +17172,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":890
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":890
  *             elif t == NPY_UINT:        f[0] =  73 #"I"
  *             elif t == NPY_LONG:        f[0] = 108 #"l"
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"             # <<<<<<<<<<<<<<
@@ -14762,7 +17190,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":891
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":891
  *             elif t == NPY_LONG:        f[0] = 108 #"l"
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"             # <<<<<<<<<<<<<<
@@ -14780,7 +17208,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":892
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":892
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"             # <<<<<<<<<<<<<<
@@ -14798,7 +17226,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":893
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":893
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"             # <<<<<<<<<<<<<<
@@ -14816,7 +17244,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":894
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":894
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"             # <<<<<<<<<<<<<<
@@ -14834,7 +17262,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":895
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":895
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"             # <<<<<<<<<<<<<<
@@ -14852,7 +17280,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":896
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":896
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf             # <<<<<<<<<<<<<<
@@ -14872,7 +17300,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":897
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":897
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd             # <<<<<<<<<<<<<<
@@ -14892,7 +17320,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":898
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":898
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd
  *             elif t == NPY_CLONGDOUBLE: f[0] = 90; f[1] = 103; f += 1 # Zg             # <<<<<<<<<<<<<<
@@ -14912,7 +17340,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":899
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":899
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd
  *             elif t == NPY_CLONGDOUBLE: f[0] = 90; f[1] = 103; f += 1 # Zg
  *             elif t == NPY_OBJECT:      f[0] = 79 #"O"             # <<<<<<<<<<<<<<
@@ -14930,7 +17358,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":901
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":901
  *             elif t == NPY_OBJECT:      f[0] = 79 #"O"
  *             else:
  *                 raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)             # <<<<<<<<<<<<<<
@@ -14949,7 +17377,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       }
       __pyx_L15:;
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":902
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":902
  *             else:
  *                 raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *             f += 1             # <<<<<<<<<<<<<<
@@ -14958,7 +17386,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       __pyx_v_f = (__pyx_v_f + 1);
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":877
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":877
  *         offset[0] += child.itemsize
  * 
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
@@ -14968,7 +17396,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       goto __pyx_L13;
     }
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":906
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":906
  *             # Cython ignores struct boundary information ("T{...}"),
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)             # <<<<<<<<<<<<<<
@@ -14981,7 +17409,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     }
     __pyx_L13:;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":851
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":851
  *     cdef tuple fields
  * 
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
@@ -14991,7 +17419,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":907
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":907
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)
  *     return f             # <<<<<<<<<<<<<<
@@ -15001,7 +17429,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   __pyx_r = __pyx_v_f;
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":842
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":842
  *         return ()
  * 
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
@@ -15026,7 +17454,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1022
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1022
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -15038,7 +17466,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_array_base", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1023
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1023
  * 
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -15047,7 +17475,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1024
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1024
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -15056,7 +17484,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   (void)(PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base));
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1022
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1022
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -15068,7 +17496,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1026
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1026
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -15083,7 +17511,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1027
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1027
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -15092,7 +17520,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1028
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1028
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -15102,7 +17530,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = ((__pyx_v_base == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1029
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1029
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -15113,7 +17541,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1028
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1028
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -15122,7 +17550,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1030
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1030
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -15134,7 +17562,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1026
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1026
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -15149,7 +17577,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1034
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1034
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -15170,7 +17598,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_array", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -15186,7 +17614,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1036
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1036
  * cdef inline int import_array() except -1:
  *     try:
  *         _import_array()             # <<<<<<<<<<<<<<
@@ -15195,7 +17623,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(3, 1036, __pyx_L3_error)
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -15209,7 +17637,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1037
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1037
  *     try:
  *         _import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -15224,7 +17652,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1038
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1038
  *         _import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -15240,7 +17668,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -15255,7 +17683,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1034
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1034
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -15278,7 +17706,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1040
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1040
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -15299,7 +17727,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_umath", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -15315,7 +17743,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1042
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1042
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -15324,7 +17752,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(3, 1042, __pyx_L3_error)
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -15338,7 +17766,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1043
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1043
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -15353,7 +17781,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1044
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1044
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -15369,7 +17797,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -15384,7 +17812,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1040
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1040
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -15407,7 +17835,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1046
+/* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1046
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -15428,7 +17856,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -15444,7 +17872,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1048
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1048
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -15453,7 +17881,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(3, 1048, __pyx_L3_error)
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -15467,7 +17895,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1049
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1049
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -15481,7 +17909,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1050
+      /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1050
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -15495,7 +17923,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
+    /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -15510,7 +17938,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1046
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1046
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -28387,7 +30815,7 @@ static PyTypeObject __pyx_type_6ailist_6ailist_Interval = {
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE, /*tp_flags*/
-  "\n\tWrapper of C interval_t\n\t", /*tp_doc*/
+  "\n    Wrapper of C interval_t\n    ", /*tp_doc*/
   0, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
@@ -28532,19 +30960,21 @@ static PyMethodDef __pyx_methods_6ailist_6ailist_AIList[] = {
   {"intersect", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_30intersect, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_29intersect},
   {"intersect_index", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_32intersect_index, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_31intersect_index},
   {"intersect_from_array", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_34intersect_from_array, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_33intersect_from_array},
-  {"coverage", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_36coverage, METH_NOARGS, __pyx_doc_6ailist_6ailist_6AIList_35coverage},
-  {"bin_coverage", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_38bin_coverage, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_37bin_coverage},
-  {"bin_nhits", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_40bin_nhits, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_39bin_nhits},
-  {"display", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_42display, METH_NOARGS, __pyx_doc_6ailist_6ailist_6AIList_41display},
-  {"merge", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_44merge, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_43merge},
-  {"subtract", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_46subtract, METH_O, __pyx_doc_6ailist_6ailist_6AIList_45subtract},
-  {"common", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_48common, METH_O, __pyx_doc_6ailist_6ailist_6AIList_47common},
-  {"append", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_50append, METH_O, __pyx_doc_6ailist_6ailist_6AIList_49append},
-  {"wps", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_52wps, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_51wps},
-  {"filter", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_54filter, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_53filter},
-  {"length_dist", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_56length_dist, METH_NOARGS, __pyx_doc_6ailist_6ailist_6AIList_55length_dist},
-  {"nhits_from_array", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_58nhits_from_array, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_57nhits_from_array},
-  {"close", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_60close, METH_NOARGS, __pyx_doc_6ailist_6ailist_6AIList_59close},
+  {"ifa", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_36ifa, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_35ifa},
+  {"ifa2", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_38ifa2, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_37ifa2},
+  {"coverage", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_40coverage, METH_NOARGS, __pyx_doc_6ailist_6ailist_6AIList_39coverage},
+  {"bin_coverage", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_42bin_coverage, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_41bin_coverage},
+  {"bin_nhits", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_44bin_nhits, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_43bin_nhits},
+  {"display", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_46display, METH_NOARGS, __pyx_doc_6ailist_6ailist_6AIList_45display},
+  {"merge", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_48merge, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_47merge},
+  {"subtract", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_50subtract, METH_O, __pyx_doc_6ailist_6ailist_6AIList_49subtract},
+  {"common", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_52common, METH_O, __pyx_doc_6ailist_6ailist_6AIList_51common},
+  {"append", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_54append, METH_O, __pyx_doc_6ailist_6ailist_6AIList_53append},
+  {"wps", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_56wps, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_55wps},
+  {"filter", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_58filter, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_57filter},
+  {"length_dist", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_60length_dist, METH_NOARGS, __pyx_doc_6ailist_6ailist_6AIList_59length_dist},
+  {"nhits_from_array", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6ailist_6ailist_6AIList_62nhits_from_array, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6ailist_6ailist_6AIList_61nhits_from_array},
+  {"close", (PyCFunction)__pyx_pw_6ailist_6ailist_6AIList_64close, METH_NOARGS, __pyx_doc_6ailist_6ailist_6AIList_63close},
   {0, 0, 0, 0}
 };
 
@@ -28666,7 +31096,7 @@ static PyTypeObject __pyx_type_6ailist_6ailist_AIList = {
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE, /*tp_flags*/
-  "\n\tWrapper for C ailist_t\n\t", /*tp_doc*/
+  "\n    Wrapper for C ailist_t\n    ", /*tp_doc*/
   0, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
@@ -29632,6 +32062,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_id, __pyx_k_id, sizeof(__pyx_k_id), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_index, __pyx_k_index, sizeof(__pyx_k_index), 0, 0, 1, 1},
+  {&__pyx_n_s_int64, __pyx_k_int64, sizeof(__pyx_k_int64), 0, 0, 1, 1},
   {&__pyx_n_s_intc, __pyx_k_intc, sizeof(__pyx_k_intc), 0, 0, 1, 1},
   {&__pyx_n_u_interval_list, __pyx_k_interval_list, sizeof(__pyx_k_interval_list), 0, 1, 0, 1},
   {&__pyx_n_s_is_closed, __pyx_k_is_closed, sizeof(__pyx_k_is_closed), 0, 0, 1, 1},
@@ -29658,12 +32089,14 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_numpy_core_multiarray_failed_to, __pyx_k_numpy_core_multiarray_failed_to, sizeof(__pyx_k_numpy_core_multiarray_failed_to), 0, 1, 0, 0},
   {&__pyx_kp_u_numpy_core_umath_failed_to_impor, __pyx_k_numpy_core_umath_failed_to_impor, sizeof(__pyx_k_numpy_core_umath_failed_to_impor), 0, 1, 0, 0},
   {&__pyx_n_s_obj, __pyx_k_obj, sizeof(__pyx_k_obj), 0, 0, 1, 1},
+  {&__pyx_n_s_ones, __pyx_k_ones, sizeof(__pyx_k_ones), 0, 0, 1, 1},
   {&__pyx_n_s_os, __pyx_k_os, sizeof(__pyx_k_os), 0, 0, 1, 1},
   {&__pyx_n_s_pack, __pyx_k_pack, sizeof(__pyx_k_pack), 0, 0, 1, 1},
   {&__pyx_n_s_pandas, __pyx_k_pandas, sizeof(__pyx_k_pandas), 0, 0, 1, 1},
   {&__pyx_n_s_path, __pyx_k_path, sizeof(__pyx_k_path), 0, 0, 1, 1},
   {&__pyx_n_s_pd, __pyx_k_pd, sizeof(__pyx_k_pd), 0, 0, 1, 1},
   {&__pyx_n_s_pickle, __pyx_k_pickle, sizeof(__pyx_k_pickle), 0, 0, 1, 1},
+  {&__pyx_n_s_print, __pyx_k_print, sizeof(__pyx_k_print), 0, 0, 1, 1},
   {&__pyx_n_s_protection, __pyx_k_protection, sizeof(__pyx_k_protection), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_PickleError, __pyx_k_pyx_PickleError, sizeof(__pyx_k_pyx_PickleError), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_checksum, __pyx_k_pyx_checksum, sizeof(__pyx_k_pyx_checksum), 0, 0, 1, 1},
@@ -29681,6 +32114,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_reduce, __pyx_k_reduce, sizeof(__pyx_k_reduce), 0, 0, 1, 1},
   {&__pyx_n_s_reduce_cython, __pyx_k_reduce_cython, sizeof(__pyx_k_reduce_cython), 0, 0, 1, 1},
   {&__pyx_n_s_reduce_ex, __pyx_k_reduce_ex, sizeof(__pyx_k_reduce_ex), 0, 0, 1, 1},
+  {&__pyx_n_s_resize, __pyx_k_resize, sizeof(__pyx_k_resize), 0, 0, 1, 1},
   {&__pyx_n_s_send, __pyx_k_send, sizeof(__pyx_k_send), 0, 0, 1, 1},
   {&__pyx_n_s_setstate, __pyx_k_setstate, sizeof(__pyx_k_setstate), 0, 0, 1, 1},
   {&__pyx_n_s_setstate_cython, __pyx_k_setstate_cython, sizeof(__pyx_k_setstate_cython), 0, 0, 1, 1},
@@ -29701,6 +32135,11 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_sys, __pyx_k_sys, sizeof(__pyx_k_sys), 0, 0, 1, 1},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
   {&__pyx_n_s_throw, __pyx_k_throw, sizeof(__pyx_k_throw), 0, 0, 1, 1},
+  {&__pyx_n_s_time, __pyx_k_time, sizeof(__pyx_k_time), 0, 0, 1, 1},
+  {&__pyx_kp_u_timing_ailist_destroy, __pyx_k_timing_ailist_destroy, sizeof(__pyx_k_timing_ailist_destroy), 0, 1, 0, 0},
+  {&__pyx_kp_u_timing_fetch_results, __pyx_k_timing_fetch_results, sizeof(__pyx_k_timing_fetch_results), 0, 1, 0, 0},
+  {&__pyx_kp_u_timing_query_from_array, __pyx_k_timing_query_from_array, sizeof(__pyx_k_timing_query_from_array), 0, 1, 0, 0},
+  {&__pyx_kp_u_timing_total, __pyx_k_timing_total, sizeof(__pyx_k_timing_total), 0, 1, 0, 0},
   {&__pyx_n_s_to_bytes, __pyx_k_to_bytes, sizeof(__pyx_k_to_bytes), 0, 0, 1, 1},
   {&__pyx_kp_s_unable_to_allocate_array_data, __pyx_k_unable_to_allocate_array_data, sizeof(__pyx_k_unable_to_allocate_array_data), 0, 0, 1, 0},
   {&__pyx_kp_s_unable_to_allocate_shape_and_str, __pyx_k_unable_to_allocate_shape_and_str, sizeof(__pyx_k_unable_to_allocate_shape_and_str), 0, 0, 1, 0},
@@ -29714,9 +32153,10 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(1, 166, __pyx_L1_error)
-  __pyx_builtin_NameError = __Pyx_GetBuiltinName(__pyx_n_s_NameError); if (!__pyx_builtin_NameError) __PYX_ERR(1, 179, __pyx_L1_error)
-  __pyx_builtin_IndexError = __Pyx_GetBuiltinName(__pyx_n_s_IndexError); if (!__pyx_builtin_IndexError) __PYX_ERR(1, 312, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(1, 172, __pyx_L1_error)
+  __pyx_builtin_NameError = __Pyx_GetBuiltinName(__pyx_n_s_NameError); if (!__pyx_builtin_NameError) __PYX_ERR(1, 185, __pyx_L1_error)
+  __pyx_builtin_IndexError = __Pyx_GetBuiltinName(__pyx_n_s_IndexError); if (!__pyx_builtin_IndexError) __PYX_ERR(1, 318, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(1, 576, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(3, 272, __pyx_L1_error)
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(3, 856, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(3, 1038, __pyx_L1_error)
@@ -29752,46 +32192,46 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "ailist/ailist.pyx":179
- * 		# Check if object is still open
- * 		if self.is_closed:
- * 			raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":185
+ *         # Check if object is still open
+ *         if self.is_closed:
+ *             raise NameError("AIList object has been closed.")             # <<<<<<<<<<<<<<
  * 
- * 		# Convert ints to bytes
+ *         # Convert ints to bytes
  */
-  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_kp_u_AIList_object_has_been_closed); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(1, 179, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_kp_u_AIList_object_has_been_closed); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(1, 185, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "ailist/ailist.pyx":312
- * 		# Check if key is greater than length
- * 		if key > self.interval_list.nr:
- * 			raise IndexError("Value larger than ailist length")             # <<<<<<<<<<<<<<
+  /* "ailist/ailist.pyx":318
+ *         # Check if key is greater than length
+ *         if key > self.interval_list.nr:
+ *             raise IndexError("Value larger than ailist length")             # <<<<<<<<<<<<<<
  * 
- * 		# Check if negative
+ *         # Check if negative
  */
-  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_kp_u_Value_larger_than_ailist_length); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(1, 312, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_kp_u_Value_larger_than_ailist_length); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(1, 318, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "ailist/ailist.pyx":579
- * 		cdef np.ndarray indices_arr = np.asarray(indices)
+  /* "ailist/ailist.pyx":565
+ *         cdef np.ndarray indices_arr = np.asarray(indices)
  * 
- * 		return indices_arr[0,:], indices_arr[1,:]             # <<<<<<<<<<<<<<
+ *         return indices_arr[0,:], indices_arr[1,:]             # <<<<<<<<<<<<<<
  * 
- * 
+ *     @cython.boundscheck(False)
  */
-  __pyx_slice__11 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__11)) __PYX_ERR(1, 579, __pyx_L1_error)
+  __pyx_slice__11 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__11)) __PYX_ERR(1, 565, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__11);
   __Pyx_GIVEREF(__pyx_slice__11);
-  __pyx_tuple__12 = PyTuple_Pack(2, __pyx_int_0, __pyx_slice__11); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(1, 579, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(2, __pyx_int_0, __pyx_slice__11); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(1, 565, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
-  __pyx_tuple__13 = PyTuple_Pack(2, __pyx_int_1, __pyx_slice__11); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(1, 579, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(2, __pyx_int_1, __pyx_slice__11); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(1, 565, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":272
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":272
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")             # <<<<<<<<<<<<<<
@@ -29802,7 +32242,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":276
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":276
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")             # <<<<<<<<<<<<<<
@@ -29813,7 +32253,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":306
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":306
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -29824,7 +32264,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":856
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":856
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
@@ -29835,7 +32275,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":880
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":880
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
@@ -29846,7 +32286,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1038
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1038
  *         _import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -29857,7 +32297,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
 
-  /* "../../../../anaconda3/envs/cfDNA/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1044
+  /* "../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1044
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -30049,14 +32489,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__37);
   __Pyx_GIVEREF(__pyx_tuple__37);
 
-  /* "ailist/ailist.pyx":17
+  /* "ailist/ailist.pyx":23
  * 
  * 
  * def get_include():             # <<<<<<<<<<<<<<
- * 	"""
- * 	Get file directory if C headers
+ *     """
+ *     Get file directory if C headers
  */
-  __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_ailist_ailist_pyx, __pyx_n_s_get_include, 17, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(1, 17, __pyx_L1_error)
+  __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_ailist_ailist_pyx, __pyx_n_s_get_include, 23, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(1, 23, __pyx_L1_error)
 
   /* "View.MemoryView":286
  *         return self.name
@@ -30130,6 +32570,13 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 }
 
 static CYTHON_SMALL_CODE int __Pyx_InitGlobals(void) {
+  /* InitThreads.init */
+  #ifdef WITH_THREAD
+PyEval_InitThreads();
+#endif
+
+if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 1, __pyx_L1_error)
+
   if (__Pyx_InitStrings(__pyx_string_tab) < 0) __PYX_ERR(1, 1, __pyx_L1_error);
   __pyx_int_0 = PyInt_FromLong(0); if (unlikely(!__pyx_int_0)) __PYX_ERR(1, 1, __pyx_L1_error)
   __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) __PYX_ERR(1, 1, __pyx_L1_error)
@@ -30189,16 +32636,16 @@ static int __Pyx_modinit_type_init_code(void) {
   /*--- Type init code ---*/
   __pyx_vtabptr_6ailist_6ailist_Interval = &__pyx_vtable_6ailist_6ailist_Interval;
   __pyx_vtable_6ailist_6ailist_Interval.set_i = (void (*)(struct __pyx_obj_6ailist_6ailist_Interval *, interval_t))__pyx_f_6ailist_6ailist_8Interval_set_i;
-  if (PyType_Ready(&__pyx_type_6ailist_6ailist_Interval) < 0) __PYX_ERR(1, 57, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6ailist_6ailist_Interval) < 0) __PYX_ERR(1, 63, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6ailist_6ailist_Interval.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6ailist_6ailist_Interval.tp_dictoffset && __pyx_type_6ailist_6ailist_Interval.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6ailist_6ailist_Interval.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6ailist_6ailist_Interval.tp_dict, __pyx_vtabptr_6ailist_6ailist_Interval) < 0) __PYX_ERR(1, 57, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Interval_2, (PyObject *)&__pyx_type_6ailist_6ailist_Interval) < 0) __PYX_ERR(1, 57, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6ailist_6ailist_Interval) < 0) __PYX_ERR(1, 57, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6ailist_6ailist_Interval.tp_dict, __pyx_vtabptr_6ailist_6ailist_Interval) < 0) __PYX_ERR(1, 63, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Interval_2, (PyObject *)&__pyx_type_6ailist_6ailist_Interval) < 0) __PYX_ERR(1, 63, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6ailist_6ailist_Interval) < 0) __PYX_ERR(1, 63, __pyx_L1_error)
   __pyx_ptype_6ailist_6ailist_Interval = &__pyx_type_6ailist_6ailist_Interval;
   __pyx_vtabptr_6ailist_6ailist_AIList = &__pyx_vtable_6ailist_6ailist_AIList;
   __pyx_vtable_6ailist_6ailist_AIList._get_data = (PyObject *(*)(struct __pyx_obj_6ailist_6ailist_AIList *))__pyx_f_6ailist_6ailist_6AIList__get_data;
@@ -30220,7 +32667,7 @@ static int __Pyx_modinit_type_init_code(void) {
   __pyx_vtable_6ailist_6ailist_AIList._length_dist = (PyArrayObject *(*)(struct __pyx_obj_6ailist_6ailist_AIList *))__pyx_f_6ailist_6ailist_6AIList__length_dist;
   __pyx_vtable_6ailist_6ailist_AIList._nhits_from_array = (PyArrayObject *(*)(struct __pyx_obj_6ailist_6ailist_AIList *, __Pyx_memviewslice, __Pyx_memviewslice))__pyx_f_6ailist_6ailist_6AIList__nhits_from_array;
   __pyx_vtable_6ailist_6ailist_AIList._nhits_from_array_length = (PyArrayObject *(*)(struct __pyx_obj_6ailist_6ailist_AIList *, __Pyx_memviewslice, __Pyx_memviewslice, int, int))__pyx_f_6ailist_6ailist_6AIList__nhits_from_array_length;
-  if (PyType_Ready(&__pyx_type_6ailist_6ailist_AIList) < 0) __PYX_ERR(1, 108, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6ailist_6ailist_AIList) < 0) __PYX_ERR(1, 114, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6ailist_6ailist_AIList.tp_print = 0;
   #endif
@@ -30229,7 +32676,7 @@ static int __Pyx_modinit_type_init_code(void) {
   }
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__len__"); if (unlikely(!wrapper)) __PYX_ERR(1, 108, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__len__"); if (unlikely(!wrapper)) __PYX_ERR(1, 114, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_6ailist_6ailist_6AIList_6__len__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_6ailist_6ailist_6AIList_6__len__.doc = __pyx_doc_6ailist_6ailist_6AIList_6__len__;
@@ -30239,7 +32686,7 @@ static int __Pyx_modinit_type_init_code(void) {
   #endif
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__iter__"); if (unlikely(!wrapper)) __PYX_ERR(1, 108, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__iter__"); if (unlikely(!wrapper)) __PYX_ERR(1, 114, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_6ailist_6ailist_6AIList_8__iter__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_6ailist_6ailist_6AIList_8__iter__.doc = __pyx_doc_6ailist_6ailist_6AIList_8__iter__;
@@ -30249,7 +32696,7 @@ static int __Pyx_modinit_type_init_code(void) {
   #endif
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__sub__"); if (unlikely(!wrapper)) __PYX_ERR(1, 108, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__sub__"); if (unlikely(!wrapper)) __PYX_ERR(1, 114, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_6ailist_6ailist_6AIList_11__sub__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_6ailist_6ailist_6AIList_11__sub__.doc = __pyx_doc_6ailist_6ailist_6AIList_11__sub__;
@@ -30259,7 +32706,7 @@ static int __Pyx_modinit_type_init_code(void) {
   #endif
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__add__"); if (unlikely(!wrapper)) __PYX_ERR(1, 108, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__add__"); if (unlikely(!wrapper)) __PYX_ERR(1, 114, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_6ailist_6ailist_6AIList_13__add__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_6ailist_6ailist_6AIList_13__add__.doc = __pyx_doc_6ailist_6ailist_6AIList_13__add__;
@@ -30269,7 +32716,7 @@ static int __Pyx_modinit_type_init_code(void) {
   #endif
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__or__"); if (unlikely(!wrapper)) __PYX_ERR(1, 108, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__or__"); if (unlikely(!wrapper)) __PYX_ERR(1, 114, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_6ailist_6ailist_6AIList_15__or__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_6ailist_6ailist_6AIList_15__or__.doc = __pyx_doc_6ailist_6ailist_6AIList_15__or__;
@@ -30279,7 +32726,7 @@ static int __Pyx_modinit_type_init_code(void) {
   #endif
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__getitem__"); if (unlikely(!wrapper)) __PYX_ERR(1, 108, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__getitem__"); if (unlikely(!wrapper)) __PYX_ERR(1, 114, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_6ailist_6ailist_6AIList_17__getitem__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_6ailist_6ailist_6AIList_17__getitem__.doc = __pyx_doc_6ailist_6ailist_6AIList_17__getitem__;
@@ -30289,7 +32736,7 @@ static int __Pyx_modinit_type_init_code(void) {
   #endif
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__repr__"); if (unlikely(!wrapper)) __PYX_ERR(1, 108, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6ailist_6ailist_AIList, "__repr__"); if (unlikely(!wrapper)) __PYX_ERR(1, 114, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_6ailist_6ailist_6AIList_19__repr__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_6ailist_6ailist_6AIList_19__repr__.doc = __pyx_doc_6ailist_6ailist_6AIList_19__repr__;
@@ -30297,10 +32744,10 @@ static int __Pyx_modinit_type_init_code(void) {
     }
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_type_6ailist_6ailist_AIList.tp_dict, __pyx_vtabptr_6ailist_6ailist_AIList) < 0) __PYX_ERR(1, 108, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_AIList_2, (PyObject *)&__pyx_type_6ailist_6ailist_AIList) < 0) __PYX_ERR(1, 108, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6ailist_6ailist_AIList.tp_dict, __pyx_vtabptr_6ailist_6ailist_AIList) < 0) __PYX_ERR(1, 114, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_AIList_2, (PyObject *)&__pyx_type_6ailist_6ailist_AIList) < 0) __PYX_ERR(1, 114, __pyx_L1_error)
   __pyx_ptype_6ailist_6ailist_AIList = &__pyx_type_6ailist_6ailist_AIList;
-  if (PyType_Ready(&__pyx_type_6ailist_6ailist___pyx_scope_struct____iter__) < 0) __PYX_ERR(1, 247, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6ailist_6ailist___pyx_scope_struct____iter__) < 0) __PYX_ERR(1, 253, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6ailist_6ailist___pyx_scope_struct____iter__.tp_print = 0;
   #endif
@@ -30621,99 +33068,132 @@ if (!__Pyx_RefNanny) {
   /* "ailist/ailist.pyx":4
  * #cython: profile=False
  * 
- * import os             # <<<<<<<<<<<<<<
+ * import time             # <<<<<<<<<<<<<<
+ * import os
  * import sys
- * import numpy as np
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_os, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_time, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_os, __pyx_t_1) < 0) __PYX_ERR(1, 4, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_time, __pyx_t_1) < 0) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "ailist/ailist.pyx":5
  * 
+ * import time
+ * import os             # <<<<<<<<<<<<<<
+ * import sys
+ * import numpy as np
+ */
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_os, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_os, __pyx_t_1) < 0) __PYX_ERR(1, 5, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "ailist/ailist.pyx":6
+ * import time
  * import os
  * import sys             # <<<<<<<<<<<<<<
  * import numpy as np
  * cimport numpy as np
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_sys, __pyx_t_1) < 0) __PYX_ERR(1, 5, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_sys, __pyx_t_1) < 0) __PYX_ERR(1, 6, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ailist/ailist.pyx":6
+  /* "ailist/ailist.pyx":7
  * import os
  * import sys
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport numpy as np
  * import math
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 6, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 6, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 7, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ailist/ailist.pyx":8
+  /* "ailist/ailist.pyx":9
  * import numpy as np
  * cimport numpy as np
  * import math             # <<<<<<<<<<<<<<
  * cimport cython
  * import pandas as pd
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_math, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 8, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_math, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_math, __pyx_t_1) < 0) __PYX_ERR(1, 8, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_math, __pyx_t_1) < 0) __PYX_ERR(1, 9, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ailist/ailist.pyx":10
+  /* "ailist/ailist.pyx":11
  * import math
  * cimport cython
  * import pandas as pd             # <<<<<<<<<<<<<<
  * from libc.string cimport memcpy
- * 
+ * from time import time
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_pandas, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 10, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_pandas, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_pd, __pyx_t_1) < 0) __PYX_ERR(1, 10, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_pd, __pyx_t_1) < 0) __PYX_ERR(1, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ailist/ailist.pyx":14
+  /* "ailist/ailist.pyx":13
+ * import pandas as pd
+ * from libc.string cimport memcpy
+ * from time import time             # <<<<<<<<<<<<<<
+ * 
+ * from cython.parallel import prange
+ */
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_INCREF(__pyx_n_s_time);
+  __Pyx_GIVEREF(__pyx_n_s_time);
+  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_time);
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_time, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 13, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_time, __pyx_t_1) < 0) __PYX_ERR(1, 13, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "ailist/ailist.pyx":20
  * 
  * # Set byteorder for __reduce__
  * byteorder = sys.byteorder             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sys); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 14, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 14, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sys); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_byteorder, __pyx_t_2) < 0) __PYX_ERR(1, 14, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_byteorder); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 20, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_byteorder, __pyx_t_1) < 0) __PYX_ERR(1, 20, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ailist/ailist.pyx":17
+  /* "ailist/ailist.pyx":23
  * 
  * 
  * def get_include():             # <<<<<<<<<<<<<<
- * 	"""
- * 	Get file directory if C headers
+ *     """
+ *     Get file directory if C headers
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_6ailist_6ailist_1get_include, NULL, __pyx_n_s_ailist_ailist); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 17, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_get_include, __pyx_t_2) < 0) __PYX_ERR(1, 17, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_6ailist_6ailist_1get_include, NULL, __pyx_n_s_ailist_ailist); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 23, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_get_include, __pyx_t_1) < 0) __PYX_ERR(1, 23, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "ailist/ailist.pyx":1
  * #cython: embedsignature=True             # <<<<<<<<<<<<<<
  * #cython: profile=False
  * 
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_1) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "View.MemoryView":209
  *         info.obj = self
@@ -30722,10 +33202,10 @@ if (!__Pyx_RefNanny) {
  * 
  *     def __dealloc__(array self):
  */
-  __pyx_t_2 = __pyx_capsule_create(((void *)(&__pyx_array_getbuffer)), ((char *)"getbuffer(obj, view, flags)")); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 209, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_array_type->tp_dict, __pyx_n_s_pyx_getbuffer, __pyx_t_2) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = __pyx_capsule_create(((void *)(&__pyx_array_getbuffer)), ((char *)"getbuffer(obj, view, flags)")); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem((PyObject *)__pyx_array_type->tp_dict, __pyx_n_s_pyx_getbuffer, __pyx_t_1) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   PyType_Modified(__pyx_array_type);
 
   /* "View.MemoryView":286
@@ -30735,12 +33215,12 @@ if (!__Pyx_RefNanny) {
  * cdef strided = Enum("<strided and direct>") # default
  * cdef indirect = Enum("<strided and indirect>")
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__39, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__39, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_XGOTREF(generic);
-  __Pyx_DECREF_SET(generic, __pyx_t_2);
-  __Pyx_GIVEREF(__pyx_t_2);
-  __pyx_t_2 = 0;
+  __Pyx_DECREF_SET(generic, __pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
+  __pyx_t_1 = 0;
 
   /* "View.MemoryView":287
  * 
@@ -30749,12 +33229,12 @@ if (!__Pyx_RefNanny) {
  * cdef indirect = Enum("<strided and indirect>")
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__40, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 287, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__40, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_XGOTREF(strided);
-  __Pyx_DECREF_SET(strided, __pyx_t_2);
-  __Pyx_GIVEREF(__pyx_t_2);
-  __pyx_t_2 = 0;
+  __Pyx_DECREF_SET(strided, __pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
+  __pyx_t_1 = 0;
 
   /* "View.MemoryView":288
  * cdef generic = Enum("<strided and direct or indirect>")
@@ -30763,12 +33243,12 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__41, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 288, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__41, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 288, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_XGOTREF(indirect);
-  __Pyx_DECREF_SET(indirect, __pyx_t_2);
-  __Pyx_GIVEREF(__pyx_t_2);
-  __pyx_t_2 = 0;
+  __Pyx_DECREF_SET(indirect, __pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
+  __pyx_t_1 = 0;
 
   /* "View.MemoryView":291
  * 
@@ -30777,12 +33257,12 @@ if (!__Pyx_RefNanny) {
  * cdef indirect_contiguous = Enum("<contiguous and indirect>")
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__42, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 291, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__42, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_XGOTREF(contiguous);
-  __Pyx_DECREF_SET(contiguous, __pyx_t_2);
-  __Pyx_GIVEREF(__pyx_t_2);
-  __pyx_t_2 = 0;
+  __Pyx_DECREF_SET(contiguous, __pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
+  __pyx_t_1 = 0;
 
   /* "View.MemoryView":292
  * 
@@ -30791,12 +33271,12 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__43, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 292, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__43, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_XGOTREF(indirect_contiguous);
-  __Pyx_DECREF_SET(indirect_contiguous, __pyx_t_2);
-  __Pyx_GIVEREF(__pyx_t_2);
-  __pyx_t_2 = 0;
+  __Pyx_DECREF_SET(indirect_contiguous, __pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
+  __pyx_t_1 = 0;
 
   /* "View.MemoryView":316
  * 
@@ -30831,10 +33311,10 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  */
-  __pyx_t_2 = __pyx_capsule_create(((void *)(&__pyx_memoryview_getbuffer)), ((char *)"getbuffer(obj, view, flags)")); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 545, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_memoryview_type->tp_dict, __pyx_n_s_pyx_getbuffer, __pyx_t_2) < 0) __PYX_ERR(0, 545, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = __pyx_capsule_create(((void *)(&__pyx_memoryview_getbuffer)), ((char *)"getbuffer(obj, view, flags)")); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 545, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem((PyObject *)__pyx_memoryview_type->tp_dict, __pyx_n_s_pyx_getbuffer, __pyx_t_1) < 0) __PYX_ERR(0, 545, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   PyType_Modified(__pyx_memoryview_type);
 
   /* "View.MemoryView":991
@@ -30844,10 +33324,10 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  */
-  __pyx_t_2 = __pyx_capsule_create(((void *)(&__pyx_memoryview_getbuffer)), ((char *)"getbuffer(obj, view, flags)")); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 991, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_memoryviewslice_type->tp_dict, __pyx_n_s_pyx_getbuffer, __pyx_t_2) < 0) __PYX_ERR(0, 991, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = __pyx_capsule_create(((void *)(&__pyx_memoryview_getbuffer)), ((char *)"getbuffer(obj, view, flags)")); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 991, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem((PyObject *)__pyx_memoryviewslice_type->tp_dict, __pyx_n_s_pyx_getbuffer, __pyx_t_1) < 0) __PYX_ERR(0, 991, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   PyType_Modified(__pyx_memoryviewslice_type);
 
   /* "(tree fragment)":1
@@ -30855,10 +33335,10 @@ if (!__Pyx_RefNanny) {
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_15View_dot_MemoryView_1__pyx_unpickle_Enum, NULL, __pyx_n_s_View_MemoryView); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle_Enum, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_15View_dot_MemoryView_1__pyx_unpickle_Enum, NULL, __pyx_n_s_View_MemoryView); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle_Enum, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "(tree fragment)":11
  *         __pyx_unpickle_Enum__set_state(<Enum> __pyx_result, __pyx_state)
@@ -32184,6 +34664,103 @@ static PyObject *__Pyx_PyObject_GetItem(PyObject *obj, PyObject* key) {
     return __Pyx_PyObject_GetIndex(obj, key);
 }
 #endif
+
+/* SliceObject */
+static CYTHON_INLINE PyObject* __Pyx_PyObject_GetSlice(PyObject* obj,
+        Py_ssize_t cstart, Py_ssize_t cstop,
+        PyObject** _py_start, PyObject** _py_stop, PyObject** _py_slice,
+        int has_cstart, int has_cstop, CYTHON_UNUSED int wraparound) {
+#if CYTHON_USE_TYPE_SLOTS
+    PyMappingMethods* mp;
+#if PY_MAJOR_VERSION < 3
+    PySequenceMethods* ms = Py_TYPE(obj)->tp_as_sequence;
+    if (likely(ms && ms->sq_slice)) {
+        if (!has_cstart) {
+            if (_py_start && (*_py_start != Py_None)) {
+                cstart = __Pyx_PyIndex_AsSsize_t(*_py_start);
+                if ((cstart == (Py_ssize_t)-1) && PyErr_Occurred()) goto bad;
+            } else
+                cstart = 0;
+        }
+        if (!has_cstop) {
+            if (_py_stop && (*_py_stop != Py_None)) {
+                cstop = __Pyx_PyIndex_AsSsize_t(*_py_stop);
+                if ((cstop == (Py_ssize_t)-1) && PyErr_Occurred()) goto bad;
+            } else
+                cstop = PY_SSIZE_T_MAX;
+        }
+        if (wraparound && unlikely((cstart < 0) | (cstop < 0)) && likely(ms->sq_length)) {
+            Py_ssize_t l = ms->sq_length(obj);
+            if (likely(l >= 0)) {
+                if (cstop < 0) {
+                    cstop += l;
+                    if (cstop < 0) cstop = 0;
+                }
+                if (cstart < 0) {
+                    cstart += l;
+                    if (cstart < 0) cstart = 0;
+                }
+            } else {
+                if (!PyErr_ExceptionMatches(PyExc_OverflowError))
+                    goto bad;
+                PyErr_Clear();
+            }
+        }
+        return ms->sq_slice(obj, cstart, cstop);
+    }
+#endif
+    mp = Py_TYPE(obj)->tp_as_mapping;
+    if (likely(mp && mp->mp_subscript))
+#endif
+    {
+        PyObject* result;
+        PyObject *py_slice, *py_start, *py_stop;
+        if (_py_slice) {
+            py_slice = *_py_slice;
+        } else {
+            PyObject* owned_start = NULL;
+            PyObject* owned_stop = NULL;
+            if (_py_start) {
+                py_start = *_py_start;
+            } else {
+                if (has_cstart) {
+                    owned_start = py_start = PyInt_FromSsize_t(cstart);
+                    if (unlikely(!py_start)) goto bad;
+                } else
+                    py_start = Py_None;
+            }
+            if (_py_stop) {
+                py_stop = *_py_stop;
+            } else {
+                if (has_cstop) {
+                    owned_stop = py_stop = PyInt_FromSsize_t(cstop);
+                    if (unlikely(!py_stop)) {
+                        Py_XDECREF(owned_start);
+                        goto bad;
+                    }
+                } else
+                    py_stop = Py_None;
+            }
+            py_slice = PySlice_New(py_start, py_stop, Py_None);
+            Py_XDECREF(owned_start);
+            Py_XDECREF(owned_stop);
+            if (unlikely(!py_slice)) goto bad;
+        }
+#if CYTHON_USE_TYPE_SLOTS
+        result = mp->mp_subscript(obj, py_slice);
+#else
+        result = PyObject_GetItem(obj, py_slice);
+#endif
+        if (!_py_slice) {
+            Py_DECREF(py_slice);
+        }
+        return result;
+    }
+    PyErr_Format(PyExc_TypeError,
+        "'%.200s' object is unsliceable", Py_TYPE(obj)->tp_name);
+bad:
+    return NULL;
+}
 
 /* DictGetItem */
 #if PY_MAJOR_VERSION >= 3 && !CYTHON_COMPILING_IN_PYPY
@@ -36727,6 +39304,29 @@ __pyx_fail:
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
                                                  (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 2,
                                                  &__Pyx_TypeInfo_long, stack,
+                                                 &result, obj);
+    if (unlikely(retcode == -1))
+        goto __pyx_fail;
+    return result;
+__pyx_fail:
+    result.memview = NULL;
+    result.data = NULL;
+    return result;
+}
+
+/* ObjectToMemviewSlice */
+  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_int64_t(PyObject *obj, int writable_flag) {
+    __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
+    __Pyx_BufFmt_StackElem stack[1];
+    int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
+    int retcode;
+    if (obj == Py_None) {
+        result.memview = (struct __pyx_memoryview_obj *) Py_None;
+        return result;
+    }
+    retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
+                                                 (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 1,
+                                                 &__Pyx_TypeInfo_nn_int64_t, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;

@@ -1,5 +1,5 @@
 //=============================================================================
-// Quick and efficient storing/querying of intervals 
+// Quick and efficient storing/querying of intervals
 // by Kyle S. Smith and Jianglin Feng
 //
 //-----------------------------------------------------------------------------
@@ -9,12 +9,12 @@
 
 uint32_t binary_search(interval_t* As, uint32_t idxS, uint32_t idxE, uint32_t qe)
 {   /* Find tE: index of the first item satisfying .s<qe from right */
-    
+
     int tL = idxS;
     int tR = idxE - 1;
     int tM;
     int tE = -1;
-    
+
     if(As[tR].start < qe)
     {
         return tR;
@@ -24,7 +24,7 @@ uint32_t binary_search(interval_t* As, uint32_t idxS, uint32_t idxE, uint32_t qe
 
     while (tL < tR - 1)
     {
-        tM = (tL + tR) / 2; 
+        tM = (tL + tR) / 2;
 
         if (As[tM].start >= qe)
         {
@@ -41,7 +41,7 @@ uint32_t binary_search(interval_t* As, uint32_t idxS, uint32_t idxE, uint32_t qe
         tE = tL;
     }
 
-    return tE; 
+    return tE;
 }
 
 
@@ -74,9 +74,9 @@ void ailist_destroy(ailist_t *ail)
 {   /* Free ailist_t object */
 
 	if (ail == 0) {return;}
-	
+
 	free(ail->interval_list);
-	
+
 	if (ail->maxE)
 	{
 		free(ail->maxE);
@@ -120,13 +120,13 @@ void ailist_sort(ailist_t *ail)
 
 
 void ailist_construct(ailist_t *ail, int cLen)
-{   /* Construct ailist_t object */  
+{   /* Construct ailist_t object */
 
     int cLen1 = cLen / 2;
     int j1, nr;
-    int minL = MAX(64, cLen);     
-    cLen += cLen1;      
-    int lenT, len, iter, j, k, k0, t;  
+    int minL = MAX(64, cLen);
+    cLen += cLen1;
+    int lenT, len, iter, j, k, k0, t;
 
     //1. Decomposition
     interval_t *L1 = ail->interval_list;					//L1: to be rebuilt
@@ -134,22 +134,22 @@ void ailist_construct(ailist_t *ail, int cLen)
     radix_interval_sort(L1, nr);
 
     if (nr <= minL)
-    {        
+    {
         ail->nc = 1;
         ail->lenC[0] = nr;
-        ail->idxC[0] = 0;                
-    } else {         
+        ail->idxC[0] = 0;
+    } else {
         interval_t *L0 = malloc(nr * sizeof(interval_t)); 	//L0: serve as input list
-        interval_t *L2 = malloc(nr * sizeof(interval_t));   //L2: extracted list 
-        memcpy(L0, L1, nr * sizeof(interval_t));			
+        interval_t *L2 = malloc(nr * sizeof(interval_t));   //L2: extracted list
+        memcpy(L0, L1, nr * sizeof(interval_t));
         iter = 0;
         k = 0;
         k0 = 0;
         lenT = nr;
 
         while (iter < MAXC && lenT > minL)
-        {   
-            len = 0;            
+        {
+            len = 0;
             for (t = 0; t < lenT - cLen; t++)
             {
                 uint32_t tt = L0[t].end;
@@ -161,18 +161,18 @@ void ailist_construct(ailist_t *ail, int cLen)
                     if (L0[j + t].end >= tt) {j1++;}
                     j++;
                 }
-                
+
                 if (j1 < cLen1)
                 {
                     memcpy(&L2[len++], &L0[t], sizeof(interval_t));
                 } else {
                     memcpy(&L1[k++], &L0[t], sizeof(interval_t));
-                }               
-            } 
+                }
+            }
 
-            memcpy(&L1[k], &L0[lenT - cLen], cLen * sizeof(interval_t));   
+            memcpy(&L1[k], &L0[lenT - cLen], cLen * sizeof(interval_t));
             k += cLen;
-            lenT = len;               
+            lenT = len;
             ail->idxC[iter] = k0;
             ail->lenC[iter] = k - k0;
             k0 = k;
@@ -187,19 +187,19 @@ void ailist_construct(ailist_t *ail, int cLen)
                     ail->lenC[iter] = lenT;
                     iter++;
                 }
-                ail->nc = iter;                   
+                ail->nc = iter;
             } else {
                 memcpy(L0, L2, lenT * sizeof(interval_t));
             }
         }
         free(L2);
-        free(L0);     
+        free(L0);
     }
 
     //2. Augmentation
-    ail->maxE = malloc(nr * sizeof(uint32_t)); 
+    ail->maxE = malloc(nr * sizeof(uint32_t));
     for (j = 0; j < ail->nc; j++)
-    { 
+    {
         k0 = ail->idxC[j];
         k = k0 + ail->lenC[j];
         uint32_t tt = L1[k0].end;
@@ -212,15 +212,15 @@ void ailist_construct(ailist_t *ail, int cLen)
                 tt = L1[t].end;
             }
 
-            ail->maxE[t] = tt;  
-        }             
+            ail->maxE[t] = tt;
+        }
     }
     return;
 }
 
 
 ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe)
-{   
+{
     int k;
 
     ailist_t *overlaps = ailist_init();
@@ -228,7 +228,7 @@ ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe)
     for (k = 0; k < ail->nc; k++)
     {   // Search each component
         int32_t cs = ail->idxC[k];
-        int32_t ce = cs + ail->lenC[k];			
+        int32_t ce = cs + ail->lenC[k];
         int32_t t;
 
         if (ail->lenC[k] > 15)
@@ -238,13 +238,13 @@ ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe)
             while (t >= cs && ail->maxE[t] > qs)
             {
                 if (ail->interval_list[t].end > qs)
-                {               	
+                {
                     ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, ail->interval_list[t].index, ail->interval_list[t].value);
                 }
 
                 t--;
             }
-        } 
+        }
         else {
             for (t = cs; t < ce; t++)
             {
@@ -252,16 +252,16 @@ ailist_t *ailist_query(ailist_t *ail, uint32_t qs, uint32_t qe)
                 {
                     ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, ail->interval_list[t].index, ail->interval_list[t].value);
                 }
-            }                      
+            }
         }
     }
 
-    return overlaps;                            
+    return overlaps;
 }
 
 
 ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_length, int max_length)
-{   
+{
     int k;
 
     ailist_t *overlaps = ailist_init();
@@ -269,7 +269,7 @@ ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_l
     for (k = 0; k < ail->nc; k++)
     {   // Search each component
         int32_t cs = ail->idxC[k];
-        int32_t ce = cs + ail->lenC[k];			
+        int32_t ce = cs + ail->lenC[k];
         int32_t t;
 
         if (ail->lenC[k] > 15)
@@ -279,7 +279,7 @@ ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_l
             while (t >= cs && ail->maxE[t] > qs)
             {
                 if (ail->interval_list[t].end > qs)
-                {               	
+                {
                     int length = ail->interval_list[t].end - ail->interval_list[t].start;
                     if (length >= min_length && length < max_length)
                     {
@@ -289,7 +289,7 @@ ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_l
 
                 t--;
             }
-        } 
+        }
         else {
             for (t = cs; t < ce; t++)
             {
@@ -301,11 +301,11 @@ ailist_t *ailist_query_length(ailist_t *ail, uint32_t qs, uint32_t qe, int min_l
                         ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, ail->interval_list[t].index, ail->interval_list[t].value);
                     }
                 }
-            }                      
+            }
         }
     }
 
-    return overlaps;                            
+    return overlaps;
 }
 
 
@@ -326,7 +326,7 @@ ailist_t *ailist_query_from_array(ailist_t *ail, const long starts[], const long
         for (k = 0; k < ail->nc; k++)
         {   // Search each component
             int32_t cs = ail->idxC[k];
-            int32_t ce = cs + ail->lenC[k];			
+            int32_t ce = cs + ail->lenC[k];
             int32_t t;
 
             if (ail->lenC[k] > 15)
@@ -336,13 +336,13 @@ ailist_t *ailist_query_from_array(ailist_t *ail, const long starts[], const long
                 while (t >= cs && ail->maxE[t] > qs)
                 {
                     if (ail->interval_list[t].end > qs)
-                    {               	
+                    {
                         ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, ail->interval_list[t].index, (double)index);
                     }
 
                     t--;
                 }
-            } 
+            }
             else {
                 for (t = cs; t < ce; t++)
                 {
@@ -350,12 +350,12 @@ ailist_t *ailist_query_from_array(ailist_t *ail, const long starts[], const long
                     {
                         ailist_add(overlaps, ail->interval_list[t].start, ail->interval_list[t].end, ail->interval_list[t].index, (double)index);
                     }
-                }                      
+                }
             }
         }
     }
 
-    return overlaps;                            
+    return overlaps;
 }
 
 
@@ -365,7 +365,7 @@ ailist_t *ailist_append(ailist_t *ail1, ailist_t *ail2)
 {
     // Initialize appended ailist
     ailist_t *appended_ailist = ailist_init();
-    
+
     // Append ail1
     int i;
     for (i = 0; i < ail1->nr; i++)
@@ -423,12 +423,12 @@ void ailist_coverage(ailist_t *ail, double coverage[])
 void ailist_bin_coverage(ailist_t *ail, double coverage[], int bin_size)
 {   /* Calculate coverage within bins */
     int start = (int)(ail->first / bin_size);
-    
+
     int i;
     for (i = 0; i < ail->nr; i++)
     {
         int start_bin = ail->interval_list[i].start / bin_size;
-        
+
         double length = (double)(ail->interval_list[i].end - ail->interval_list[i].start);
         int n_bins = ceil(((double)(ail->interval_list[i].start % bin_size) / bin_size) + (length / bin_size));
         int n;
@@ -450,12 +450,12 @@ void ailist_bin_coverage(ailist_t *ail, double coverage[], int bin_size)
 void ailist_bin_coverage_length(ailist_t *ail, double coverage[], int bin_size, int min_length, int max_length)
 {   /* Calculate coverage within bins of a length */
     int start = (int)(ail->first / bin_size);
-    
+
     int i;
     for (i = 0; i < ail->nr; i++)
     {
         int start_bin = ail->interval_list[i].start / bin_size;
-        
+
         double length = (double)(ail->interval_list[i].end - ail->interval_list[i].start);
         if (length >= min_length && length < max_length)
         {
@@ -480,12 +480,12 @@ void ailist_bin_coverage_length(ailist_t *ail, double coverage[], int bin_size, 
 void ailist_bin_nhits(ailist_t *ail, double coverage[], int bin_size)
 {   /* Calculate n hits within bins */
     int start = (int)(ail->first / bin_size);
-    
+
     int i;
     for (i = 0; i < ail->nr; i++)
     {
         int start_bin = ail->interval_list[i].start / bin_size;
-        
+
         double length = (double)(ail->interval_list[i].end - ail->interval_list[i].start);
         int n_bins = ceil(((double)(ail->interval_list[i].start % bin_size) / bin_size) + (length / bin_size));
         int n;
@@ -503,12 +503,12 @@ void ailist_bin_nhits(ailist_t *ail, double coverage[], int bin_size)
 void ailist_bin_nhits_length(ailist_t *ail, double coverage[], int bin_size, int min_length, int max_length)
 {   /* Calculate n hits of a length within bins */
     int start = (int)(ail->first / bin_size);
-    
+
     int i;
     for (i = 0; i < ail->nr; i++)
     {
         int start_bin = ail->interval_list[i].start / bin_size;
-        
+
         double length = (double)(ail->interval_list[i].end - ail->interval_list[i].start);
         if (length >= min_length && length < max_length)
         {
@@ -528,7 +528,7 @@ void ailist_bin_nhits_length(ailist_t *ail, double coverage[], int bin_size, int
 
 void ailist_from_array(ailist_t *ail, const long starts[], const long ends[], const long index[], const double values[], int length)
 {
-    
+
     // Iterate over itervals and add
     int i;
     for (i = 0; i < length; i++)
@@ -551,7 +551,7 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
     // Iterate over regions
     int i = j+1;
     while (i < ref_ail->nr && (int)query_i.start < previous_end && (int)query_i.end > previous_start)
-    {        
+    {
         if (previous_end > (int)ref_ail->interval_list[i].start)
         {   // If previous overlaps current, merge
             previous_end = MAX(previous_end, (int)ref_ail->interval_list[i].end);
@@ -585,7 +585,7 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
                     query_i.start = previous_end;
                 }
             }
-            
+
 
             previous_start = ref_ail->interval_list[i].start;
             previous_end = ref_ail->interval_list[i].end;
@@ -634,7 +634,7 @@ void subtract_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t quer
         // Add new bounds to result
         ailist_add(result_ail, s_start, s_end, query_i.index, query_i.value);
     }
-    
+
 
 }
 
@@ -659,7 +659,7 @@ ailist_t *ailist_subtract(ailist_t *ref_ail, ailist_t *query_ail)
             n_merged++;
         }
         else
-        {   
+        {
             // Add intervals until caught up with ail1
             while (j < query_ail->nr && (int)query_ail->interval_list[j].end < previous_start)
             {
@@ -713,7 +713,7 @@ void common_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t query_
     // Iterate over regions
     int i = j+1;
     while (i < ref_ail->nr && (int)query_i.start < previous_end && (int)query_i.end > previous_start)
-    {        
+    {
         if (previous_end > (int)ref_ail->interval_list[i].start)
         {   // If previous overlaps current, merge
             previous_end = MAX(previous_end, (int)ref_ail->interval_list[i].end);
@@ -756,7 +756,7 @@ void common_intervals(ailist_t *ref_ail, ailist_t *result_ail, interval_t query_
                 // Add new bounds to result
                 ailist_add(result_ail, c_start, c_end, query_i.index, query_i.value);
             }
-            
+
 
             previous_start = ref_ail->interval_list[i].start;
             previous_end = ref_ail->interval_list[i].end;
@@ -826,7 +826,7 @@ ailist_t *ailist_common(ailist_t *ref_ail, ailist_t *query_ail)
             n_merged++;
         }
         else
-        {   
+        {
             // Add intervals until caught up with ail1
             while (j < query_ail->nr && (int)query_ail->interval_list[j].end < previous_start)
             {
@@ -941,7 +941,7 @@ void ailist_wps_length(ailist_t *ail, double wps[], uint32_t protection, int min
     // Iterate over regions
     int i;
     for (i = 0; i < ail->nr; i++)
-    {   
+    {
         // Check if length is in range
         int length = ail->interval_list[i].end - ail->interval_list[i].start;
         if (length >= min_length && length < max_length)
@@ -1006,7 +1006,7 @@ ailist_t *ailist_length_filter(ailist_t *ail, int min_length, int max_length)
 
 int ailist_max_length(ailist_t *ail)
 {   /* Calculate maximum length */
-	
+
     // Iterate over intervals and record length
     int length;
     int maximum = 0;
@@ -1077,26 +1077,26 @@ void display_list(ailist_t *ail)
 
 
 /* Driver program to test above functions*/
-int main() 
-{ 
+int main()
+{
     printf("Initializing AIList...\n");
     ailist_t *ail = ailist_init();
 
     printf("Adding intervals...\n");
-    ailist_add(ail, 15, 20, 1, 0.0); 
-    ailist_add(ail, 10, 30, 2, 0.0); 
-    ailist_add(ail, 17, 19, 3, 0.0); 
-    ailist_add(ail, 5, 20, 4, 0.0); 
-    ailist_add(ail, 12, 15, 5, 0.0); 
-    ailist_add(ail, 30, 40, 6, 0.0); 
+    ailist_add(ail, 15, 20, 1, 0.0);
+    ailist_add(ail, 10, 30, 2, 0.0);
+    ailist_add(ail, 17, 19, 3, 0.0);
+    ailist_add(ail, 5, 20, 4, 0.0);
+    ailist_add(ail, 12, 15, 5, 0.0);
+    ailist_add(ail, 30, 40, 6, 0.0);
 
     //int i;
-    /* for (i = 1000; i < 1000000000; i+=100) 
+    /* for (i = 1000; i < 1000000000; i+=100)
     {
         ailist_add(ail, i, i+2000, 0);
     } */
     display_list(ail);
-    
+
     printf("Constructing AIList...\n");
     ailist_construct(ail, 20);
     display_list(ail);
